@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595356602771",
+    "project_id": "picstorage-f5e87",
+    "storage_bucket": "picstorage-f5e87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595356602771:android:a208fe66820df662b05866",
+        "android_client_info": {
+          "package_name": "com.example.a13_cloud_gallery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5AYFbYNJEnWv3N2rbMr1MP3yZ1tNaZXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
