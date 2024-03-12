@@ -24,8 +24,8 @@ class DashBoardApp extends StatelessWidget {
         useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
-      // home: const DashBoard_ph2(),
-      home: const DashBoard(),
+      home: const DashBoard_ph2(),
+      // home: const DashBoard(),
       // home: const ScrollTest(),
       // home: const Notice(),
     );

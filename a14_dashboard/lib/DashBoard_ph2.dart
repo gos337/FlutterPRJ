@@ -4,6 +4,7 @@ import 'package:a14_dashboard/ServerData.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 //?1   tableGroup2() 에서 그룹테이블 생성에 사용하는 데이터        [[
@@ -143,7 +144,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   int activeIndex = 0;
   final CarouselController _carouselController = CarouselController();
 
-  int pageIndex = 0;
+  double pageIndex = 0;
   final PageController _pageController = PageController();
 
   @override
@@ -155,7 +156,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     MakeUncleanssingServerList();
     // _pageController.addListener(onPageChanged);
 
-    loadJSON();
+    // _pageController.addListener(onPageChanged);
+
+    // loadJSON();
   }
 
   @override
@@ -164,6 +167,15 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
     // TODO: implement dispose
     super.dispose();
+  }
+
+  void onPageChanged() {
+    // setState(() {
+    //   pageIndex;
+    // });
+    print(_pageController.page);
+    // pageIndex = _pageController.page as double;
+    // setState(() {});
   }
 
   dynamic jsonResponse, jsonResponse2;
@@ -291,12 +303,12 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       }
     }
 
-    for (int i = 0; i < serverlist_doing.length; i++) {
-      print(serverlist_doing[i]["team"]);
-      print((serverlist_doing[i]["data"] as List<Map<String, Object?>>).length);
-    }
+    // for (int i = 0; i < serverlist_doing.length; i++) {
+    //   print(serverlist_doing[i]["team"]);
+    //   print((serverlist_doing[i]["data"] as List<Map<String, Object?>>).length);
+    // }
 
-    print("End _ MakeUninstalledServerList");
+    // print("End _ MakeUninstalledServerList");
   }
 
   MakeUncleanssingServerList() async {
@@ -313,9 +325,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       // print("###### $i");
       // print(rawdata_serveri[i]);
       // 성공, 3월착수 서버는 스킵
-      if (rawdata_serveri[i]["num"] == 239) {
-        print(rawdata_serveri[i]);
-      }
+      // if (rawdata_serveri[i]["num"] == 239) {
+      //   print(rawdata_serveri[i]);
+      // }
 
       if (rawdata_serveri[i]["target"] == "3월착수") {
         continue;
@@ -392,8 +404,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   @override
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
-    print("displayWidth");
-    print(displayWidth);
+    // print("displayWidth");
+    // print(displayWidth);
 
     return Scaffold(
       appBar: AppBar(
@@ -417,32 +429,56 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                     tableGroup(height: dataColumn_height, width: dataColumn_width),
                     const SizedBox(width: 4),
 
-                    GestureDetector(
-                      onTap: _MovePageView(0),
-                      child: tableGagebar(
-                          height: dataColumn_height,
-                          width: dataColumn_width,
-                          title: "개인정보\n검출솔루션\n(Server-i)",
-                          tableData: result_serveri),
-                    ),
+                    Stack(children: [
+                      Row(
+                        children: [
+                          GestureDetector(
+                            onTap: _MovePageView(0),
+                            child: tableGagebar(
+                                height: dataColumn_height,
+                                width: dataColumn_width,
+                                title: "개인정보\n검출솔루션\n(Server-i)",
+                                tableData: result_serveri),
+                          ),
+                          GestureDetector(
+                            onTap: _MovePageView(1),
+                            child: tableGagebar(
+                                height: dataColumn_height,
+                                width: dataColumn_width,
+                                title: "취약점점검\n(SolidStep)",
+                                tableData: result_serveri),
+                          ),
+                          GestureDetector(
+                            onTap: _MovePageView(2),
+                            child: tableGagebar(
+                                height: dataColumn_height,
+                                width: dataColumn_width,
+                                title: "웹쉘탐지\n(Metieye)",
+                                tableData: result_serveri),
+                          ),
+                        ],
+                      ),
 
-                    GestureDetector(
-                      onTap: _MovePageView(1),
-                      child: tableGagebar(
-                          height: dataColumn_height,
-                          width: dataColumn_width,
-                          title: "취약점점검\n(SolidStep)",
-                          tableData: result_serveri),
-                    ),
+                      /// End of Row  //
+                      AnimatedContainer(
+                        margin: EdgeInsets.only(left: pageIndex * 100),
+                        width: 100,
+                        height: 780,
+                        duration: const Duration(milliseconds: 1000),
+                        curve: Curves.fastOutSlowIn,
+                        decoration: BoxDecoration(
+                          // color: const Color.fromRGBO(225, 190, 231, 0.2),
+                          color: const Color.fromRGBO(206, 147, 216, 0.2),
+                          border: Border.all(
+                            color: Colors.purple[200]!,
+                            width: 4,
 
-                    GestureDetector(
-                      onTap: _MovePageView(2),
-                      child: tableGagebar(
-                          height: dataColumn_height,
-                          width: dataColumn_width,
-                          title: "웹쉘탐지\n(Metieye)",
-                          tableData: result_serveri),
-                    ),
+                            // top: BorderSide(color: Colors.purple[100], width: 2),
+                            // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
+                          ),
+                        ),
+                      ),
+                    ]),
                     const SizedBox(width: 4),
 
                     SizedBox(
@@ -510,6 +546,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
   Function()? _MovePageView(int index) => () {
         // print(index);
+        // pageIndicator.fuc_abc(index as double);
+        setState(() {
+          pageIndex = index as double;
+        });
+
         _pageController.animateToPage(
           index,
           duration: const Duration(milliseconds: 1000),
@@ -620,10 +661,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                 style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900, color: Colors.blueAccent[700])),
             const Text(" - Cloud PC 에서 접속하세요.", style: textStyle_Type2),
             const SelectionArea(child: Text(" - https://172.21.235.24", style: textStyle_Type2)),
-            const SelectionArea(child: Text("    - ID : upluscto", style: textStyle_Type2)),
-            const SelectionArea(child: Text("    - PW : uplus123!", style: textStyle_Type2)),
+            // SelectionArea(child: Text("    - ID : upluscto", style: textStyle_Type2)),
+            // SelectionArea(child: Text("    - PW : uplus123!", style: textStyle_Type2)),
             const SizedBox(height: 20),
-            Text("개인정보 검출솔루션 Agent 검출 후 프로세스",
+            Text("개인정보 검출솔루션 Agent 검출 후 클렌징 작업 프로세스",
                 style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900, color: Colors.blueAccent[700])),
             Image.asset("resource/ServerI_Menual_01.png", width: 1049),
             Image.asset("resource/ServerI_Menual_02.png", width: 1043),
@@ -817,7 +858,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                   context: context,
                                   team: groupLab[i + 1]["team"]!,
                                   data: list,
-                                  tip: tipMsg_ServerIAgent(),
+                                  tip: tipMsg_ServerIAgent(type: type),
                                 );
                               },
                               icon: const Icon(Icons.help)),
@@ -881,17 +922,47 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     );
   }
 
-  Column tipMsg_ServerIAgent() {
+  Column tipMsg_ServerIAgent({required dialogType type}) {
     return Column(
       children: [
-        Row(
-          children: [
-            const Icon(Icons.error, color: Colors.red),
-            Text(
-                " Agent를 설치했으나 미설치 서버로 분류된다면, 개인정보 검출솔루션 사이트(DLP)에 표시된 호스트명을 확인해주세요.\n 호스트명이 다를 경우, 개발서버List의 호스트명을 수정해주세요.",
-                style: textStyle_Type2.copyWith(color: Colors.red)),
-          ],
-        ),
+        if (type == dialogType.agent)
+          Column(
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.error, color: Colors.red),
+                  Text(
+                      " Agent를 설치했으나 미설치 서버로 분류된다면, 개인정보 검출솔루션 사이트(DLP)에 표시된 호스트명을 확인해주세요.\n 호스트명이 다를 경우, 개발서버List의 호스트명을 수정해주세요.",
+                      style: textStyle_Type2.copyWith(color: Colors.red)),
+                ],
+              ),
+            ],
+          ),
+        if (type == dialogType.cleansing)
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.error, color: Colors.red),
+                  Text(" 클렌징 미완료 서버는 하기 링크된 작업 메뉴얼의 클렌징 작업 프로세스 참고하시어 진행 부탁드립니다.",
+                      style: textStyle_Type2.copyWith(color: Colors.red)),
+                ],
+              ),
+              InkWell(
+                  child: Row(
+                    children: [
+                      Icon(Icons.error, color: Colors.amber[700]),
+                      Container(
+                          color: const Color.fromARGB(255, 103, 220, 235),
+                          child: const Text(" 개인정보 검출솔루션 작업 메뉴얼(클릭하세요)", style: textStyle_Type2)),
+                    ],
+                  ),
+                  onTap: () {
+                    showAlert_Menual(context: context);
+                  }),
+            ],
+          ),
         const SizedBox(height: 20),
       ],
     );
@@ -911,8 +982,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         for (int j = 0; j < (serverlist[i]["data"] as List<Map<String, Object?>>).length; j++) {
           Map<String, Object?> temp = (serverlist[i]["data"] as List<Map<String, Object?>>)[j];
 
-          print("temp");
-          print(temp);
+          // print("temp");
+          // print(temp);
           list.add({
             "No": temp["No"].toString(),
             "hostname": temp["hostname"].toString(),
@@ -923,9 +994,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       }
     }
 
-    print("serverlist");
-    print(serverlist);
-    print(list);
+    // print("serverlist");
+    // print(serverlist);
+    // print(list);
 
     return list;
   }
@@ -1061,13 +1132,13 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       ),
     );
 
-    print("showDialog Start");
+    // print("showDialog Start");
     showDialog(
         context: context,
         builder: (BuildContext context) {
           return alert;
         });
-    print("showDialog End");
+    // print("showDialog End");
   }
 
 //?1   전체 서버리스트 팝업의 Head 생성                   //
