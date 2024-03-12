@@ -1,0 +1,14 @@
+{
+  "cSpell.words": [
+    "Charactor",
+    "fluttertoast",
+    "Sinamoro",
+    "Webtoon"
+  ],
+  "[dart]": {
+    "editor.rulers": [
+        120
+    ]
+  },
+  "editor.wordWrapColumn": 120,
+}
