@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:a14_dashboard/ServerData.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -404,6 +405,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   @override
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
+    double displayHeight = MediaQuery.of(context).size.height;
     // print("displayWidth");
     // print(displayWidth);
 
@@ -415,133 +417,266 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           Center(child: Text("기준일 : 2월 29일    ", style: textStyle_Type1)),
         ],
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    tableGroup(height: dataColumn_height, width: dataColumn_width),
-                    const SizedBox(width: 4),
+      body: Stack(children: [
+        SizedBox(
+          width: displayWidth,
+          height: displayHeight,
+          child: Image.asset(
+            "resource/sakura_background.png",
+            fit: BoxFit.fill,
+          ),
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      tableGroup(height: dataColumn_height, width: dataColumn_width),
+                      const SizedBox(width: 4),
 
-                    Stack(children: [
-                      Row(
+                      Stack(
+                        alignment: AlignmentDirectional.bottomStart,
                         children: [
-                          GestureDetector(
-                            onTap: _MovePageView(0),
-                            child: tableGagebar(
-                                height: dataColumn_height,
-                                width: dataColumn_width,
-                                title: "개인정보\n검출솔루션\n(Server-i)",
-                                tableData: result_serveri),
+                          Row(
+                            children: [
+                              GestureDetector(
+                                onTap: _MovePageView(0),
+                                child: tableGagebar(
+                                    height: dataColumn_height,
+                                    width: dataColumn_width,
+                                    title: "개인정보\n검출솔루션\n(Server-i)",
+                                    tableData: data_serveri_cleansing_ver2_data),
+                              ),
+                              GestureDetector(
+                                onTap: _MovePageView(1),
+                                child: tableGagebar(
+                                    height: dataColumn_height,
+                                    width: dataColumn_width,
+                                    title: "취약점점검\n(SolidStep)",
+                                    tableData: data_solidstep_cleansing_ver2_data),
+                              ),
+                              GestureDetector(
+                                onTap: _MovePageView(2),
+                                child: tableGagebar(
+                                    height: dataColumn_height,
+                                    width: dataColumn_width,
+                                    title: "웹쉘탐지\n(Metieye)",
+                                    tableData: data_metieye_cleansing_ver2_data),
+                              ),
+                            ],
                           ),
-                          GestureDetector(
-                            onTap: _MovePageView(1),
-                            child: tableGagebar(
-                                height: dataColumn_height,
-                                width: dataColumn_width,
-                                title: "취약점점검\n(SolidStep)",
-                                tableData: result_serveri),
-                          ),
-                          GestureDetector(
-                            onTap: _MovePageView(2),
-                            child: tableGagebar(
-                                height: dataColumn_height,
-                                width: dataColumn_width,
-                                title: "웹쉘탐지\n(Metieye)",
-                                tableData: result_serveri),
+
+                          /// End of Row  //
+                          Column(
+                            // mainAxisAlignment: MainAxisAlignment.end,
+                            // crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              AnimatedContainer(
+                                margin: EdgeInsets.only(left: pageIndex * 100),
+                                width: 100,
+                                height: 50,
+                                duration: const Duration(milliseconds: 1000),
+                                curve: Curves.fastOutSlowIn,
+                                decoration: BoxDecoration(
+                                  color: Colors.purple[200]!,
+                                  borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                                ),
+                                child: Center(
+                                  child: Text("선택된\n보안점검",
+                                      textAlign: TextAlign.center,
+                                      style: textStyle_Type1.copyWith(
+                                        fontSize: 18,
+                                        // color: Colors.grey[800],
+                                        color: Colors.purple[800],
+                                      )),
+                                ),
+                                //textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                              ),
+                              AnimatedContainer(
+                                margin: EdgeInsets.only(left: pageIndex * 100),
+                                width: 100,
+                                height: 780,
+                                duration: const Duration(milliseconds: 1000),
+                                curve: Curves.fastOutSlowIn,
+                                decoration: BoxDecoration(
+                                  // color: const Color.fromRGBO(225, 190, 231, 0.2),
+                                  color: const Color.fromRGBO(206, 147, 216, 0.2),
+                                  border: Border.all(
+                                    color: Colors.purple[200]!,
+                                    width: 4,
+
+                                    // top: BorderSide(color: Colors.purple[100], width: 2),
+                                    // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
+                      const SizedBox(width: 4),
 
-                      /// End of Row  //
-                      AnimatedContainer(
-                        margin: EdgeInsets.only(left: pageIndex * 100),
-                        width: 100,
-                        height: 780,
-                        duration: const Duration(milliseconds: 1000),
-                        curve: Curves.fastOutSlowIn,
-                        decoration: BoxDecoration(
-                          // color: const Color.fromRGBO(225, 190, 231, 0.2),
-                          color: const Color.fromRGBO(206, 147, 216, 0.2),
-                          border: Border.all(
-                            color: Colors.purple[200]!,
-                            width: 4,
-
-                            // top: BorderSide(color: Colors.purple[100], width: 2),
-                            // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
-                          ),
+                      SizedBox(
+                        width: 1900,
+                        height: 830,
+                        child: PageView.builder(
+                          controller: _pageController,
+                          physics: const NeverScrollableScrollPhysics(),
+                          allowImplicitScrolling: true,
+                          itemCount: 3,
+                          itemBuilder: (context, index) {
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                pageTitle(index),
+                                pageTable(index),
+                              ],
+                            );
+                          },
                         ),
                       ),
-                    ]),
-                    const SizedBox(width: 4),
 
-                    SizedBox(
-                      width: 1900,
-                      height: 780,
-                      child: PageView.builder(
-                        controller: _pageController,
-                        physics: const NeverScrollableScrollPhysics(),
-                        allowImplicitScrolling: true,
-                        itemCount: 3,
-                        itemBuilder: (context, index) {
-                          return Row(
-                            children: [
-                              // tableNormal(title: data_serveri_ver2_title, data: jsonResponse, type: dialogType.agent),
-                              tableNormal(
-                                  title: data_serveri_ver2_title, data: data_serveri_ver2_data, type: dialogType.agent),
-                              const SizedBox(width: 4),
-                              tableNormal(
-                                  title: data_serveri_cleansing_ver2_title,
-                                  data: data_serveri_cleansing_ver2_data,
-                                  // data: jsonResponse2,
-                                  type: dialogType.cleansing),
-                              setupGuide(context)
-                            ],
-                          );
-                        },
-                      ),
-                    ),
+                      // Row(
+                      //   children: [
+                      //     tableNormal(title: data_serveri_ver2_title, data: data_serveri_ver2_data),
+                      //     const SizedBox(width: 4),
+                      //     tableNormal(title: data_serveri_cleansing_ver2_title, data: data_serveri_cleansing_ver2_data),
+                      //   ],
+                      // ),
 
-                    // Row(
-                    //   children: [
-                    //     tableNormal(title: data_serveri_ver2_title, data: data_serveri_ver2_data),
-                    //     const SizedBox(width: 4),
-                    //     tableNormal(title: data_serveri_cleansing_ver2_title, data: data_serveri_cleansing_ver2_data),
-                    //   ],
-                    // ),
-
-                    // tableGroup2(),
-                    // TableHead(),
-                    // TableHead2(),
-                    // TableRow(),
-                    // TableRow2(),
-                  ],
-                ),
-                SizedBox(
-                  width: displayWidth,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        "resource/mouse2.jpg",
-                        height: 80,
-                      ),
-                      Text("  좌우 스크롤은 마우스 드래그를 사용하세요", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                      // tableGroup2(),
+                      // TableHead(),
+                      // TableHead2(),
+                      // TableRow(),
+                      // TableRow2(),
                     ],
                   ),
-                ),
-              ],
+                  SizedBox(
+                    width: displayWidth,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          "resource/mouse2.jpg",
+                          height: 80,
+                        ),
+                        Text("  좌우 스크롤은 마우스 드래그를 사용하세요",
+                            style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
+      ]),
+    );
+  }
+
+  Container pageTitle(int index) {
+    String str = "";
+    if (index == 0) {
+      str = "개인정보 검출솔루션 (Server-I)";
+    } else if (index == 1)
+      str = "취약점점검 (SolidStep)";
+    else if (index == 2) str = "웹쉘탐지 (Metieye)";
+
+    return Container(
+      width: 1000,
+      height: 50,
+      alignment: Alignment.center,
+      // color: Colors.amber,
+      child: Text(
+        str,
+        style: TextStyle(color: Colors.grey[800], fontSize: 22, fontWeight: FontWeight.w800),
       ),
     );
+  }
+
+  Row pageTable(int index) {
+    List<String> titleAgent;
+    List<String> titleCleansing;
+    List<dynamic> dataAgent;
+    List<dynamic> dataCleansing;
+
+    Column tableOfAgent;
+    Column tableOfSecurityScore;
+    Padding securityGuide;
+
+    if (index == 0) {
+      titleAgent = data_serveri_ver2_title;
+      titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_serveri_ver2_data;
+      dataCleansing = data_serveri_cleansing_ver2_data;
+
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+      tableOfSecurityScore = tableNormal(
+          title: titleCleansing,
+          data: dataCleansing,
+          // data: jsonResponse2,
+          type: dialogType.cleansing);
+      securityGuide = setupGuide(context);
+    } else if (index == 1) {
+      titleAgent = data_serveri_ver2_title;
+      titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_solidstep_cleansing_ver2_data;
+      dataCleansing = data_solidstep_cleansing_ver2_data;
+
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+
+      tableOfSecurityScore = tableGagebar(
+          height: dataColumn_height,
+          width: dataColumn_width,
+          title: "보안점수",
+          tableData: data_solidstep_cleansing_ver2_data);
+
+      securityGuide = setupGuide(context);
+    } else {
+      titleAgent = data_serveri_ver2_title;
+      titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_metieye_cleansing_ver2_data;
+      dataCleansing = data_metieye_cleansing_ver2_data;
+
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+      tableOfSecurityScore = tableNormal(
+          title: titleCleansing,
+          data: dataCleansing,
+          // data: jsonResponse2,
+          type: dialogType.cleansing);
+      securityGuide = setupGuide(context);
+    }
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        tableOfAgent,
+        const SizedBox(width: 4),
+        tableOfSecurityScore,
+        securityGuide,
+      ],
+    );
+
+    // return Row(
+    //   crossAxisAlignment: CrossAxisAlignment.start,
+    //   children: [
+    //     tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent),
+    //     const SizedBox(width: 4),
+    //     tableNormal(
+    //         title: titleCleansing,
+    //         data: dataCleansing,
+    //         // data: jsonResponse2,
+    //         type: dialogType.cleansing),
+    //     setupGuide(context)
+    //   ],
+    // );
   }
 
   Function()? _MovePageView(int index) => () {
@@ -681,8 +816,30 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   }
 
   Column tableGagebar(
-      {required double height, required double width, required String title, required List<String> tableData}) {
+      {required double height, required double width, required String title, required List<dynamic>? tableData}) {
     // List<List<String>> data = [];
+
+    List<List<dynamic>> temp = [];
+    List<List<String>> dataOfTable = [];
+
+    //?2 표에 표시할 데이터 변환    [[
+    // Map -> List 변환
+    if (tableData == null) return const Column();
+
+    for (int i = 0; i < tableData.length; i++) {
+      temp.add(tableData[i].values.toList());
+    }
+
+    // 테이블 바디에 입력할 데이터 생성
+    for (int i = 0; i < temp.length; i++) {
+      List<String> list = [];
+      // for (int j = 0; j < temp[i].length; j++) {
+      // print(temp[i][j].toString());
+      list.add(temp[i][temp[i].length - 1].toString());
+      // }
+      dataOfTable.add(list);
+    }
+    //?2 표에 표시할 데이터 변환    ]]
 
     return Column(
       children: [
@@ -690,10 +847,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         ColumnBox(height: headColumn_height, width: width, text: title, style: "head3"),
 
         ///     바디 표시     //
-        for (int i = 0; i < tableData.length; i++)
+        for (int i = 0; i < dataOfTable.length; i++)
           Stack(children: [
-            ColumnBox(height: height, width: width, text: tableData[i], style: "body3"),
-            Gagebar(height: height, width: width, text: tableData[i]),
+            ColumnBox(height: height, width: width, text: dataOfTable[i][0], style: "body3"),
+            Gagebar(height: height, width: width, text: dataOfTable[i][0]),
           ])
       ],
     );
@@ -708,11 +865,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         Row(
           children: [
             for (int j = 0; j < group.length; j++)
-              ColumnBox(
-                  height: headColumn_height,
-                  width: width * (j % 2 == 0 ? 1 : 2),
-                  text: group[j],
-                  style: j % 2 == 0 ? "head3" : "head3-1"),
+              ColumnBox(height: headColumn_height, width: width * (j % 2 == 0 ? 1 : 2), text: group[j], style: "head3"),
           ],
         ),
 
@@ -758,11 +911,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         Row(
           children: [
             for (int j = 0; j < data[0].length; j++)
-              ColumnBox(
-                  height: headColumn_height,
-                  width: width * 2,
-                  text: data[0][j],
-                  style: j % 2 == 0 ? "head3" : "head3-1"),
+              ColumnBox(height: headColumn_height, width: width * 2, text: data[0][j], style: "head3"),
           ],
         ),
 
@@ -809,12 +958,18 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
     return Column(
       children: [
-        ///     타이틀 표시     //
+        ///     타이틀 상단 표시     //
         Row(
           children: [
-            for (int j = 0; j < title.length; j++)
-              ColumnBox(
-                  height: headColumn_height, width: width, text: title[j], style: j % 2 == 0 ? "head3" : "head3-1"),
+            ColumnBox(height: headColumn_height / 2, width: width * 5, text: title[0], style: "head3-1"),
+          ],
+        ),
+
+        ///     타이틀 하단 표시     //
+        Row(
+          children: [
+            for (int j = 1; j < title.length; j++)
+              ColumnBox(height: headColumn_height / 2, width: width, text: title[j], style: "head3"),
           ],
         ),
 
@@ -1041,12 +1196,21 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       decoration = const BoxDecoration(
           color: Color.fromRGBO(157, 213, 204, 1), borderRadius: BorderRadius.vertical(top: Radius.circular(16)));
       textstyle = textStyle_Type2;
-    } else if (style == "head3" || style == "head3-1") {
+    } else if (style == "head3") {
       decoration = BoxDecoration(
         color: Colors.grey[300],
         border: Border(
           top: const BorderSide(color: Colors.grey, width: 2),
           bottom: BorderSide(color: Colors.grey[800]!, width: 3),
+        ),
+      );
+      textstyle = textStyle_Type2;
+    } else if (style == "head3-1") {
+      decoration = BoxDecoration(
+        color: Colors.grey[300],
+        border: const Border(
+          top: BorderSide(color: Colors.grey, width: 2),
+          // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
         ),
       );
       textstyle = textStyle_Type2;
@@ -1062,7 +1226,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       textstyle = textStyle_Type2;
     } else if (style == "body3" || style == "body3-1") {
       decoration = const BoxDecoration(
-        color: Colors.white70,
+        color: Color.fromRGBO(255, 255, 255, 0.5),
         border: Border(
           bottom: BorderSide(color: Colors.grey, width: 1),
         ),
@@ -1094,7 +1258,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       padding: const EdgeInsets.all(4.0),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.grey[100],
+          // color: Colors.grey[100],
+          color: const Color.fromRGBO(245, 245, 245, 0.5),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Stack(children: [
