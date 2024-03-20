@@ -65,6 +65,7 @@ List<String> result_serveri = [
 
 // 미설치 서버 리스트 생성
 List<Map<String, Object>> serverlist_doing = [];
+List<Map<String, Object>> solidsteplist_doing = [];
 
 ///                                    //
 /// 생성할 serverlist_doing 데이터 포맷         //
@@ -115,7 +116,7 @@ List<Map<String, Object>> serverlist_Clean_doing = [];
 //       }
 //     ];
 
-enum dialogType { agent, cleansing, deving }
+enum dialogType { agent, cleansing, deving, solidstepAgent }
 
 class DashBoard_ph2 extends StatefulWidget {
   const DashBoard_ph2({super.key});
@@ -236,6 +237,17 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     //   print("Delay 끝");
     // });
 
+    SearchUninstalledServer(
+        data: serverlist_doing, key: "installServeri", value: "성공", removeKey: "target", removeValue: "3월착수");
+    SearchUninstalledServer(data: solidsteplist_doing, key: "installSolidStep", value: "설치");
+  }
+
+  void SearchUninstalledServer(
+      {required List<Map<String, Object>> data,
+      required String key,
+      required String value,
+      String? removeKey,
+      String? removeValue}) {
     bool isExist = false;
 
     /// step1 : 모수에서 미설치 서버 검색
@@ -245,15 +257,17 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       // print("###### $i");
       // print(rawdata_serveri[i]);
       // 성공, 3월착수 서버는 스킵
-      if (rawdata_serveri[i]["target"] == "3월착수") {
-        continue;
+      if (removeKey != null) {
+        if (rawdata_serveri[i][removeKey] == removeValue) {
+          continue;
+        }
       }
 
       //?2  Agent 미설치 리스트 생성
-      if (rawdata_serveri[i]["install"] != "성공") {
+      if (rawdata_serveri[i][key] != value) {
         /// serverlist_doing 가 비어있는 Case
-        if (serverlist_doing.isEmpty == true) {
-          serverlist_doing.add({
+        if (data.isEmpty == true) {
+          data.add({
             "team": rawdata_serveri[i]["team"] as String,
             "data": [
               {
@@ -268,10 +282,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
         /// serverlist_doing 에 데이터가 있는 Case
         else {
-          for (int j = 0; j < serverlist_doing.length; j++) {
+          for (int j = 0; j < data.length; j++) {
             /// 팀이 존재하는 경우
-            if (serverlist_doing[j]["team"] == rawdata_serveri[i]["team"]) {
-              (serverlist_doing[j]["data"] as List<Map<String, Object?>>).add(
+            if (data[j]["team"] == rawdata_serveri[i]["team"]) {
+              (data[j]["data"] as List<Map<String, Object?>>).add(
                 {
                   "No": rawdata_serveri[i]["num"],
                   "hostname": rawdata_serveri[i]["hostname"],
@@ -288,7 +302,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
             // print("##############");
             // print(serverlist_doing);
             // print(rawdata_serveri[i]["team"]);
-            serverlist_doing.add({
+            data.add({
               "team": rawdata_serveri[i]["team"] as String,
               "data": [
                 {
@@ -303,7 +317,6 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         }
       }
     }
-
     // for (int i = 0; i < serverlist_doing.length; i++) {
     //   print(serverlist_doing[i]["team"]);
     //   print((serverlist_doing[i]["data"] as List<Map<String, Object?>>).length);
@@ -611,6 +624,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     Column tableOfSecurityScore;
     Padding securityGuide;
 
+    //?2 Server-I Table 생성 [[]]
     if (index == 0) {
       titleAgent = data_serveri_ver2_title;
       titleCleansing = data_serveri_cleansing_ver2_title;
@@ -623,23 +637,39 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           data: dataCleansing,
           // data: jsonResponse2,
           type: dialogType.cleansing);
-      securityGuide = setupGuide(context);
-    } else if (index == 1) {
-      titleAgent = data_serveri_ver2_title;
-      titleCleansing = data_serveri_cleansing_ver2_title;
-      dataAgent = data_solidstep_cleansing_ver2_data;
-      dataCleansing = data_solidstep_cleansing_ver2_data;
+      securityGuide = setupGuideforServeri(context);
+    }
 
-      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+    //?2 SolidStep Table 생성 [[]]
+    else if (index == 1) {
+      titleAgent = data_solidstep_title;
+      // titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_solidstep_data;
+      dataCleansing = data_solidstep_score;
 
-      tableOfSecurityScore = tableGagebar(
-          height: dataColumn_height,
-          width: dataColumn_width,
-          title: "보안점수",
-          tableData: data_solidstep_cleansing_ver2_data);
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.solidstepAgent);
 
-      securityGuide = setupGuide(context);
-    } else {
+      tableOfSecurityScore =
+          tableGagebar(height: dataColumn_height, width: dataColumn_width, title: "보안점수", tableData: dataCleansing);
+
+      securityGuide = setupGuideforSolidstep(context);
+
+      // titleAgent = data_serveri_ver2_title;
+      // titleCleansing = data_serveri_cleansing_ver2_title;
+      // dataAgent = data_solidstep_cleansing_ver2_data;
+      // dataCleansing = data_solidstep_cleansing_ver2_data;
+
+      // tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+      // tableOfSecurityScore = tableNormal(
+      //     title: titleCleansing,
+      //     data: dataCleansing,
+      //     // data: jsonResponse2,
+      //     type: dialogType.cleansing);
+      // securityGuide = setupGuide(context);
+    }
+
+    //?2 Metieye Table 생성 [[]]
+    else {
       titleAgent = data_serveri_ver2_title;
       titleCleansing = data_serveri_cleansing_ver2_title;
       dataAgent = data_metieye_cleansing_ver2_data;
@@ -651,7 +681,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           data: dataCleansing,
           // data: jsonResponse2,
           type: dialogType.cleansing);
-      securityGuide = setupGuide(context);
+      securityGuide = setupGuideforServeri(context);
     }
 
     return Row(
@@ -693,7 +723,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         );
       };
 
-  Padding setupGuide(BuildContext context) {
+  Padding setupGuideforServeri(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -759,6 +789,82 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           ),
           Text(" - 개인정보 검출 : 김남형님, 한민혜님\n - 설치관련 지원 : 남도균님, 한기진님",
               style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          const SizedBox(height: 40),
+          Row(
+            children: [
+              const Icon(Icons.error, color: Colors.red),
+              Text(" 주의사항", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900, color: Colors.red)),
+            ],
+          ),
+          Text(" - 개인정보 검출솔루션이 다운로드 안된다면, 방화벽 작업이 필요합니다.", style: textStyle_Type2.copyWith(color: Colors.red)),
+          Text(
+              " - Agent를 설치했으나 미설치 서버로 분류된다면, 개인정보 검출솔루션 사이트(DLP)에 표시된 호스트명을 확인해주세요.\n    호스트명이 다를 경우, 개발서버List의 호스트명을 수정해주세요.",
+              style: textStyle_Type2.copyWith(color: Colors.red)),
+        ],
+      ),
+    );
+  }
+
+  Padding setupGuideforSolidstep(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 개발서버 List", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(" - 시스템 인벤토리에 작성된 개발서버 호스트명으로 취약점점검 Agent 설치현황을 확인합니다", style: textStyle_Type2),
+          const Text(" - 작성된 호스트명이 실제 서버의 호스트명과 다르면 점검완료로 판정되지 않습니다. ", style: textStyle_Type2),
+          const SizedBox(height: 4),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38011503280");
+            },
+            child: Text("  1. 모바일서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38009903541");
+            },
+            child: Text("  2. 기업서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38009935118");
+            },
+            child: Text("  3. 홈서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 취약점점검 진행 순서", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(" - Step 1. 서버 담당자 정보 현행화\n - Step 2. 에이전트 설치\n - Step 3. 취약점점검 신청", style: textStyle_Type2),
+          const SizedBox(height: 20),
+          InkWell(
+              child: Row(
+                children: [
+                  Icon(Icons.error, color: Colors.amber[700]),
+                  Text(" 취약점점검 메뉴얼(클릭하세요)", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+                ],
+              ),
+              onTap: () {
+                showAlert_Menual(context: context);
+              }),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 취약점점검 담당자", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(" - 황대선님 (dshwang@lguplus.co.kr)\n - 유동건님 (dgyu@lgupluspartners.co.kr)", style: textStyle_Type2),
           const SizedBox(height: 40),
           Row(
             children: [
@@ -934,6 +1040,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       required dialogType type}) {
     double height = dataColumn_height;
     double width = dataColumn_width;
+    int dataLength;
     List<List<dynamic>> temp = [];
     List<List<String>> dataOfTable = [];
 
@@ -954,6 +1061,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       }
       dataOfTable.add(list);
     }
+
+    dataLength = temp[0].length;
+
     //?2 표에 표시할 데이터 변환    ]]
 
     return Column(
@@ -961,7 +1071,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         ///     타이틀 상단 표시     //
         Row(
           children: [
-            ColumnBox(height: headColumn_height / 2, width: width * 5, text: title[0], style: "head3-1"),
+            ColumnBox(height: headColumn_height / 2, width: width * dataLength, text: title[0], style: "head3-1"),
           ],
         ),
 
@@ -1005,6 +1115,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                   list = makeList(data: serverlist_doing, team: groupLab[i + 1]["team"]!);
                                 } else if (type == dialogType.cleansing) {
                                   list = makeList(data: serverlist_Clean_doing, team: groupLab[i + 1]["team"]!);
+                                } else if (type == dialogType.solidstepAgent) {
+                                  list = makeList(data: solidsteplist_doing, team: groupLab[i + 1]["team"]!);
                                 }
 
                                 //?2 팝업 생성 및 데이터 표현부 [[
@@ -1020,7 +1132,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                         ),
 
                     //?2 점검대상 클릭 이벤트 처리   [[]]
-                    if (j == 3)
+                    if (j == 3 && type == dialogType.agent ||
+                        j == 3 && type == dialogType.cleansing ||
+                        j == 2 && type == dialogType.solidstepAgent)
                       GestureDetector(
                         child: Container(height: height, width: width, color: const Color.fromRGBO(255, 255, 255, 0)),
                         onTap: () {

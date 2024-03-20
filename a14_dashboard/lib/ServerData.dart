@@ -290,6 +290,51 @@ List<Map<String, dynamic>> data_serveri_cleansing_ver2_data = [
   {"clean_done": 0, "clean_doing": 0, "clean_ready": 2, "clean_target": 2, "clean_rate": "100%"},
   {"clean_done": 927, "clean_doing": 6, "clean_ready": 295, "clean_target": 1228, "clean_rate": "99%"}
 ];
+
+List<String> data_solidstep_title = ["Agent 설치", "설치완료", "미설치", "점검대상", "설치율"];
+
+List<Map<String, dynamic>> data_solidstep_data = [
+  {"done": 7, "doing": 14, "target": 21, "rate": "33%"},
+  {"done": 51, "doing": 46, "target": 97, "rate": "52%"},
+  {"done": 73, "doing": 8, "target": 81, "rate": "90%"},
+  {"done": 39, "doing": 8, "target": 47, "rate": "82%"},
+  {"done": 75, "doing": 6, "target": 81, "rate": "92%"},
+  {"done": 9, "doing": 3, "target": 12, "rate": "75%"},
+  {"done": 39, "doing": 15, "target": 54, "rate": "72%"},
+  {"done": 56, "doing": 30, "target": 86, "rate": "65%"},
+  {"done": 14, "doing": 10, "target": 24, "rate": "58%"},
+  {"done": 73, "doing": 28, "target": 101, "rate": "72%"},
+  {"done": 4, "doing": 14, "target": 18, "rate": "22%"},
+  {"done": 5, "doing": 2, "target": 7, "rate": "71%"},
+  {"done": 6, "doing": 5, "target": 11, "rate": "54%"},
+  {"done": 459, "doing": 15, "target": 474, "rate": "96%"},
+  {"done": 21, "doing": 89, "target": 110, "rate": "19%"},
+  {"done": 2, "doing": 0, "target": 2, "rate": "100%"},
+  {"done": 0, "doing": 2, "target": 2, "rate": "0%"},
+  {"done": 933, "doing": 295, "target": 1228, "rate": "75%"}
+];
+
+List<Map<String, dynamic>> data_solidstep_score = [
+  {"score": "0%"},
+  {"score": "51%"},
+  {"score": "20%"},
+  {"score": "75%"},
+  {"score": "46%"},
+  {"score": "75%"},
+  {"score": "68%"},
+  {"score": "28%"},
+  {"score": "58%"},
+  {"score": "64%"},
+  {"score": "22%"},
+  {"score": "0%"},
+  {"score": "0%"},
+  {"score": "88%"},
+  {"score": "0%"},
+  {"score": "100%"},
+  {"score": "0%"},
+  {"score": "40%"}
+];
+
 List<Map<String, dynamic>> data_solidstep_cleansing_ver2_data = [
   {"clean_done": 0, "clean_doing": 0, "clean_ready": 0, "clean_target": 0, "clean_rate": "0%"},
   {"clean_done": 0, "clean_doing": 0, "clean_ready": 0, "clean_target": 0, "clean_rate": "0%"},
@@ -339,9 +384,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 로그 수집 서버(미사용)",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 2,
@@ -350,9 +397,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DA광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 3,
@@ -361,9 +410,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DA광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 4,
@@ -372,9 +423,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DA광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 5,
@@ -383,9 +436,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DA광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 6,
@@ -394,9 +449,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DA광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 7,
@@ -405,9 +462,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 8,
@@ -416,9 +475,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 9,
@@ -427,9 +488,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.9
   },
   {
     "num": 10,
@@ -438,9 +501,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.9
   },
   {
     "num": 11,
@@ -449,9 +514,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 12,
@@ -460,9 +527,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 13,
@@ -471,9 +540,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.2
   },
   {
     "num": 14,
@@ -482,9 +553,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 15,
@@ -493,9 +566,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 16,
@@ -504,9 +579,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 17,
@@ -515,9 +592,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 18,
@@ -526,9 +605,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 19,
@@ -537,9 +618,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 72.2
   },
   {
     "num": 20,
@@ -548,9 +631,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 21,
@@ -559,9 +644,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 22,
@@ -570,9 +657,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 23,
@@ -581,9 +670,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 24,
@@ -592,9 +683,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 25,
@@ -603,9 +696,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 26,
@@ -614,9 +709,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 27,
@@ -625,9 +722,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 28,
@@ -636,9 +735,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합광고플랫폼",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 29,
@@ -647,9 +748,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "메타버스 광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 30,
@@ -658,9 +761,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "메타버스 광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 31,
@@ -669,9 +774,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+Page",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 32,
@@ -680,9 +787,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+Page",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 33,
@@ -691,9 +800,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+Page",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 34,
@@ -702,9 +813,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+Page",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 35,
@@ -713,9 +826,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+Page",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 36,
@@ -724,9 +839,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "통합 광고",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 37,
@@ -735,9 +852,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 커버",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 38,
@@ -746,9 +865,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 39,
@@ -757,9 +878,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 40,
@@ -768,9 +891,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 41,
@@ -779,9 +904,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 42,
@@ -790,9 +917,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 43,
@@ -801,9 +930,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "광고 집행",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 44,
@@ -812,9 +943,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 45,
@@ -823,9 +956,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 46,
@@ -834,9 +969,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 47,
@@ -845,9 +982,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 48,
@@ -856,9 +995,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 49,
@@ -867,9 +1008,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 50,
@@ -878,9 +1021,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 51,
@@ -889,9 +1034,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 52,
@@ -900,9 +1047,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 53,
@@ -911,9 +1060,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "딜라이브",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 54,
@@ -922,9 +1073,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+뉴스",
     "team": "광고플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 55,
@@ -933,9 +1086,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 56,
@@ -944,9 +1099,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 57,
@@ -955,9 +1112,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 58,
@@ -966,9 +1125,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 59,
@@ -977,9 +1138,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 60,
@@ -988,9 +1151,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직벨링",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 61,
@@ -999,9 +1164,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직부가서비스",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 62,
@@ -1010,9 +1177,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직부가서비스",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 63,
@@ -1021,9 +1190,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직부가서비스",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 64,
@@ -1032,9 +1203,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직부가서비스",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 65,
@@ -1043,9 +1216,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "뮤직부가서비스",
     "team": "모바일서비스개발챕터",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 66,
@@ -1054,9 +1229,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CBSG 해외 결제 시연",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 67,
@@ -1065,9 +1242,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "군밤",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 68,
@@ -1076,9 +1255,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "블록체인사설인증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 69,
@@ -1087,9 +1268,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "블록체인사설인증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 70,
@@ -1098,9 +1281,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "블록체인사설인증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 71,
@@ -1109,9 +1294,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+휴대폰 분실 파손보험",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 72,
@@ -1120,9 +1307,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+휴대폰 분실 파손보험",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 73,
@@ -1131,9 +1320,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+휴대폰 분실 파손보험",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 74,
@@ -1142,9 +1333,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+휴대폰 분실 파손보험",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 75,
@@ -1153,9 +1346,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버스",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 76,
@@ -1164,9 +1359,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버스",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 77,
@@ -1175,9 +1372,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버스",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 78,
@@ -1186,9 +1385,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버스",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 79,
@@ -1197,9 +1398,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버스",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 80,
@@ -1208,9 +1411,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+모바일 사원증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 81,
@@ -1219,9 +1424,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+모바일 사원증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 82,
@@ -1230,9 +1437,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+모바일 사원증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 83,
@@ -1241,9 +1450,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+모바일 사원증",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 84,
@@ -1252,9 +1463,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버십",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 85,
@@ -1263,9 +1476,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버십",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 86,
@@ -1274,9 +1489,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버십",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 87,
@@ -1285,9 +1502,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버십",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 88,
@@ -1296,20 +1515,24 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+멤버십",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 89,
     "lab": "모바일Lab",
-    "hostname": "vdewaltdbo1",
+    "hostname": "vdewalltdbo1",
     "service": "스마트월렛",
     "team": "모바일서비스선행개발팀",
     "usage": "개발",
-    "install": "미설치",
-    "clean": "미완료",
-    "target": "3월착수"
+    "installServeri": "성공",
+    "clean": "완료",
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 90,
@@ -1318,9 +1541,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 91,
@@ -1329,9 +1554,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 92,
@@ -1340,9 +1567,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 93,
@@ -1351,9 +1580,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.4
   },
   {
     "num": 94,
@@ -1362,9 +1593,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 95,
@@ -1373,9 +1606,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 96,
@@ -1384,9 +1619,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "일상비일상의틈",
     "team": "모바일서비스SW개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 97,
@@ -1395,9 +1632,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.9
   },
   {
     "num": 98,
@@ -1406,9 +1645,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 99,
@@ -1417,9 +1658,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 100,
@@ -1428,9 +1671,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 101,
@@ -1439,9 +1684,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 102,
@@ -1450,9 +1697,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 본인확인",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 103,
@@ -1461,9 +1710,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 104,
@@ -1472,9 +1723,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 105,
@@ -1483,9 +1736,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 106,
@@ -1494,9 +1749,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 107,
@@ -1505,9 +1762,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 108,
@@ -1516,9 +1775,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 109,
@@ -1527,9 +1788,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 110,
@@ -1538,9 +1801,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 111,
@@ -1549,9 +1814,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 112,
@@ -1560,9 +1827,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 113,
@@ -1571,9 +1840,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 114,
@@ -1582,9 +1853,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 115,
@@ -1593,9 +1866,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 116,
@@ -1604,9 +1879,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 117,
@@ -1615,9 +1892,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 118,
@@ -1626,9 +1905,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 119,
@@ -1637,9 +1918,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 120,
@@ -1648,9 +1931,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 121,
@@ -1659,9 +1944,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 122,
@@ -1670,9 +1957,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 123,
@@ -1681,9 +1970,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 124,
@@ -1692,9 +1983,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 125,
@@ -1703,9 +1996,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 126,
@@ -1714,9 +2009,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 127,
@@ -1725,9 +2022,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 128,
@@ -1736,9 +2035,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 129,
@@ -1747,9 +2048,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 130,
@@ -1758,9 +2061,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 131,
@@ -1769,9 +2074,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 132,
@@ -1780,9 +2087,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 133,
@@ -1791,9 +2100,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 134,
@@ -1802,9 +2113,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PASS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 135,
@@ -1813,9 +2126,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "쿠폰 Enabler",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 136,
@@ -1824,9 +2139,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모바일 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 137,
@@ -1835,9 +2152,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모바일 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 138,
@@ -1846,9 +2165,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모바일 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 139,
@@ -1857,9 +2178,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모바일 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 140,
@@ -1868,9 +2191,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로밍 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 141,
@@ -1879,9 +2204,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로밍 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 142,
@@ -1890,9 +2217,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로밍 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 143,
@@ -1901,9 +2230,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 144,
@@ -1912,9 +2243,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 145,
@@ -1923,9 +2256,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 146,
@@ -1934,9 +2269,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 상품권",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 147,
@@ -1945,9 +2282,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 충전소",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 148,
@@ -1956,9 +2295,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 충전소",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 149,
@@ -1967,9 +2308,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터 충전소",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 150,
@@ -1978,9 +2321,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 151,
@@ -1989,9 +2334,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 152,
@@ -2000,9 +2347,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 153,
@@ -2011,9 +2360,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 154,
@@ -2022,9 +2373,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 155,
@@ -2033,9 +2386,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 156,
@@ -2044,9 +2399,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 157,
@@ -2055,9 +2412,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 158,
@@ -2066,9 +2425,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 159,
@@ -2077,9 +2438,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 160,
@@ -2088,9 +2451,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 181,
@@ -2099,9 +2464,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CAS",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 182,
@@ -2110,9 +2477,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DAS (U+ID)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 183,
@@ -2121,9 +2490,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DAS (U+ID)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 184,
@@ -2132,9 +2503,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DAS (U+ID)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 185,
@@ -2143,9 +2516,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "DAS (U+ID)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 190,
@@ -2154,9 +2529,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ADCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 191,
@@ -2165,9 +2542,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ADCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 192,
@@ -2176,9 +2555,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ADCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 193,
@@ -2187,9 +2568,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ADCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 194,
@@ -2198,9 +2581,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ADCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 84.4
   },
   {
     "num": 195,
@@ -2209,9 +2594,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SDCB",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 196,
@@ -2220,9 +2607,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 99.8
   },
   {
     "num": 197,
@@ -2231,9 +2620,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 99.8
   },
   {
     "num": 198,
@@ -2242,9 +2633,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 199,
@@ -2253,9 +2646,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 200,
@@ -2264,9 +2659,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 201,
@@ -2275,9 +2672,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "심툴킷",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 202,
@@ -2286,9 +2685,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "TSM",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.2
   },
   {
     "num": 203,
@@ -2297,9 +2698,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "TSM",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 204,
@@ -2308,9 +2711,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "AR엔터",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 205,
@@ -2319,9 +2724,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 결제",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 206,
@@ -2330,9 +2737,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 결제",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 207,
@@ -2341,9 +2750,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 결제",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 208,
@@ -2352,9 +2763,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "휴대폰 결제",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 209,
@@ -2363,9 +2776,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+홈트NOW",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 210,
@@ -2374,9 +2789,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+홈트NOW",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 211,
@@ -2385,9 +2802,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+홈트NOW",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 212,
@@ -2396,9 +2815,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "머니me (마이데이터)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 213,
@@ -2407,9 +2828,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "머니me (마이데이터)",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 214,
@@ -2418,9 +2841,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "머니me (마이데이터)",
     "team": "커머스서비스개발팀",
     "usage": "개발/검수/상용",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 215,
@@ -2429,9 +2854,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "멤버스 인프라 구조개선",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 216,
@@ -2440,9 +2867,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 217,
@@ -2451,9 +2880,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 218,
@@ -2462,9 +2893,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 219,
@@ -2473,9 +2906,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 220,
@@ -2484,9 +2919,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 221,
@@ -2495,9 +2932,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 222,
@@ -2506,9 +2945,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 223,
@@ -2517,9 +2958,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 224,
@@ -2528,9 +2971,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "wTRSP",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 225,
@@ -2539,9 +2984,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송AS",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 226,
@@ -2550,9 +2997,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송AS",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 227,
@@ -2561,9 +3010,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송AS",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 228,
@@ -2572,9 +3023,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송채널",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 229,
@@ -2583,9 +3036,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송채널",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 230,
@@ -2594,9 +3049,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송채널",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 231,
@@ -2605,9 +3062,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송채널",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 232,
@@ -2616,9 +3075,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송스트리밍",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 233,
@@ -2627,9 +3088,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "가족방송녹화",
     "team": "VAS서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 234,
@@ -2638,9 +3101,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스팸차단(문자)",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 235,
@@ -2649,9 +3114,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PUSH",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 236,
@@ -2660,9 +3127,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PUSH",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 237,
@@ -2671,9 +3140,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PUSH",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 238,
@@ -2682,9 +3153,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "MMSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 239,
@@ -2693,9 +3166,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "MMSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 240,
@@ -2704,9 +3179,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "국제및 050 SMSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 241,
@@ -2715,9 +3192,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "국제및 050 SMSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 242,
@@ -2726,9 +3205,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "국제및 050 SMSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 243,
@@ -2737,9 +3218,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "번호안내",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 244,
@@ -2748,9 +3231,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "번호안내",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 245,
@@ -2759,9 +3244,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "번호안내",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 246,
@@ -2770,9 +3257,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "텔레메틱스",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 247,
@@ -2781,9 +3270,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "텔레메틱스",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 248,
@@ -2792,9 +3283,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "텔레메틱스",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 57.8
   },
   {
     "num": 249,
@@ -2803,9 +3296,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "해외위급특보",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 250,
@@ -2814,9 +3309,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "해외위급특보",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 251,
@@ -2825,9 +3322,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CBC재난문자",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 252,
@@ -2836,9 +3335,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CBC재난문자",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 253,
@@ -2847,9 +3348,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSOMS, 분실폰",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 254,
@@ -2858,9 +3361,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSOMS, 분실폰",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 255,
@@ -2869,9 +3374,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSOMS, 분실폰",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 256,
@@ -2880,9 +3387,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 257,
@@ -2891,9 +3400,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PDEGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 258,
@@ -2902,9 +3413,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 259,
@@ -2913,9 +3426,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 260,
@@ -2924,9 +3439,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSMAP",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 261,
@@ -2935,9 +3452,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSMAP",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 262,
@@ -2946,9 +3465,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSMAP",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 263,
@@ -2957,9 +3478,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 264,
@@ -2968,9 +3491,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 265,
@@ -2979,9 +3504,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 266,
@@ -2990,9 +3517,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 267,
@@ -3001,9 +3530,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 268,
@@ -3012,9 +3543,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 269,
@@ -3023,9 +3556,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 270,
@@ -3034,9 +3569,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "SUPL",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 271,
@@ -3045,9 +3582,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ZOS / RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 272,
@@ -3056,9 +3595,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ZOS / RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 273,
@@ -3067,9 +3608,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ZOS / RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 274,
@@ -3078,9 +3621,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LTEZGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 275,
@@ -3089,9 +3634,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "VLRGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 276,
@@ -3100,9 +3647,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LMF",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 277,
@@ -3111,9 +3660,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LMF",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 278,
@@ -3122,9 +3673,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "GMLC(LTE)",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 279,
@@ -3133,9 +3686,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "GLMC",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 280,
@@ -3144,9 +3699,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "GLMC",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 281,
@@ -3155,9 +3712,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ESMLC",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 282,
@@ -3166,9 +3725,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ESMLC",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 283,
@@ -3177,9 +3738,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LSBP / Trigger",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 284,
@@ -3188,9 +3751,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LBSP / Trigger",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 285,
@@ -3199,9 +3764,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "GPSWEB",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 286,
@@ -3210,9 +3777,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "GPSWEB",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 287,
@@ -3221,9 +3790,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 288,
@@ -3232,9 +3803,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 289,
@@ -3243,9 +3816,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "LPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 290,
@@ -3254,9 +3829,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 291,
@@ -3265,9 +3842,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 292,
@@ -3276,9 +3855,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 293,
@@ -3287,9 +3868,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 294,
@@ -3298,9 +3881,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발(인큐)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 295,
@@ -3309,9 +3894,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 296,
@@ -3320,9 +3907,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 297,
@@ -3331,9 +3920,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+가족지킴이",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 298,
@@ -3342,9 +3933,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "WPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 299,
@@ -3353,9 +3946,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "WPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 300,
@@ -3364,9 +3959,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "WPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 301,
@@ -3375,9 +3972,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "WPS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 302,
@@ -3386,9 +3985,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Crowd Sourcing",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 303,
@@ -3397,9 +3998,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Crowd Sourcing",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 304,
@@ -3408,9 +4011,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 305,
@@ -3419,9 +4024,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 306,
@@ -3430,9 +4037,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RIMS",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 307,
@@ -3441,9 +4050,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 308,
@@ -3452,9 +4063,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 309,
@@ -3463,9 +4076,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 310,
@@ -3474,9 +4089,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 311,
@@ -3485,9 +4102,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 312,
@@ -3496,9 +4115,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 313,
@@ -3507,9 +4128,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGW",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 74.4
   },
   {
     "num": 314,
@@ -3518,9 +4141,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ipms",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 315,
@@ -3529,9 +4154,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CBS 캠패인",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 316,
@@ -3540,9 +4167,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스팸전화알림",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 317,
@@ -3551,9 +4180,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스팸전화알림",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 318,
@@ -3562,9 +4193,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스팸전화알림",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 319,
@@ -3573,9 +4206,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "이통MaaP FE",
     "team": "기반서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 320,
@@ -3584,9 +4219,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "AR엔터 서비스",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 321,
@@ -3595,9 +4232,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KB금융제휴 개발기",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 322,
@@ -3606,9 +4245,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈쇼핑AR방송 신규서비스 개발",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 323,
@@ -3617,9 +4258,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "gsm 구축",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 324,
@@ -3628,9 +4271,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "gsm 구축",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 325,
@@ -3639,9 +4284,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "gsm 구축",
     "team": "커머스서비스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -3650,9 +4297,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -3661,9 +4310,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -3672,9 +4323,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 1,
@@ -3683,9 +4336,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT@industry(전용망인증)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 2,
@@ -3694,9 +4349,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT@industry(전용망인증)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 3,
@@ -3705,9 +4362,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT@industry(전용망인증)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 4,
@@ -3716,9 +4375,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT@industry(전용망인증)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 5,
@@ -3727,9 +4388,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "M2MS(vM2MS)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 6,
@@ -3738,9 +4401,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "M2MS(vM2MS)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 7,
@@ -3749,9 +4414,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "M2MS(vM2MS)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 8,
@@ -3760,9 +4427,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Dynamic맵",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 9,
@@ -3771,9 +4440,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Dynamic맵",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 10,
@@ -3782,9 +4453,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Dynamic맵",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 11,
@@ -3793,9 +4466,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "Dynamic맵",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 14,
@@ -3804,9 +4479,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지도인프라 LogAPI web",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 15,
@@ -3815,9 +4492,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지도인프라 LogAPI was",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 16,
@@ -3826,9 +4505,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티향 지도인프라 - WEB",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 17,
@@ -3837,9 +4518,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티향 지도인프라 - WAS",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 18,
@@ -3848,9 +4531,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT Partners Portal",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 19,
@@ -3859,9 +4544,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": " IoT Partners Portal",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 20,
@@ -3870,9 +4557,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT Partners Portal",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 21,
@@ -3881,9 +4570,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT Partners Portal",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 22,
@@ -3892,9 +4583,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IoT Partners Portal",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 23,
@@ -3903,9 +4596,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 24,
@@ -3914,9 +4609,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 25,
@@ -3925,9 +4622,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 26,
@@ -3936,9 +4635,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 27,
@@ -3947,9 +4648,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 28,
@@ -3958,9 +4661,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 29,
@@ -3969,9 +4674,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 30,
@@ -3980,9 +4687,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 31,
@@ -3991,9 +4700,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 32,
@@ -4002,9 +4713,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "자율주행차량 이상상태 분석판단",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 33,
@@ -4013,9 +4726,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 34,
@@ -4024,9 +4739,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 35,
@@ -4035,9 +4752,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 36,
@@ -4046,9 +4765,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 37,
@@ -4057,9 +4778,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 38,
@@ -4068,9 +4791,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 39,
@@ -4079,9 +4804,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 40,
@@ -4090,9 +4817,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 스마트레이더",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 41,
@@ -4101,9 +4830,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 42,
@@ -4112,9 +4843,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 43,
@@ -4123,9 +4856,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 44,
@@ -4134,9 +4869,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 45,
@@ -4145,9 +4882,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 46,
@@ -4156,9 +4895,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 47,
@@ -4167,9 +4908,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 48,
@@ -4178,9 +4921,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 49,
@@ -4189,9 +4934,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 50,
@@ -4200,9 +4947,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 51,
@@ -4211,9 +4960,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "로봇플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 52,
@@ -4222,9 +4973,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트크린 개발기 DB1",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 53,
@@ -4233,9 +4986,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트크린 개발기 DB2",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 54,
@@ -4244,9 +4999,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트크린 개발기 web",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 55,
@@ -4255,9 +5012,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트크린 개발기 was",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -4266,9 +5025,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF web 개발기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -4277,9 +5038,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF web 개발기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 56,
@@ -4288,9 +5051,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF was",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 57,
@@ -4299,9 +5064,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF DB(오라클)",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 58,
@@ -4310,9 +5077,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF web",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 59,
@@ -4321,9 +5090,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF web",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 60,
@@ -4332,9 +5103,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF was2",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 61,
@@ -4343,9 +5116,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한전IF was1",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 62,
@@ -4354,9 +5129,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "출입관리기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 63,
@@ -4365,9 +5142,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "출입관리기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 64,
@@ -4376,9 +5155,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "출입관리기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 65,
@@ -4387,9 +5168,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "출입관리기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 66,
@@ -4398,9 +5181,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "출입관리기",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 67,
@@ -4409,9 +5194,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 68,
@@ -4420,9 +5207,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 69,
@@ -4431,9 +5220,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 70,
@@ -4442,9 +5233,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 71,
@@ -4453,9 +5246,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 72,
@@ -4464,9 +5259,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트배관망",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 73,
@@ -4475,9 +5272,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 74,
@@ -4486,9 +5285,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 75,
@@ -4497,9 +5298,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 76,
@@ -4508,9 +5311,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 77,
@@ -4519,9 +5324,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 78,
@@ -4530,9 +5337,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 79,
@@ -4541,9 +5350,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 80,
@@ -4552,9 +5363,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -4563,9 +5376,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -4574,9 +5389,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -4585,9 +5402,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "차량관제",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 81,
@@ -4596,9 +5415,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 82,
@@ -4607,9 +5428,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 83,
@@ -4618,9 +5441,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 84,
@@ -4629,9 +5454,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 85,
@@ -4640,9 +5467,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 86,
@@ -4651,9 +5480,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 87,
@@ -4662,9 +5493,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 88,
@@ -4673,9 +5506,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 89,
@@ -4684,9 +5519,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 90,
@@ -4695,9 +5532,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 91,
@@ -4706,9 +5545,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 78.1
   },
   {
     "num": 92,
@@ -4717,9 +5558,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 93,
@@ -4728,9 +5571,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 94,
@@ -4739,9 +5584,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 95,
@@ -4750,9 +5597,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 96,
@@ -4761,9 +5610,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+ 비즈마켓",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 97,
@@ -4772,9 +5623,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 98,
@@ -4783,9 +5636,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 99,
@@ -4794,9 +5649,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 100,
@@ -4805,9 +5662,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 85.9
   },
   {
     "num": 101,
@@ -4816,9 +5675,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 102,
@@ -4827,9 +5688,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 91.8
   },
   {
     "num": 103,
@@ -4838,9 +5701,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 104,
@@ -4849,9 +5714,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 87.1
   },
   {
     "num": 105,
@@ -4860,9 +5727,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 82.4
   },
   {
     "num": 106,
@@ -4871,9 +5740,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 107,
@@ -4882,9 +5753,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 108,
@@ -4893,9 +5766,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 87.1
   },
   {
     "num": 109,
@@ -4904,9 +5779,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 87.1
   },
   {
     "num": 110,
@@ -4915,9 +5792,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 111,
@@ -4926,9 +5805,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 112,
@@ -4937,9 +5818,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 95.3
   },
   {
     "num": 113,
@@ -4948,9 +5831,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 82.4
   },
   {
     "num": 114,
@@ -4959,9 +5844,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 82.4
   },
   {
     "num": 115,
@@ -4970,9 +5857,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 116,
@@ -4981,9 +5870,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 85.9
   },
   {
     "num": 117,
@@ -4992,9 +5883,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 118,
@@ -5003,9 +5896,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 119,
@@ -5014,9 +5909,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 120,
@@ -5025,9 +5922,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 121,
@@ -5036,9 +5935,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 122,
@@ -5047,9 +5948,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 123,
@@ -5058,9 +5961,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 124,
@@ -5069,9 +5974,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 125,
@@ -5080,9 +5987,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 83.6
   },
   {
     "num": 126,
@@ -5091,9 +6000,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 127,
@@ -5102,9 +6013,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 128,
@@ -5113,9 +6026,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 129,
@@ -5124,9 +6039,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 130,
@@ -5135,9 +6052,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 78.9
   },
   {
     "num": 131,
@@ -5146,9 +6065,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 132,
@@ -5157,9 +6078,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 83.6
   },
   {
     "num": 133,
@@ -5168,9 +6091,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 134,
@@ -5179,9 +6104,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 78.9
   },
   {
     "num": 135,
@@ -5190,9 +6117,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 91.8
   },
   {
     "num": 136,
@@ -5201,9 +6130,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.2
   },
   {
     "num": 137,
@@ -5212,9 +6143,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 138,
@@ -5223,9 +6156,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 139,
@@ -5234,9 +6169,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 78.7
   },
   {
     "num": 140,
@@ -5245,9 +6182,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 141,
@@ -5256,9 +6195,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발(상암)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 142,
@@ -5267,9 +6208,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발(상암)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 143,
@@ -5278,9 +6221,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "지능형CCTV",
     "team": "지능형CCTV개발팀",
     "usage": "개발(상암)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 193,
@@ -5289,9 +6234,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 194,
@@ -5300,9 +6247,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 196,
@@ -5311,9 +6260,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 197,
@@ -5322,9 +6273,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 198,
@@ -5333,9 +6286,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.3
   },
   {
     "num": 199,
@@ -5344,9 +6299,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 200,
@@ -5355,9 +6312,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 201,
@@ -5366,9 +6325,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 202,
@@ -5377,9 +6338,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 203,
@@ -5388,9 +6351,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 204,
@@ -5399,9 +6364,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 205,
@@ -5410,9 +6377,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 206,
@@ -5421,9 +6390,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 207,
@@ -5432,9 +6403,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 208,
@@ -5443,9 +6416,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 209,
@@ -5454,9 +6429,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.6
   },
   {
     "num": 210,
@@ -5465,9 +6442,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 211,
@@ -5476,9 +6455,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 212,
@@ -5487,9 +6468,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 213,
@@ -5498,9 +6481,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 214,
@@ -5509,9 +6494,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 215,
@@ -5520,9 +6507,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 216,
@@ -5531,9 +6520,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 217,
@@ -5542,9 +6533,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 218,
@@ -5553,9 +6546,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 219,
@@ -5564,9 +6559,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 220,
@@ -5575,9 +6572,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 221,
@@ -5586,9 +6585,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 222,
@@ -5597,9 +6598,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 223,
@@ -5608,9 +6611,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 2.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 224,
@@ -5619,9 +6624,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 225,
@@ -5630,9 +6637,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 226,
@@ -5641,9 +6650,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 227,
@@ -5652,9 +6663,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 228,
@@ -5663,9 +6676,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 229,
@@ -5674,9 +6689,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 230,
@@ -5685,9 +6702,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 231,
@@ -5696,9 +6715,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 232,
@@ -5707,9 +6728,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 233,
@@ -5718,9 +6741,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 234,
@@ -5729,9 +6754,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "웹하드 3.0",
     "team": "SME솔루션개발팀",
     "usage": "개발(Windows)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 235,
@@ -5740,9 +6767,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 236,
@@ -5751,9 +6780,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 237,
@@ -5762,9 +6793,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 238,
@@ -5773,9 +6806,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 239,
@@ -5784,9 +6819,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 240,
@@ -5795,9 +6832,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 241,
@@ -5806,9 +6845,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 242,
@@ -5817,9 +6858,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 243,
@@ -5828,9 +6871,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 0,
@@ -5839,9 +6884,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -5850,9 +6897,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -5861,9 +6910,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "U+우리가게패키지",
     "team": "SOHO플랫폼개발팀",
     "usage": "개발(상용)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 244,
@@ -5872,9 +6923,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 245,
@@ -5883,9 +6936,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 246,
@@ -5894,9 +6949,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 247,
@@ -5905,9 +6962,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 248,
@@ -5916,9 +6975,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 249,
@@ -5927,9 +6988,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 250,
@@ -5938,9 +7001,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 251,
@@ -5949,9 +7014,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 252,
@@ -5960,9 +7027,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 253,
@@ -5971,9 +7040,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 254,
@@ -5982,9 +7053,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 255,
@@ -5993,9 +7066,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 256,
@@ -6004,9 +7079,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 257,
@@ -6015,9 +7092,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 258,
@@ -6026,9 +7105,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 259,
@@ -6037,9 +7118,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 260,
@@ -6048,9 +7131,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 261,
@@ -6059,9 +7144,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 262,
@@ -6070,9 +7157,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 263,
@@ -6081,9 +7170,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 264,
@@ -6092,9 +7183,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 265,
@@ -6103,9 +7196,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 266,
@@ -6114,9 +7209,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 267,
@@ -6125,9 +7222,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 268,
@@ -6136,9 +7235,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 269,
@@ -6147,9 +7248,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 270,
@@ -6158,9 +7261,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 271,
@@ -6169,9 +7274,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 272,
@@ -6180,9 +7287,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 273,
@@ -6191,9 +7300,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 274,
@@ -6202,9 +7313,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 275,
@@ -6213,9 +7326,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 276,
@@ -6224,9 +7339,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 277,
@@ -6235,9 +7352,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 278,
@@ -6246,9 +7365,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 279,
@@ -6257,9 +7378,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 280,
@@ -6268,9 +7391,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 281,
@@ -6279,9 +7404,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 282,
@@ -6290,9 +7417,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.4
   },
   {
     "num": 283,
@@ -6301,9 +7430,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 284,
@@ -6312,9 +7443,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 285,
@@ -6323,9 +7456,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 286,
@@ -6334,9 +7469,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 287,
@@ -6345,9 +7482,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 288,
@@ -6356,9 +7495,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 289,
@@ -6367,9 +7508,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 290,
@@ -6378,9 +7521,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 291,
@@ -6389,9 +7534,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 292,
@@ -6400,9 +7547,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 293,
@@ -6411,9 +7560,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 294,
@@ -6422,9 +7573,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "KG모빌리티",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 295,
@@ -6433,9 +7586,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스토어 서버",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 296,
@@ -6444,9 +7599,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스토어 서버",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 297,
@@ -6455,9 +7612,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스토어 서버",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 298,
@@ -6466,9 +7625,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스토어 서버",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 299,
@@ -6477,9 +7638,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BMW향 MNO portal",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 300,
@@ -6488,9 +7651,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BMW향 MNO portal",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 301,
@@ -6499,9 +7664,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BMW향 MNO portal",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 302,
@@ -6510,9 +7677,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BMW향 MNO portal",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 303,
@@ -6521,9 +7690,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BMW향 MNO portal",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 304,
@@ -6532,9 +7703,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라 내비 익스텐션",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 305,
@@ -6543,9 +7716,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "BM 지도인프라 내비 익스텐션",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 310,
@@ -6554,9 +7729,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 311,
@@ -6565,9 +7742,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 314,
@@ -6576,9 +7755,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 315,
@@ -6587,9 +7768,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 316,
@@ -6598,9 +7781,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 317,
@@ -6609,9 +7794,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 318,
@@ -6620,9 +7807,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 319,
@@ -6631,9 +7820,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 320,
@@ -6642,9 +7833,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 321,
@@ -6653,9 +7846,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 322,
@@ -6664,9 +7859,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 323,
@@ -6675,9 +7872,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 324,
@@ -6686,9 +7885,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 325,
@@ -6697,9 +7898,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 326,
@@ -6708,9 +7911,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 327,
@@ -6719,9 +7924,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 328,
@@ -6730,9 +7937,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 329,
@@ -6741,9 +7950,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 330,
@@ -6752,9 +7963,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 57.8
   },
   {
     "num": 331,
@@ -6763,9 +7976,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "인큐",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 80.8
   },
   {
     "num": 333,
@@ -6774,9 +7989,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "산업DX플랫폼Node",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 334,
@@ -6785,9 +8002,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "산업DX플랫폼 Application",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 335,
@@ -6796,9 +8015,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "산업DX플랫폼Baston",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 336,
@@ -6807,9 +8028,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "산업DX플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 337,
@@ -6818,9 +8041,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "산업DX플랫폼",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 338,
@@ -6829,9 +8054,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "토요타커넥티드카",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 339,
@@ -6840,9 +8067,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 340,
@@ -6851,9 +8080,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 341,
@@ -6862,9 +8093,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 342,
@@ -6873,9 +8106,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 343,
@@ -6884,9 +8119,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 344,
@@ -6895,9 +8132,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 345,
@@ -6906,9 +8145,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 346,
@@ -6917,9 +8158,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 347,
@@ -6928,9 +8171,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 348,
@@ -6939,9 +8184,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 349,
@@ -6950,9 +8197,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 350,
@@ -6961,9 +8210,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 351,
@@ -6972,9 +8223,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 352,
@@ -6983,9 +8236,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 353,
@@ -6994,9 +8249,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 354,
@@ -7005,9 +8262,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "구축형 스마트드론 관제시스템",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 355,
@@ -7016,9 +8275,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "구축형 스마트드론 관제시스템",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 356,
@@ -7027,9 +8288,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "구축형 스마트드론 관제시스템",
     "team": "미래모빌리티기술팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 357,
@@ -7038,9 +8301,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
-    "clean": "미완료",
-    "target": "3월착수"
+    "installServeri": "성공",
+    "clean": "완료",
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 358,
@@ -7049,9 +8314,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발",
-    "install": "미설치",
-    "clean": "미완료",
-    "target": "3월착수"
+    "installServeri": "성공",
+    "clean": "완료",
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 360,
@@ -7060,9 +8327,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 361,
@@ -7071,9 +8340,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 362,
@@ -7082,9 +8353,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "미설치",
-    "clean": "미완료",
-    "target": "3월착수"
+    "installServeri": "성공",
+    "clean": "완료",
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 363,
@@ -7093,9 +8366,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "미설치",
-    "clean": "미완료",
-    "target": "3월착수"
+    "installServeri": "성공",
+    "clean": "완료",
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 364,
@@ -7104,9 +8379,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 365,
@@ -7115,9 +8392,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "현대차 모바일tv",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(OEM)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 366,
@@ -7126,9 +8405,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "oneM2M",
     "team": "스마트DX플랫폼개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 367,
@@ -7137,9 +8418,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "AICC클라우드",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 368,
@@ -7148,9 +8431,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "AICC클라우드",
     "team": "SME솔루션개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 1,
@@ -7159,9 +8444,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 2,
@@ -7170,9 +8457,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 94.1
   },
   {
     "num": 3,
@@ -7181,9 +8470,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 4,
@@ -7192,9 +8483,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 5,
@@ -7203,9 +8496,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 6,
@@ -7214,9 +8509,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 7,
@@ -7225,9 +8522,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 8,
@@ -7236,9 +8535,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 9,
@@ -7247,9 +8548,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 10,
@@ -7258,9 +8561,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 11,
@@ -7269,9 +8574,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 12,
@@ -7280,9 +8587,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 13,
@@ -7291,9 +8600,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 14,
@@ -7302,9 +8613,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.9
   },
   {
     "num": 15,
@@ -7313,9 +8626,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 16,
@@ -7324,9 +8639,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 17,
@@ -7335,9 +8652,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 DB1)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 18,
@@ -7346,9 +8665,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 19,
@@ -7357,9 +8678,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 20,
@@ -7368,9 +8691,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 21,
@@ -7379,9 +8704,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 22,
@@ -7390,9 +8717,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 23,
@@ -7401,9 +8730,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 24,
@@ -7412,9 +8743,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 25,
@@ -7423,9 +8756,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 26,
@@ -7434,9 +8769,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 27,
@@ -7445,9 +8782,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 28,
@@ -7456,9 +8795,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 29,
@@ -7467,9 +8808,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 30,
@@ -7478,9 +8821,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 31,
@@ -7489,9 +8834,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 32,
@@ -7500,9 +8847,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 33,
@@ -7511,9 +8860,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 34,
@@ -7522,9 +8873,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 35,
@@ -7533,9 +8886,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 36,
@@ -7544,9 +8899,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 37,
@@ -7555,9 +8912,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 38,
@@ -7566,9 +8925,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS DB 개발1)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 39,
@@ -7577,9 +8938,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 WAS1)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 40,
@@ -7588,9 +8951,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 WEB1)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 41,
@@ -7599,9 +8964,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 42,
@@ -7610,9 +8977,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 43,
@@ -7621,9 +8990,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 44,
@@ -7632,9 +9003,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 45,
@@ -7643,9 +9016,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 46,
@@ -7654,9 +9029,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 47,
@@ -7665,9 +9042,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 48,
@@ -7676,9 +9055,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 49,
@@ -7687,9 +9068,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 50,
@@ -7698,9 +9081,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 51,
@@ -7709,9 +9094,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 52,
@@ -7720,9 +9107,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 53,
@@ -7731,9 +9120,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 54,
@@ -7742,9 +9133,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 55,
@@ -7753,9 +9146,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 56,
@@ -7764,9 +9159,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 57,
@@ -7775,9 +9172,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 58,
@@ -7786,9 +9185,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 59,
@@ -7797,9 +9198,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 60,
@@ -7808,9 +9211,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 61,
@@ -7819,9 +9224,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 62,
@@ -7830,9 +9237,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 63,
@@ -7841,9 +9250,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 64,
@@ -7852,9 +9263,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 65,
@@ -7863,9 +9276,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 66,
@@ -7874,9 +9289,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 67,
@@ -7885,9 +9302,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS 성능검수 WEB)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.6
   },
   {
     "num": 68,
@@ -7896,9 +9315,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 69,
@@ -7907,9 +9328,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 70,
@@ -7918,9 +9341,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS 성능검수 DB)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 71,
@@ -7929,9 +9354,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS 성능검수 DB)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 72,
@@ -7940,9 +9367,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 73,
@@ -7951,9 +9380,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 74,
@@ -7962,9 +9393,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 75,
@@ -7973,9 +9406,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 76,
@@ -7984,9 +9419,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 77,
@@ -7995,9 +9432,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 78,
@@ -8006,9 +9445,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 79,
@@ -8017,9 +9458,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 80,
@@ -8028,9 +9471,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 81,
@@ -8039,9 +9484,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 82,
@@ -8050,9 +9497,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 83,
@@ -8061,9 +9510,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 84,
@@ -8072,9 +9523,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 85,
@@ -8083,9 +9536,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 86,
@@ -8094,9 +9549,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 87,
@@ -8105,9 +9562,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 88,
@@ -8116,9 +9575,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 89,
@@ -8127,9 +9588,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 90,
@@ -8138,9 +9601,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 91,
@@ -8149,9 +9614,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 92,
@@ -8160,9 +9627,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 WEB 홈넷-대우건설)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 93,
@@ -8171,9 +9640,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 APP 홈넷-대우건설)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 94,
@@ -8182,9 +9653,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 95,
@@ -8193,9 +9666,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 WAS1 스마트가전)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 96,
@@ -8204,9 +9679,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(제휴GW 개발 WEB2)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 97,
@@ -8215,9 +9692,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS 공통WEB 개발2~4)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 98,
@@ -8226,9 +9705,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 99,
@@ -8237,9 +9718,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 100,
@@ -8248,9 +9731,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 101,
@@ -8259,9 +9744,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 102,
@@ -8270,9 +9757,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 103,
@@ -8281,9 +9770,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(NCD서버)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 104,
@@ -8292,9 +9783,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(NCD 성능 WAS)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 105,
@@ -8303,9 +9796,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 106,
@@ -8314,9 +9809,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(SAS DB 개발2~4)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 107,
@@ -8325,9 +9822,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 108,
@@ -8336,9 +9835,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT개발(conncar,iotautorun)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 109,
@@ -8347,9 +9848,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 110,
@@ -8358,9 +9861,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 111,
@@ -8369,9 +9874,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 112,
@@ -8380,9 +9887,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 113,
@@ -8391,9 +9900,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 114,
@@ -8402,9 +9913,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 115,
@@ -8413,9 +9926,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 116,
@@ -8424,9 +9939,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 117,
@@ -8435,9 +9952,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 118,
@@ -8446,9 +9965,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 119,
@@ -8457,9 +9978,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 120,
@@ -8468,9 +9991,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 121,
@@ -8479,9 +10004,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 122,
@@ -8490,9 +10017,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 123,
@@ -8501,9 +10030,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 124,
@@ -8512,9 +10043,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 125,
@@ -8523,9 +10056,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 126,
@@ -8534,9 +10069,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 127,
@@ -8545,9 +10082,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 128,
@@ -8556,9 +10095,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 129,
@@ -8567,9 +10108,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 130,
@@ -8578,9 +10121,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 131,
@@ -8589,9 +10134,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 132,
@@ -8600,9 +10147,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.9
   },
   {
     "num": 133,
@@ -8611,9 +10160,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 134,
@@ -8622,9 +10173,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 135,
@@ -8633,9 +10186,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 136,
@@ -8644,9 +10199,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT(AUTH_WEB2)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 137,
@@ -8655,9 +10212,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 138,
@@ -8666,9 +10225,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 139,
@@ -8677,9 +10238,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 140,
@@ -8688,9 +10251,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 141,
@@ -8699,9 +10264,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 142,
@@ -8710,9 +10277,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 143,
@@ -8721,9 +10290,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 144,
@@ -8732,9 +10303,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 145,
@@ -8743,9 +10316,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 146,
@@ -8754,9 +10329,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 147,
@@ -8765,9 +10342,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 148,
@@ -8776,9 +10355,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 149,
@@ -8787,9 +10368,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 150,
@@ -8798,9 +10381,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 151,
@@ -8809,9 +10394,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 152,
@@ -8820,9 +10407,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 153,
@@ -8831,9 +10420,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 154,
@@ -8842,9 +10433,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 155,
@@ -8853,9 +10446,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 156,
@@ -8864,9 +10459,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 157,
@@ -8875,9 +10472,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 158,
@@ -8886,9 +10485,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 159,
@@ -8897,9 +10498,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 160,
@@ -8908,9 +10511,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 161,
@@ -8919,9 +10524,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 162,
@@ -8930,9 +10537,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 163,
@@ -8941,9 +10550,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 164,
@@ -8952,9 +10563,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 165,
@@ -8963,9 +10576,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 166,
@@ -8974,9 +10589,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 167,
@@ -8985,9 +10602,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 168,
@@ -8996,9 +10615,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 169,
@@ -9007,9 +10628,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 170,
@@ -9018,9 +10641,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 171,
@@ -9029,9 +10654,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 172,
@@ -9040,9 +10667,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 173,
@@ -9051,9 +10680,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 174,
@@ -9062,9 +10693,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 175,
@@ -9073,9 +10706,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 176,
@@ -9084,9 +10719,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 177,
@@ -9095,9 +10732,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 178,
@@ -9106,9 +10745,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 179,
@@ -9117,9 +10758,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 180,
@@ -9128,9 +10771,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 181,
@@ -9139,9 +10784,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 182,
@@ -9150,9 +10797,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 183,
@@ -9161,9 +10810,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 184,
@@ -9172,9 +10823,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 185,
@@ -9183,9 +10836,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 186,
@@ -9194,9 +10849,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 187,
@@ -9205,9 +10862,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 188,
@@ -9216,9 +10875,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 189,
@@ -9227,9 +10888,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.9
   },
   {
     "num": 190,
@@ -9238,9 +10901,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 191,
@@ -9249,9 +10914,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 192,
@@ -9260,9 +10927,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 193,
@@ -9271,9 +10940,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 194,
@@ -9282,9 +10953,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 195,
@@ -9293,9 +10966,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 196,
@@ -9304,9 +10979,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.2
   },
   {
     "num": 197,
@@ -9315,9 +10992,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IAG",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 198,
@@ -9326,9 +11005,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 199,
@@ -9337,9 +11018,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 200,
@@ -9348,9 +11031,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 201,
@@ -9359,9 +11044,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 202,
@@ -9370,9 +11057,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 203,
@@ -9381,9 +11070,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 204,
@@ -9392,9 +11083,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 205,
@@ -9403,9 +11096,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 206,
@@ -9414,9 +11109,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 207,
@@ -9425,9 +11122,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 208,
@@ -9436,9 +11135,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 209,
@@ -9447,9 +11148,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 210,
@@ -9458,9 +11161,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 211,
@@ -9469,9 +11174,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 212,
@@ -9480,9 +11187,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 213,
@@ -9491,9 +11200,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 214,
@@ -9502,9 +11213,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 215,
@@ -9513,9 +11226,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 216,
@@ -9524,9 +11239,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 217,
@@ -9535,9 +11252,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 218,
@@ -9546,9 +11265,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 219,
@@ -9557,9 +11278,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 220,
@@ -9568,9 +11291,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 221,
@@ -9579,9 +11304,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 222,
@@ -9590,9 +11317,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 223,
@@ -9601,9 +11330,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 224,
@@ -9612,9 +11343,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 225,
@@ -9623,9 +11356,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 226,
@@ -9634,9 +11369,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 227,
@@ -9645,9 +11382,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 228,
@@ -9656,9 +11395,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 229,
@@ -9667,9 +11408,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 230,
@@ -9678,9 +11421,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 231,
@@ -9689,9 +11434,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 232,
@@ -9700,9 +11447,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 233,
@@ -9711,9 +11460,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 234,
@@ -9722,9 +11473,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 235,
@@ -9733,9 +11486,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 236,
@@ -9744,9 +11499,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 237,
@@ -9755,9 +11512,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 238,
@@ -9766,9 +11525,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 239,
@@ -9777,9 +11538,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 240,
@@ -9788,9 +11551,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 241,
@@ -9799,9 +11564,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 242,
@@ -9810,9 +11577,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 243,
@@ -9821,9 +11590,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 244,
@@ -9832,9 +11603,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 245,
@@ -9843,9 +11616,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 246,
@@ -9854,9 +11629,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 247,
@@ -9865,9 +11642,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 248,
@@ -9876,9 +11655,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 249,
@@ -9887,9 +11668,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 84.4
   },
   {
     "num": 250,
@@ -9898,9 +11681,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 251,
@@ -9909,9 +11694,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 252,
@@ -9920,9 +11707,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 253,
@@ -9931,9 +11720,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 254,
@@ -9942,9 +11733,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 255,
@@ -9953,9 +11746,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 256,
@@ -9964,9 +11759,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 257,
@@ -9975,9 +11772,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 258,
@@ -9986,9 +11785,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 259,
@@ -9997,9 +11798,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 260,
@@ -10008,9 +11811,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 78.7
   },
   {
     "num": 261,
@@ -10019,9 +11824,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 262,
@@ -10030,9 +11837,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 263,
@@ -10041,9 +11850,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 264,
@@ -10052,9 +11863,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 265,
@@ -10063,9 +11876,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 266,
@@ -10074,9 +11889,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 267,
@@ -10085,9 +11902,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 268,
@@ -10096,9 +11915,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 269,
@@ -10107,9 +11928,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 270,
@@ -10118,9 +11941,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 271,
@@ -10129,9 +11954,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 272,
@@ -10140,9 +11967,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 273,
@@ -10151,9 +11980,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 274,
@@ -10162,9 +11993,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 275,
@@ -10173,9 +12006,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 276,
@@ -10184,9 +12019,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 277,
@@ -10195,9 +12032,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 278,
@@ -10206,9 +12045,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 279,
@@ -10217,9 +12058,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 280,
@@ -10228,9 +12071,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 281,
@@ -10239,9 +12084,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 282,
@@ -10250,9 +12097,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 283,
@@ -10261,9 +12110,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 284,
@@ -10272,9 +12123,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 285,
@@ -10283,9 +12136,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 286,
@@ -10294,9 +12149,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 84.4
   },
   {
     "num": 287,
@@ -10305,9 +12162,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 84.4
   },
   {
     "num": 288,
@@ -10316,9 +12175,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 289,
@@ -10327,9 +12188,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "슈퍼맘카 P2P",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 290,
@@ -10338,9 +12201,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 291,
@@ -10349,9 +12214,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 292,
@@ -10360,9 +12227,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 293,
@@ -10371,9 +12240,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 294,
@@ -10382,9 +12253,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 295,
@@ -10393,9 +12266,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 296,
@@ -10404,9 +12279,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 297,
@@ -10415,9 +12292,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 298,
@@ -10426,9 +12305,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 76.5
   },
   {
     "num": 299,
@@ -10437,9 +12318,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 300,
@@ -10448,9 +12331,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 301,
@@ -10459,9 +12344,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 302,
@@ -10470,9 +12357,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스트리밍서버",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 303,
@@ -10481,9 +12370,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스트리밍서버",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 304,
@@ -10492,9 +12383,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스트리밍서버",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 305,
@@ -10503,9 +12396,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스트리밍서버",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 306,
@@ -10514,9 +12409,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 307,
@@ -10525,9 +12422,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 308,
@@ -10536,9 +12435,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 309,
@@ -10547,9 +12448,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈CCTV플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 310,
@@ -10558,9 +12461,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 311,
@@ -10569,9 +12474,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.2
   },
   {
     "num": 312,
@@ -10580,9 +12487,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 88.2
   },
   {
     "num": 313,
@@ -10591,9 +12500,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 314,
@@ -10602,9 +12513,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 315,
@@ -10613,9 +12526,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 316,
@@ -10624,9 +12539,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 317,
@@ -10635,9 +12552,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 318,
@@ -10646,9 +12565,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 319,
@@ -10657,9 +12578,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 320,
@@ -10668,9 +12591,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 321,
@@ -10679,9 +12604,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 322,
@@ -10690,9 +12617,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 323,
@@ -10701,9 +12630,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 324,
@@ -10712,9 +12643,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 325,
@@ -10723,9 +12656,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 326,
@@ -10734,9 +12669,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.2
   },
   {
     "num": 327,
@@ -10745,9 +12682,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.2
   },
   {
     "num": 328,
@@ -10756,9 +12695,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "HCSS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 329,
@@ -10767,9 +12708,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 330,
@@ -10778,9 +12721,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT법인가입자 관리(전출입관리시스템)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 331,
@@ -10789,9 +12734,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT법인가입자 관리(전출입관리시스템)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 332,
@@ -10800,9 +12747,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT법인가입자 관리(전출입관리시스템)",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 333,
@@ -10811,9 +12760,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 334,
@@ -10822,9 +12773,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 335,
@@ -10833,9 +12786,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT 플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 336,
@@ -10844,9 +12799,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 337,
@@ -10855,9 +12812,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 338,
@@ -10866,9 +12825,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 339,
@@ -10877,9 +12838,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 340,
@@ -10888,9 +12851,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 341,
@@ -10899,9 +12864,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 342,
@@ -10910,9 +12877,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 343,
@@ -10921,9 +12890,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 344,
@@ -10932,9 +12903,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 345,
@@ -10943,9 +12916,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 346,
@@ -10954,9 +12929,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 347,
@@ -10965,9 +12942,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 97.7
   },
   {
     "num": 348,
@@ -10976,9 +12955,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 349,
@@ -10987,9 +12968,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 350,
@@ -10998,9 +12981,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 351,
@@ -11009,9 +12994,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "홈IoT SAS",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 352,
@@ -11020,9 +13007,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 353,
@@ -11031,9 +13020,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 354,
@@ -11042,9 +13033,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 355,
@@ -11053,9 +13046,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 356,
@@ -11064,9 +13059,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 357,
@@ -11075,9 +13072,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 358,
@@ -11086,9 +13085,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 359,
@@ -11097,9 +13098,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 360,
@@ -11108,9 +13111,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 361,
@@ -11119,9 +13124,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 362,
@@ -11130,9 +13137,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 363,
@@ -11141,9 +13150,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 364,
@@ -11152,9 +13163,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 365,
@@ -11163,9 +13176,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 366,
@@ -11174,9 +13189,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 367,
@@ -11185,9 +13202,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 368,
@@ -11196,9 +13215,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 369,
@@ -11207,9 +13228,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 370,
@@ -11218,9 +13241,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 371,
@@ -11229,9 +13254,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 372,
@@ -11240,9 +13267,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 373,
@@ -11251,9 +13280,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 374,
@@ -11262,9 +13293,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 375,
@@ -11273,9 +13306,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 376,
@@ -11284,9 +13319,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 377,
@@ -11295,9 +13332,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 378,
@@ -11306,9 +13345,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 379,
@@ -11317,9 +13358,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 380,
@@ -11328,9 +13371,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 381,
@@ -11339,9 +13384,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 382,
@@ -11350,9 +13397,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 383,
@@ -11361,9 +13410,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 384,
@@ -11372,9 +13423,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 385,
@@ -11383,9 +13436,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 386,
@@ -11394,9 +13449,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 387,
@@ -11405,9 +13462,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 388,
@@ -11416,9 +13475,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 389,
@@ -11427,9 +13488,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 390,
@@ -11438,9 +13501,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 391,
@@ -11449,9 +13514,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 392,
@@ -11460,9 +13527,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 393,
@@ -11471,9 +13540,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 394,
@@ -11482,9 +13553,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 395,
@@ -11493,9 +13566,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 396,
@@ -11504,9 +13579,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 397,
@@ -11515,9 +13592,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 398,
@@ -11526,9 +13605,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 399,
@@ -11537,9 +13618,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 400,
@@ -11548,9 +13631,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 401,
@@ -11559,9 +13644,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 402,
@@ -11570,9 +13657,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 403,
@@ -11581,9 +13670,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 404,
@@ -11592,9 +13683,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 405,
@@ -11603,9 +13696,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 406,
@@ -11614,9 +13709,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 407,
@@ -11625,9 +13722,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 408,
@@ -11636,9 +13735,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 409,
@@ -11647,9 +13748,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 410,
@@ -11658,9 +13761,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 411,
@@ -11669,9 +13774,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 412,
@@ -11680,9 +13787,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 413,
@@ -11691,9 +13800,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 414,
@@ -11702,9 +13813,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 415,
@@ -11713,9 +13826,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 416,
@@ -11724,9 +13839,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 417,
@@ -11735,9 +13852,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 418,
@@ -11746,9 +13865,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 419,
@@ -11757,9 +13878,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 420,
@@ -11768,9 +13891,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 421,
@@ -11779,9 +13904,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 422,
@@ -11790,9 +13917,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 423,
@@ -11801,9 +13930,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 424,
@@ -11812,9 +13943,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 425,
@@ -11823,9 +13956,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 426,
@@ -11834,9 +13969,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 427,
@@ -11845,9 +13982,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 428,
@@ -11856,9 +13995,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 429,
@@ -11867,9 +14008,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 430,
@@ -11878,9 +14021,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 431,
@@ -11889,9 +14034,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 432,
@@ -11900,9 +14047,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 433,
@@ -11911,9 +14060,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 434,
@@ -11922,9 +14073,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 435,
@@ -11933,9 +14086,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 436,
@@ -11944,9 +14099,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 437,
@@ -11955,9 +14112,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 438,
@@ -11966,9 +14125,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 439,
@@ -11977,9 +14138,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 440,
@@ -11988,9 +14151,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 441,
@@ -11999,9 +14164,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 442,
@@ -12010,9 +14177,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 443,
@@ -12021,9 +14190,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 444,
@@ -12032,9 +14203,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 445,
@@ -12043,9 +14216,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 446,
@@ -12054,9 +14229,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 447,
@@ -12065,9 +14242,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 448,
@@ -12076,9 +14255,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 449,
@@ -12087,9 +14268,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 98.8
   },
   {
     "num": 450,
@@ -12098,9 +14281,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 451,
@@ -12109,9 +14294,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 452,
@@ -12120,9 +14307,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 453,
@@ -12131,9 +14320,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 454,
@@ -12142,9 +14333,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 455,
@@ -12153,9 +14346,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 456,
@@ -12164,9 +14359,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 457,
@@ -12175,9 +14372,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 458,
@@ -12186,9 +14385,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 459,
@@ -12197,9 +14398,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 460,
@@ -12208,9 +14411,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 461,
@@ -12219,9 +14424,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 462,
@@ -12230,9 +14437,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 463,
@@ -12241,9 +14450,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 464,
@@ -12252,9 +14463,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 465,
@@ -12263,9 +14476,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 466,
@@ -12274,9 +14489,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 467,
@@ -12285,9 +14502,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 468,
@@ -12296,9 +14515,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 469,
@@ -12307,9 +14528,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 470,
@@ -12318,9 +14541,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 471,
@@ -12329,9 +14554,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 472,
@@ -12340,9 +14567,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 473,
@@ -12351,9 +14580,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 474,
@@ -12362,9 +14593,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "스마트홈Easy플랫폼",
     "team": "홈IoT개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 475,
@@ -12373,9 +14606,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "FPS",
     "team": "홈디바이스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 476,
@@ -12384,9 +14619,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "FPS",
     "team": "홈디바이스개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "미완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 477,
@@ -12395,9 +14632,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 478,
@@ -12406,9 +14645,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 479,
@@ -12417,9 +14658,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 480,
@@ -12428,9 +14671,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 481,
@@ -12439,9 +14684,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 482,
@@ -12450,9 +14697,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 483,
@@ -12461,9 +14710,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 484,
@@ -12472,9 +14723,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 485,
@@ -12483,9 +14736,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 486,
@@ -12494,9 +14749,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 487,
@@ -12505,9 +14762,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 488,
@@ -12516,9 +14775,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 489,
@@ -12527,9 +14788,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 490,
@@ -12538,9 +14801,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 491,
@@ -12549,9 +14814,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 492,
@@ -12560,9 +14827,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 493,
@@ -12571,9 +14840,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "UDRVUG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 494,
@@ -12582,9 +14853,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "VUCTLO로그 수집 서버",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 495,
@@ -12593,9 +14866,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "UXTEN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 496,
@@ -12604,9 +14879,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 497,
@@ -12615,9 +14892,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 498,
@@ -12626,9 +14905,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 499,
@@ -12637,9 +14918,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 500,
@@ -12648,9 +14931,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 501,
@@ -12659,9 +14944,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 502,
@@ -12670,9 +14957,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 503,
@@ -12681,9 +14970,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 504,
@@ -12692,9 +14983,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "RCSGA",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 505,
@@ -12703,9 +14996,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 506,
@@ -12714,9 +15009,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 507,
@@ -12725,9 +15022,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 508,
@@ -12736,9 +15035,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 509,
@@ -12747,9 +15048,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 510,
@@ -12758,9 +15061,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ECS",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 511,
@@ -12769,9 +15074,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ECS",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 512,
@@ -12780,9 +15087,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ECS",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 513,
@@ -12791,9 +15100,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ECS",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 514,
@@ -12802,9 +15113,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 515,
@@ -12813,9 +15126,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 516,
@@ -12824,9 +15139,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 517,
@@ -12835,9 +15152,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 518,
@@ -12846,9 +15165,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 519,
@@ -12857,9 +15178,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 520,
@@ -12868,9 +15191,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 521,
@@ -12879,9 +15204,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 522,
@@ -12890,9 +15217,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "EPG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 523,
@@ -12901,9 +15230,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터방송",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 524,
@@ -12912,9 +15243,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터방송",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 525,
@@ -12923,9 +15256,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "데이터방송",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 526,
@@ -12934,9 +15269,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "VODCG",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 527,
@@ -12945,9 +15282,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "멀티뷰",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 528,
@@ -12956,9 +15295,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "FLUTE",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 529,
@@ -12967,9 +15308,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "FLUTE",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 530,
@@ -12978,9 +15321,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "UI스크립트",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 531,
@@ -12989,9 +15334,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "UI스크립트",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 532,
@@ -13000,9 +15347,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "UI스크립트",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 533,
@@ -13011,9 +15360,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모아보기 서비스",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 534,
@@ -13022,9 +15373,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모아보기 서비스",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 535,
@@ -13033,9 +15386,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "공지서버",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 536,
@@ -13044,9 +15399,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "공지서버",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 96.5
   },
   {
     "num": 537,
@@ -13055,9 +15412,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 538,
@@ -13066,9 +15425,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 539,
@@ -13077,9 +15438,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 540,
@@ -13088,9 +15451,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 541,
@@ -13099,9 +15464,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 542,
@@ -13110,9 +15477,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 543,
@@ -13121,9 +15490,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "IMCS Agent",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 544,
@@ -13132,9 +15503,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "ISU",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 545,
@@ -13143,9 +15516,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "모아보기",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 546,
@@ -13154,9 +15529,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 547,
@@ -13165,9 +15542,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 548,
@@ -13176,9 +15555,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 549,
@@ -13187,9 +15568,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 550,
@@ -13198,9 +15581,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 551,
@@ -13209,9 +15594,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 552,
@@ -13220,9 +15607,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 553,
@@ -13231,9 +15620,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 554,
@@ -13242,9 +15633,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 555,
@@ -13253,9 +15646,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 556,
@@ -13264,9 +15659,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "실시간",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 557,
@@ -13275,9 +15672,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "실시간",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 558,
@@ -13286,9 +15685,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "실시간",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 559,
@@ -13297,9 +15698,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "실시간",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 560,
@@ -13308,9 +15711,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "실시간",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 561,
@@ -13319,9 +15724,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 562,
@@ -13330,9 +15737,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 563,
@@ -13341,9 +15750,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 564,
@@ -13352,9 +15763,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CDN",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 565,
@@ -13363,9 +15776,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 566,
@@ -13374,9 +15789,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 567,
@@ -13385,9 +15802,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 568,
@@ -13396,9 +15815,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 569,
@@ -13407,9 +15828,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 570,
@@ -13418,9 +15841,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 571,
@@ -13429,9 +15854,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 572,
@@ -13440,9 +15867,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 573,
@@ -13451,9 +15880,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 574,
@@ -13462,9 +15893,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 575,
@@ -13473,9 +15906,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 576,
@@ -13484,9 +15919,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 577,
@@ -13495,9 +15932,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 578,
@@ -13506,9 +15945,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 579,
@@ -13517,9 +15958,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 580,
@@ -13528,9 +15971,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 581,
@@ -13539,9 +15984,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 582,
@@ -13550,9 +15997,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 583,
@@ -13561,9 +16010,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 584,
@@ -13572,9 +16023,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CloudUI",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 585,
@@ -13583,9 +16036,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "VOD",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 586,
@@ -13594,9 +16049,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "CADRM",
     "team": "IPTV인프라개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 587,
@@ -13605,9 +16062,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한눈에 쇼핑",
     "team": "IPTV서비스개발팀",
     "usage": "개발",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13616,9 +16075,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13627,9 +16088,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13638,9 +16101,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13649,9 +16114,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13660,9 +16127,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13671,9 +16140,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13682,9 +16153,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13693,9 +16166,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13704,9 +16179,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13715,9 +16192,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13726,9 +16205,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13737,9 +16218,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13748,9 +16231,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 0,
@@ -13759,9 +16244,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "화상커뮤니케이션 플랫폼",
     "team": "SME솔루션개발팀",
     "usage": "개발(검수)",
-    "install": "성공",
+    "installServeri": "성공",
     "clean": "완료",
-    "target": "대상"
+    "target": "대상",
+    "installSolidStep": "설치",
+    "SolidStepScore": 0
   },
   {
     "num": 306,
@@ -13770,9 +16257,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 307,
@@ -13781,9 +16270,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 308,
@@ -13792,9 +16283,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 309,
@@ -13803,9 +16296,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 312,
@@ -13814,9 +16309,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 313,
@@ -13825,9 +16322,11 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "PQC PUF VPN",
     "team": "스마트모빌리티개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 588,
@@ -13836,8 +16335,10 @@ List<Map<String, Object>> rawdata_serveri = [
     "service": "한눈에 쇼핑",
     "team": "IPTV서비스개발팀",
     "usage": "개발(검수)",
-    "install": "미설치",
+    "installServeri": "미설치",
     "clean": "미완료",
-    "target": "3월착수"
+    "target": "3월착수",
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   }
 ];
