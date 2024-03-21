@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:a14_dashboard/ServerData.dart';
+import 'package:a14_dashboard/DataOfServeri.dart';
+import 'package:a14_dashboard/DataOfSolidstep.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -66,6 +67,9 @@ List<String> result_serveri = [
 // 미설치 서버 리스트 생성
 List<Map<String, Object>> serverlist_doing = [];
 List<Map<String, Object>> solidsteplist_doing = [];
+List<Map<String, Object>> solidsteplist_OS_doing = [];
+List<Map<String, Object>> solidsteplist_DB_doing = [];
+List<Map<String, Object>> solidsteplist_WEB_doing = [];
 
 ///                                    //
 /// 생성할 serverlist_doing 데이터 포맷         //
@@ -116,7 +120,7 @@ List<Map<String, Object>> serverlist_Clean_doing = [];
 //       }
 //     ];
 
-enum dialogType { agent, cleansing, deving, solidstepAgent }
+enum dialogType { agent, cleansing, deving, solidstepAgent, solidstepOS, solidstepDB, solidstepWEB }
 
 class DashBoard_ph2 extends StatefulWidget {
   const DashBoard_ph2({super.key});
@@ -146,8 +150,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   int activeIndex = 0;
   final CarouselController _carouselController = CarouselController();
 
-  double pageIndex = 0;
-  final PageController _pageController = PageController();
+  int pageIndex = 1;
+  final PageController _pageController = PageController(initialPage: 1);
 
   @override
   void initState() {
@@ -155,7 +159,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     super.initState();
 
     MakeUninstalledServerList();
-    MakeUncleanssingServerList();
+    MakeUncleanssingServeriList();
+    MakeUncleanssingSolidstepList();
+
     // _pageController.addListener(onPageChanged);
 
     // _pageController.addListener(onPageChanged);
@@ -325,7 +331,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // print("End _ MakeUninstalledServerList");
   }
 
-  MakeUncleanssingServerList() async {
+  MakeUncleanssingServeriList() async {
     // step1 : 모수에서 미설치 서버 검색 (모수 : rawdata_serveri)
     // step2 : serverlist_doing 에 검색된 미설치 서버 정보 입력
     //         팀별 data에 추가하는 방식
@@ -415,6 +421,97 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // }
   }
 
+  MakeUncleanssingSolidstepList() async {
+    SearchUncleanssingServer(data: solidsteplist_OS_doing, type: "OS");
+    SearchUncleanssingServer(data: solidsteplist_DB_doing, type: "DB");
+    SearchUncleanssingServer(data: solidsteplist_WEB_doing, type: "WEB");
+  }
+
+  void SearchUncleanssingServer({required List<Map<String, Object>> data, required String type}) {
+    // step1 : 모수에서 미완료(100점 아님) 서버 검색 (모수 : rawdata_serveri)
+    // step2 : solidsteplist_OS_doing, solidsteplist_DB_doing, solidsteplist_WEB_doing 에 검색된 미완료 서버 정보 입력
+    //         팀별 data에 추가하는 방식
+
+    List<Map<String, Object>> source = rawdata_solidstep;
+    bool isExist = false;
+
+    /// step1 : 모수에서 미설치 서버 검색
+    for (int i = 0; i < source.length; i++) {
+      isExist = false;
+
+      //?2  Agent 미설치 리스트 생성
+      if (source[i]["score"] != 100 && source[i]["type"] == type) {
+        // if (source[i]["team"] == "SME솔루션개발팀") {
+        //   print(source[i]);
+        // }
+
+        /// serverlist_doing 가 비어있는 Case
+        if (data.isEmpty == true) {
+          data.add({
+            "team": source[i]["team"] as String,
+            "data": [
+              {
+                // "No": source[i]["num"],
+                "hostname": source[i]["hostname"],
+                "service": source[i]["service"],
+                "sw": source[i]["sw"],
+                "score": source[i]["score"],
+              }
+            ],
+          });
+        }
+
+        /// serverlist_doing 에 데이터가 있는 Case
+        else {
+          for (int j = 0; j < data.length; j++) {
+            /// 팀이 존재하는 경우
+            if (data[j]["team"] == source[i]["team"]) {
+              (data[j]["data"] as List<Map<String, Object?>>).add(
+                {
+                  // "No": source[i]["num"],
+                  "hostname": source[i]["hostname"],
+                  "service": source[i]["service"],
+                  "sw": source[i]["sw"],
+                  "score": source[i]["score"],
+                },
+              );
+              isExist = true;
+              break;
+            }
+          }
+          // 팀이 없는 경우
+          if (isExist == false) {
+            // print("##############");
+            // print(serverlist_doing);
+            // print(rawdata_serveri[i]["team"]);
+            data.add({
+              "team": source[i]["team"] as String,
+              "data": [
+                {
+                  // "No": source[i]["num"],
+                  "hostname": source[i]["hostname"],
+                  "service": source[i]["service"],
+                  "sw": source[i]["sw"],
+                  "score": source[i]["score"],
+                }
+              ],
+            });
+          }
+        }
+      }
+    }
+    for (int i = 0; i < data.length; i++) {
+      print(data[i]["team"]);
+      print((data[i]["data"] as List).length);
+    }
+    // for (int i = 0; i < serverlist_doing.length; i++) {
+    //   print(serverlist_doing[i]["team"]);
+    //   print((serverlist_doing[i]["data"] as List<Map<String, Object?>>).length);
+    // }
+
+    // print("End _ MakeUninstalledServerList");
+  }
+
   @override
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
@@ -473,7 +570,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                     height: dataColumn_height,
                                     width: dataColumn_width,
                                     title: "취약점점검\n(SolidStep)",
-                                    tableData: data_solidstep_cleansing_ver2_data),
+                                    tableData: data_solidstep_score),
                               ),
                               GestureDetector(
                                 onTap: _MovePageView(2),
@@ -537,7 +634,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                       const SizedBox(width: 4),
 
                       SizedBox(
-                        width: 1900,
+                        width: 2100,
                         height: 830,
                         child: PageView.builder(
                           controller: _pageController,
@@ -621,7 +718,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     List<dynamic> dataCleansing;
 
     Column tableOfAgent;
-    Column tableOfSecurityScore;
+    Widget tableOfSecurityScore;
     Padding securityGuide;
 
     //?2 Server-I Table 생성 [[]]
@@ -644,13 +741,26 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     else if (index == 1) {
       titleAgent = data_solidstep_title;
       // titleCleansing = data_serveri_cleansing_ver2_title;
-      dataAgent = data_solidstep_data;
+      dataAgent = data_solidstep_agent;
       dataCleansing = data_solidstep_score;
 
       tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.solidstepAgent);
 
-      tableOfSecurityScore =
-          tableGagebar(height: dataColumn_height, width: dataColumn_width, title: "보안점수", tableData: dataCleansing);
+      // tableOfSecurityScore =
+      //     tableGagebar(height: dataColumn_height, width: dataColumn_width, title: "보안점수", tableData: dataCleansing);
+
+      tableOfSecurityScore = Row(
+        children: [
+          tableNormal(title: data_solidstep_score_OStitle, data: data_solidstep_OS_Score, type: dialogType.solidstepOS),
+          const SizedBox(width: 2),
+          tableNormal(title: data_solidstep_score_DBtitle, data: data_solidstep_DB_Score, type: dialogType.solidstepDB),
+          const SizedBox(width: 2),
+          tableNormal(
+              title: data_solidstep_score_WEBtitle, data: data_solidstep_WEB_Score, type: dialogType.solidstepWEB),
+          const SizedBox(width: 4),
+          tableGagebar(height: dataColumn_height, width: dataColumn_width, title: "보안점수", tableData: dataCleansing),
+        ],
+      );
 
       securityGuide = setupGuideforSolidstep(context);
 
@@ -713,7 +823,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         // print(index);
         // pageIndicator.fuc_abc(index as double);
         setState(() {
-          pageIndex = index as double;
+          pageIndex = index;
         });
 
         _pageController.animateToPage(
@@ -845,7 +955,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               Text(" 취약점점검 진행 순서", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
             ],
           ),
-          const Text(" - Step 1. 서버 담당자 정보 현행화\n - Step 2. 에이전트 설치\n - Step 3. 취약점점검 신청", style: textStyle_Type2),
+          const Text(" - Step 1. 서버 담당자 정보 현행화\n - Step 2. 방화벽 요청\n - Step 3. 에이전트 설치\n - Step 4. 취약점점검 신청",
+              style: textStyle_Type2),
           const SizedBox(height: 20),
           InkWell(
               child: Row(
@@ -872,9 +983,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               Text(" 주의사항", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900, color: Colors.red)),
             ],
           ),
-          Text(" - 개인정보 검출솔루션이 다운로드 안된다면, 방화벽 작업이 필요합니다.", style: textStyle_Type2.copyWith(color: Colors.red)),
           Text(
-              " - Agent를 설치했으나 미설치 서버로 분류된다면, 개인정보 검출솔루션 사이트(DLP)에 표시된 호스트명을 확인해주세요.\n    호스트명이 다를 경우, 개발서버List의 호스트명을 수정해주세요.",
+              " - Agent를 설치했으나 미설치 서버로 분류된다면, SeedCrock에 표시된 호스트명을 확인해주세요.\n    호스트명이 다를 경우, SeedCrock에 표시된 호스트명을 수정해주세요.",
               style: textStyle_Type2.copyWith(color: Colors.red)),
         ],
       ),
@@ -1117,6 +1227,12 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                   list = makeList(data: serverlist_Clean_doing, team: groupLab[i + 1]["team"]!);
                                 } else if (type == dialogType.solidstepAgent) {
                                   list = makeList(data: solidsteplist_doing, team: groupLab[i + 1]["team"]!);
+                                } else if (type == dialogType.solidstepOS) {
+                                  list = makeList(data: solidsteplist_OS_doing, team: groupLab[i + 1]["team"]!);
+                                } else if (type == dialogType.solidstepDB) {
+                                  list = makeList(data: solidsteplist_DB_doing, team: groupLab[i + 1]["team"]!);
+                                } else if (type == dialogType.solidstepWEB) {
+                                  list = makeList(data: solidsteplist_WEB_doing, team: groupLab[i + 1]["team"]!);
                                 }
 
                                 //?2 팝업 생성 및 데이터 표현부 [[
