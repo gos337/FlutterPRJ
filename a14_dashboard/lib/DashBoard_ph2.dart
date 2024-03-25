@@ -150,8 +150,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   int activeIndex = 0;
   final CarouselController _carouselController = CarouselController();
 
-  int pageIndex = 1;
-  final PageController _pageController = PageController(initialPage: 1);
+  int pageIndex = 0;
+  final PageController _pageController = PageController(initialPage: 0);
 
   @override
   void initState() {
@@ -524,7 +524,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         title: const Text("기술개발그룹 보안 Dash Board", style: textStyle),
         centerTitle: true,
         actions: const [
-          Center(child: Text("기준일 : 2월 29일    ", style: textStyle_Type1)),
+          Center(child: Text("기준일 : 3월 22일    ", style: textStyle_Type1)),
         ],
       ),
       body: Stack(children: [
@@ -567,10 +567,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                               GestureDetector(
                                 onTap: _MovePageView(1),
                                 child: tableGagebar(
-                                    height: dataColumn_height,
-                                    width: dataColumn_width,
-                                    title: "취약점점검\n(SolidStep)",
-                                    tableData: data_solidstep_score),
+                                  height: dataColumn_height,
+                                  width: dataColumn_width,
+                                  title: "취약점점검\n(SolidStep)",
+                                  tableData: data_solidstep_score,
+                                ),
                               ),
                               GestureDetector(
                                 onTap: _MovePageView(2),
@@ -721,7 +722,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     Widget tableOfSecurityScore;
     Padding securityGuide;
 
-    //?2 Server-I Table 생성 [[]]
+    //?3 Server-I Table 생성 [[]]
     if (index == 0) {
       titleAgent = data_serveri_ver2_title;
       titleCleansing = data_serveri_cleansing_ver2_title;
@@ -737,7 +738,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       securityGuide = setupGuideforServeri(context);
     }
 
-    //?2 SolidStep Table 생성 [[]]
+    //?3 SolidStep Table 생성 [[]]
     else if (index == 1) {
       titleAgent = data_solidstep_title;
       // titleCleansing = data_serveri_cleansing_ver2_title;
@@ -778,7 +779,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       // securityGuide = setupGuide(context);
     }
 
-    //?2 Metieye Table 생성 [[]]
+    //?3 Metieye Table 생성 [[]]
     else {
       titleAgent = data_serveri_ver2_title;
       titleCleansing = data_serveri_cleansing_ver2_title;
@@ -955,7 +956,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               Text(" 취약점점검 진행 순서", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
             ],
           ),
-          const Text(" - Step 1. 서버 담당자 정보 현행화\n - Step 2. 방화벽 요청\n - Step 3. 에이전트 설치\n - Step 4. 취약점점검 신청",
+          const Text(
+              " - Step 1. 서버 담당자 정보 현행화\n - Step 2. 방화벽 요청\n - Step 3. 에이전트 설치\n - Step 4. 취약점점검 신청\n * 상세내용은 하기 메뉴얼 참고",
               style: textStyle_Type2),
           const SizedBox(height: 20),
           InkWell(
@@ -1143,6 +1145,28 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     );
   }
 
+  void convertListMaptoDoubleList(List<Map<String, Object>> input, List<List<String>> output) {
+    List<List<dynamic>> temp1 = [];
+    List<List<String>> temp2 = [];
+
+    // Map -> List 변환
+    for (int i = 0; i < input.length; i++) {
+      temp1.add(input[i].values.toList());
+    }
+
+    // 테이블 바디에 입력할 데이터 생성
+    for (int i = 0; i < temp1.length; i++) {
+      List<String> list = [];
+      for (int j = 0; j < temp1[i].length; j++) {
+        // print(temp[i][j].toString());
+        list.add(temp1[i][j].toString());
+      }
+      temp2.add(list);
+    }
+
+    output = temp2;
+  }
+
   Column tableNormal(
       // {required List<String> title, required List<Map<String, dynamic>>? data, required dialogType type}) {
       {required List<String> title,
@@ -1219,30 +1243,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                               onPressed: () {
                                 //?2 팝업으로 띄울 데이터 생성부 [[
                                 // Data 만들자
-                                List<Map<String, Object>> list = [];
-
-                                if (type == dialogType.agent) {
-                                  list = makeList(data: serverlist_doing, team: groupLab[i + 1]["team"]!);
-                                } else if (type == dialogType.cleansing) {
-                                  list = makeList(data: serverlist_Clean_doing, team: groupLab[i + 1]["team"]!);
-                                } else if (type == dialogType.solidstepAgent) {
-                                  list = makeList(data: solidsteplist_doing, team: groupLab[i + 1]["team"]!);
-                                } else if (type == dialogType.solidstepOS) {
-                                  list = makeList(data: solidsteplist_OS_doing, team: groupLab[i + 1]["team"]!);
-                                } else if (type == dialogType.solidstepDB) {
-                                  list = makeList(data: solidsteplist_DB_doing, team: groupLab[i + 1]["team"]!);
-                                } else if (type == dialogType.solidstepWEB) {
-                                  list = makeList(data: solidsteplist_WEB_doing, team: groupLab[i + 1]["team"]!);
-                                }
-
-                                //?2 팝업 생성 및 데이터 표현부 [[
-                                // showAlert 에게 데이터만 전달하자
-                                showAlert(
-                                  context: context,
-                                  team: groupLab[i + 1]["team"]!,
-                                  data: list,
-                                  tip: tipMsg_ServerIAgent(type: type),
-                                );
+                                RegiPopup(type, groupLab[i + 1]["team"]!);
                               },
                               icon: const Icon(Icons.help)),
                         ),
@@ -1305,6 +1306,45 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         ),
       ],
     );
+  }
+
+  void RegiPopup(dialogType type, String team) {
+    //?2 팝업으로 띄울 데이터 생성부 [[
+    // Data 만들자
+    List<Map<String, Object>> list = [];
+    List<List<String>> listOfSolidstep = [];
+
+    if (type == dialogType.agent) {
+      list = makeList(data: serverlist_doing, team: team);
+    } else if (type == dialogType.cleansing) {
+      list = makeList(data: serverlist_Clean_doing, team: team);
+    } else if (type == dialogType.solidstepAgent) {
+      list = makeList(data: solidsteplist_doing, team: team);
+    } else if (type == dialogType.solidstepOS) {
+      listOfSolidstep = makeListforSolidstep(input: solidsteplist_OS_doing, team: team);
+    } else if (type == dialogType.solidstepDB) {
+      listOfSolidstep = makeListforSolidstep(input: solidsteplist_DB_doing, team: team);
+    } else if (type == dialogType.solidstepWEB) {
+      listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+    }
+
+    //?2 팝업 생성 및 데이터 표현부 [[
+    // showAlert 에게 데이터만 전달하자
+    if (type == dialogType.agent || type == dialogType.cleansing || type == dialogType.solidstepAgent) {
+      showAlert(
+        context: context,
+        team: team,
+        data: list,
+        tip: tipMsg_ServerIAgent(type: type),
+      );
+    } else if (type == dialogType.solidstepOS || type == dialogType.solidstepDB || type == dialogType.solidstepWEB) {
+      showAlertForSolidstep(
+        context: context,
+        team: team,
+        data: listOfSolidstep,
+        tip: tipMsg_ServerIAgent(type: type),
+      );
+    }
   }
 
   Column tipMsg_ServerIAgent({required dialogType type}) {
@@ -1384,6 +1424,56 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // print(list);
 
     return list;
+  }
+
+  List<List<String>> makeListforSolidstep({required List<Map<String, Object>> input, required String team}) {
+    // List<Map<String, Object>> makeListforSolidstep({required List<Map<String, Object>> input, required String team}) {
+    List<Map<String, Object>> serverlist = input;
+    // List<Map<String, Object>> list = [];
+
+    List<List<Object?>> temp1 = [];
+    List<List<String>> output = [];
+
+    temp1.add(["호스트명", "프로젝트(서비스)", "서버구분", "보안점수"]);
+
+    /// 전체 리스트에서 해당 팀의 리스트만 추출함   //
+    for (int i = 0; i < serverlist.length; i++) {
+      if (serverlist[i]["team"] == team) {
+        for (int j = 0; j < (serverlist[i]["data"] as List<Map<String, Object?>>).length; j++) {
+          Map<String, Object?> temp = (serverlist[i]["data"] as List<Map<String, Object?>>)[j];
+
+          // print("temp");
+          // print(temp);
+
+          // list.add({
+          //   "No": temp["No"].toString(),
+          //   "hostname": temp["hostname"].toString(),
+          //   "service": temp["service"].toString(),
+          //   "usage": temp["usage"].toString()
+          // });
+
+          temp1.add(temp.values.toList());
+        }
+      }
+    }
+
+    // 테이블 바디에 입력할 데이터 생성
+    for (int i = 0; i < temp1.length; i++) {
+      List<String> list = [];
+      for (int j = 0; j < temp1[i].length; j++) {
+        // print(temp[i][j].toString());
+        list.add(temp1[i][j].toString());
+      }
+      output.add(list);
+    }
+
+    // print("serverlist");
+    // print(serverlist);
+    // print(list);
+
+    // convertListMaptoDoubleList(input, output); //List<Map<String, Object>> input, List<List<String>> output
+
+    return output;
   }
 
   List<Map<String, Object>> makeTotalServerList({required List<Map<String, Object>> data, required String team}) {
@@ -1536,6 +1626,32 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // print("showDialog End");
   }
 
+  void showAlertForSolidstep(
+      {required BuildContext context, required String team, required List<List<String>> data, Widget? tip}) {
+    var alert = AlertDialog(
+      title: Text(team, style: textStyle_Type1),
+      content: SingleChildScrollView(
+        child: SelectionArea(
+          child: Column(
+            children: [
+              if (tip != null) tip,
+              // DialogTableHead(),
+              DialogTableRowforSolidstep(team: team, data: data),
+            ],
+          ),
+        ),
+      ),
+    );
+
+    // print("showDialog Start");
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return alert;
+        });
+    // print("showDialog End");
+  }
+
 //?1   전체 서버리스트 팝업의 Head 생성                   //
 //?1   showAlert_TotalServerlist   ->   DialogTableHead                  //
   // Row DialogTableHead() {
@@ -1618,6 +1734,37 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               text: (list[index]["usage"].toString()),
               style: index == 0 ? "head3" : "body3",
             ),
+          ]);
+        },
+      ),
+    );
+  }
+
+  SizedBox DialogTableRowforSolidstep({required String team, required List<List<String>> data}) {
+    List<List<String>> list = data;
+
+    //?2 Display 부분
+    return SizedBox(
+      height: list.length > 15 ? dataColumn_height * 15 + 20 : dataColumn_height * list.length,
+      width: dataColumn_width * 10,
+      child: ListView.builder(
+        scrollDirection: Axis.vertical,
+        itemCount: list.length,
+        itemBuilder: (context, index) {
+          print(index);
+
+          return Row(children: [
+            for (int i = 0; i < list[index].length; i++)
+              ColumnBox(
+                height: dataColumn_height,
+                width: i == 0
+                    ? dataColumn_width * 5
+                    : i == 1
+                        ? dataColumn_width * 3
+                        : dataColumn_width,
+                text: (list[index][i]),
+                style: index == 0 ? "head3" : "body3",
+              ),
           ]);
         },
       ),

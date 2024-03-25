@@ -249,15 +249,15 @@ List<String> data_serveri_ver2_title = ["Agent 설치", "설치완료", "미설�
 
 List<Map<String, dynamic>> data_serveri_ver2_data = [
   {"done": 14, "doing": 0, "ready": 7, "target": 21, "rate": "100%"},
-  {"done": 49, "doing": 0, "ready": 48, "target": 97, "rate": "100%"},
+  {"done": 53, "doing": 0, "ready": 44, "target": 97, "rate": "100%"},
   {"done": 66, "doing": 0, "ready": 15, "target": 81, "rate": "100%"},
   {"done": 30, "doing": 0, "ready": 17, "target": 47, "rate": "100%"},
   {"done": 52, "doing": 0, "ready": 29, "target": 81, "rate": "100%"},
   {"done": 7, "doing": 0, "ready": 5, "target": 12, "rate": "100%"},
   {"done": 46, "doing": 0, "ready": 8, "target": 54, "rate": "100%"},
   {"done": 65, "doing": 0, "ready": 21, "target": 86, "rate": "100%"},
-  {"done": 23, "doing": 0, "ready": 1, "target": 24, "rate": "100%"},
-  {"done": 93, "doing": 0, "ready": 8, "target": 101, "rate": "100%"},
+  {"done": 24, "doing": 0, "ready": 0, "target": 24, "rate": "100%"},
+  {"done": 86, "doing": 0, "ready": 7, "target": 93, "rate": "100%"},
   {"done": 9, "doing": 0, "ready": 9, "target": 18, "rate": "100%"},
   {"done": 6, "doing": 0, "ready": 1, "target": 7, "rate": "100%"},
   {"done": 11, "doing": 0, "ready": 0, "target": 11, "rate": "100%"},
@@ -265,30 +265,30 @@ List<Map<String, dynamic>> data_serveri_ver2_data = [
   {"done": 1, "doing": 0, "ready": 109, "target": 110, "rate": "100%"},
   {"done": 2, "doing": 0, "ready": 0, "target": 2, "rate": "100%"},
   {"done": 0, "doing": 0, "ready": 2, "target": 2, "rate": "100%"},
-  {"done": 933, "doing": 0, "ready": 295, "target": 1228, "rate": "100%"}
+  {"done": 931, "doing": 0, "ready": 289, "target": 1220, "rate": "100%"}
 ];
 
 List<String> data_serveri_cleansing_ver2_title = ["보안점검 이행", "삭제완료", "미완료", "3월 착수 서버", "점검대상", "삭제율"];
 
 List<Map<String, dynamic>> data_serveri_cleansing_ver2_data = [
   {"clean_done": 14, "clean_doing": 0, "clean_ready": 7, "clean_target": 21, "clean_rate": "100%"},
-  {"clean_done": 49, "clean_doing": 0, "clean_ready": 48, "clean_target": 97, "clean_rate": "100%"},
+  {"clean_done": 53, "clean_doing": 0, "clean_ready": 44, "clean_target": 97, "clean_rate": "100%"},
   {"clean_done": 66, "clean_doing": 0, "clean_ready": 15, "clean_target": 81, "clean_rate": "100%"},
   {"clean_done": 30, "clean_doing": 0, "clean_ready": 17, "clean_target": 47, "clean_rate": "100%"},
   {"clean_done": 52, "clean_doing": 0, "clean_ready": 29, "clean_target": 81, "clean_rate": "100%"},
   {"clean_done": 7, "clean_doing": 0, "clean_ready": 5, "clean_target": 12, "clean_rate": "100%"},
   {"clean_done": 46, "clean_doing": 0, "clean_ready": 8, "clean_target": 54, "clean_rate": "100%"},
-  {"clean_done": 61, "clean_doing": 4, "clean_ready": 21, "clean_target": 86, "clean_rate": "93%"},
-  {"clean_done": 23, "clean_doing": 0, "clean_ready": 1, "clean_target": 24, "clean_rate": "100%"},
-  {"clean_done": 93, "clean_doing": 0, "clean_ready": 8, "clean_target": 101, "clean_rate": "100%"},
+  {"clean_done": 65, "clean_doing": 0, "clean_ready": 21, "clean_target": 86, "clean_rate": "100%"},
+  {"clean_done": 24, "clean_doing": 0, "clean_ready": 0, "clean_target": 24, "clean_rate": "100%"},
+  {"clean_done": 86, "clean_doing": 0, "clean_ready": 7, "clean_target": 93, "clean_rate": "100%"},
   {"clean_done": 9, "clean_doing": 0, "clean_ready": 9, "clean_target": 18, "clean_rate": "100%"},
   {"clean_done": 6, "clean_doing": 0, "clean_ready": 1, "clean_target": 7, "clean_rate": "100%"},
   {"clean_done": 10, "clean_doing": 1, "clean_ready": 0, "clean_target": 11, "clean_rate": "90%"},
   {"clean_done": 459, "clean_doing": 0, "clean_ready": 15, "clean_target": 474, "clean_rate": "100%"},
   {"clean_done": 1, "clean_doing": 0, "clean_ready": 109, "clean_target": 110, "clean_rate": "100%"},
-  {"clean_done": 1, "clean_doing": 1, "clean_ready": 0, "clean_target": 2, "clean_rate": "50%"},
+  {"clean_done": 2, "clean_doing": 0, "clean_ready": 0, "clean_target": 2, "clean_rate": "100%"},
   {"clean_done": 0, "clean_doing": 0, "clean_ready": 2, "clean_target": 2, "clean_rate": "100%"},
-  {"clean_done": 927, "clean_doing": 6, "clean_ready": 295, "clean_target": 1228, "clean_rate": "99%"}
+  {"clean_done": 930, "clean_doing": 1, "clean_ready": 289, "clean_target": 1220, "clean_rate": "99%"}
 ];
 
 List<Map<String, Object>> rawdata_serveri = [
@@ -407,7 +407,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.9
+    "SolidStepScore": 95.45
   },
   {
     "num": 10,
@@ -420,7 +420,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.9
+    "SolidStepScore": 96.6
   },
   {
     "num": 11,
@@ -446,7 +446,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 95.3
+    "SolidStepScore": 96.6
   },
   {
     "num": 13,
@@ -459,7 +459,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 88.2
+    "SolidStepScore": 92.95
   },
   {
     "num": 14,
@@ -485,7 +485,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 95.3
+    "SolidStepScore": 85.9
   },
   {
     "num": 16,
@@ -524,7 +524,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 19,
@@ -537,7 +537,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 72.2
+    "SolidStepScore": 84.35
   },
   {
     "num": 20,
@@ -550,7 +550,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 84.35
   },
   {
     "num": 21,
@@ -563,7 +563,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 84.35
   },
   {
     "num": 22,
@@ -615,7 +615,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 80.5
   },
   {
     "num": 26,
@@ -628,7 +628,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 87.1
   },
   {
     "num": 27,
@@ -1551,7 +1551,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.9
+    "SolidStepScore": 87.2
   },
   {
     "num": 98,
@@ -1578,45 +1578,6 @@ List<Map<String, Object>> rawdata_serveri = [
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 100
-  },
-  {
-    "num": 100,
-    "lab": "모바일Lab",
-    "hostname": "vdeauthapp1",
-    "service": "휴대폰 본인확인",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
-    "num": 101,
-    "lab": "모바일Lab",
-    "hostname": "vdeauthadmsewba1",
-    "service": "휴대폰 본인확인",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
-    "num": 102,
-    "lab": "모바일Lab",
-    "hostname": "vdeauthadmsewst1",
-    "service": "휴대폰 본인확인",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
   },
   {
     "num": 103,
@@ -2058,7 +2019,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "3월착수",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 80.25
   },
   {
     "num": 137,
@@ -2071,7 +2032,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 87.3
   },
   {
     "num": 138,
@@ -2084,7 +2045,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 88.7
   },
   {
     "num": 139,
@@ -2097,7 +2058,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 81.9
   },
   {
     "num": 140,
@@ -2110,7 +2071,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.7
   },
   {
     "num": 141,
@@ -2123,7 +2084,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 86.95
   },
   {
     "num": 142,
@@ -2136,7 +2097,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 96.05
   },
   {
     "num": 143,
@@ -2149,7 +2110,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 85.9
   },
   {
     "num": 144,
@@ -2162,7 +2123,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 95.3
   },
   {
     "num": 145,
@@ -2175,7 +2136,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.65
   },
   {
     "num": 146,
@@ -2188,7 +2149,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.825
   },
   {
     "num": 147,
@@ -2201,7 +2162,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 87.1
   },
   {
     "num": 148,
@@ -2214,7 +2175,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.65
   },
   {
     "num": 149,
@@ -2227,7 +2188,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 93.7
   },
   {
     "num": 150,
@@ -2240,7 +2201,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 100
   },
   {
     "num": 151,
@@ -2253,7 +2214,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 100
   },
   {
     "num": 152,
@@ -2266,7 +2227,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 100
   },
   {
     "num": 153,
@@ -2305,7 +2266,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 88.25
   },
   {
     "num": 156,
@@ -2318,7 +2279,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 100
   },
   {
     "num": 157,
@@ -2370,20 +2331,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
-  },
-  {
-    "num": 181,
-    "lab": "모바일Lab",
-    "hostname": "CAS2_DEV",
-    "service": "CAS",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "미설치",
-    "clean": "미완료",
-    "target": "3월착수",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 95.2
   },
   {
     "num": 182,
@@ -2396,7 +2344,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.7
   },
   {
     "num": 183,
@@ -2409,7 +2357,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 184,
@@ -2422,7 +2370,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.7
   },
   {
     "num": 185,
@@ -2435,7 +2383,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 95.3
   },
   {
     "num": 190,
@@ -2448,7 +2396,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 87.1
   },
   {
     "num": 191,
@@ -2461,7 +2409,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 192,
@@ -2474,7 +2422,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 193,
@@ -2487,7 +2435,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.7
   },
   {
     "num": 194,
@@ -2500,7 +2448,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 84.4
+    "SolidStepScore": 92.2
   },
   {
     "num": 195,
@@ -2513,7 +2461,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 97.7
   },
   {
     "num": 196,
@@ -2526,7 +2474,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 99.8
+    "SolidStepScore": 97.7
   },
   {
     "num": 197,
@@ -2539,7 +2487,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 99.8
+    "SolidStepScore": 97.7
   },
   {
     "num": 198,
@@ -2552,7 +2500,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 87.1
   },
   {
     "num": 199,
@@ -2565,7 +2513,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 95.3
   },
   {
     "num": 200,
@@ -2578,7 +2526,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 92.7
   },
   {
     "num": 201,
@@ -2591,7 +2539,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.7
   },
   {
     "num": 202,
@@ -2604,7 +2552,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 88.2
+    "SolidStepScore": 93.73333333
   },
   {
     "num": 203,
@@ -3017,7 +2965,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "team": "기반서비스개발팀",
     "usage": "개발",
     "installServeri": "성공",
-    "clean": "미완료",
+    "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 100
@@ -3030,7 +2978,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "team": "기반서비스개발팀",
     "usage": "개발",
     "installServeri": "성공",
-    "clean": "미완료",
+    "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 100
@@ -3069,7 +3017,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "team": "기반서비스개발팀",
     "usage": "개발",
     "installServeri": "성공",
-    "clean": "미완료",
+    "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 0
@@ -3108,7 +3056,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "team": "기반서비스개발팀",
     "usage": "개발",
     "installServeri": "성공",
-    "clean": "미완료",
+    "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 0
@@ -3202,7 +3150,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 57.8
+    "SolidStepScore": 78.9
   },
   {
     "num": 249,
@@ -3331,7 +3279,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3344,7 +3292,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3630,7 +3578,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3643,7 +3591,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3682,7 +3630,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3695,7 +3643,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -3734,7 +3682,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -4047,7 +3995,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 74.4
+    "SolidStepScore": 87.2
   },
   {
     "num": 314,
@@ -4141,62 +4089,10 @@ List<Map<String, Object>> rawdata_serveri = [
     "SolidStepScore": 0
   },
   {
-    "num": 321,
-    "lab": "모바일Lab",
-    "hostname": "ubdevdbo1",
-    "service": "KB금융제휴 개발기",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
     "num": 322,
     "lab": "모바일Lab",
     "hostname": "vdehswebwba1",
     "service": "홈쇼핑AR방송 신규서비스 개발",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
-    "num": 323,
-    "lab": "모바일Lab",
-    "hostname": "vdegsmwst1",
-    "service": "gsm 구축",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
-    "num": 324,
-    "lab": "모바일Lab",
-    "hostname": "vdegsmwba1",
-    "service": "gsm 구축",
-    "team": "커머스서비스개발팀",
-    "usage": "개발",
-    "installServeri": "성공",
-    "clean": "완료",
-    "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
-  },
-  {
-    "num": 325,
-    "lab": "모바일Lab",
-    "hostname": "vdegsmdbo1",
-    "service": "gsm 구축",
     "team": "커머스서비스개발팀",
     "usage": "개발",
     "installServeri": "성공",
@@ -5828,7 +5724,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.6
   },
   {
     "num": 120,
@@ -5841,7 +5737,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 121,
@@ -5867,7 +5763,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 90.45
   },
   {
     "num": 123,
@@ -5880,7 +5776,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 124,
@@ -5893,7 +5789,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 97.05
   },
   {
     "num": 125,
@@ -5932,7 +5828,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 128,
@@ -6062,7 +5958,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 90.45
   },
   {
     "num": 138,
@@ -6088,7 +5984,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 78.7
+    "SolidStepScore": 87.6
   },
   {
     "num": 140,
@@ -7141,7 +7037,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 268,
@@ -7154,7 +7050,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 269,
@@ -7167,7 +7063,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 270,
@@ -7206,7 +7102,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 273,
@@ -7219,7 +7115,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 274,
@@ -7271,7 +7167,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 92.16666667
   },
   {
     "num": 278,
@@ -7336,7 +7232,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 94.4
+    "SolidStepScore": 97.2
   },
   {
     "num": 283,
@@ -7882,7 +7778,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 57.8
+    "SolidStepScore": 78.9
   },
   {
     "num": 331,
@@ -7895,7 +7791,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 80.8
+    "SolidStepScore": 90.4
   },
   {
     "num": 333,
@@ -7973,7 +7869,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 94.1
   },
   {
     "num": 339,
@@ -8375,8 +8271,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 94.1
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 3,
@@ -8388,8 +8284,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 4,
@@ -8401,8 +8297,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 5,
@@ -8428,7 +8324,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "미완료",
     "target": "3월착수",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 0
   },
   {
     "num": 7,
@@ -8453,8 +8349,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 9,
@@ -8532,7 +8428,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.9
+    "SolidStepScore": 98.85
   },
   {
     "num": 15,
@@ -8622,7 +8518,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -8648,8 +8544,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 24,
@@ -9064,8 +8960,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 56,
@@ -9077,8 +8973,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 57,
@@ -9090,8 +8986,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 58,
@@ -9142,8 +9038,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 62,
@@ -9207,8 +9103,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 67,
@@ -9220,8 +9116,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 97.6
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 68,
@@ -9233,8 +9129,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 69,
@@ -9246,8 +9142,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 70,
@@ -9454,8 +9350,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 86,
@@ -9520,7 +9416,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 88.25
   },
   {
     "num": 91,
@@ -9546,7 +9442,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 76.5
   },
   {
     "num": 93,
@@ -9571,8 +9467,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 95,
@@ -9624,7 +9520,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 0
   },
   {
     "num": 99,
@@ -9806,7 +9702,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "3월착수",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 113,
@@ -10001,7 +9897,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 89.35
   },
   {
     "num": 128,
@@ -10053,7 +9949,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 97.85
   },
   {
     "num": 132,
@@ -10066,7 +9962,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.9
+    "SolidStepScore": 97.85
   },
   {
     "num": 133,
@@ -10104,8 +10000,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 136,
@@ -10117,8 +10013,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 137,
@@ -10182,8 +10078,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 142,
@@ -10235,7 +10131,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 146,
@@ -10391,7 +10287,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 158,
@@ -10417,7 +10313,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 160,
@@ -10611,8 +10507,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 175,
@@ -10624,8 +10520,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 176,
@@ -10729,7 +10625,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 88.25
   },
   {
     "num": 184,
@@ -10742,7 +10638,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 88.25
   },
   {
     "num": 185,
@@ -10807,7 +10703,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.9
+    "SolidStepScore": 98.95
   },
   {
     "num": 190,
@@ -10820,7 +10716,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 191,
@@ -10846,7 +10742,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 98.85
   },
   {
     "num": 193,
@@ -10859,7 +10755,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 194,
@@ -10898,7 +10794,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 88.2
+    "SolidStepScore": 94.1
   },
   {
     "num": 197,
@@ -10911,7 +10807,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 94.1
   },
   {
     "num": 198,
@@ -10976,7 +10872,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 203,
@@ -10988,8 +10884,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 204,
@@ -11028,7 +10924,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 207,
@@ -11041,7 +10937,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 208,
@@ -11080,7 +10976,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 211,
@@ -11093,7 +10989,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.25
   },
   {
     "num": 212,
@@ -11105,8 +11001,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
-    "SolidStepScore": 0
+    "installSolidStep": "설치",
+    "SolidStepScore": 100
   },
   {
     "num": 213,
@@ -11587,7 +11483,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 84.4
+    "SolidStepScore": 92.2
   },
   {
     "num": 250,
@@ -11600,7 +11496,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 92.2
   },
   {
     "num": 251,
@@ -11626,7 +11522,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 92.13333333
   },
   {
     "num": 253,
@@ -11639,7 +11535,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 89.35
   },
   {
     "num": 254,
@@ -11690,8 +11586,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 258,
@@ -11703,8 +11599,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 259,
@@ -11717,7 +11613,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 92.9
   },
   {
     "num": 260,
@@ -11730,7 +11626,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 78.7
+    "SolidStepScore": 92.9
   },
   {
     "num": 261,
@@ -12068,7 +11964,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 84.4
+    "SolidStepScore": 92.2
   },
   {
     "num": 287,
@@ -12081,7 +11977,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 84.4
+    "SolidStepScore": 92.2
   },
   {
     "num": 288,
@@ -12119,8 +12015,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 291,
@@ -12146,7 +12042,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 88.23333333
   },
   {
     "num": 293,
@@ -12158,8 +12054,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 294,
@@ -12185,7 +12081,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 92.16666667
   },
   {
     "num": 296,
@@ -12210,8 +12106,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 298,
@@ -12224,7 +12120,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 76.5
+    "SolidStepScore": 100
   },
   {
     "num": 299,
@@ -12237,7 +12133,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 66.95
   },
   {
     "num": 300,
@@ -12262,8 +12158,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 302,
@@ -12380,7 +12276,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 94.1
   },
   {
     "num": 311,
@@ -12405,8 +12301,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 88.2
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 313,
@@ -12419,7 +12315,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 92.35
   },
   {
     "num": 314,
@@ -12483,7 +12379,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12496,7 +12392,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12509,7 +12405,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12522,7 +12418,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12535,7 +12431,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12548,7 +12444,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12561,7 +12457,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12574,7 +12470,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12613,8 +12509,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 329,
@@ -12626,7 +12522,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12718,7 +12614,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 337,
@@ -12731,7 +12627,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 99.4
   },
   {
     "num": 338,
@@ -12744,7 +12640,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 99.4
   },
   {
     "num": 339,
@@ -12756,7 +12652,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -12770,7 +12666,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 100
+    "SolidStepScore": 99.4
   },
   {
     "num": 341,
@@ -12783,7 +12679,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 342,
@@ -12848,7 +12744,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 347,
@@ -12861,7 +12757,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 97.7
+    "SolidStepScore": 98.85
   },
   {
     "num": 348,
@@ -12926,7 +12822,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 353,
@@ -13069,7 +12965,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 96.66666667
   },
   {
     "num": 364,
@@ -13082,7 +12978,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 97.65
   },
   {
     "num": 365,
@@ -13094,8 +12990,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 366,
@@ -13107,8 +13003,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 367,
@@ -13121,7 +13017,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 368,
@@ -13134,7 +13030,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 369,
@@ -13147,7 +13043,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 370,
@@ -13238,7 +13134,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 377,
@@ -13251,7 +13147,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 99.4
   },
   {
     "num": 378,
@@ -13263,8 +13159,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 379,
@@ -13485,7 +13381,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 396,
@@ -13627,8 +13523,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 407,
@@ -13641,7 +13537,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 408,
@@ -13654,7 +13550,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 409,
@@ -13667,7 +13563,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 410,
@@ -13680,7 +13576,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 96.66666667
   },
   {
     "num": 411,
@@ -13693,7 +13589,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 97.65
   },
   {
     "num": 412,
@@ -13705,8 +13601,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 413,
@@ -13718,8 +13614,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 414,
@@ -13731,8 +13627,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 415,
@@ -13770,8 +13666,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 418,
@@ -13783,8 +13679,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 419,
@@ -13797,7 +13693,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 420,
@@ -13810,7 +13706,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 421,
@@ -14018,7 +13914,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 437,
@@ -14082,8 +13978,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 442,
@@ -14161,7 +14057,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 96.66666667
   },
   {
     "num": 448,
@@ -14174,7 +14070,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "SolidStepScore": 97.65
   },
   {
     "num": 449,
@@ -14186,8 +14082,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 98.8
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 450,
@@ -14199,8 +14095,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 451,
@@ -14213,7 +14109,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 452,
@@ -14226,7 +14122,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 453,
@@ -14239,7 +14135,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 97.26666667
   },
   {
     "num": 454,
@@ -14330,7 +14226,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "SolidStepScore": 98.25
   },
   {
     "num": 461,
@@ -14355,8 +14251,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 463,
@@ -14368,8 +14264,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 464,
@@ -14381,8 +14277,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 465,
@@ -14394,8 +14290,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 466,
@@ -14407,8 +14303,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 467,
@@ -14420,8 +14316,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 468,
@@ -14433,8 +14329,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 469,
@@ -14446,8 +14342,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 470,
@@ -14459,8 +14355,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 471,
@@ -14472,8 +14368,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 472,
@@ -14485,8 +14381,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 473,
@@ -14498,8 +14394,8 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "설치",
-    "SolidStepScore": 96.5
+    "installSolidStep": "미설치",
+    "SolidStepScore": 0
   },
   {
     "num": 474,
@@ -14535,7 +14431,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "team": "홈디바이스개발팀",
     "usage": "개발",
     "installServeri": "성공",
-    "clean": "미완료",
+    "clean": "완료",
     "target": "대상",
     "installSolidStep": "설치",
     "SolidStepScore": 100
@@ -14901,7 +14797,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -15044,7 +14940,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15148,7 +15044,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15174,7 +15070,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -15291,7 +15187,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15304,7 +15200,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15421,7 +15317,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15577,7 +15473,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15590,7 +15486,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15603,7 +15499,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15616,7 +15512,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15629,7 +15525,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15824,7 +15720,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15838,7 +15734,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "clean": "미완료",
     "target": "3월착수",
     "installSolidStep": "설치",
-    "SolidStepScore": 0
+    "SolidStepScore": 84.7
   },
   {
     "num": 577,
@@ -15928,7 +15824,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -15941,7 +15837,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "미설치",
     "clean": "미완료",
     "target": "3월착수",
-    "installSolidStep": "설치",
+    "installSolidStep": "미설치",
     "SolidStepScore": 0
   },
   {
@@ -16006,7 +15902,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
@@ -16123,7 +16019,7 @@ List<Map<String, Object>> rawdata_serveri = [
     "installServeri": "성공",
     "clean": "완료",
     "target": "대상",
-    "installSolidStep": "미설치",
+    "installSolidStep": "설치",
     "SolidStepScore": 0
   },
   {
