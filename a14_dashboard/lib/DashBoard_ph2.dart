@@ -600,176 +600,194 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // print(displayWidth);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("기술개발그룹 보안 Dash Board", style: textStyle),
-        centerTitle: true,
-        actions: const [
-          Center(child: Text("기준일 : 3월 28일    ", style: textStyle_Type1)),
-        ],
-      ),
-      body: Stack(children: [
-        SizedBox(
-          width: displayWidth,
-          height: displayHeight,
-          child: Image.asset(
-            "resource/sakura_background.png",
-            // "resource/spring.png",
-            fit: BoxFit.fill,
+      // appBar: AppBar(
+      //   title: const Text("기술개발그룹 보안 Dash Board", style: textStyle),
+      //   centerTitle: true,
+      //   actions: const [
+      //     Center(child: Text("기준일 : 3월 28일    ", style: textStyle_Type1)),
+      //   ],
+      // ),
+      body: NestedScrollView(
+        headerSliverBuilder: (context, innerBoxIsScrolled) {
+          return [
+            const SliverAppBar(
+              title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
+              centerTitle: true,
+              actions: [
+                Center(child: Text("기준일 : 3월 28일    ", style: textStyle_Type1)),
+              ],
+              elevation: 0,
+              automaticallyImplyLeading: false,
+              expandedHeight: 50,
+              floating: true,
+              snap: true,
+            )
+          ];
+        },
+        body: Stack(children: [
+          SizedBox(
+            width: displayWidth,
+            height: displayHeight,
+            child: Image.asset(
+              "resource/sakura_background.png",
+              // "resource/spring.png",
+              fit: BoxFit.fill,
+            ),
           ),
-        ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                // mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      tableGroup(height: dataColumn_height, width: dataColumn_width),
-                      const SizedBox(width: 4),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  // mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        tableGroup(height: dataColumn_height, width: dataColumn_width),
+                        const SizedBox(width: 4),
 
-                      Stack(
-                        alignment: AlignmentDirectional.bottomStart,
-                        children: [
-                          Row(
-                            children: [
-                              GestureDetector(
-                                onTap: _MovePageView(0),
-                                child: tableGagebar(
+                        Stack(
+                          alignment: AlignmentDirectional.bottomStart,
+                          children: [
+                            Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: _MovePageView(0),
+                                  child: tableGagebar(
+                                      height: dataColumn_height,
+                                      width: dataColumn_width,
+                                      title: "개인정보\n검출솔루션\n(Server-i)",
+                                      tableData: data_serveri_cleansing_ver2_data),
+                                ),
+                                GestureDetector(
+                                  onTap: _MovePageView(1),
+                                  child: tableGagebar(
                                     height: dataColumn_height,
                                     width: dataColumn_width,
-                                    title: "개인정보\n검출솔루션\n(Server-i)",
-                                    tableData: data_serveri_cleansing_ver2_data),
-                              ),
-                              GestureDetector(
-                                onTap: _MovePageView(1),
-                                child: tableGagebar(
-                                  height: dataColumn_height,
-                                  width: dataColumn_width,
-                                  title: "취약점점검\n(SolidStep)",
-                                  tableData: data_solidstep_score,
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: _MovePageView(2),
-                                child: tableGagebar(
-                                    height: dataColumn_height,
-                                    width: dataColumn_width,
-                                    title: "웹쉘탐지\n(Metieye)",
-                                    tableData: data_metieye_cleansing_ver2_data),
-                              ),
-                            ],
-                          ),
-
-                          /// End of Row  //
-                          Column(
-                            // mainAxisAlignment: MainAxisAlignment.end,
-                            // crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              AnimatedContainer(
-                                margin: EdgeInsets.only(left: pageIndex * 100),
-                                width: 100,
-                                height: 50,
-                                duration: const Duration(milliseconds: 1000),
-                                curve: Curves.fastOutSlowIn,
-                                decoration: BoxDecoration(
-                                  color: Colors.purple[200]!,
-                                  borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
-                                ),
-                                child: Center(
-                                  child: Text("선택된\n보안점검",
-                                      textAlign: TextAlign.center,
-                                      style: textStyle_Type1.copyWith(
-                                        fontSize: 18,
-                                        // color: Colors.grey[800],
-                                        color: Colors.purple[800],
-                                      )),
-                                ),
-                                //textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
-                              ),
-                              AnimatedContainer(
-                                margin: EdgeInsets.only(left: pageIndex * 100),
-                                width: 100,
-                                height: 780,
-                                duration: const Duration(milliseconds: 1000),
-                                curve: Curves.fastOutSlowIn,
-                                decoration: BoxDecoration(
-                                  // color: const Color.fromRGBO(225, 190, 231, 0.2),
-                                  color: const Color.fromRGBO(206, 147, 216, 0.2),
-                                  border: Border.all(
-                                    color: Colors.purple[200]!,
-                                    width: 4,
-
-                                    // top: BorderSide(color: Colors.purple[100], width: 2),
-                                    // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
+                                    title: "취약점점검\n(SolidStep)",
+                                    tableData: data_solidstep_score,
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 4),
-
-                      SizedBox(
-                        width: 2151,
-                        height: 830,
-                        child: PageView.builder(
-                          controller: _pageController,
-                          physics: const NeverScrollableScrollPhysics(),
-                          allowImplicitScrolling: true,
-                          itemCount: 3,
-                          itemBuilder: (context, index) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                pageTitle(index),
-                                pageTable(index),
+                                GestureDetector(
+                                  onTap: _MovePageView(2),
+                                  child: tableGagebar(
+                                      height: dataColumn_height,
+                                      width: dataColumn_width,
+                                      title: "웹쉘탐지\n(Metieye)",
+                                      tableData: data_metieye_cleansing_ver2_data),
+                                ),
                               ],
-                            );
-                          },
-                        ),
-                      ),
+                            ),
 
-                      // Row(
-                      //   children: [
-                      //     tableNormal(title: data_serveri_ver2_title, data: data_serveri_ver2_data),
-                      //     const SizedBox(width: 4),
-                      //     tableNormal(title: data_serveri_cleansing_ver2_title, data: data_serveri_cleansing_ver2_data),
-                      //   ],
-                      // ),
+                            /// End of Row  //
+                            Column(
+                              // mainAxisAlignment: MainAxisAlignment.end,
+                              // crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                AnimatedContainer(
+                                  margin: EdgeInsets.only(left: pageIndex * 100),
+                                  width: 100,
+                                  height: 50,
+                                  duration: const Duration(milliseconds: 1000),
+                                  curve: Curves.fastOutSlowIn,
+                                  decoration: BoxDecoration(
+                                    color: Colors.purple[200]!,
+                                    borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                                  ),
+                                  child: Center(
+                                    child: Text("선택된\n보안점검",
+                                        textAlign: TextAlign.center,
+                                        style: textStyle_Type1.copyWith(
+                                          fontSize: 18,
+                                          // color: Colors.grey[800],
+                                          color: Colors.purple[800],
+                                        )),
+                                  ),
+                                  //textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                                ),
+                                AnimatedContainer(
+                                  margin: EdgeInsets.only(left: pageIndex * 100),
+                                  width: 100,
+                                  height: 780,
+                                  duration: const Duration(milliseconds: 1000),
+                                  curve: Curves.fastOutSlowIn,
+                                  decoration: BoxDecoration(
+                                    // color: const Color.fromRGBO(225, 190, 231, 0.2),
+                                    color: const Color.fromRGBO(206, 147, 216, 0.2),
+                                    border: Border.all(
+                                      color: Colors.purple[200]!,
+                                      width: 4,
 
-                      // tableGroup2(),
-                      // TableHead(),
-                      // TableHead2(),
-                      // TableRow(),
-                      // TableRow2(),
-                    ],
-                  ),
-                  SizedBox(
-                    width: displayWidth,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          "resource/mouse2.jpg",
-                          height: 80,
+                                      // top: BorderSide(color: Colors.purple[100], width: 2),
+                                      // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
-                        Text("  좌우 스크롤은 마우스 드래그를 사용하세요",
-                            style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                        const SizedBox(width: 4),
+
+                        SizedBox(
+                          width: 1810,
+                          height: 830,
+                          child: PageView.builder(
+                            controller: _pageController,
+                            physics: const NeverScrollableScrollPhysics(),
+                            allowImplicitScrolling: true,
+                            itemCount: 3,
+                            itemBuilder: (context, index) {
+                              return Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  pageTitle(index),
+                                  pageTable(index),
+                                ],
+                              );
+                            },
+                          ),
+                        ),
+
+                        // Row(
+                        //   children: [
+                        //     tableNormal(title: data_serveri_ver2_title, data: data_serveri_ver2_data),
+                        //     const SizedBox(width: 4),
+                        //     tableNormal(title: data_serveri_cleansing_ver2_title, data: data_serveri_cleansing_ver2_data),
+                        //   ],
+                        // ),
+
+                        // tableGroup2(),
+                        // TableHead(),
+                        // TableHead2(),
+                        // TableRow(),
+                        // TableRow2(),
                       ],
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: displayWidth,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "resource/mouse2.jpg",
+                            height: 80,
+                          ),
+                          Text("  좌우 스크롤은 마우스 드래그를 사용하세요",
+                              style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
-        ),
-      ]),
+        ]),
+      ),
     );
   }
 
@@ -1308,7 +1326,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       required List<dynamic>? data,
       required dialogType type}) {
     double height = dataColumn_height;
-    double width = pageIndex == 1 ? 75 : dataColumn_width;
+    double width = pageIndex == 1 ? 75 : 90;
     // double width = 75;
     int dataLength;
     List<List<dynamic>> temp = [];
@@ -1390,7 +1408,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                     //?2 점검대상 클릭 이벤트 처리   [[]]
                     if (j == 3 && type == dialogType.agent ||
                         j == 3 && type == dialogType.cleansing ||
-                        j == 2 && type == dialogType.solidstepAgent) // solidsteplist_score_doing
+                        j == 3 && type == dialogType.solidstepAgent) // solidsteplist_score_doing
                       GestureDetector(
                         child: Container(height: height, width: width, color: const Color.fromRGBO(255, 255, 255, 0)),
                         onTap: () {
