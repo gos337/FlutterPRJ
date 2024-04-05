@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:a14_dashboard/DataOfMetieye.dart';
 import 'package:a14_dashboard/DataOfServeri.dart';
 import 'package:a14_dashboard/DataOfSolidstep.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -121,7 +122,17 @@ List<Map<String, Object>> serverlist_Clean_doing = [];
 //       }
 //     ];
 
-enum dialogType { agent, cleansing, deving, solidstepAgent, solidstepOS, solidstepDB, solidstepWEB, solidstepScore }
+enum dialogType {
+  agent,
+  cleansing,
+  deving,
+  solidstepAgent,
+  solidstepOS,
+  solidstepDB,
+  solidstepWEB,
+  solidstepScore,
+  metieye
+}
 
 class DashBoard_ph2 extends StatefulWidget {
   const DashBoard_ph2({super.key});
@@ -614,7 +625,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
               actions: [
-                Center(child: Text("기준일 : 3월 28일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 4월 4일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
@@ -817,7 +828,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     List<dynamic> dataAgent;
     List<dynamic> dataCleansing;
 
-    Column tableOfAgent;
+    Widget tableOfAgent;
     Widget tableOfSecurityScore;
     Padding securityGuide;
 
@@ -885,18 +896,29 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
     //?3 Metieye Table 생성 [[]]
     else {
-      titleAgent = data_serveri_ver2_title;
-      titleCleansing = data_serveri_cleansing_ver2_title;
-      dataAgent = data_metieye_cleansing_ver2_data;
-      dataCleansing = data_metieye_cleansing_ver2_data;
+      bool test = true;
 
-      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
-      tableOfSecurityScore = tableNormal(
-          title: titleCleansing,
-          data: dataCleansing,
-          // data: jsonResponse2,
-          type: dialogType.cleansing);
-      securityGuide = setupGuideforServeri(context);
+      if (!test) {
+        titleAgent = data_Metieye_title;
+        dataAgent = data_metieye_data;
+
+        tableOfAgent = tableForMetieye(title: titleAgent, data: dataAgent, type: dialogType.metieye);
+        tableOfSecurityScore = const SizedBox();
+        securityGuide = setupGuideforServeri(context);
+      } else {
+        titleAgent = data_serveri_ver2_title;
+        titleCleansing = data_serveri_cleansing_ver2_title;
+        dataAgent = data_metieye_cleansing_ver2_data;
+        dataCleansing = data_metieye_cleansing_ver2_data;
+
+        tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+        tableOfSecurityScore = tableNormal(
+            title: titleCleansing,
+            data: dataCleansing,
+            // data: jsonResponse2,
+            type: dialogType.cleansing);
+        securityGuide = setupGuideforServeri(context);
+      }
     }
 
     return Row(
@@ -1176,10 +1198,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // 테이블 바디에 입력할 데이터 생성
     for (int i = 0; i < temp.length; i++) {
       List<String> list = [];
-      // for (int j = 0; j < temp[i].length; j++) {
-      // print(temp[i][j].toString());
+
+      /// 마지막 열의 데이터만 입력
       list.add(temp[i][temp[i].length - 1].toString());
-      // }
       dataOfTable.add(list);
     }
     //?2 표에 표시할 데이터 변환    ]]
@@ -1318,6 +1339,219 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     }
 
     output = temp2;
+  }
+
+  Column tableForMetieye(
+      // {required List<String> title, required List<Map<String, dynamic>>? data, required dialogType type}) {
+      {required List<String> title,
+      required List<dynamic>? data,
+      required dialogType type}) {
+    double heightTitle = headColumn_height;
+    double heightData = dataColumn_height;
+    double width = 90;
+    int dataLength = 2;
+    List<List<dynamic>> temp = [];
+    List<List<String>> dataOfTable = [];
+
+    //?2 표에 표시할 데이터 변환    [[
+    // Map -> List 변환
+    if (data == null) return const Column();
+
+    for (int i = 0; i < data.length; i++) {
+      temp.add(data[i].values.toList());
+    }
+
+    // 테이블 바디에 입력할 데이터 생성
+    for (int i = 0; i < temp.length; i++) {
+      List<String> list = [];
+      for (int j = 0; j < temp[i].length; j++) {
+        // print(temp[i][j].toString());
+        list.add(temp[i][j].toString());
+      }
+      dataOfTable.add(list);
+    }
+    //?2 표에 표시할 데이터 변환    ]]
+
+    return Column(
+      children: [
+        ///     타이틀 표시     //
+        tableTitleForMetieye(heightTitle, width, title, dataLength),
+
+        ///     바디 표시     //
+        for (int i = 0; i < dataOfTable.length - 1; i++) tableBodyForMetieye(dataOfTable, i, heightData, width, type),
+
+        ///     Tail 표시     //
+        tableTailForMetieye(dataOfTable, heightData, width),
+      ],
+    );
+  }
+
+  Row tableTailForMetieye(List<List<String>> dataOfTable, double height, double width) {
+    return Row(
+      children: [
+        tableTailCellForMetieye(0, dataOfTable, height, width),
+        const SizedBox(width: 2),
+        tableTailCellForMetieye(1, dataOfTable, height, width),
+        tableTailCellForMetieye(2, dataOfTable, height, width),
+        const SizedBox(width: 2),
+        tableTailCellForMetieye(3, dataOfTable, height, width),
+        tableTailCellForMetieye(4, dataOfTable, height, width),
+        const SizedBox(width: 2),
+        tableTailCellForMetieye(5, dataOfTable, height, width),
+        tableTailCellForMetieye(6, dataOfTable, height, width),
+        const SizedBox(width: 2),
+        tableTailCellForMetieye(7, dataOfTable, height, width),
+        tableTailCellForMetieye(8, dataOfTable, height, width),
+        const SizedBox(width: 4),
+        tableTailCellForMetieye(9, dataOfTable, height, width),
+      ],
+    );
+  }
+
+  Widget tableTailCellForMetieye(int j, List<List<String>> dataOfTable, double height, double width) {
+    return j == dataOfTable[dataOfTable.length - 1].length - 1
+        ? Stack(children: [
+            ColumnBox(
+                height: height,
+                width: width,
+                text: dataOfTable[dataOfTable.length - 1][j],
+                style: j % 2 == 0 ? "body3" : "body3"),
+            Gagebar(height: height, width: width, text: dataOfTable[dataOfTable.length - 1][j]),
+          ])
+        : ColumnBox(
+            height: height,
+            width: width,
+            text: dataOfTable[dataOfTable.length - 1][j],
+            style: j % 2 == 0 ? "body3" : "body3");
+  }
+
+  Row tableBodyForMetieye(List<List<String>> dataOfTable, int i, double height, double width, dialogType type) {
+    return Row(
+      children: [
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 0, type),
+        const SizedBox(width: 2),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 1, type),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 2, type),
+        const SizedBox(width: 2),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 3, type),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 4, type),
+        const SizedBox(width: 2),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 5, type),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 6, type),
+        const SizedBox(width: 2),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 7, type),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 8, type),
+        const SizedBox(width: 4),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 9, type),
+      ],
+    );
+  }
+
+  Stack tableBodyCellForMetieye(
+      double height, double width, List<List<String>> dataOfTable, int i, int j, dialogType type) {
+    return Stack(
+      children: [
+        ColumnBox(height: height, width: width, text: dataOfTable[i][j], style: j % 2 == 0 ? "body3" : "body3-1"),
+
+        //?2 점검율에 게이지바 추가    [[]]
+        if (j == 2 || j == 4 || j == 6 || j == 8 || j == 9)
+          Gagebar(height: height, width: width, text: dataOfTable[i][j]),
+
+        //?2 미설치 클릭 이벤트 처리   [[]]
+        if (j == 1 || j == 3 || j == 5 || j == 7)
+          if (dataOfTable[i][j] != "0")
+            Container(
+              height: height,
+              width: width,
+              // padding: const EdgeInsets.all(0),
+              alignment: Alignment.centerRight,
+              child: IconButton(
+                  splashRadius: 1,
+                  // padding: const EdgeInsets.all(0),
+                  // alignment: Alignment.centerRight,
+                  color: Colors.lightBlue,
+                  onPressed: () {
+                    //?2 팝업으로 띄울 데이터 생성부 [[
+                    // RegiPopup(type, groupLab[i + 1]["team"]!);
+                    String team = groupLab[i + 1]["team"]!;
+
+                    // Data 만들자
+                    List<Map<String, Object>> list = [];
+                    List<List<String>> listOfSolidstep = [];
+
+                    if (j == 1) {
+                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_OS_doing, team: team);
+                    } else if (j == 3) {
+                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_DB_doing, team: team);
+                    } else if (j == 5) {
+                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+                    } else if (j == 7) {
+                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+                    }
+
+                    //?2 팝업 생성 및 데이터 표현부 [[
+                    // showAlert 에게 데이터만 전달하자
+                    showAlertForSolidstep(
+                      context: context,
+                      team: team,
+                      data: listOfSolidstep,
+                      tip: tipMsg_Solidstep(type: type),
+                    );
+                  },
+                  icon: const Icon(Icons.help)),
+            ),
+
+        //?2 점검대상 클릭 이벤트 처리   [[]]
+        if (j == 0) // solidsteplist_score_doing
+          GestureDetector(
+            child: Container(height: height, width: width, color: const Color.fromRGBO(255, 255, 255, 0)),
+            onTap: () {
+              //?2 팝업으로 띄울 데이터 생성부 [[
+              // Data 만들자
+              List<Map<String, Object>> list = [];
+
+              list = makeTotalServerList(data: rawdata_serveri, team: groupLab[i + 1]["team"]!);
+
+              //?2 팝업 생성 및 데이터 표현부 [[
+              // showAlert 에게 데이터만 전달하자
+              showAlert(context: context, team: groupLab[i + 1]["team"]!, data: list); // type: dialogType.agent);
+            },
+          ),
+      ],
+    );
+  }
+
+  Row tableTitleForMetieye(double height, double width, List<String> title, int dataLength) {
+    return Row(children: [
+      ColumnBox(height: height, width: width, text: title[0], style: "head3"),
+      const SizedBox(width: 2),
+      tableTitle_depth2(height, width, dataLength, title, 1),
+      const SizedBox(width: 2),
+      tableTitle_depth2(height, width, dataLength, title, 4),
+      const SizedBox(width: 2),
+      tableTitle_depth2(height, width, dataLength, title, 7),
+      const SizedBox(width: 2),
+      tableTitle_depth2(height, width, dataLength, title, 10),
+      const SizedBox(width: 4),
+      ColumnBox(height: height, width: width, text: title[13], style: "head3"),
+    ]);
+  }
+
+  Column tableTitle_depth2(double height, double width, int dataLength, List<String> title, int index) {
+    return Column(
+      children: [
+        ///     타이틀 상단 표시     //
+        ColumnBox(height: height / 2, width: width * dataLength, text: title[index], style: "head3-1"),
+
+        ///     타이틀 하단 표시     //
+        Row(
+          children: [
+            ColumnBox(height: height / 2, width: width, text: title[index + 1], style: "head3"),
+            ColumnBox(height: height / 2, width: width, text: title[index + 2], style: "head3"),
+          ],
+        ),
+      ],
+    );
   }
 
   Column tableNormal(
@@ -1652,9 +1886,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   }
 
   List<List<String>> makeListforSolidstep({required List<Map<String, Object>> input, required String team}) {
-    // List<Map<String, Object>> makeListforSolidstep({required List<Map<String, Object>> input, required String team}) {
     List<Map<String, Object>> serverlist = input;
-    // List<Map<String, Object>> list = [];
 
     List<List<Object?>> temp1 = [];
     List<List<String>> output = [];
@@ -1667,16 +1899,6 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       if (serverlist[i]["team"] == team) {
         for (int j = 0; j < (serverlist[i]["data"] as List<Map<String, Object?>>).length; j++) {
           Map<String, Object?> temp = (serverlist[i]["data"] as List<Map<String, Object?>>)[j];
-
-          // print("temp");
-          // print(temp);
-
-          // list.add({
-          //   "No": temp["No"].toString(),
-          //   "hostname": temp["hostname"].toString(),
-          //   "service": temp["service"].toString(),
-          //   "usage": temp["usage"].toString()
-          // });
 
           temp1.add(temp.values.toList());
         }
@@ -1692,12 +1914,6 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       }
       output.add(list);
     }
-
-    // print("serverlist");
-    // print(serverlist);
-    // print(list);
-
-    // convertListMaptoDoubleList(input, output); //List<Map<String, Object>> input, List<List<String>> output
 
     return output;
   }
