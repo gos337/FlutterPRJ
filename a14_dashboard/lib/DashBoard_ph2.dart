@@ -68,10 +68,19 @@ List<String> result_serveri = [
 // 미설치 서버 리스트 생성
 List<Map<String, Object>> serverlist_doing = [];
 List<Map<String, Object>> solidsteplist_doing = [];
+List<Map<String, Object>> metieye_doing = [];
+
+// SolidStep 미점검 서버 리스트 생성
 List<Map<String, Object>> solidsteplist_OS_doing = [];
 List<Map<String, Object>> solidsteplist_DB_doing = [];
 List<Map<String, Object>> solidsteplist_WEB_doing = [];
 List<Map<String, Object>> solidsteplist_score_doing = [];
+
+// Metieye 미점검 서버 리스트 생성
+List<Map<String, Object>> metieyelist_direc_doing = [];
+List<Map<String, Object>> metieyelist_live_doing = [];
+List<Map<String, Object>> metieyelist_alarm_doing = [];
+List<Map<String, Object>> metieyelist_check_doing = [];
 
 ///                                    //
 /// 생성할 serverlist_doing 데이터 포맷         //
@@ -131,7 +140,11 @@ enum dialogType {
   solidstepDB,
   solidstepWEB,
   solidstepScore,
-  metieye
+  metieyeAgent,
+  metieyeDirec,
+  metieyeLive,
+  metieyeAlarm,
+  metieyeCheck
 }
 
 class DashBoard_ph2 extends StatefulWidget {
@@ -165,6 +178,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   int pageIndex = 0;
   final PageController _pageController = PageController(initialPage: 0);
 
+  var page0;
+  var page1;
+  var page2;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -173,6 +190,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     MakeUninstalledServerList();
     MakeUncleanssingServeriList();
     MakeUncleanssingSolidstepList();
+    MakeUncleanssingMetieyeList();
+
+    page0 = Load_pageTable(0);
+    page1 = Load_pageTable(1);
+    page2 = Load_pageTable(2);
 
     // _pageController.addListener(onPageChanged);
 
@@ -527,6 +549,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     for (int i = 0; i < source.length; i++) {
       isExist = false;
 
+      // 성공, 3월착수 서버는 스킵
+      if (source[i]["target"] == "설치미지원") {
+        continue;
+      }
+
       //?2  Agent 미설치 리스트 생성
       if (source[i]["score"] != 100 && source[i]["type"] == type) {
         // if (source[i]["team"] == "SME솔루션개발팀") {
@@ -603,6 +630,35 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     // print("End _ MakeUninstalledServerList");
   }
 
+  MakeUncleanssingMetieyeList() async {
+    SearchUninstalledServer(
+        data: metieye_doing, key: "installMetieye", value: "설치", removeKey: "targetMetieye", removeValue: "설치미지원");
+
+    SearchUninstalledServer(
+        data: metieyelist_direc_doing,
+        key: "meti_directory",
+        value: "설정",
+        removeKey: "targetMetieye",
+        removeValue: "설치미지원");
+
+    SearchUninstalledServer(
+        data: metieyelist_live_doing, key: "meti_live", value: "ON", removeKey: "targetMetieye", removeValue: "설치미지원");
+
+    SearchUninstalledServer(
+        data: metieyelist_alarm_doing,
+        key: "meti_alarm",
+        value: "설정",
+        removeKey: "targetMetieye",
+        removeValue: "설치미지원");
+
+    SearchUninstalledServer(
+        data: metieyelist_check_doing,
+        key: "meti_check",
+        value: "완료",
+        removeKey: "targetMetieye",
+        removeValue: "설치미지원");
+  }
+
   @override
   Widget build(BuildContext context) {
     double displayWidth = MediaQuery.of(context).size.width;
@@ -625,7 +681,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
               actions: [
-                Center(child: Text("기준일 : 4월 4일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 5월 9일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
@@ -640,8 +696,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
             width: displayWidth,
             height: displayHeight,
             child: Image.asset(
-              "resource/sakura_background.png",
+              // "resource/sakura_background.png",
               // "resource/spring.png",
+              "resource/deck.jpg",
+              // "resource/family.jpg",
               fit: BoxFit.fill,
             ),
           ),
@@ -688,22 +746,18 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                       height: dataColumn_height,
                                       width: dataColumn_width,
                                       title: "웹쉘탐지\n(Metieye)",
-                                      tableData: data_metieye_cleansing_ver2_data),
+                                      tableData: data_metieye_data),
                                 ),
                               ],
                             ),
 
                             /// End of Row  //
                             Column(
-                              // mainAxisAlignment: MainAxisAlignment.end,
-                              // crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                AnimatedContainer(
+                                Container(
                                   margin: EdgeInsets.only(left: pageIndex * 100),
                                   width: 100,
                                   height: 50,
-                                  duration: const Duration(milliseconds: 1000),
-                                  curve: Curves.fastOutSlowIn,
                                   decoration: BoxDecoration(
                                     color: Colors.purple[200]!,
                                     borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
@@ -713,30 +767,55 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                         textAlign: TextAlign.center,
                                         style: textStyle_Type1.copyWith(
                                           fontSize: 18,
-                                          // color: Colors.grey[800],
                                           color: Colors.purple[800],
                                         )),
                                   ),
-                                  //textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
                                 ),
-                                AnimatedContainer(
+                                Container(
                                   margin: EdgeInsets.only(left: pageIndex * 100),
                                   width: 100,
                                   height: 780,
-                                  duration: const Duration(milliseconds: 1000),
-                                  curve: Curves.fastOutSlowIn,
                                   decoration: BoxDecoration(
-                                    // color: const Color.fromRGBO(225, 190, 231, 0.2),
                                     color: const Color.fromRGBO(206, 147, 216, 0.2),
                                     border: Border.all(
                                       color: Colors.purple[200]!,
                                       width: 4,
-
-                                      // top: BorderSide(color: Colors.purple[100], width: 2),
-                                      // bottom: BorderSide(color: Colors.grey[800]!, width: 3),
                                     ),
                                   ),
                                 ),
+                                // AnimatedContainer(
+                                //   margin: EdgeInsets.only(left: pageIndex * 100),
+                                //   width: 100,
+                                //   height: 50,
+                                //   duration: const Duration(milliseconds: 1000),
+                                //   curve: Curves.fastOutSlowIn,
+                                //   decoration: BoxDecoration(
+                                //     color: Colors.purple[200]!,
+                                //     borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
+                                //   ),
+                                //   child: Center(
+                                //     child: Text("선택된\n보안점검",
+                                //         textAlign: TextAlign.center,
+                                //         style: textStyle_Type1.copyWith(
+                                //           fontSize: 18,
+                                //           color: Colors.purple[800],
+                                //         )),
+                                //   ),
+                                // ),
+                                // AnimatedContainer(
+                                //   margin: EdgeInsets.only(left: pageIndex * 100),
+                                //   width: 100,
+                                //   height: 780,
+                                //   duration: const Duration(milliseconds: 1000),
+                                //   curve: Curves.fastOutSlowIn,
+                                //   decoration: BoxDecoration(
+                                //     color: const Color.fromRGBO(206, 147, 216, 0.2),
+                                //     border: Border.all(
+                                //       color: Colors.purple[200]!,
+                                //       width: 4,
+                                //     ),
+                                //   ),
+                                // ),
                               ],
                             ),
                           ],
@@ -744,24 +823,44 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                         const SizedBox(width: 4),
 
                         SizedBox(
-                          width: 1810,
+                          width: 2011,
                           height: 830,
-                          child: PageView.builder(
-                            controller: _pageController,
-                            physics: const NeverScrollableScrollPhysics(),
-                            allowImplicitScrolling: true,
-                            itemCount: 3,
-                            itemBuilder: (context, index) {
-                              return Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  pageTitle(index),
-                                  pageTable(index),
-                                ],
-                              );
-                            },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              pageTitle(pageIndex),
+                              if (pageIndex == 0) page0,
+                              if (pageIndex == 1) page1,
+                              if (pageIndex == 2) page2,
+                            ],
                           ),
                         ),
+
+                        // pageview 로 구현부
+                        if (false)
+                          SizedBox(
+                            width: 2011,
+                            height: 830,
+                            child: PageView.builder(
+                              controller: _pageController,
+                              physics: const NeverScrollableScrollPhysics(),
+                              allowImplicitScrolling: true,
+                              itemCount: 3,
+                              itemBuilder: (context, index) {
+                                return Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    pageTitle(index),
+
+                                    // pageTable(index),
+                                    if (index == 0) page0,
+                                    if (index == 1) page1,
+                                    if (index == 2) page2,
+                                  ],
+                                );
+                              },
+                            ),
+                          ),
 
                         // Row(
                         //   children: [
@@ -896,15 +995,139 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
 
     //?3 Metieye Table 생성 [[]]
     else {
-      bool test = true;
+      bool test = false;
 
       if (!test) {
         titleAgent = data_Metieye_title;
         dataAgent = data_metieye_data;
 
-        tableOfAgent = tableForMetieye(title: titleAgent, data: dataAgent, type: dialogType.metieye);
+        tableOfAgent = tableForMetieye(title: titleAgent, data: dataAgent, type: dialogType.metieyeAgent);
         tableOfSecurityScore = const SizedBox();
+        securityGuide = setupGuideforMetieye(context);
+      } else {
+        titleAgent = data_serveri_ver2_title;
+        titleCleansing = data_serveri_cleansing_ver2_title;
+        dataAgent = data_metieye_cleansing_ver2_data;
+        dataCleansing = data_metieye_cleansing_ver2_data;
+
+        tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+        tableOfSecurityScore = tableNormal(
+            title: titleCleansing,
+            data: dataCleansing,
+            // data: jsonResponse2,
+            type: dialogType.cleansing);
         securityGuide = setupGuideforServeri(context);
+      }
+    }
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        tableOfAgent,
+        const SizedBox(width: 4),
+        tableOfSecurityScore,
+        securityGuide,
+      ],
+    );
+
+    // return Row(
+    //   crossAxisAlignment: CrossAxisAlignment.start,
+    //   children: [
+    //     tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent),
+    //     const SizedBox(width: 4),
+    //     tableNormal(
+    //         title: titleCleansing,
+    //         data: dataCleansing,
+    //         // data: jsonResponse2,
+    //         type: dialogType.cleansing),
+    //     setupGuide(context)
+    //   ],
+    // );
+  }
+
+  Row Load_pageTable(int index) {
+    List<String> titleAgent;
+    List<String> titleCleansing;
+    List<dynamic> dataAgent;
+    List<dynamic> dataCleansing;
+
+    Widget tableOfAgent;
+    Widget tableOfSecurityScore;
+    Padding securityGuide;
+
+    //?3 Server-I Table 생성 [[]]
+    if (index == 0) {
+      titleAgent = data_serveri_ver2_title;
+      titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_serveri_ver2_data;
+      dataCleansing = data_serveri_cleansing_ver2_data;
+
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+      tableOfSecurityScore = tableNormal(
+          title: titleCleansing,
+          data: dataCleansing,
+          // data: jsonResponse2,
+          type: dialogType.cleansing);
+      securityGuide = setupGuideforServeri(context);
+    }
+
+    //?3 SolidStep Table 생성 [[]]
+    else if (index == 1) {
+      titleAgent = data_solidstep_title;
+      // titleCleansing = data_serveri_cleansing_ver2_title;
+      dataAgent = data_solidstep_agent;
+      dataCleansing = data_solidstep_score;
+
+      tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.solidstepAgent);
+
+      // tableOfSecurityScore =
+      //     tableGagebar(height: dataColumn_height, width: dataColumn_width, title: "보안점수", tableData: dataCleansing);
+
+      tableOfSecurityScore = Row(
+        children: [
+          tableNormal(title: data_solidstep_score_OStitle, data: data_solidstep_OS_Score, type: dialogType.solidstepOS),
+          const SizedBox(width: 2),
+          tableNormal(title: data_solidstep_score_DBtitle, data: data_solidstep_DB_Score, type: dialogType.solidstepDB),
+          const SizedBox(width: 2),
+          tableNormal(
+              title: data_solidstep_score_WEBtitle, data: data_solidstep_WEB_Score, type: dialogType.solidstepWEB),
+          const SizedBox(width: 4),
+          tableGagebar(
+              height: dataColumn_height,
+              width: dataColumn_width,
+              title: "보안점수",
+              tableData: dataCleansing,
+              type: dialogType.solidstepScore),
+        ],
+      );
+
+      securityGuide = setupGuideforSolidstep(context);
+
+      // titleAgent = data_serveri_ver2_title;
+      // titleCleansing = data_serveri_cleansing_ver2_title;
+      // dataAgent = data_solidstep_cleansing_ver2_data;
+      // dataCleansing = data_solidstep_cleansing_ver2_data;
+
+      // tableOfAgent = tableNormal(title: titleAgent, data: dataAgent, type: dialogType.agent);
+      // tableOfSecurityScore = tableNormal(
+      //     title: titleCleansing,
+      //     data: dataCleansing,
+      //     // data: jsonResponse2,
+      //     type: dialogType.cleansing);
+      // securityGuide = setupGuide(context);
+    }
+
+    //?3 Metieye Table 생성 [[]]
+    else {
+      bool test = false;
+
+      if (!test) {
+        titleAgent = data_Metieye_title;
+        dataAgent = data_metieye_data;
+
+        tableOfAgent = tableForMetieye(title: titleAgent, data: dataAgent, type: dialogType.metieyeAgent);
+        tableOfSecurityScore = const SizedBox();
+        securityGuide = setupGuideforMetieye(context);
       } else {
         titleAgent = data_serveri_ver2_title;
         titleCleansing = data_serveri_cleansing_ver2_title;
@@ -1024,7 +1247,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               Text(" 데이터보안팀 담당자", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
             ],
           ),
-          Text(" - 개인정보 검출 : 김남형님, 한민혜님\n - 설치관련 지원 : 남도균님, 한기진님",
+          Text(" - 개인정보 검출 : 이태경님, 홍승표님\n - 설치관련 지원 : 남도균님",
               style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
           const SizedBox(height: 40),
           Row(
@@ -1130,6 +1353,99 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           ),
           Text(
               " - Agent를 설치했으나 미설치 서버로 분류된다면, SeedCrock에 표시된 호스트명을 확인해주세요.\n    호스트명이 다를 경우, SeedCrock에 표시된 호스트명을 수정해주세요.",
+              style: textStyle_Type2.copyWith(color: Colors.red)),
+        ],
+      ),
+    );
+  }
+
+  Padding setupGuideforMetieye(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 개발서버 List", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(" - 컨플 시스템 인벤토리에 작성된 개발서버 호스트명으로 웹쉘탐지 Agent 설치현황을 확인합니다", style: textStyle_Type2),
+          const Text(" - 작성된 호스트명이 실제 서버의 호스트명과 다르면 점검완료로 판정되지 않습니다. ", style: textStyle_Type2),
+          const Text(" - Fade-out 서버는 Fade-out 완료 후 시스템 인벤토리에서 서버 정보를 삭제해주세요. ", style: textStyle_Type2),
+          const SizedBox(height: 4),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38011503280");
+            },
+            child: Text("  1. 모바일서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38009903541");
+            },
+            child: Text("  2. 기업서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          InkWell(
+            onTap: () {
+              _launchUrl("https://lgu-cto.atlassian.net/wiki/spaces/CTOTF24/pages/38009935118");
+            },
+            child: Text("  3. 홈서비스개발Lab (클릭)", style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" Agent 설치 예외처리", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(
+              " - \"미지원 OS\", \"EKS\" 등의 사유로 Agent 설치가 어려운 서버는\n    아래 ECM 경로에 있는 파일에 미지원 서버 정보를 작성해주시면 취합시 반영하겠습니다. ",
+              style: textStyle_Type2),
+          SelectionArea(
+            child: Text(" - ECM>공유폴더> 00. 2024년 기술개발그룹(공용)>99. 취합>03_웹쉘탐지(Metieye)",
+                style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 취약점점검 진행 순서", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(
+              " - Step 1. 방화벽 요청\n - Step 2. 에이전트 설치\n - Step 3. 탐지디렉토리 설정\n - Step 4. 탐지디렉토리 설정\n - Step 5. 실시간 탐지 설정\n - Step 6. 알람 설정\n - Step 7. 전수검사 수행 및 조치", //\n * 상세내용은 하기 메뉴얼 참고",
+              style: textStyle_Type2),
+          const SizedBox(height: 20),
+
+          // InkWell(
+          //     child: Row(
+          //       children: [
+          //         Icon(Icons.error, color: Colors.amber[700]),
+          //         Text(" 취약점점검 메뉴얼(클릭하세요)", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+          //       ],
+          //     ),
+          //     onTap: () {
+          //       showAlert_Menual(context: context);
+          //     }),
+          // const SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.error, color: Colors.amber[700]),
+              Text(" 취약점점검 담당자", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+            ],
+          ),
+          const Text(" - 황대선님 (dshwang@lguplus.co.kr)\n - 유동건님 (dgyu@lgupluspartners.co.kr)", style: textStyle_Type2),
+          const SizedBox(height: 40),
+
+          Row(
+            children: [
+              const Icon(Icons.error, color: Colors.red),
+              Text(" 주의사항", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900, color: Colors.red)),
+            ],
+          ),
+          Text(" - Agent를 설치했으나 미설치 서버로 분류된다면, Metieye에 표시된 호스트명을 확인해주세요.\n    호스트명이 다를 경우, Metieye에 표시된 호스트명을 수정해주세요.",
               style: textStyle_Type2.copyWith(color: Colors.red)),
         ],
       ),
@@ -1380,7 +1696,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         ///     바디 표시     //
         for (int i = 0; i < dataOfTable.length - 1; i++) tableBodyForMetieye(dataOfTable, i, heightData, width, type),
 
-        ///     Tail 표시     //
+        // ///     Tail 표시     //
         tableTailForMetieye(dataOfTable, heightData, width),
       ],
     );
@@ -1402,27 +1718,47 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         const SizedBox(width: 2),
         tableTailCellForMetieye(7, dataOfTable, height, width),
         tableTailCellForMetieye(8, dataOfTable, height, width),
-        const SizedBox(width: 4),
+        const SizedBox(width: 2),
         tableTailCellForMetieye(9, dataOfTable, height, width),
+        tableTailCellForMetieye(10, dataOfTable, height, width),
+        const SizedBox(width: 4),
+        tableTailCellForMetieye(11, dataOfTable, height, width),
       ],
     );
   }
 
   Widget tableTailCellForMetieye(int j, List<List<String>> dataOfTable, double height, double width) {
-    return j == dataOfTable[dataOfTable.length - 1].length - 1
-        ? Stack(children: [
-            ColumnBox(
-                height: height,
-                width: width,
-                text: dataOfTable[dataOfTable.length - 1][j],
-                style: j % 2 == 0 ? "body3" : "body3"),
-            Gagebar(height: height, width: width, text: dataOfTable[dataOfTable.length - 1][j]),
-          ])
-        : ColumnBox(
+    // return j == dataOfTable[dataOfTable.length - 1].length - 1
+    //     ? Stack(children: [
+    //         ColumnBox(
+    //             height: height,
+    //             width: width,
+    //             text: dataOfTable[dataOfTable.length - 1][j],
+    //             style: j % 2 == 0 ? "body3" : "body3"),
+    //         Gagebar(height: height, width: width, text: dataOfTable[dataOfTable.length - 1][j]),
+    //       ])
+    //     : ColumnBox(
+    //         height: height,
+    //         width: width,
+    //         text: dataOfTable[dataOfTable.length - 1][j],
+    //         style: j % 2 == 0 ? "body3" : "body3");
+
+    if (j == 2 || j == 4 || j == 6 || j == 8 || j == 10 || j == 11) {
+      return Stack(children: [
+        ColumnBox(
             height: height,
             width: width,
             text: dataOfTable[dataOfTable.length - 1][j],
-            style: j % 2 == 0 ? "body3" : "body3");
+            style: j % 2 == 0 ? "body3" : "body3"),
+        Gagebar(height: height, width: width, text: dataOfTable[dataOfTable.length - 1][j]),
+      ]);
+    } else {
+      return ColumnBox(
+          height: height,
+          width: width,
+          text: dataOfTable[dataOfTable.length - 1][j],
+          style: j % 2 == 0 ? "body3" : "body3");
+    }
   }
 
   Row tableBodyForMetieye(List<List<String>> dataOfTable, int i, double height, double width, dialogType type) {
@@ -1441,8 +1777,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         const SizedBox(width: 2),
         tableBodyCellForMetieye(height, width, dataOfTable, i, 7, type),
         tableBodyCellForMetieye(height, width, dataOfTable, i, 8, type),
-        const SizedBox(width: 4),
+        const SizedBox(width: 2),
         tableBodyCellForMetieye(height, width, dataOfTable, i, 9, type),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 10, type),
+        const SizedBox(width: 4),
+        tableBodyCellForMetieye(height, width, dataOfTable, i, 11, type),
       ],
     );
   }
@@ -1454,11 +1793,11 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         ColumnBox(height: height, width: width, text: dataOfTable[i][j], style: j % 2 == 0 ? "body3" : "body3-1"),
 
         //?2 점검율에 게이지바 추가    [[]]
-        if (j == 2 || j == 4 || j == 6 || j == 8 || j == 9)
+        if (j == 2 || j == 4 || j == 6 || j == 8 || j == 10 || j == 11)
           Gagebar(height: height, width: width, text: dataOfTable[i][j]),
 
-        //?2 미설치 클릭 이벤트 처리   [[]]
-        if (j == 1 || j == 3 || j == 5 || j == 7)
+        //?2 미설치 클릭 이벤트 처리   [[
+        if (j == 1 || j == 3 || j == 5 || j == 7 || j == 9)
           if (dataOfTable[i][j] != "0")
             Container(
               height: height,
@@ -1480,26 +1819,29 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                     List<List<String>> listOfSolidstep = [];
 
                     if (j == 1) {
-                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_OS_doing, team: team);
+                      list = makeList(data: metieye_doing, team: team);
                     } else if (j == 3) {
-                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_DB_doing, team: team);
+                      list = makeList(data: metieyelist_direc_doing, team: team);
                     } else if (j == 5) {
-                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+                      list = makeList(data: metieyelist_live_doing, team: team);
                     } else if (j == 7) {
-                      listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+                      list = makeList(data: metieyelist_alarm_doing, team: team);
+                    } else if (j == 9) {
+                      list = makeList(data: metieyelist_check_doing, team: team);
                     }
 
                     //?2 팝업 생성 및 데이터 표현부 [[
                     // showAlert 에게 데이터만 전달하자
-                    showAlertForSolidstep(
+                    showAlert(
                       context: context,
                       team: team,
-                      data: listOfSolidstep,
-                      tip: tipMsg_Solidstep(type: type),
+                      data: list,
+                      tip: tipMsg_Metieye(type: type),
                     );
                   },
                   icon: const Icon(Icons.help)),
             ),
+        //?2 미설치 클릭 이벤트 처리   ]]
 
         //?2 점검대상 클릭 이벤트 처리   [[]]
         if (j == 0) // solidsteplist_score_doing
@@ -1532,8 +1874,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       tableTitle_depth2(height, width, dataLength, title, 7),
       const SizedBox(width: 2),
       tableTitle_depth2(height, width, dataLength, title, 10),
+      const SizedBox(width: 2),
+      tableTitle_depth2(height, width, dataLength, title, 13),
       const SizedBox(width: 4),
-      ColumnBox(height: height, width: width, text: title[13], style: "head3"),
+      ColumnBox(height: height, width: width, text: title[16], style: "head3"),
     ]);
   }
 
@@ -1717,6 +2061,16 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       listOfSolidstep = makeListforSolidstep(input: solidsteplist_DB_doing, team: team);
     } else if (type == dialogType.solidstepWEB) {
       listOfSolidstep = makeListforSolidstep(input: solidsteplist_WEB_doing, team: team);
+    } else if (type == dialogType.metieyeAgent) {
+      list = makeList(data: metieye_doing, team: team);
+    } else if (type == dialogType.metieyeDirec) {
+      listOfSolidstep = makeListforSolidstep(input: metieyelist_direc_doing, team: team);
+    } else if (type == dialogType.metieyeLive) {
+      listOfSolidstep = makeListforSolidstep(input: metieyelist_live_doing, team: team);
+    } else if (type == dialogType.metieyeAlarm) {
+      listOfSolidstep = makeListforSolidstep(input: metieyelist_alarm_doing, team: team);
+    } else if (type == dialogType.metieyeCheck) {
+      listOfSolidstep = makeListforSolidstep(input: metieyelist_check_doing, team: team);
     }
 
     //?2 팝업 생성 및 데이터 표현부 [[
@@ -1843,6 +2197,34 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                           style: textStyle_Type2.copyWith(color: Colors.red)),
                     ],
                   ),
+                ],
+              ),
+            ],
+          ),
+        const SizedBox(height: 20),
+      ],
+    );
+  }
+
+  Column tipMsg_Metieye({required dialogType type}) {
+    return Column(
+      children: [
+        if (type == dialogType.metieyeAgent)
+          Column(
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.error, color: Colors.red),
+                  Text(
+                      " Agent를 설치했으나 미설치 서버로 분류된다면, Metieye에 표시된 호스트명을 확인해주세요.\n 호스트명이 다를 경우, Metieye에 표시된 호스트명을 수정해주세요.",
+                      style: textStyle_Type2.copyWith(color: Colors.red)),
+                ],
+              ),
+              Row(
+                children: [
+                  const Icon(Icons.error, color: Colors.red),
+                  Text(" Fade-out 서버는 Fade-out 완료 후 시스템 인벤토리에서 서버 정보를 삭제해주세요.",
+                      style: textStyle_Type2.copyWith(color: Colors.red)),
                 ],
               ),
             ],

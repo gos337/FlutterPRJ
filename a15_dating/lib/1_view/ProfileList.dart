@@ -81,7 +81,7 @@ class _ProfileListState extends State<ProfileList> {
 
   Padding ProfileListStyle01() {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 32),
+      padding: const EdgeInsets.symmetric(vertical: 16),
       child: InkWell(
         onTap: () {
           Navigator.push(
@@ -125,7 +125,7 @@ class _ProfileListState extends State<ProfileList> {
 
   Padding ProfileListStyle02() {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 60),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 60),
       child: InkWell(
         onTap: () {
           Navigator.push(
@@ -150,7 +150,7 @@ class _ProfileListState extends State<ProfileList> {
           child: Row(
             children: [
               Flexible(
-                  flex: 1,
+                  flex: 2,
                   child: Container(
                       padding: const EdgeInsets.only(left: 12.0),
                       child: Column(
@@ -161,7 +161,7 @@ class _ProfileListState extends State<ProfileList> {
                         ],
                       ))),
               Flexible(
-                  flex: 1,
+                  flex: 3,
                   child: Container(
                       clipBehavior: Clip.hardEdge,
                       decoration: BoxDecoration(
