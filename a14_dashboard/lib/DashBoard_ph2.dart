@@ -681,7 +681,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
               actions: [
-                Center(child: Text("기준일 : 5월 9일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 5월 24일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
