@@ -182,6 +182,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
   var page1;
   var page2;
 
+  bool isVisibleNoticePopup = true;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -681,7 +683,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
               actions: [
-                Center(child: Text("기준일 : 5월 24일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 6월 11일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
@@ -825,18 +827,26 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                         SizedBox(
                           width: 2011,
                           height: 830,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          child: Stack(
                             children: [
-                              pageTitle(pageIndex),
-                              if (pageIndex == 0) page0,
-                              if (pageIndex == 1) page1,
-                              if (pageIndex == 2) page2,
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  pageTitle(pageIndex),
+                                  if (pageIndex == 0) page0,
+                                  if (pageIndex == 1) page1,
+                                  if (pageIndex == 2) page2,
+                                ],
+                              ),
+
+                              //?1 팝업을 여기다가 오버레이어로 //
+                              NotiPopup()
                             ],
                           ),
                         ),
-
-                        // pageview 로 구현부
+                        //?3                      [[
+                        //?3 pageview 로 구현부     [[
+                        //?3                      [[
                         if (false)
                           SizedBox(
                             width: 2011,
@@ -861,6 +871,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                               },
                             ),
                           ),
+                        //?3                      ]]
+                        //?3 pageview 로 구현부     ]]
+                        //?3                      ]]
 
                         // Row(
                         //   children: [
@@ -898,6 +911,66 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
           ),
         ]),
       ),
+    );
+  }
+
+  Visibility NotiPopup() {
+    return Visibility(
+      visible: isVisibleNoticePopup,
+      child: Container(
+        color: Colors.purple[50],
+        height: 700,
+        width: 800,
+        margin: const EdgeInsets.only(top: 100),
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            noti_body(),
+            noti_closebtn(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  InkWell noti_closebtn() {
+    return InkWell(
+      onTap: () {
+        setState(() {
+          isVisibleNoticePopup = false;
+        });
+      },
+      child: Container(
+          height: 50,
+          width: 760,
+          color: Colors.green[300],
+          child: Center(child: Text("확인", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)))),
+    );
+  }
+
+  Column noti_body() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(Icons.error, color: Colors.amber[700]),
+            Text(" [개인정보 검출솔루션] 폐쇄망 및 공인망 서버 개인정보 검출을 위한 Agent 개발 완료 공지",
+                style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
+          ],
+        ),
+        const SizedBox(height: 16),
+        Text("1. \"폐쇄망\", \"공인IP만 보유\" 등의 사유로 개인정보 검출솔루션(Server-I)을 설치 못했던 서버에 대해\n    검출솔루션 설치 및 보안점검을 진행 부탁드립니다.\n",
+            style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+        Text("2. 솔루션 설치가 불가능한 서버는 보안팀과 협의하신 후 하기 경로의 문서에 사유를 작성해주세요.",
+            style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+        const Text("   - 경로 : 내 PC\\ECM공유 폴더\\00. 2024년 기술개발그룹(공용)\\99. 취합\\01_데이터클렌징(Server-i)",
+            style: textStyle_Type2),
+        const Text("   - 파일 : 데이터클렌징 미적용 사유 취합(폐쇄망, 공인망 지원 이후 Agent).xlsx", style: textStyle_Type2),
+        const SizedBox(height: 16),
+        Image.asset("resource/ServerI_Menual_10.png", width: 800),
+      ],
     );
   }
 
@@ -1223,12 +1296,12 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               Text(" 개인정보 검출솔루션 설치 예외처리", style: textStyle_Type1.copyWith(fontWeight: FontWeight.w900)),
             ],
           ),
-          const Text(" - \"폐쇄망\", \"공인IP만 보유\" 등의 사유로 개인정보 검출솔루션 설치가 어려운 서버는\n    Cloud PC에서 아래 경로의 엑셀에 사유를 작성해주세요. ",
-              style: textStyle_Type2),
-          SelectionArea(
-            child: Text(" - 내 PC\\ECM공유 폴더\\00. 2024년 기술개발그룹(공용)\\99. 취합\\01_데이터클렌징(Server-i)",
-                style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
-          ),
+          const Text("  - 개인정보 검출솔루션 설치가 어려운 서버는 Cloud PC에서 아래 경로의 엑셀에 사유를 작성해주세요.", style: textStyle_Type2),
+          const Text("     (\"폐쇄망\", \"공인IP만 보유\" 서버는 신규 Agent 설치후 보안점검을 진행해주세요.)", style: textStyle_Type2),
+          Text("  - 경로 : 내 PC\\ECM공유 폴더\\00. 2024년 기술개발그룹(공용)\\99. 취합\\01_데이터클렌징(Server-i)",
+              style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
+          Text("  - 파일 : 데이터클렌징 미적용 사유 취합(폐쇄망, 공인망 지원 이후 Agent).xlsx",
+              style: textStyle_Type2.copyWith(color: Colors.blueAccent[700])),
           const SizedBox(height: 20),
           InkWell(
               child: Row(
