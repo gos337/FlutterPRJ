@@ -683,7 +683,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
               actions: [
-                Center(child: Text("기준일 : 6월 11일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 6월 27일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
@@ -700,7 +700,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
             child: Image.asset(
               // "resource/sakura_background.png",
               // "resource/spring.png",
-              "resource/deck.jpg",
+              // "resource/deck.jpg",
+              "resource/summer.jpg",
               // "resource/family.jpg",
               fit: BoxFit.fill,
             ),

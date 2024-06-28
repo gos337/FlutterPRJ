@@ -5,7 +5,7 @@ List<String> data_solidstep_score_WEBtitle = ["WEB", "점검대상", "미완료"
 
 List<Map<String, dynamic>> data_solidstep_agent = [
   {"done": 8, "doing": 0, "ready": 1, "target": 9, "rate": "100%"},
-  {"done": 51, "doing": 0, "ready": 15, "target": 66, "rate": "100%"},
+  {"done": 51, "doing": 0, "ready": 33, "target": 84, "rate": "100%"},
   {"done": 66, "doing": 0, "ready": 3, "target": 69, "rate": "100%"},
   {"done": 41, "doing": 0, "ready": 11, "target": 52, "rate": "100%"},
   {"done": 91, "doing": 0, "ready": 0, "target": 91, "rate": "100%"},
@@ -21,49 +21,49 @@ List<Map<String, dynamic>> data_solidstep_agent = [
   {"done": 40, "doing": 0, "ready": 0, "target": 40, "rate": "100%"},
   {"done": 2, "doing": 0, "ready": 0, "target": 2, "rate": "100%"},
   {"done": 0, "doing": 0, "ready": 2, "target": 2, "rate": "100%"},
-  {"done": 1037, "doing": 1, "ready": 55, "target": 1093, "rate": "99%"}
+  {"done": 1037, "doing": 1, "ready": 73, "target": 1111, "rate": "99%"}
 ];
 
 List<Map<String, dynamic>> data_solidstep_score = [
   {"score": "100점"},
   {"score": "98점"},
   {"score": "100점"},
-  {"score": "99점"},
-  {"score": "78점"},
-  {"score": "100점"},
   {"score": "98점"},
-  {"score": "90점"},
+  {"score": "89점"},
+  {"score": "100점"},
+  {"score": "99점"},
+  {"score": "89점"},
   {"score": "97점"},
-  {"score": "91점"},
-  {"score": "61점"},
+  {"score": "76점"},
+  {"score": "75점"},
   {"score": "100점"},
-  {"score": "42점"},
+  {"score": "100점"},
   {"score": "92점"},
-  {"score": "85점"},
+  {"score": "82점"},
   {"score": "100점"},
-  {"score": "50점"},
-  {"score": "87점"}
+  {"score": "100점"},
+  {"score": "93점"}
 ];
 
 List<Map<String, dynamic>> data_solidstep_OS_Score = [
   {"target": 8, "doing": 0, "rate": "100%"},
   {"target": 19, "doing": 1, "rate": "94%"},
-  {"target": 100, "doing": 1, "rate": "99%"},
+  {"target": 102, "doing": 0, "rate": "100%"},
   {"target": 39, "doing": 1, "rate": "97%"},
-  {"target": 77, "doing": 13, "rate": "83%"},
+  {"target": 75, "doing": 1, "rate": "98%"},
   {"target": 3, "doing": 0, "rate": "100%"},
   {"target": 57, "doing": 0, "rate": "100%"},
-  {"target": 154, "doing": 17, "rate": "88%"},
-  {"target": 8, "doing": 0, "rate": "100%"},
-  {"target": 161, "doing": 39, "rate": "75%"},
-  {"target": 73, "doing": 24, "rate": "67%"},
-  {"target": 28, "doing": 0, "rate": "100%"},
+  {"target": 171, "doing": 30, "rate": "82%"},
+  {"target": 7, "doing": 0, "rate": "100%"},
+  {"target": 195, "doing": 83, "rate": "57%"},
+  {"target": 84, "doing": 31, "rate": "63%"},
+  {"target": 21, "doing": 0, "rate": "100%"},
   {"target": 11, "doing": 0, "rate": "100%"},
-  {"target": 475, "doing": 127, "rate": "73%"},
-  {"target": 47, "doing": 3, "rate": "93%"},
+  {"target": 467, "doing": 127, "rate": "72%"},
+  {"target": 45, "doing": 11, "rate": "75%"},
   {"target": 6, "doing": 0, "rate": "100%"},
-  {"target": 0, "doing": 0, "rate": "0%"},
-  {"target": 1266, "doing": 226, "rate": "82%"}
+  {"target": 0, "doing": 0, "rate": "100%"},
+  {"target": 1310, "doing": 285, "rate": "78%"}
 ];
 
 List<Map<String, dynamic>> data_solidstep_DB_Score = [
@@ -71,20 +71,20 @@ List<Map<String, dynamic>> data_solidstep_DB_Score = [
   {"target": 2, "doing": 0, "rate": "100%"},
   {"target": 6, "doing": 0, "rate": "100%"},
   {"target": 2, "doing": 0, "rate": "100%"},
-  {"target": 8, "doing": 5, "rate": "37%"},
+  {"target": 8, "doing": 3, "rate": "62%"},
   {"target": 1, "doing": 0, "rate": "100%"},
   {"target": 7, "doing": 0, "rate": "100%"},
-  {"target": 29, "doing": 10, "rate": "65%"},
+  {"target": 30, "doing": 5, "rate": "83%"},
   {"target": 12, "doing": 2, "rate": "83%"},
-  {"target": 23, "doing": 2, "rate": "91%"},
-  {"target": 12, "doing": 10, "rate": "16%"},
+  {"target": 19, "doing": 10, "rate": "47%"},
+  {"target": 14, "doing": 5, "rate": "64%"},
   {"target": 0, "doing": 0, "rate": "100%"},
-  {"target": 2, "doing": 2, "rate": "0%"},
+  {"target": 2, "doing": 0, "rate": "100%"},
   {"target": 29, "doing": 5, "rate": "82%"},
   {"target": 0, "doing": 0, "rate": "100%"},
   {"target": 0, "doing": 0, "rate": "100%"},
-  {"target": 0, "doing": 0, "rate": "0%"},
-  {"target": 133, "doing": 36, "rate": "73%"}
+  {"target": 0, "doing": 0, "rate": "100%"},
+  {"target": 132, "doing": 30, "rate": "77%"}
 ];
 
 List<Map<String, dynamic>> data_solidstep_WEB_Score = [
@@ -92,20 +92,20 @@ List<Map<String, dynamic>> data_solidstep_WEB_Score = [
   {"target": 10, "doing": 0, "rate": "100%"},
   {"target": 33, "doing": 0, "rate": "100%"},
   {"target": 14, "doing": 0, "rate": "100%"},
-  {"target": 56, "doing": 21, "rate": "62%"},
+  {"target": 54, "doing": 10, "rate": "81%"},
   {"target": 2, "doing": 0, "rate": "100%"},
-  {"target": 27, "doing": 1, "rate": "96%"},
-  {"target": 45, "doing": 6, "rate": "86%"},
+  {"target": 27, "doing": 0, "rate": "100%"},
+  {"target": 67, "doing": 20, "rate": "70%"},
   {"target": 8, "doing": 0, "rate": "100%"},
-  {"target": 77, "doing": 12, "rate": "84%"},
-  {"target": 11, "doing": 9, "rate": "18%"},
+  {"target": 128, "doing": 55, "rate": "57%"},
+  {"target": 20, "doing": 14, "rate": "30%"},
   {"target": 0, "doing": 0, "rate": "100%"},
-  {"target": 9, "doing": 9, "rate": "0%"},
-  {"target": 188, "doing": 2, "rate": "98%"},
-  {"target": 4, "doing": 3, "rate": "25%"},
+  {"target": 9, "doing": 0, "rate": "100%"},
+  {"target": 184, "doing": 2, "rate": "98%"},
+  {"target": 11, "doing": 8, "rate": "27%"},
   {"target": 4, "doing": 0, "rate": "100%"},
-  {"target": 0, "doing": 0, "rate": "0%"},
-  {"target": 490, "doing": 63, "rate": "87%"}
+  {"target": 0, "doing": 0, "rate": "100%"},
+  {"target": 573, "doing": 109, "rate": "81%"}
 ];
 
 // List<Map<String, dynamic>> data_solidstep_cleansing_ver2_data = [
@@ -151,19 +151,4250 @@ List<Map<String, dynamic>> data_metieye_cleansing_ver2_data = [
 
 List<Map<String, Object>> rawdata_solidstep = [
   {
-    "hostname": "ip-172-31-186-101.ap-northeast-2.compute.internal",
+    "hostname": "vdenxgauthwst1",
+    "sw": "Tomcat",
+    "service": "vdenxgauthwst1",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthwba1",
     "sw": "Linux",
-    "service": "ip-172-31-186-101.ap-northeast-2.compute.internal",
+    "service": "vdenxgauthwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthadmwba1",
+    "sw": "Apache",
+    "service": "vdenxgauthadmwba1",
+    "score": 64.7,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthwst1",
+    "sw": "Linux",
+    "service": "vdenxgauthwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthadmwba1",
+    "sw": "Linux",
+    "service": "vdenxgauthadmwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthwba1",
+    "sw": "Apache",
+    "service": "vdenxgauthwba1",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsadmdbm01",
+    "sw": "MariaDB",
+    "service": "vdewpsadmdbm01",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba1",
+    "sw": "Linux",
+    "service": "vdenxgauthdba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba3",
+    "sw": "Altibase",
+    "service": "vdenxgauthdba3",
+    "score": 80.8,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba4",
+    "sw": "Altibase",
+    "service": "vdenxgauthdba4",
+    "score": 80.8,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba2",
+    "sw": "Altibase",
+    "service": "vdenxgauthdba2",
+    "score": 80.8,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwba1",
+    "sw": "Apache",
+    "service": "vexsivextwba1",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextgw2",
+    "sw": "Nginx",
+    "service": "vexsivextgw2",
+    "score": 96.8,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextgw1",
+    "sw": "Nginx",
+    "service": "vexsivextgw1",
+    "score": 96.8,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwba2",
+    "sw": "Apache",
+    "service": "vexsivextwba2",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivwba1",
+    "sw": "Apache",
+    "service": "vdesivwba1",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextwba1",
+    "sw": "Apache",
+    "service": "vdesivextwba1",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextgw1",
+    "sw": "Nginx",
+    "service": "vdesivextgw1",
+    "score": 96.8,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivwba1",
+    "sw": "Linux",
+    "service": "vdesivwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwst1",
+    "sw": "Linux",
+    "service": "vexlbspwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspwba1",
+    "sw": "Apache",
+    "service": "vdelbspwba1",
+    "score": 64.7,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwba1",
+    "sw": "Linux",
+    "service": "vexlbspadwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspadwba1",
+    "sw": "Linux",
+    "service": "vdelbspadwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwba2",
+    "sw": "Apache",
+    "service": "vexlbspwba2",
+    "score": 64.7,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwba1",
+    "sw": "Linux",
+    "service": "vexlbspwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspwba1",
+    "sw": "Linux",
+    "service": "vdelbspwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspadwst1",
+    "sw": "Tomcat",
+    "service": "vdelbspadwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwba1",
+    "sw": "Linux",
+    "service": "vlbspadwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspdbm1",
+    "sw": "Linux",
+    "service": "vlbspdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwba2",
+    "sw": "Linux",
+    "service": "vexlbspwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwba2",
+    "sw": "Linux",
+    "service": "vexlbspadwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwst2",
+    "sw": "Linux",
+    "service": "vexlbspwst2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba3",
+    "sw": "Linux",
+    "service": "vlbspwba3",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba2",
+    "sw": "Linux",
+    "service": "vlbspwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba1",
+    "sw": "Linux",
+    "service": "vlbspwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst1",
+    "sw": "Linux",
+    "service": "vlbspwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspwst1",
+    "sw": "Linux",
+    "service": "vdelbspwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspdbm2",
+    "sw": "Linux",
+    "service": "vexlbspdbm2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspadwba1",
+    "sw": "Apache",
+    "service": "vdelbspadwba1",
+    "score": 52.9,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspdbm1",
+    "sw": "Linux",
+    "service": "vexlbspdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst3",
+    "sw": "Linux",
+    "service": "vlbspwst3",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwst1",
+    "sw": "Linux",
+    "service": "vexlbspadwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspadwst1",
+    "sw": "Linux",
+    "service": "vdelbspadwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwst2",
+    "sw": "Linux",
+    "service": "vlbspadwst2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst2",
+    "sw": "Linux",
+    "service": "vlbspwst2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba4",
+    "sw": "Linux",
+    "service": "vlbspwba4",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspdbm1",
+    "sw": "Linux",
+    "service": "vdelbspdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwst2",
+    "sw": "Linux",
+    "service": "vexlbspadwst2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspdbm2",
+    "sw": "Linux",
+    "service": "vlbspdbm2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst4",
+    "sw": "Linux",
+    "service": "vlbspwst4",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwst1",
+    "sw": "Linux",
+    "service": "vlbspadwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwba2",
+    "sw": "Linux",
+    "service": "vlbspadwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwba1",
+    "sw": "Apache",
+    "service": "vexlbspwba1",
+    "score": 64.7,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwba1",
+    "sw": "Apache",
+    "service": "vexlbspadwba1",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsapdbm01",
+    "sw": "MariaDB",
+    "service": "vdewpsapdbm01",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivdbm2",
+    "sw": "MariaDB",
+    "service": "vexsivdbm2",
+    "score": 96.9,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpswba01",
+    "sw": "Linux",
+    "service": "vdewpswba01",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmdbm2",
+    "sw": "MariaDB",
+    "service": "vexwpsadmdbm2",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsapdbm1",
+    "sw": "MariaDB",
+    "service": "vexwpsapdbm1",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmdbm1",
+    "sw": "MariaDB",
+    "service": "vexwpsadmdbm1",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsapdbm2",
+    "sw": "MariaDB",
+    "service": "vexwpsapdbm2",
+    "score": 100,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss101",
+    "sw": "Apache",
+    "service": "vptb2ss101",
+    "score": 70.6,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "SEARCHAgent_TB",
+    "sw": "Linux",
+    "service": "SEARCHAgent_TB",
     "score": 100,
     "type": "OS",
     "team": "VAS서비스개발팀",
     "target": "대상"
   },
   {
+    "hostname": "tvTB2ss1",
+    "sw": "PostgreSQL",
+    "service": "tvTB2ss1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTBcms1",
+    "sw": "Linux",
+    "service": "tvTBcms1",
+    "score": 97.4,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss100",
+    "sw": "Apache",
+    "service": "vptb2ss100",
+    "score": 70.6,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CTISTB",
+    "sw": "Linux",
+    "service": "CTISTB",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "helloagenttb",
+    "sw": "Linux",
+    "service": "helloagenttb",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "4D-acqapi-TB",
+    "sw": "Linux",
+    "service": "4D-acqapi-TB",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTBcds1",
+    "sw": "PostgreSQL",
+    "service": "vpTBcds1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "helloagenttb",
+    "sw": "Tomcat",
+    "service": "helloagenttb",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "helloagenttb",
+    "sw": "Apache",
+    "service": "helloagenttb",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB2ss1",
+    "sw": "Linux",
+    "service": "tvTB2ss1",
+    "score": 96.2,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tb-hdtvlog",
+    "sw": "Apache",
+    "service": "tb-hdtvlog",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tb-hdtvlog",
+    "sw": "Tomcat",
+    "service": "tb-hdtvlog",
+    "score": 78.7,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss101",
+    "sw": "PostgreSQL",
+    "service": "vptb2ss101",
+    "score": 97,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss100",
+    "sw": "Linux",
+    "service": "vptb2ss100",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "isu-dev",
+    "sw": "Linux",
+    "service": "isu-dev",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTBcds1",
+    "sw": "Linux",
+    "service": "tvTBcds1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB1ls1",
+    "sw": "Linux",
+    "service": "tvTB1ls1",
+    "score": 99.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CGAgent_TB",
+    "sw": "Linux",
+    "service": "CGAgent_TB",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB1ss1",
+    "sw": "Linux",
+    "service": "tvTB1ss1",
+    "score": 99.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ls1",
+    "sw": "PostgreSQL",
+    "service": "vptb2ls1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB2ls2",
+    "sw": "PostgreSQL",
+    "service": "tvTB2ls2",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "himcstb",
+    "sw": "Tomcat",
+    "service": "himcstb",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTBcds1",
+    "sw": "Linux",
+    "service": "vpTBcds1",
+    "score": 87.6,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "stp-hitpop02",
+    "sw": "Linux",
+    "service": "stp-hitpop02",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "VUC-TB",
+    "sw": "Linux",
+    "service": "VUC-TB",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss101",
+    "sw": "Linux",
+    "service": "vptb2ss101",
+    "score": 96.2,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tb-hdtvlog",
+    "sw": "Linux",
+    "service": "tb-hdtvlog",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "IDX_AGT2",
+    "sw": "Windows",
+    "service": "IDX_AGT2",
+    "score": 98.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "stp_conout_ecs01",
+    "sw": "Linux",
+    "service": "stp_conout_ecs01",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "stp_conout_ecs02",
+    "sw": "Linux",
+    "service": "stp_conout_ecs02",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "IDX_AGT1",
+    "sw": "Windows",
+    "service": "IDX_AGT1",
+    "score": 98.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "himcstb",
+    "sw": "Linux",
+    "service": "himcstb",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ls1",
+    "sw": "Linux",
+    "service": "vptb2ls1",
+    "score": 96.2,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dvfas1",
+    "sw": "Tomcat",
+    "service": "dvfas1",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {"hostname": "ca", "sw": "Windows", "service": "ca", "score": 100, "type": "OS", "team": "VAS서비스개발팀", "target": "대상"},
+  {
+    "hostname": "SEARCHAgent_TB",
+    "sw": "Tomcat",
+    "service": "SEARCHAgent_TB",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB2ls2",
+    "sw": "Linux",
+    "service": "tvTB2ls2",
+    "score": 97.4,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "IDX_AGT4",
+    "sw": "Windows",
+    "service": "IDX_AGT4",
+    "score": 98.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "agent",
+    "sw": "Windows",
+    "service": "agent",
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CG_Agent_TB",
+    "sw": "Windows",
+    "service": "CG_Agent_TB",
+    "score": 92.9,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "IDX_AGT5",
+    "sw": "Windows",
+    "service": "IDX_AGT5",
+    "score": 98.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CTISTB",
+    "sw": "JBoss",
+    "service": "CTISTB",
+    "score": 78.3,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CTISTB",
+    "sw": "Apache",
+    "service": "CTISTB",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "CTISTB",
+    "sw": "Tomcat",
+    "service": "CTISTB",
+    "score": 78.7,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ZIDX",
+    "sw": "Windows",
+    "service": "ZIDX",
+    "score": 98.8,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "isu-dev",
+    "sw": "Tomcat",
+    "service": "isu-dev",
+    "score": 100,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "isu-dev",
+    "sw": "Apache",
+    "service": "isu-dev",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "IDX_AGT3",
+    "sw": "Windows",
+    "service": "IDX_AGT3",
+    "score": 97.6,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "4D-acqapi-TB",
+    "sw": "Tomcat",
+    "service": "4D-acqapi-TB",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "4D-acqapi-TB",
+    "sw": "Apache",
+    "service": "4D-acqapi-TB",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspwst1",
+    "sw": "Tomcat",
+    "service": "vdelbspwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwba2",
+    "sw": "Apache",
+    "service": "vexlbspadwba2",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspadwst2",
+    "sw": "Tomcat",
+    "service": "vexlbspadwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspwst1",
+    "sw": "Tomcat",
+    "service": "vexlbspwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "itvDAS_TB",
+    "sw": "Solaris",
+    "service": "itvDAS_TB",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "PullServer",
+    "sw": "Linux",
+    "service": "PullServer",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_API_01",
+    "sw": "Apache",
+    "service": "TB_UIS_API_01",
+    "score": 52.9,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "epgp-tb",
+    "sw": "Windows",
+    "service": "epgp-tb",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCM1",
+    "sw": "Linux",
+    "service": "TB-FCM1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_API_02",
+    "sw": "Apache",
+    "service": "TB_UIS_API_02",
+    "score": 52.9,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_Admin_01",
+    "sw": "Apache",
+    "service": "TB_UIS_Admin_01",
+    "score": 52.9,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FLUTE-UMS",
+    "sw": "Tomcat",
+    "service": "TB-FLUTE-UMS",
+    "score": 100,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-2-230.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ec2-dev-nfxpw-bastion",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-IPTV-NODE1-DNP1",
+    "sw": "Linux",
+    "service": "TB-IPTV-NODE1-DNP1",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_API_01",
+    "sw": "Linux",
+    "service": "TB_UIS_API_01",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FLUTE-UMS",
+    "sw": "Linux",
+    "service": "TB-FLUTE-UMS",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vodTBads1",
+    "sw": "Linux",
+    "service": "vodTBads1",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-IPTV-NODE1-LSM1",
+    "sw": "Linux",
+    "service": "TB-IPTV-NODE1-LSM1",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "SDS_Testbed",
+    "sw": "Windows",
+    "service": "SDS_Testbed",
+    "score": 98.8,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "MITG_MAPC_TB",
+    "sw": "Windows",
+    "service": "MITG_MAPC_TB",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCS1",
+    "sw": "Linux",
+    "service": "TB-FCS1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "VODCG-I30",
+    "sw": "Windows",
+    "service": "VODCG-I30",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vodtb2dnp100-edge",
+    "sw": "Linux",
+    "service": "vodtb2dnp100-edge",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTBads1",
+    "sw": "Linux",
+    "service": "vpTBads1",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-CUI-N1Svc002",
+    "sw": "Linux",
+    "service": "TB-CUI-N1Svc002",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvtb2ss100-shield",
+    "sw": "Linux",
+    "service": "tvtb2ss100-shield",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTB2lsm1",
+    "sw": "Linux",
+    "service": "vpTB2lsm1",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCS2",
+    "sw": "Linux",
+    "service": "TB-FCS2",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCS3",
+    "sw": "Linux",
+    "service": "TB-FCS3",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_API_02",
+    "sw": "Linux",
+    "service": "TB_UIS_API_02",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "VODCG_TB",
+    "sw": "Windows",
+    "service": "VODCG_TB",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "V_EDA_asip",
+    "sw": "Windows",
+    "service": "V_EDA_asip",
+    "score": 82,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "eas2",
+    "sw": "Linux",
+    "service": "eas2",
+    "score": 99.8,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-5-90.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ec2-stg-nfxpw-bastion",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "PullServer",
+    "sw": "JBoss",
+    "service": "PullServer",
+    "score": 78.3,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-IPTV-206",
+    "sw": "Linux",
+    "service": "TB-IPTV-206",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "EPGP-PSI",
+    "sw": "Windows",
+    "service": "EPGP-PSI",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "edsp-tb",
+    "sw": "Windows",
+    "service": "edsp-tb",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTB2lsm2",
+    "sw": "Linux",
+    "service": "vpTB2lsm2",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "VODCG_I30_TB",
+    "sw": "Windows",
+    "service": "VODCG_I30_TB",
+    "score": 98.8,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCS4",
+    "sw": "Linux",
+    "service": "TB-FCS4",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "fdtb1ss100-vod",
+    "sw": "Linux",
+    "service": "fdtb1ss100-vod",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_UIS_Admin_01",
+    "sw": "Linux",
+    "service": "TB_UIS_Admin_01",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "EPGC-PSI",
+    "sw": "Windows",
+    "service": "EPGC-PSI",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB_FLUTE_GEN",
+    "sw": "Windows",
+    "service": "WIN-1DER4R2EDAL",
+    "score": 97.6,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vpTB2lsm1-os2",
+    "sw": "Linux",
+    "service": "vpTB2lsm1-os2",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ASIP-TB",
+    "sw": "Windows",
+    "service": "ASIP-TB",
+    "score": 98.8,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "itv_tb",
+    "sw": "Windows",
+    "service": "itv_tb",
+    "score": 100,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCM1",
+    "sw": "Tomcat",
+    "service": "TB-FCM1",
+    "score": 100,
+    "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "eas1",
+    "sw": "Linux",
+    "service": "eas1",
+    "score": 99.8,
+    "type": "OS",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "imglink98",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "link98",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd_mdb",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "billapi-dev",
+    "sw": "Linux",
+    "service": "billapi-dev",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd998",
+    "sw": "Linux",
+    "service": "whdd998",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "mail3_a1",
+    "sw": "Linux",
+    "service": "mail3_a1",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "pauth2_a1",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd903",
+    "sw": "Linux",
+    "service": "whdd903",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd9002",
+    "sw": "Linux",
+    "service": "whdd9002",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "linkmedia98",
+    "sw": "Linux",
+    "service": "linkmedia98",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "sfolder_a1",
+    "sw": "Linux",
+    "service": "sfolder_a1",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd995",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nauth1",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "cick-dev",
+    "sw": "Linux",
+    "service": "cick-dev",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "images_a1",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd9001",
+    "sw": "Linux",
+    "service": "whdd9001",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "meta99",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nauth2",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "preview_a1",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wldd99",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "program_a1",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "cowork98",
+    "sw": "Linux",
+    "service": "cowork98",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nate-b",
+    "sw": "Oracle",
+    "service": "nate-b",
+    "score": 97.2,
+    "type": "DB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "pauth1_a1",
+    "sw": "Linux",
+    "service": "pauth1_a1",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "sfolder_a1",
+    "sw": "Apache",
+    "service": "sfolder_a1",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "www98",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "preview_a1",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wsms2",
+    "sw": "Linux",
+    "service": "wsms2",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "www98",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd998",
+    "sw": "Apache",
+    "service": "whdd998",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd903",
+    "sw": "Apache",
+    "service": "whdd903",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd9002",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wldd99",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd997",
+    "sw": "Apache",
+    "service": "whdd997",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "cowork98",
+    "sw": "Apache",
+    "service": "cowork98",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "www998",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nate-b",
+    "sw": "Linux",
+    "service": "nate-b",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "www998",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd997",
+    "sw": "Linux",
+    "service": "whdd997",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd_mdb",
+    "sw": "MariaDB",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "DB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "link98",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "bill1",
+    "sw": "Apache",
+    "service": "bill1",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd9001",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd996",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "imglink98",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "billapi-dev",
+    "sw": "Apache",
+    "service": "billapi-dev",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "linkmedia98",
+    "sw": "Apache",
+    "service": "linkmedia98",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd995",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wsms2",
+    "sw": "Apache",
+    "service": "wsms2",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "images_a1",
+    "sw": "Apache",
+    "service": "images_a1",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "program_a1",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd996",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "bill1",
+    "sw": "Linux",
+    "service": "bill1",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nwh-webdev2",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nwh-svn",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba4",
+    "sw": "Linux",
+    "service": "vdenxgauthdba4",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba3",
+    "sw": "Linux",
+    "service": "vdenxgauthdba3",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba2",
+    "sw": "Linux",
+    "service": "vdenxgauthdba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthdba1",
+    "sw": "Altibase",
+    "service": "vdenxgauthdba1",
+    "score": 51.9,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-WEBDEV",
+    "sw": "Linux",
+    "service": "NWH-WEBDEV",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-CONVDEV",
+    "sw": "Windows",
+    "service": "NWH-CONVDEV",
+    "score": 97.6,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "DEV-OFFICEDB01",
+    "sw": "Linux",
+    "service": "DEV-OFFICEDB01",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev03",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev02",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "DEV-OFFICE01",
+    "sw": "Tomcat",
+    "service": "DEV-OFFICE01",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-FILEDEV",
+    "sw": "Apache",
+    "service": "NWH-FILEDEV",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-FILEDEV",
+    "sw": "Tomcat",
+    "service": "NWH-FILEDEV",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-DBDEV",
+    "sw": "Linux",
+    "service": "NWH-DBDEV",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "DEV-OFFICE01",
+    "sw": "Linux",
+    "service": "DEV-OFFICE01",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-FILEDEV",
+    "sw": "Linux",
+    "service": "NWH-FILEDEV",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev01",
+    "sw": "Apache",
+    "service": "wh3-dev01",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nwh-webdev2",
+    "sw": "Tomcat",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nwh-webdev2",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-WEBDEV",
+    "sw": "Apache",
+    "service": "NWH-WEBDEV",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-WEBDEV",
+    "sw": "Tomcat",
+    "service": "NWH-WEBDEV",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev01",
+    "sw": "Linux",
+    "service": "서비스안양_웹하드3.0",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev03",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev03",
+    "sw": "Tomcat",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "DEV-OFFICEDB01",
+    "sw": "MariaDB",
+    "service": "DEV-OFFICEDB01",
+    "score": 100,
+    "type": "DB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev02",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "wh3-dev02",
+    "sw": "Tomcat",
+    "service": "서비스안양_웹하드3.0/개발_신규",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-DBDEV",
+    "sw": "Oracle",
+    "service": "NWH-DBDEV",
+    "score": 100,
+    "type": "DB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "NWH-CONVDEV",
+    "sw": "IIS",
+    "service": "NWH-CONVDEV",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "nwh-svn",
+    "sw": "Apache",
+    "service": "서비스안양_웹하드",
+    "score": 100,
+    "type": "WEB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTBcms1",
+    "sw": "PostgreSQL",
+    "service": "tvTBcms1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dvfas1",
+    "sw": "Linux",
+    "service": "dvfas1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB1ls1",
+    "sw": "PostgreSQL",
+    "service": "tvTB1ls1",
+    "score": 97,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTBcds1",
+    "sw": "PostgreSQL",
+    "service": "tvTBcds1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "tvTB1ss1",
+    "sw": "PostgreSQL",
+    "service": "tvTB1ss1",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-20-97-180.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-20-97-180.ap-northeast-2.compute.internal",
+    "score": 97.7,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-20-97-170.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-20-97-170.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-20-97-180.ap-northeast-2.compute.internal",
+    "sw": "Nginx",
+    "service": "ip-172-20-97-180.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivdbm1",
+    "sw": "MariaDB",
+    "service": "vdesivdbm1",
+    "score": 96.9,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivwst1",
+    "sw": "Linux",
+    "service": "vdesivwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivdbm1",
+    "sw": "Linux",
+    "service": "vdesivdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextwba1",
+    "sw": "Linux",
+    "service": "vdesivextwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivadm1",
+    "sw": "Linux",
+    "service": "vdesivadm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextwst1",
+    "sw": "Linux",
+    "service": "vdesivextwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextgw1",
+    "sw": "Linux",
+    "service": "vdesivextgw1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivgw1",
+    "sw": "Linux",
+    "service": "vdesivgw1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-119-136.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-119-136.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-119-149.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-119-149.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthadmwst1",
+    "sw": "Linux",
+    "service": "vdenxgauthadmwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmdbm2",
+    "sw": "Linux",
+    "service": "vexwpsadmdbm2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsapdbm1",
+    "sw": "Linux",
+    "service": "vexwpsapdbm1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsadmdbm01",
+    "sw": "Linux",
+    "service": "vdewpsadmdbm01",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsadmapp01",
+    "sw": "Nginx",
+    "service": "vdewpsadmapp01",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsapdbm2",
+    "sw": "Linux",
+    "service": "vexwpsapdbm2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmapp2",
+    "sw": "Linux",
+    "service": "vexwpsadmapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmapp1",
+    "sw": "Linux",
+    "service": "vexwpsadmapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswba2",
+    "sw": "Nginx",
+    "service": "vexwpswba2",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsapdbm01",
+    "sw": "Linux",
+    "service": "vdewpsapdbm01",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpsadmapp01",
+    "sw": "Linux",
+    "service": "vdewpsadmapp01",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpswba01",
+    "sw": "Nginx",
+    "service": "vdewpswba01",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswst1",
+    "sw": "Linux",
+    "service": "vexwpswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmdbm1",
+    "sw": "Linux",
+    "service": "vexwpsadmdbm1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswba1",
+    "sw": "Nginx",
+    "service": "vexwpswba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswba2",
+    "sw": "Linux",
+    "service": "vexwpswba2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswba1",
+    "sw": "Linux",
+    "service": "vexwpswba1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewpswst01",
+    "sw": "Linux",
+    "service": "vdewpswst01",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpswst2",
+    "sw": "Linux",
+    "service": "vexwpswst2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmapp2",
+    "sw": "Nginx",
+    "service": "vexwpsadmapp2",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexwpsadmapp1",
+    "sw": "Nginx",
+    "service": "vexwpsadmapp1",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-20-97-170.ap-northeast-2.compute.internal",
+    "sw": "Nginx",
+    "service": "ip-172-20-97-170.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextgw2",
+    "sw": "Linux",
+    "service": "vexsivextgw2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-108-internal",
+    "sw": "Tomcat",
+    "service": "ip-172-31-149-108-internal",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-37-internal",
+    "sw": "Tomcat",
+    "service": "ip-172-31-149-37-internal",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-112.ap-northeast-2.compute.internal",
+    "sw": "Tomcat",
+    "service": "ip-172-31-149-112.ap-northeast-2.compute.internal",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthsmsapp1",
+    "sw": "Linux",
+    "service": "vdenxgauthsmsapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthfdswba1",
+    "sw": "Linux",
+    "service": "vdenxgauthfdswba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwba2",
+    "sw": "Apache",
+    "service": "vexsivwba2",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwba1",
+    "sw": "Apache",
+    "service": "vmccwba1",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwba2",
+    "sw": "Apache",
+    "service": "vmccwba2",
+    "score": 76.5,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst2",
+    "sw": "Linux",
+    "service": "vmcckafkawst2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccproxywba1",
+    "sw": "Linux",
+    "service": "vmccproxywba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst1",
+    "sw": "Tomcat",
+    "service": "vmcckafkawst1",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst3",
+    "sw": "Tomcat",
+    "service": "vmcckafkawst3",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccdbm2",
+    "sw": "Linux",
+    "service": "vmccdbm2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccproxywba2",
+    "sw": "Apache",
+    "service": "vmccproxywba2",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccdbm1",
+    "sw": "Linux",
+    "service": "vmccdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwst2",
+    "sw": "Tomcat",
+    "service": "vmccwst2",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwba2",
+    "sw": "Linux",
+    "service": "vmccwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwst1",
+    "sw": "Tomcat",
+    "service": "vmccwst1",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst1",
+    "sw": "Linux",
+    "service": "vmcckafkawst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccproxywba2",
+    "sw": "Linux",
+    "service": "vmccproxywba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst3",
+    "sw": "Linux",
+    "service": "vmcckafkawst3",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcckafkawst2",
+    "sw": "Tomcat",
+    "service": "vmcckafkawst2",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwst2",
+    "sw": "Linux",
+    "service": "vmccwst2",
+    "score": 97.4,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwst1",
+    "sw": "Linux",
+    "service": "vmccwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccproxywba1",
+    "sw": "Apache",
+    "service": "vmccproxywba1",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccwba1",
+    "sw": "Linux",
+    "service": "vmccwba1",
+    "score": 97.4,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthfdswst1",
+    "sw": "Linux",
+    "service": "vdenxgauthfdswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthexwst1",
+    "sw": "Linux",
+    "service": "vdenxgauthexwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthredapp1",
+    "sw": "Linux",
+    "service": "vdenxgauthredapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst1",
+    "sw": "Linux",
+    "service": "vexsivextwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextgw1",
+    "sw": "Linux",
+    "service": "vexsivextgw1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst2",
+    "sw": "Linux",
+    "service": "vexsivextwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst2",
+    "sw": "Linux",
+    "service": "vcasadminwst2",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst5",
+    "sw": "Linux",
+    "service": "vnCASwst5",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst2",
+    "sw": "Linux",
+    "service": "vnCASwst2",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba5",
+    "sw": "Linux",
+    "service": "vnCASwba5",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba2",
+    "sw": "Linux",
+    "service": "vnCASwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba3",
+    "sw": "Linux",
+    "service": "vnCASwba3",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba1",
+    "sw": "Linux",
+    "service": "vcasadminwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba8",
+    "sw": "Linux",
+    "service": "vnCASwba8",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst1",
+    "sw": "Tomcat",
+    "service": "vcasadminwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst1",
+    "sw": "Tomcat",
+    "service": "vnCASwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba2",
+    "sw": "Apache",
+    "service": "vcasadminwba2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst4",
+    "sw": "Tomcat",
+    "service": "vnCASwst4",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba7",
+    "sw": "Apache",
+    "service": "vnCASwba7",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst3",
+    "sw": "Tomcat",
+    "service": "vnCASwst3",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst6",
+    "sw": "Tomcat",
+    "service": "vnCASwst6",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba1",
+    "sw": "Apache",
+    "service": "vnCASwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba4",
+    "sw": "Apache",
+    "service": "vnCASwba4",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba6",
+    "sw": "Apache",
+    "service": "vnCASwba6",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vMMSPVLapp2",
+    "sw": "Linux",
+    "service": "vMMSPVLapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASPVLapp2",
+    "sw": "Linux",
+    "service": "vnCASPVLapp2",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst1",
+    "sw": "Linux",
+    "service": "vcasadminwst1",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst8",
+    "sw": "Tomcat",
+    "service": "vnCASwst8",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst7",
+    "sw": "Tomcat",
+    "service": "vnCASwst7",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst1",
+    "sw": "Linux",
+    "service": "vnCASwst1",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba2",
+    "sw": "Linux",
+    "service": "vcasadminwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst4",
+    "sw": "Linux",
+    "service": "vnCASwst4",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba7",
+    "sw": "Linux",
+    "service": "vnCASwba7",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst3",
+    "sw": "Linux",
+    "service": "vnCASwst3",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst6",
+    "sw": "Linux",
+    "service": "vnCASwst6",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba1",
+    "sw": "Linux",
+    "service": "vnCASwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba6",
+    "sw": "Linux",
+    "service": "vnCASwba6",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba4",
+    "sw": "Linux",
+    "service": "vnCASwba4",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst2",
+    "sw": "Tomcat",
+    "service": "vcasadminwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst2",
+    "sw": "Tomcat",
+    "service": "vnCASwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst5",
+    "sw": "Tomcat",
+    "service": "vnCASwst5",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst8",
+    "sw": "Linux",
+    "service": "vnCASwst8",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst7",
+    "sw": "Linux",
+    "service": "vnCASwst7",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba5",
+    "sw": "Apache",
+    "service": "vnCASwba5",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba1",
+    "sw": "Apache",
+    "service": "vcasadminwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba3",
+    "sw": "Apache",
+    "service": "vnCASwba3",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba2",
+    "sw": "Apache",
+    "service": "vnCASwba2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba8",
+    "sw": "Apache",
+    "service": "vnCASwba8",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vMMSPVLapp1",
+    "sw": "Linux",
+    "service": "vMMSPVLapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASPVLapp1",
+    "sw": "Linux",
+    "service": "vnCASPVLapp1",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthfdswst1",
+    "sw": "Tomcat",
+    "service": "vdenxgauthfdswst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenxgauthadmwst1",
+    "sw": "Tomcat",
+    "service": "vdenxgauthadmwst1",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst1",
+    "sw": "Linux",
+    "service": "vexsivwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivdbm1",
+    "sw": "Linux",
+    "service": "vexsivdbm1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst2",
+    "sw": "Linux",
+    "service": "vexsivwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwba1",
+    "sw": "Apache",
+    "service": "vexsivwba1",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivdbm2",
+    "sw": "Linux",
+    "service": "vexsivdbm2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivadm1",
+    "sw": "Linux",
+    "service": "vexsivadm1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst1",
+    "sw": "Tomcat",
+    "service": "vexsivwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst2",
+    "sw": "Tomcat",
+    "service": "vexsivwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst1",
+    "sw": "Tomcat",
+    "service": "vexsivwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivadm1",
+    "sw": "Tomcat",
+    "service": "vexsivadm1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst2",
+    "sw": "Tomcat",
+    "service": "vexsivwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst1",
+    "sw": "Tomcat",
+    "service": "vexsivwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwba1",
+    "sw": "Linux",
+    "service": "vexsivwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivdbm1",
+    "sw": "MariaDB",
+    "service": "vexsivdbm1",
+    "score": 96.9,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwba2",
+    "sw": "Linux",
+    "service": "vexsivwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivwst2",
+    "sw": "Tomcat",
+    "service": "vexsivwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivadm1",
+    "sw": "Tomcat",
+    "service": "vexsivadm1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst1",
+    "sw": "Tomcat",
+    "service": "vexsivextwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwba1",
+    "sw": "Linux",
+    "service": "vexsivextwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst2",
+    "sw": "Tomcat",
+    "service": "vexsivextwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwba2",
+    "sw": "Linux",
+    "service": "vexsivextwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst1",
+    "sw": "Tomcat",
+    "service": "vexsivextwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsivextwst2",
+    "sw": "Tomcat",
+    "service": "vexsivextwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdergiftdbo1",
+    "sw": "Oracle",
+    "service": "vdergiftdbo1",
+    "score": 100,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdedgiftwst1",
+    "sw": "Tomcat",
+    "service": "vdedgiftwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdedgiftwba1",
+    "sw": "Apache",
+    "service": "vdedgiftwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdedgiftwst1",
+    "sw": "Linux",
+    "service": "vdedgiftwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdedgiftwba1",
+    "sw": "Linux",
+    "service": "vdedgiftwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdergiftdbo1",
+    "sw": "Linux",
+    "service": "vdergiftdbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-135-88.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-135-55.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-135-83-external",
+    "sw": "Linux",
+    "service": "ip-172.31.135.103-external",
+    "score": 100,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-135-79-internal",
+    "sw": "Linux",
+    "service": "ip-172-31-135-61.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-135-5.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-135-5.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadcrptapp1",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepageproxywba1",
+    "sw": "Linux",
+    "service": "U+Page",
+    "score": 100,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-103-external",
+    "sw": "Apache",
+    "service": "ip-172-31-149-45.ap-northeast-2.compute.internal",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadcbdpapp1",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-51-external",
+    "sw": "Apache",
+    "service": "ip-172.31.149.51-external",
+    "score": 88.2,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadcbdpapp2",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadcrptapp2",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadclogapp4",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadclogapp1",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadclogapp2",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vadclogapp3",
+    "sw": "Tomcat",
+    "service": "통합광고(상용)",
+    "score": 97.9,
+    "type": "WEB",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadcrptapp1",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadcrptapp2",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadclogapp3",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-135-83-external",
+    "sw": "Apache",
+    "service": "ip-172.31.135.103-external",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadclogapp4",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadjksapp1",
+    "sw": "Linux",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadclogapp1",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexadclogapp2",
+    "sw": "Tomcat",
+    "service": "통합광고(검수)",
+    "score": 100,
+    "type": "WEB",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-127-87.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_oem_bastion_2",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-25-164.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_dev_config",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-25-140.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_dev_bastion_1",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-127-36.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_oem_bastion_1",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-127-60.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_oem_config_1",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-127-94.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "hkmc_mtv_oem_config_2",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepageadmwba1",
+    "sw": "Apache",
+    "service": "U+Page",
+    "score": 100,
+    "type": "WEB",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-113.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-113.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-32.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-32.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-4.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-4.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-75.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-75.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-42.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-42.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-36.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-36.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-23.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-23.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-26.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-26.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-33.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-33.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-77.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-77.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-75.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-75.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-35.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-35.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-8.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-8.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-62.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-62.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-55.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-55.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-69.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-69.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-100.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-100.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-112.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-112.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-25.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-25.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-97.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-97.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-113.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-113.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-17.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-17.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-53.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-53.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-125.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-125.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-47.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-47.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-125.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-125.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-105.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-105.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-123.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-123.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-85.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-85.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-34.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-34.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-109.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-109.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-28.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-28.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-49.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-49.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-21.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-21.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-78.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-78.ap-northeast-2.compute.internal",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCdbm1",
+    "sw": "MariaDB",
+    "service": "vdeMSCdbm1",
+    "score": 100,
+    "type": "DB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemvasdbm1",
+    "sw": "MariaDB",
+    "service": "vdemvasdbm1",
+    "score": 100,
+    "type": "DB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemvascwba1",
+    "sw": "Apache",
+    "service": "vdemvascwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCadmwst1",
+    "sw": "Tomcat",
+    "service": "vdeMSCadmwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemvasawba1",
+    "sw": "Apache",
+    "service": "vdemvasawba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemvascwst1",
+    "sw": "Tomcat",
+    "service": "vdemvascwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCDwba1",
+    "sw": "Apache",
+    "service": "vdeMSCDwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemvasawst1",
+    "sw": "Tomcat",
+    "service": "vdemvasawst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCwba1",
+    "sw": "Apache",
+    "service": "vdeMSCwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCwst1",
+    "sw": "Tomcat",
+    "service": "vdeMSCwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCDwst1",
+    "sw": "Tomcat",
+    "service": "vdeMSCDwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
     "hostname": "ip-172-31-185-52.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "ip-172-31-185-52.ap-northeast-2.compute.internal",
-    "score": 97.7,
+    "score": 100,
+    "type": "OS",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-186-101.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-186-101.ap-northeast-2.compute.internal",
+    "score": 100,
     "type": "OS",
     "team": "VAS서비스개발팀",
     "target": "대상"
@@ -232,843 +4463,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "nwh-svn",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nwh-webdev2",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-CONVDEV",
-    "sw": "Windows",
-    "service": "NWH-CONVDEV",
-    "score": 88.2,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-DBDEV",
-    "sw": "Oracle",
-    "service": "NWH-DBDEV",
-    "score": 94.4,
-    "type": "DB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-WEBDEV",
-    "sw": "Linux",
-    "service": "NWH-WEBDEV",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "DEV-OFFICE01",
-    "sw": "Linux",
-    "service": "DEV-OFFICE01",
-    "score": 98.8,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev01",
-    "sw": "Apache",
-    "service": "wh3-dev01",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nwh-webdev2",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nwh-webdev2",
-    "sw": "Tomcat",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "DEV-OFFICEDB01",
-    "sw": "Linux",
-    "service": "DEV-OFFICEDB01",
-    "score": 98.8,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-CONVDEV",
-    "sw": "IIS",
-    "service": "NWH-CONVDEV",
-    "score": 94,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-FILEDEV",
-    "sw": "Tomcat",
-    "service": "NWH-FILEDEV",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-FILEDEV",
-    "sw": "Apache",
-    "service": "NWH-FILEDEV",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-DBDEV",
-    "sw": "Linux",
-    "service": "NWH-DBDEV",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev03",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev03",
-    "sw": "Tomcat",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev02",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev02",
-    "sw": "Tomcat",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-FILEDEV",
-    "sw": "Linux",
-    "service": "NWH-FILEDEV",
-    "score": 98.8,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev03",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 98.8,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev02",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드3.0/개발_신규",
-    "score": 98.8,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-WEBDEV",
-    "sw": "Apache",
-    "service": "NWH-WEBDEV",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "NWH-WEBDEV",
-    "sw": "Tomcat",
-    "service": "NWH-WEBDEV",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "DEV-OFFICE01",
-    "sw": "Tomcat",
-    "service": "DEV-OFFICE01",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wh3-dev01",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드3.0",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "DEV-OFFICEDB01",
-    "sw": "MariaDB",
-    "service": "DEV-OFFICEDB01",
-    "score": 68.8,
-    "type": "DB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nwh-svn",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "billapi-dev",
-    "sw": "Linux",
-    "service": "billapi-dev",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd996",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "www998",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd995",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd903",
-    "sw": "Linux",
-    "service": "whdd903",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "preview_a1",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "sfolder_a1",
-    "sw": "Linux",
-    "service": "sfolder_a1",
-    "score": 90.6,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "link98",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "linkmedia98",
-    "sw": "Linux",
-    "service": "linkmedia98",
-    "score": 95.3,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd_mdb",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wsms2",
-    "sw": "Linux",
-    "service": "wsms2",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "bill1",
-    "sw": "Linux",
-    "service": "bill1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd998",
-    "sw": "Linux",
-    "service": "whdd998",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "cowork98",
-    "sw": "Linux",
-    "service": "cowork98",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "www98",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd9001",
-    "sw": "Linux",
-    "service": "whdd9001",
-    "score": 97.7,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd9002",
-    "sw": "Linux",
-    "service": "whdd9002",
-    "score": 97.7,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wldd99",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "imglink98",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nauth2",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nauth1",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "meta99",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "program_a1",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "cick-dev",
-    "sw": "Linux",
-    "service": "cick-dev",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "pauth2_a1",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "pauth1_a1",
-    "sw": "Linux",
-    "service": "pauth1_a1",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nate-b",
-    "sw": "Linux",
-    "service": "nate-b",
-    "score": 97.7,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "nate-b",
-    "sw": "Oracle",
-    "service": "nate-b",
-    "score": 68.9,
-    "type": "DB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "mail3_a1",
-    "sw": "Linux",
-    "service": "mail3_a1",
-    "score": 95.3,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "images_a1",
-    "sw": "Linux",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd997",
-    "sw": "Linux",
-    "service": "whdd997",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wldd99",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd9002",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd9001",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "www98",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 64.7,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd996",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "wsms2",
-    "sw": "Apache",
-    "service": "wsms2",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "www998",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 64.7,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd998",
-    "sw": "Apache",
-    "service": "whdd998",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "billapi-dev",
-    "sw": "Apache",
-    "service": "billapi-dev",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "sfolder_a1",
-    "sw": "Apache",
-    "service": "sfolder_a1",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "bill1",
-    "sw": "Apache",
-    "service": "bill1",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "cowork98",
-    "sw": "Apache",
-    "service": "cowork98",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "linkmedia98",
-    "sw": "Apache",
-    "service": "linkmedia98",
-    "score": 64.7,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "preview_a1",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "program_a1",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd_mdb",
-    "sw": "MariaDB",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "DB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "link98",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 100,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd997",
-    "sw": "Apache",
-    "service": "whdd997",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd903",
-    "sw": "Apache",
-    "service": "whdd903",
-    "score": 41.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "images_a1",
-    "sw": "Apache",
-    "service": "images_a1",
-    "score": 64.7,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "imglink98",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd995",
-    "sw": "Apache",
-    "service": "서비스안양_웹하드",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "CTISTB",
-    "sw": "Tomcat",
-    "service": "CTISTB",
-    "score": 74.5,
-    "type": "WEB",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "CTISTB",
-    "sw": "Apache",
-    "service": "CTISTB",
-    "score": 29.4,
-    "type": "WEB",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "isu-dev",
-    "sw": "Apache",
-    "service": "isu-dev",
-    "score": 52.9,
-    "type": "WEB",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "isu-dev",
-    "sw": "Tomcat",
-    "service": "isu-dev",
-    "score": 100,
-    "type": "WEB",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "himcstb",
-    "sw": "Tomcat",
-    "service": "himcstb",
-    "score": 76.6,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "4D-acqapi-TB",
-    "sw": "Tomcat",
-    "service": "4D-acqapi-TB",
-    "score": 100,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "4D-acqapi-TB",
-    "sw": "Apache",
-    "service": "4D-acqapi-TB",
-    "score": 41.2,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "SEARCHAgent_TB",
-    "sw": "Tomcat",
-    "service": "SEARCHAgent_TB",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dvfas1",
-    "sw": "Tomcat",
-    "service": "dvfas1",
-    "score": 100,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "helloagenttb",
-    "sw": "Tomcat",
-    "service": "helloagenttb",
-    "score": 74.5,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "helloagenttb",
-    "sw": "Apache",
-    "service": "helloagenttb",
-    "score": 41.2,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tb-hdtvlog",
-    "sw": "Tomcat",
-    "service": "tb-hdtvlog",
-    "score": 57.4,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tb-hdtvlog",
-    "sw": "Apache",
-    "service": "tb-hdtvlog",
-    "score": 29.4,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdemcpnadmapp1",
     "sw": "Apache",
     "service": "vdemcpnadmapp1",
@@ -1087,15 +4481,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepageadmwba1",
-    "sw": "Apache",
-    "service": "U+Page",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdepagewba1",
     "sw": "Apache",
     "service": "U+Page",
@@ -1105,264 +4490,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexwpswba1",
-    "sw": "Linux",
-    "service": "vexwpswba1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmapp1",
-    "sw": "Linux",
-    "service": "vexwpsadmapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpswst2",
-    "sw": "Linux",
-    "service": "vexwpswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmdbm2",
-    "sw": "Linux",
-    "service": "vexwpsadmdbm2",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsapdbm1",
-    "sw": "Linux",
-    "service": "vexwpsapdbm1",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpswst1",
-    "sw": "Linux",
-    "service": "vexwpswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmdbm1",
-    "sw": "Linux",
-    "service": "vexwpsadmdbm1",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpswst01",
-    "sw": "Linux",
-    "service": "vdewpswst01",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsapdbm2",
-    "sw": "Linux",
-    "service": "vexwpsapdbm2",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpswba2",
-    "sw": "Linux",
-    "service": "vexwpswba2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpswba01",
-    "sw": "Linux",
-    "service": "vdewpswba01",
-    "score": 97.4,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmapp2",
-    "sw": "Linux",
-    "service": "vexwpsadmapp2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpsapdbm01",
-    "sw": "Linux",
-    "service": "vdewpsapdbm01",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpsadmapp01",
-    "sw": "Linux",
-    "service": "vdewpsadmapp01",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpsadmdbm01",
-    "sw": "Linux",
-    "service": "vdewpsadmdbm01",
-    "score": 99.8,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss101",
-    "sw": "Apache",
-    "service": "vptb2ss101",
-    "score": 47.1,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss100",
-    "sw": "Apache",
-    "service": "vptb2ss100",
-    "score": 47.1,
-    "type": "WEB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpTBcds1",
-    "sw": "PostgreSQL",
-    "service": "vpTBcds1",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss101",
-    "sw": "PostgreSQL",
-    "service": "vptb2ss101",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB2ls2",
-    "sw": "PostgreSQL",
-    "service": "tvTB2ls2",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ls1",
-    "sw": "PostgreSQL",
-    "service": "vptb2ls1",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTBcms1",
-    "sw": "PostgreSQL",
-    "service": "tvTBcms1",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vptb2ss100",
     "sw": "PostgreSQL",
     "service": "vptb2ss100",
     "score": 97,
     "type": "DB",
     "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB1ls1",
-    "sw": "PostgreSQL",
-    "service": "tvTB1ls1",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTBcds1",
-    "sw": "PostgreSQL",
-    "service": "tvTBcds1",
-    "score": 51.5,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB1ss1",
-    "sw": "PostgreSQL",
-    "service": "tvTB1ss1",
-    "score": 97,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmdbm2",
-    "sw": "MariaDB",
-    "service": "vexwpsadmdbm2",
-    "score": 81.3,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsapdbm1",
-    "sw": "MariaDB",
-    "service": "vexwpsapdbm1",
-    "score": 81.3,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmdbm1",
-    "sw": "MariaDB",
-    "service": "vexwpsadmdbm1",
-    "score": 81.3,
-    "type": "DB",
-    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
@@ -1372,385 +4505,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsapdbm2",
-    "sw": "MariaDB",
-    "service": "vexwpsapdbm2",
-    "score": 81.3,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdergiftdbo1",
-    "sw": "Oracle",
-    "service": "vdergiftdbo1",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdedgiftwst1",
-    "sw": "Tomcat",
-    "service": "vdedgiftwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdedgiftwba1",
-    "sw": "Apache",
-    "service": "vdedgiftwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdedgiftwst1",
-    "sw": "Linux",
-    "service": "vdedgiftwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdedgiftwba1",
-    "sw": "Linux",
-    "service": "vdedgiftwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdergiftdbo1",
-    "sw": "Linux",
-    "service": "vdergiftdbo1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "helloagenttb",
-    "sw": "Linux",
-    "service": "helloagenttb",
-    "score": 95.3,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "CGAgent_TB",
-    "sw": "Linux",
-    "service": "CGAgent_TB",
-    "score": 97.7,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "SEARCHAgent_TB",
-    "sw": "Linux",
-    "service": "SEARCHAgent_TB",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "stp-hitpop02",
-    "sw": "Linux",
-    "service": "stp-hitpop02",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "VUC-TB",
-    "sw": "Linux",
-    "service": "VUC-TB",
-    "score": 97.7,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tb-hdtvlog",
-    "sw": "Linux",
-    "service": "tb-hdtvlog",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss101",
-    "sw": "Linux",
-    "service": "vptb2ss101",
-    "score": 96,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTBcms1",
-    "sw": "Linux",
-    "service": "tvTBcms1",
-    "score": 93.7,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "himcstb",
-    "sw": "Linux",
-    "service": "himcstb",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "CG_Agent_TB",
-    "sw": "Windows",
-    "service": "CG_Agent_TB",
-    "score": 85.8,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "IDX_AGT5",
-    "sw": "Windows",
-    "service": "IDX_AGT5",
-    "score": 98.8,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB2ls2",
-    "sw": "Linux",
-    "service": "tvTB2ls2",
-    "score": 86.9,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ls1",
-    "sw": "Linux",
-    "service": "vptb2ls1",
-    "score": 96,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB2ss1",
-    "sw": "Linux",
-    "service": "tvTB2ss1",
-    "score": 89.7,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ZIDX",
-    "sw": "Windows",
-    "service": "ZIDX",
-    "score": 98.8,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss100",
-    "sw": "Linux",
-    "service": "vptb2ss100",
-    "score": 98.6,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "4D-acqapi-TB",
-    "sw": "Linux",
-    "service": "4D-acqapi-TB",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "IDX_AGT3",
-    "sw": "Windows",
-    "service": "IDX_AGT3",
-    "score": 97.6,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {"hostname": "ca", "sw": "Windows", "service": "ca", "score": 100, "type": "OS", "team": "VAS서비스개발팀", "target": "대상"},
-  {
-    "hostname": "tvTB1ls1",
-    "sw": "Linux",
-    "service": "tvTB1ls1",
-    "score": 98.6,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTBcds1",
-    "sw": "Linux",
-    "service": "tvTBcds1",
-    "score": 96,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "IDX_AGT1",
-    "sw": "Windows",
-    "service": "IDX_AGT1",
-    "score": 98.8,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvTB1ss1",
-    "sw": "Linux",
-    "service": "tvTB1ss1",
-    "score": 96.2,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dvfas1",
-    "sw": "Linux",
-    "service": "dvfas1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "IDX_AGT4",
-    "sw": "Windows",
-    "service": "IDX_AGT4",
-    "score": 97.6,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "stp_conout_ecs02",
-    "sw": "Linux",
-    "service": "stp_conout_ecs02",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "stp_conout_ecs01",
-    "sw": "Linux",
-    "service": "stp_conout_ecs01",
-    "score": 100,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "IDX_AGT2",
-    "sw": "Windows",
-    "service": "IDX_AGT2",
-    "score": 98.8,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpswba1",
-    "sw": "Nginx",
-    "service": "vexwpswba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmapp1",
-    "sw": "Nginx",
-    "service": "vexwpsadmapp1",
-    "score": 96.8,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpswba2",
-    "sw": "Nginx",
-    "service": "vexwpswba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexwpsadmapp2",
-    "sw": "Nginx",
-    "service": "vexwpsadmapp2",
-    "score": 96.8,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwba1",
-    "sw": "Apache",
-    "service": "vexsivextwba1",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpsapdbm01",
-    "sw": "MariaDB",
-    "service": "vdewpsapdbm01",
-    "score": 37.5,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpsadmdbm01",
-    "sw": "MariaDB",
-    "service": "vdewpsadmdbm01",
-    "score": 37.5,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewpswba01",
-    "sw": "Nginx",
-    "service": "vdewpswba01",
-    "score": 100,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
@@ -1817,19 +4571,28 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdewpsadmapp01",
-    "sw": "Nginx",
-    "service": "vdewpsadmapp01",
-    "score": 100,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotsaswst7",
     "sw": "Linux",
     "service": "vdehiotsaswst7",
     "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG2dbo1",
+    "sw": "Linux",
+    "service": "vexSTG2dbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "viotwstdev",
+    "sw": "Linux",
+    "service": "viotwstdev",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -1853,6 +4616,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "slave2",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev3-hbase3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-es3",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-es3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vhiotaswst2",
     "sw": "Linux",
     "service": "vhiotaswst2",
@@ -1862,36 +4643,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ovxsasdbo2",
-    "sw": "Linux",
-    "service": "ovxsasdbo2",
-    "score": 95.3,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "viotwstdev",
-    "sw": "Linux",
-    "service": "viotwstdev",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexpmqwst1",
     "sw": "Linux",
     "service": "vexpmqwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgupdownwst1",
-    "sw": "Linux",
-    "service": "vexdeviotstgupdownwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -1907,18 +4661,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexSTG2dbo1",
+    "hostname": "ovxsasdbo2",
     "sw": "Linux",
-    "service": "vexSTG2dbo1",
-    "score": 100,
+    "service": "ovxsasdbo2",
+    "score": 95.3,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "slave2",
+    "hostname": "vexdeviotstgupdownwst1",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase3",
+    "service": "vexdeviotstgupdownwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -1928,15 +4682,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "slave3",
     "sw": "Linux",
     "service": "ec2-az2a-luiot-dev2-hbase4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-es3",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-es3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -1970,19 +4715,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexSTG1dbo2",
+    "hostname": "vdepetGPwst2",
     "sw": "Linux",
-    "service": "vexSTG1dbo2",
-    "score": 100,
+    "service": "vdepetGPwst2",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdepetGPwst2",
+    "hostname": "vexSTG1dbo2",
     "sw": "Linux",
-    "service": "vdepetGPwst2",
-    "score": 97.7,
+    "service": "vexSTG1dbo2",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2006,6 +4751,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vhiotisswst1",
+    "sw": "Linux",
+    "service": "vhiotisswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdehiotauthwst1",
     "sw": "Linux",
     "service": "vdehiotauthwst1",
@@ -2024,6 +4778,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexiag3wba2",
+    "sw": "Linux",
+    "service": "vexiag3wba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsswst1",
+    "sw": "Linux",
+    "service": "vhiotsswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdefanwst1",
     "sw": "Linux",
     "service": "vdefanwst1",
@@ -2033,9 +4805,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst9",
+    "hostname": "vexdeviotstgupdownwba1",
     "sw": "Linux",
-    "service": "vdeviotsaswst9",
+    "service": "vexdeviotstgupdownwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvcswst2",
+    "sw": "Linux",
+    "service": "vdecctvcswst2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2060,36 +4841,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgupdownwba1",
+    "hostname": "vdeviotsaswst9",
     "sw": "Linux",
-    "service": "vexdeviotstgupdownwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexiag3wba2",
-    "sw": "Linux",
-    "service": "vexiag3wba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst2",
-    "sw": "Linux",
-    "service": "vdecctvcswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsswst1",
-    "sw": "Linux",
-    "service": "vhiotsswst1",
+    "service": "vdeviotsaswst9",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2099,15 +4853,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdehiothomewst1",
     "sw": "Linux",
     "service": "vdehiothomewst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotisswst1",
-    "sw": "Linux",
-    "service": "vhiotisswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2132,18 +4877,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "master1",
+    "hostname": "slave4",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-hbase1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgimgwst1",
-    "sw": "Linux",
-    "service": "vexdeviotstgimgwst1",
+    "service": "ec2-az2c-luiot-dev3-hbase5",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2159,9 +4895,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexSTG3dbo1",
+    "hostname": "slave1",
     "sw": "Linux",
-    "service": "vexSTG3dbo1",
+    "service": "ec2-az2c-luiot-dev2-hbase2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgimgwst1",
+    "sw": "Linux",
+    "service": "vexdeviotstgimgwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2177,18 +4922,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave1",
+    "hostname": "vexSTG3dbo1",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-hbase2",
+    "service": "vexSTG3dbo1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "slave4",
+    "hostname": "master1",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase5",
+    "service": "ec2-az2c-luiot-dev2-hbase1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2204,37 +4949,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehcgwapp1",
+    "hostname": "vexdeviotstgauthwba2",
     "sw": "Linux",
-    "service": "vdehcgwapp1",
+    "service": "vexdeviotstgauthwba2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeepswst2",
+    "hostname": "ec2-az2a-luiot-dev1-es3",
     "sw": "Linux",
-    "service": "vdeepswst2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG1dbo1",
-    "sw": "Linux",
-    "service": "vexSTG1dbo1",
+    "service": "ec2-az2a-luiot-dev1-es3",
     "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotcgs2",
-    "sw": "Linux",
-    "service": "vdehiotcgs2",
-    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2249,10 +4976,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-es1",
+    "hostname": "vhiotcgswst3",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-es1",
+    "service": "vhiotcgswst3",
     "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3dba1",
+    "sw": "Linux",
+    "service": "vexiag3dba1",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2261,6 +4997,33 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "master1",
     "sw": "Linux",
     "service": "ec2-az2a-luiot-dev1-hbase1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetGWwst2",
+    "sw": "Linux",
+    "service": "vdepetGWwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevhcctvwas",
+    "sw": "Linux",
+    "service": "vdevhcctvwas",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcgwapp1",
+    "sw": "Linux",
+    "service": "vdehcgwapp1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2285,73 +5048,10 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotsswst3",
+    "hostname": "vdeepswst2",
     "sw": "Linux",
-    "service": "vhiotsswst3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotepswst1",
-    "sw": "Linux",
-    "service": "vhiotepswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotcgswst3",
-    "sw": "Linux",
-    "service": "vhiotcgswst3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpetGW1wst2",
-    "sw": "Linux",
-    "service": "vexpetGW1wst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgauthwba2",
-    "sw": "Linux",
-    "service": "vexdeviotstgauthwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba1",
-    "sw": "Linux",
-    "service": "vexdhiotp2pdclogwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-es3",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-es3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst3",
-    "sw": "Linux",
-    "service": "vdehiotsaswst3",
-    "score": 100,
+    "service": "vdeepswst2",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2360,6 +5060,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdepetGPwst1",
     "sw": "Linux",
     "service": "vdepetGPwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG1dbo1",
+    "sw": "Linux",
+    "service": "vexSTG1dbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotcgs2",
+    "sw": "Linux",
+    "service": "vdehiotcgs2",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2375,18 +5093,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepetGWwst2",
+    "hostname": "vexdhiotp2pdclogwba1",
     "sw": "Linux",
-    "service": "vdepetGWwst2",
+    "service": "vexdhiotp2pdclogwba1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgimgwst2",
+    "hostname": "vdehiotsaswst3",
     "sw": "Linux",
-    "service": "vexdeviotstgimgwst2",
+    "service": "vdehiotsaswst3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsswst3",
+    "sw": "Linux",
+    "service": "vhiotsswst3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2402,216 +5129,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdevhcctvwas",
+    "hostname": "vexdeviotstgimgwst2",
     "sw": "Linux",
-    "service": "vdevhcctvwas",
+    "service": "vexdeviotstgimgwst2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexiag3dba1",
+    "hostname": "vexpetGW1wst2",
     "sw": "Linux",
-    "service": "vexiag3dba1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwapp1",
-    "sw": "Linux",
-    "service": "vexdhhcgwapp1",
+    "service": "vexpetGW1wst2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-coap",
+    "hostname": "ec2-az2a-luiot-dev1-es1",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-coap",
+    "service": "ec2-az2a-luiot-dev1-es1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "slave4",
+    "hostname": "vhiotepswst1",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev2-hbase5",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-prometheus",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-prometheus",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-board",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-board",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexcctvdba1",
-    "sw": "Linux",
-    "service": "vexcctvdba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgapiwba2",
-    "sw": "Linux",
-    "service": "vexdeviotstgapiwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-xxljob",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-xxljob",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-manager",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-manager",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst1",
-    "sw": "Linux",
-    "service": "vdehiotsaswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-rocketmq2",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-rocketmq2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsswst4",
-    "sw": "Linux",
-    "service": "vhiotsswst4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst2",
-    "sw": "Linux",
-    "service": "vexdepetwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vissexwba1",
-    "sw": "Linux",
-    "service": "vissexwba1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotogsapp1",
-    "sw": "Linux",
-    "service": "vdehiotogsapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave2",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hbase3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG4dbo2",
-    "sw": "Linux",
-    "service": "vexSTG4dbo2",
-    "score": 99.8,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-es3",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-es3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdetesthcctvwst1",
-    "sw": "Linux",
-    "service": "vdetesthcctvwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst1",
-    "sw": "Linux",
-    "service": "vhiotaswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiag2wst1",
-    "sw": "Linux",
-    "service": "vdeiag2wst1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst6",
-    "sw": "Linux",
-    "service": "vdeviotsaswst6",
+    "service": "vhiotepswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2627,46 +5174,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiagwst1",
+    "hostname": "slave4",
     "sw": "Linux",
-    "service": "vdeiagwst1",
+    "service": "ec2-az2a-luiot-dev2-hbase5",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vissexwba1",
+    "sw": "Linux",
+    "service": "vissexwba1",
     "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevupimg2setwst2",
-    "sw": "Linux",
-    "service": "vexdevupimg2setwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgapiwst1",
-    "sw": "Linux",
-    "service": "vexhcboxapiwst02",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-ota",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-ota",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst8",
-    "sw": "Linux",
-    "service": "vdeviotsaswst8",
-    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2681,9 +5201,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-manager",
+    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-manager",
+    "service": "ec2-az2c-luiot-dev2-opncldfrnt",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2699,36 +5219,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiag2dba1",
+    "hostname": "ec2-az2c-luiot-dev2-es3",
     "sw": "Linux",
-    "service": "vdeiag2dba1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotrgsapp2",
-    "sw": "Linux",
-    "service": "vdehiotrgsapp2",
+    "service": "ec2-az2c-luiot-dev2-es3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
+    "hostname": "vexSTG4dbo2",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-opncldfrnt",
-    "score": 100,
+    "service": "vexSTG4dbo2",
+    "score": 99.8,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehhngwwst2",
+    "hostname": "ec2-az2a-luiot-dev3-coap",
     "sw": "Linux",
-    "service": "vdehhngwwst2",
+    "service": "ec2-az2a-luiot-dev3-coap",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2744,9 +5255,279 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "slave2",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hbase3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp5",
+    "sw": "Linux",
+    "service": "vexphiotp2predisapp5",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotcgswst2",
+    "sw": "Linux",
+    "service": "vhiotcgswst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pzookeeperapp2",
+    "sw": "Linux",
+    "service": "vexphiotp2pzookeeperapp2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave2",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-hbase3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwst1",
+    "sw": "Linux",
+    "service": "vexhcboxapiwst02",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhhcgwapp1",
+    "sw": "Linux",
+    "service": "vexdhhcgwapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-manager",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-manager",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst8",
+    "sw": "Linux",
+    "service": "vdeviotsaswst8",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotaswst4",
+    "sw": "Linux",
+    "service": "vdehiotaswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-ota",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-ota",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiag2dba1",
+    "sw": "Linux",
+    "service": "vdeiag2dba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdehiotsaswba1",
     "sw": "Linux",
     "service": "vdehiotsaswba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotaswst1",
+    "sw": "Linux",
+    "service": "vhiotaswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-board",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-board",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesswst1",
+    "sw": "Linux",
+    "service": "vdesswst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba2",
+    "sw": "Linux",
+    "service": "vexdeviotstgapiwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsswst4",
+    "sw": "Linux",
+    "service": "vhiotsswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexcctvdba1",
+    "sw": "Linux",
+    "service": "vexcctvdba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotogsapp1",
+    "sw": "Linux",
+    "service": "vdehiotogsapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-manager",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-manager",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-prometheus",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-prometheus",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiagwst1",
+    "sw": "Linux",
+    "service": "vdeiagwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiag2wst1",
+    "sw": "Linux",
+    "service": "vdeiag2wst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehhngwwst2",
+    "sw": "Linux",
+    "service": "vdehhngwwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst6",
+    "sw": "Linux",
+    "service": "vdeviotsaswst6",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-es2",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-es2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pstunwba2",
+    "sw": "Linux",
+    "service": "vexphiotp2pstunwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-xxljob",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-xxljob",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-rocketmq2",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-rocketmq2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst1",
+    "sw": "Linux",
+    "service": "vdehiotsaswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2771,72 +5552,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pstunwba2",
-    "sw": "Linux",
-    "service": "vexphiotp2pstunwba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pmasterwst1",
-    "sw": "Linux",
-    "service": "vexphiotp2pmasterwst1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotaswst4",
-    "sw": "Linux",
-    "service": "vdehiotaswst4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotcgswst2",
-    "sw": "Linux",
-    "service": "vhiotcgswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexhiotemulapp1",
     "sw": "Linux",
     "service": "vexhiotemulapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp5",
-    "sw": "Linux",
-    "service": "vexphiotp2predisapp5",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-rocketmq1",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-rocketmq1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-es2",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-es2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2852,28 +5570,55 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave2",
+    "hostname": "vexphiotp2pmasterwst1",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-hbase3",
+    "service": "vexphiotp2pmasterwst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdetesthcctvwst1",
+    "sw": "Linux",
+    "service": "vdetesthcctvwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdesswst1",
+    "hostname": "vexdevupimg2setwst2",
     "sw": "Linux",
-    "service": "vdesswst1",
+    "service": "vexdevupimg2setwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotrgsapp2",
+    "sw": "Linux",
+    "service": "vdehiotrgsapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-rocketmq1",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-rocketmq1",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pzookeeperapp2",
+    "hostname": "vexdepetwst2",
     "sw": "Linux",
-    "service": "vexphiotp2pzookeeperapp2",
-    "score": 97.7,
+    "service": "vexdepetwst2",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -2882,15 +5627,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdenauthdba1",
     "sw": "Altibase",
     "service": "vdenauthdba1",
-    "score": 100,
+    "score": 80.8,
     "type": "DB",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "slave6",
+    "hostname": "ec2-az2a-luiot-dev3-es1",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase7",
+    "service": "ec2-az2a-luiot-dev3-es1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave5",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hbase6",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2906,18 +5660,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave5",
+    "hostname": "slave6",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hbase6",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-es1",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-es1",
+    "service": "ec2-az2c-luiot-dev3-hbase7",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -2933,105 +5678,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "vexphiotp2pdclogwba2",
-    "sw": "Linux",
-    "service": "vexphiotp2pdclogwba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexiag3dba2",
-    "sw": "Linux",
-    "service": "vexiag3dba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehigwwst2",
-    "sw": "Linux",
-    "service": "vdehigwwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotisswst2",
-    "sw": "Linux",
-    "service": "vdehiotisswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRCwst2",
-    "sw": "Linux",
-    "service": "vdepetRCwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehhigwwst2",
-    "sw": "Linux",
-    "service": "vdehhigwwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotisswst1",
-    "sw": "Linux",
-    "service": "vdehiotisswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pzookeeperapp2",
-    "sw": "Linux",
-    "service": "vexdhiotp2pzookeeperapp2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst5",
-    "sw": "Linux",
-    "service": "vdehiotsaswst5",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhiotdba2",
-    "sw": "Linux",
-    "service": "vexhiotdba2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotaswst2",
-    "sw": "Linux",
-    "service": "vdehiotaswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotsaswst12",
     "sw": "Linux",
     "service": "vdehiotsaswst12",
@@ -3041,27 +5687,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwba1",
+    "hostname": "vexiag3dba2",
     "sw": "Linux",
-    "service": "vexdeviotstgapiwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevdedup2setwst2",
-    "sw": "Linux",
-    "service": "vexdevdedup2setwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeogswst1",
-    "sw": "Linux",
-    "service": "vdeogswst1",
+    "service": "vexiag3dba2",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3077,6 +5705,78 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdehiotisswst2",
+    "sw": "Linux",
+    "service": "vdehiotisswst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba1",
+    "sw": "Linux",
+    "service": "vexdeviotstgapiwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pzookeeperapp2",
+    "sw": "Linux",
+    "service": "vexdhiotp2pzookeeperapp2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhiotdba2",
+    "sw": "Linux",
+    "service": "vexhiotdba2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst5",
+    "sw": "Linux",
+    "service": "vdehiotsaswst5",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevdedup2setwst2",
+    "sw": "Linux",
+    "service": "vexdevdedup2setwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst2",
+    "sw": "Linux",
+    "service": "vdepetRCwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pdclogwba2",
+    "sw": "Linux",
+    "service": "vexphiotp2pdclogwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexhcctvwst1",
     "sw": "Linux",
     "service": "vexhcctvwst1",
@@ -3086,18 +5786,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotaswst3",
+    "hostname": "vdehiotaswst2",
     "sw": "Linux",
-    "service": "vhiotaswst3",
+    "service": "vdehiotaswst2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdepetGPUwst1",
+    "hostname": "vdehhigwwst2",
     "sw": "Linux",
-    "service": "vdepetGPUwst1",
+    "service": "vdehhigwwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehigwwst2",
+    "sw": "Linux",
+    "service": "vdehigwwst2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3113,55 +5822,37 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehomecctvstrm2app",
+    "hostname": "vdehiotisswst1",
     "sw": "Linux",
-    "service": "vdehomecctvstrm2app",
+    "service": "vdehiotisswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdevdedup2setwst1",
+    "hostname": "vdepetGPUwst1",
     "sw": "Linux",
-    "service": "vexdevdedup2setwst1",
+    "service": "vdepetGPUwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vhiotcgswst1",
+    "hostname": "vhiotaswst3",
     "sw": "Linux",
-    "service": "vhiotcgswst1",
+    "service": "vhiotaswst3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdevupdd2setwst1",
+    "hostname": "vdeogswst1",
     "sw": "Linux",
-    "service": "vexdevupdd2setwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexiag3wba1",
-    "sw": "Linux",
-    "service": "vexiag3wba1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdbm2",
-    "sw": "Linux",
-    "service": "vexdhiotp2pdbm2",
-    "score": 97.7,
+    "service": "vdeogswst1",
+    "score": 0,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -3176,54 +5867,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pdbm1",
+    "hostname": "vdehiotsaswst6",
     "sw": "Linux",
-    "service": "vexdhiotp2pdbm1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2predisapp1",
-    "sw": "Linux",
-    "service": "vexdhiotp2predisapp1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2predisapp6",
-    "sw": "Linux",
-    "service": "vexdhiotp2predisapp6",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pcasapp1",
-    "sw": "Linux",
-    "service": "vexphiotp2pcasapp1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pzookeeperapp3",
-    "sw": "Linux",
-    "service": "vexphiotp2pzookeeperapp3",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pdbm2",
-    "sw": "Linux",
-    "service": "vexphiotp2pdbm2",
+    "service": "vdehiotsaswst6",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3239,36 +5885,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsswst1",
+    "hostname": "vdehiot1saswst8",
     "sw": "Linux",
-    "service": "vdehiotsswst1",
+    "service": "vdehiot1saswst8",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotauthwst2",
+    "hostname": "vdehomecctvsb2app",
     "sw": "Linux",
-    "service": "vdehiotauthwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst1",
-    "sw": "Linux",
-    "service": "vdehiotmainwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst6",
-    "sw": "Linux",
-    "service": "vdehiotsaswst6",
+    "service": "vdehomecctvsb2app",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3284,18 +5912,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexlcctvcswst1",
+    "hostname": "vexiag3wba1",
     "sw": "Linux",
-    "service": "vexlcctvcswst1",
-    "score": 100,
+    "service": "vexiag3wba1",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiot1saswst4",
+    "hostname": "vexphiotp2pdbm2",
     "sw": "Linux",
-    "service": "vdehiot1saswst4",
+    "service": "vexphiotp2pdbm2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3311,9 +5939,63 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiot1saswst8",
+    "hostname": "vexphiotp2pzookeeperapp3",
     "sw": "Linux",
-    "service": "vdehiot1saswst8",
+    "service": "vexphiotp2pzookeeperapp3",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst4",
+    "sw": "Linux",
+    "service": "vdehiot1saswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlcctvcswst1",
+    "sw": "Linux",
+    "service": "vexlcctvcswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotcgswst1",
+    "sw": "Linux",
+    "service": "vhiotcgswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2predisapp1",
+    "sw": "Linux",
+    "service": "vexdhiotp2predisapp1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst1",
+    "sw": "Linux",
+    "service": "vdehiotmainwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehomecctvstrm2app",
+    "sw": "Linux",
+    "service": "vdehomecctvstrm2app",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3329,9 +6011,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiotgwdbm2",
+    "hostname": "vexdhiotp2pdbm1",
     "sw": "Linux",
-    "service": "vdeiotgwdbm2",
+    "service": "vexdhiotp2pdbm1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2predisapp6",
+    "sw": "Linux",
+    "service": "vexdhiotp2predisapp6",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevdedup2setwst1",
+    "sw": "Linux",
+    "service": "vexdevdedup2setwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pcasapp1",
+    "sw": "Linux",
+    "service": "vexphiotp2pcasapp1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsswst1",
+    "sw": "Linux",
+    "service": "vdehiotsswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3347,10 +6065,37 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehomecctvsb2app",
+    "hostname": "vexdevupdd2setwst1",
     "sw": "Linux",
-    "service": "vdehomecctvsb2app",
+    "service": "vexdevupdd2setwst1",
     "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotgwdbm2",
+    "sw": "Linux",
+    "service": "vdeiotgwdbm2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotauthwst2",
+    "sw": "Linux",
+    "service": "vdehiotauthwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdbm2",
+    "sw": "Linux",
+    "service": "vexdhiotp2pdbm2",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -3572,19 +6317,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehigwwst1",
+    "hostname": "vexdhiotp2pcasapp1",
     "sw": "Linux",
-    "service": "vdehigwwst1",
-    "score": 100,
+    "service": "vexdhiotp2pcasapp1",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pcasapp1",
+    "hostname": "vdehigwwst1",
     "sw": "Linux",
-    "service": "vexdhiotp2pcasapp1",
-    "score": 97.7,
+    "service": "vdehigwwst1",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -3644,18 +6389,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-manager",
+    "hostname": "ec2-az2a-luiot-dev1-devex",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-manager",
+    "service": "ec2-az2a-luiot-dev1-devex",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-devex",
+    "hostname": "ec2-az2a-luiot-dev1-manager",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-devex",
+    "service": "ec2-az2a-luiot-dev1-manager",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3734,54 +6479,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehcgwwba1",
+    "hostname": "ec2-az2c-luiot-dev2-hetu",
     "sw": "Linux",
-    "service": "vdehcgwwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-uplusadmin",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-uplusadmin",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-p2p1",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-p2p1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-gateway",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-gateway",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeepswst1",
-    "sw": "Linux",
-    "service": "vdeepswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehomecctvstrm1app",
-    "sw": "Linux",
-    "service": "vdehomecctvstrm1app",
+    "service": "ec2-az2c-luiot-dev2-hetu",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3797,18 +6497,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-rocketmq3",
+    "hostname": "slave3",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-rocketmq3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1sasdbo1",
-    "sw": "Linux",
-    "service": "vdehiot1sasdbo1",
+    "service": "ec2-az2c-luiot-dev3-hbase4",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3824,117 +6515,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst13",
-    "sw": "Linux",
-    "service": "vdehiotsaswst13",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-rocketmq2",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-rocketmq2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-device",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-device",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-cem",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-cem",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave4",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hbase5",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-registsvr",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-registsvr",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-registsvr",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-registsvr",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiothomewst2",
-    "sw": "Linux",
-    "service": "vdehiothomewst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdeviotsaswba1",
     "sw": "Linux",
     "service": "vdeviotsaswba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgupdownwba2",
-    "sw": "Linux",
-    "service": "vexdeviotstgupdownwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave3",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiagdba1",
-    "sw": "Linux",
-    "service": "vdeiagdba1",
-    "score": 91.5,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-hetu",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-hetu",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3959,6 +6542,33 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2a-luiot-dev3-registsvr",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-registsvr",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1sasdbo1",
+    "sw": "Linux",
+    "service": "vdehiot1sasdbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgupdownwba2",
+    "sw": "Linux",
+    "service": "vexdeviotstgupdownwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2c-luiot-dev2-apollos",
     "sw": "Linux",
     "service": "ec2-az2c-luiot-dev2-apollos",
@@ -3968,9 +6578,54 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdecctvwst1",
+    "hostname": "ec2-az2a-luiot-dev3-device",
     "sw": "Linux",
-    "service": "vdecctvwst1",
+    "service": "ec2-az2a-luiot-dev3-device",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehomecctvstrm1app",
+    "sw": "Linux",
+    "service": "vdehomecctvstrm1app",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-rocketmq2",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-rocketmq2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave4",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hbase5",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiagdba1",
+    "sw": "Linux",
+    "service": "vdeiagdba1",
+    "score": 91.5,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-gateway",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-gateway",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -3986,6 +6641,96 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2a-luiot-dev1-registsvr",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-registsvr",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-cem",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-cem",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-rocketmq3",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-rocketmq3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeepswst1",
+    "sw": "Linux",
+    "service": "vdeepswst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst13",
+    "sw": "Linux",
+    "service": "vdehiotsaswst13",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcgwwba1",
+    "sw": "Linux",
+    "service": "vdehcgwwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-p2p1",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-p2p1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiothomewst2",
+    "sw": "Linux",
+    "service": "vdehiothomewst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-uplusadmin",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-uplusadmin",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvwst1",
+    "sw": "Linux",
+    "service": "vdecctvwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2a-luiot-dev1-device",
     "sw": "Linux",
     "service": "ec2-az2a-luiot-dev1-device",
@@ -3995,18 +6740,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdecctvctrlapp3",
+    "hostname": "vdehiotsaswst9",
     "sw": "Linux",
-    "service": "vdecctvctrlapp3",
+    "service": "vdehiotsaswst9",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst9",
+    "hostname": "vdecctvctrlapp3",
     "sw": "Linux",
-    "service": "vdehiotsaswst9",
+    "service": "vdecctvctrlapp3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -4095,7 +6840,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexdhiotp2pmasterwba2",
-    "sw": "Nginx",
+    "sw": "Tomcat",
     "service": "vexdhiotp2pmasterwba2",
     "score": 100,
     "type": "WEB",
@@ -4113,7 +6858,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexdhiotp2pmasterwba2",
-    "sw": "Tomcat",
+    "sw": "Nginx",
     "service": "vexdhiotp2pmasterwba2",
     "score": 100,
     "type": "WEB",
@@ -4149,7 +6894,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vucashdev01",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "vucashdev01",
     "score": 100,
     "type": "WEB",
@@ -4158,7 +6903,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vucashdev01",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "vucashdev01",
     "score": 100,
     "type": "WEB",
@@ -4193,45 +6938,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotmainwst2",
-    "sw": "Linux",
-    "service": "vdehiotmainwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst1",
-    "sw": "Linux",
-    "service": "vexdepetwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotauthwba1",
     "sw": "Linux",
     "service": "vdehiotauthwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pttswba1",
-    "sw": "Linux",
-    "service": "vexdhiotp2pttswba1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst22",
-    "sw": "Linux",
-    "service": "vdehiotsaswst22",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -4247,54 +6956,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pmasterwst1",
+    "hostname": "vexdepetwst1",
     "sw": "Linux",
-    "service": "vexdhiotp2pmasterwst1",
+    "service": "vexdepetwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "viotdbadev",
+    "hostname": "vexdhiotp2pttswba1",
     "sw": "Linux",
-    "service": "viotdbadev",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst10",
-    "sw": "Linux",
-    "service": "vdeviotsaswst10",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst3",
-    "sw": "Linux",
-    "service": "vdecctvcswst3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst7",
-    "sw": "Linux",
-    "service": "vdehiot1saswst7",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotdba2",
-    "sw": "Linux",
-    "service": "vdehiotdba2",
+    "service": "vexdhiotp2pttswba1",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -4310,182 +6983,83 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst20",
+    "hostname": "vexdhiotp2pmasterwst1",
     "sw": "Linux",
-    "service": "vdehiotsaswst20",
+    "service": "vexdhiotp2pmasterwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst17",
+    "hostname": "vdehiotsaswst22",
     "sw": "Linux",
-    "service": "vdehiotsaswst17",
+    "service": "vdehiotsaswst22",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2predisapp3",
+    "hostname": "vdeviotsaswst10",
     "sw": "Linux",
-    "service": "vexphiotp2predisapp3",
+    "service": "vdeviotsaswst10",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst2",
+    "sw": "Linux",
+    "service": "vdehiotmainwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vdehiotdba2",
+    "sw": "Linux",
+    "service": "vdehiotdba2",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgauthwst2",
+    "hostname": "vdehiot1saswst7",
     "sw": "Linux",
-    "service": "vexdeviotstgauthwst2",
+    "service": "vdehiot1saswst7",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pplaybackwba1",
+    "hostname": "viotdbadev",
     "sw": "Linux",
-    "service": "vexdhiotp2pplaybackwba1",
+    "service": "viotdbadev",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswba2",
+    "hostname": "vdecctvcswst3",
     "sw": "Linux",
-    "service": "vdeviotsaswba2",
+    "service": "vdecctvcswst3",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswba4",
+    "hostname": "vdeiag2wba1",
     "sw": "Linux",
-    "service": "vdeviotsaswba4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpetGW1wst1",
-    "sw": "Linux",
-    "service": "vexpetGW1wst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba2",
-    "sw": "Linux",
-    "service": "vexdhiotp2pdclogwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1oaswba1",
-    "sw": "Linux",
-    "service": "vdehiot1oaswba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevupdd2setwst2",
-    "sw": "Linux",
-    "service": "vexdevupdd2setwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pcasapp2",
-    "sw": "Linux",
-    "service": "vexphiotp2pcasapp2",
+    "service": "vdeiag2wba1",
     "score": 97.7,
     "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotogsapp2",
-    "sw": "Linux",
-    "service": "vdehiotogsapp2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "devhcboxsaiirwst2",
-    "sw": "Linux",
-    "service": "devhcboxsaiirwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm1",
-    "sw": "Linux",
-    "service": "vdehiotgwdbm1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpgwwst2",
-    "sw": "Linux",
-    "service": "vexpgwwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotccarwba1",
-    "sw": "Linux",
-    "service": "vdeiotccarwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpgwwst1",
-    "sw": "Linux",
-    "service": "vexpgwwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "Apache",
-    "service": "ec2-az2c-luiot-dev2-hbase1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "Tomcat",
-    "service": "ec2-az2c-luiot-dev2-hbase1",
-    "score": 100,
-    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -4517,18 +7091,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdecubewst1",
+    "hostname": "vdehiotgwdbm1",
     "sw": "Linux",
-    "service": "vexdecubewst1",
+    "service": "vdehiotgwdbm1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehpasdbo1",
+    "hostname": "vdehiotsaswst17",
     "sw": "Linux",
-    "service": "vdehpasdbo1",
+    "service": "vdehiotsaswst17",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotccarwba1",
+    "sw": "Linux",
+    "service": "vdeiotccarwba1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -4544,6 +7127,69 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "master1",
+    "sw": "Apache",
+    "service": "ec2-az2c-luiot-dev2-hbase1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehpasdbo1",
+    "sw": "Linux",
+    "service": "vdehpasdbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pplaybackwba1",
+    "sw": "Linux",
+    "service": "vexdhiotp2pplaybackwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevupdd2setwst2",
+    "sw": "Linux",
+    "service": "vexdevupdd2setwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "Tomcat",
+    "service": "ec2-az2c-luiot-dev2-hbase1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgauthwst2",
+    "sw": "Linux",
+    "service": "vexdeviotstgauthwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pcasapp2",
+    "sw": "Linux",
+    "service": "vexphiotp2pcasapp2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdeiotgwwba2",
     "sw": "Linux",
     "service": "vdeiotgwwba2",
@@ -4553,10 +7199,109 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiag2wba1",
+    "hostname": "vexpgwwst1",
     "sw": "Linux",
-    "service": "vdeiag2wba1",
+    "service": "vexpgwwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "devhcboxsaiirwst2",
+    "sw": "Linux",
+    "service": "devhcboxsaiirwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotogsapp2",
+    "sw": "Linux",
+    "service": "vdehiotogsapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1oaswba1",
+    "sw": "Linux",
+    "service": "vdehiot1oaswba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst20",
+    "sw": "Linux",
+    "service": "vdehiotsaswst20",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba2",
+    "sw": "Linux",
+    "service": "vexdhiotp2pdclogwba2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdecubewst1",
+    "sw": "Linux",
+    "service": "vexdecubewst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp3",
+    "sw": "Linux",
+    "service": "vexphiotp2predisapp3",
     "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpetGW1wst1",
+    "sw": "Linux",
+    "service": "vexpetGW1wst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba4",
+    "sw": "Linux",
+    "service": "vdeviotsaswba4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba2",
+    "sw": "Linux",
+    "service": "vdeviotsaswba2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpgwwst2",
+    "sw": "Linux",
+    "service": "vexpgwwst2",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -4679,20 +7424,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst16",
-    "sw": "Linux",
-    "service": "vdehiotsaswst16",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexphiotp2pdclogwba1",
     "sw": "Nginx",
     "service": "vexphiotp2pdclogwba1",
     "score": 100,
     "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst16",
+    "sw": "Linux",
+    "service": "vdehiotsaswst16",
+    "score": 100,
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -5057,18 +7802,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdebbotwst1",
+    "hostname": "vexphiotp2pdbm1",
     "sw": "Linux",
-    "service": "vexdebbotwst1",
+    "service": "vexphiotp2pdbm1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pdbm1",
+    "hostname": "vexdebbotwst1",
     "sw": "Linux",
-    "service": "vexphiotp2pdbm1",
+    "service": "vexdebbotwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -5318,19 +8063,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pclickhouseapp1",
+    "hostname": "ec2-az2a-luiot-dev3-hetu",
     "sw": "Linux",
-    "service": "vexdhiotp2pclickhouseapp1",
-    "score": 97.7,
+    "service": "ec2-az2a-luiot-dev3-hetu",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-hetu",
+    "hostname": "vexdhiotp2pclickhouseapp1",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-hetu",
-    "score": 100,
+    "service": "vexdhiotp2pclickhouseapp1",
+    "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -5354,15 +8099,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-logcollect",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-logcollect",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdeviotsaswst2",
     "sw": "Linux",
     "service": "vdeviotsaswst2",
@@ -5372,11 +8108,11 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexiag3wst2",
-    "sw": "Tomcat",
-    "service": "vexiag3wst2",
-    "score": 100,
-    "type": "WEB",
+    "hostname": "ec2-az2a-luiot-dev1-logcollect",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-logcollect",
+    "score": 97.7,
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -5384,6 +8120,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdepetGWwst2",
     "sw": "Tomcat",
     "service": "vdepetGWwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3wst2",
+    "sw": "Tomcat",
+    "service": "vexiag3wst2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -5852,7 +8597,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "ec2-az2a-luiot-dev2-sms",
     "sw": "Linux",
     "service": "ec2-az2a-luiot-dev2-sms",
-    "score": 0,
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -5876,18 +8621,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-push",
+    "hostname": "ec2-az2a-luiot-dev1-leisi",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-push",
+    "service": "ec2-az2a-luiot-dev1-leisi",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-leisi",
+    "hostname": "ec2-az2a-luiot-dev1-push",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-leisi",
+    "service": "ec2-az2a-luiot-dev1-push",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -5939,18 +8684,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-xxljob",
+    "hostname": "ec2-az2c-luiot-dev2-board",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-xxljob",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave3",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hbase4",
+    "service": "ec2-az2c-luiot-dev2-board",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -5966,87 +8702,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave1",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-uplusmnger",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-uplusmnger",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-xxljob",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-xxljob",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-board",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-board",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-oss",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-oss",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-leisi",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-leisi",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-cem",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-cem",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-coap",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-coap",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-rocketmq1",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-rocketmq1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vhiotsaswst1",
     "sw": "Linux",
     "service": "vhiotsaswst1",
@@ -6056,63 +8711,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-devex",
+    "hostname": "ec2-az2a-luiot-dev3-logcollect",
     "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-devex",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehomecctvsb1app",
-    "sw": "Linux",
-    "service": "vdehomecctvsb1app",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-ifttt",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-ifttt",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-gateway",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-gateway",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-es1",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-es1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave5",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase6",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pmasterwba1",
-    "sw": "Linux",
-    "service": "vexdhiotp2pmasterwba1",
+    "service": "ec2-az2a-luiot-dev3-logcollect",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -6128,45 +8729,72 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-sms",
+    "hostname": "slave5",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-sms",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpetGW1wst2",
-    "sw": "Tomcat",
-    "service": "vexpetGW1wst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-logcollect",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-logcollect",
+    "service": "ec2-az2c-luiot-dev3-hbase6",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-p2p2",
+    "hostname": "ec2-az2c-luiot-dev2-cem",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-p2p2",
+    "service": "ec2-az2c-luiot-dev2-cem",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-xxljob",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-xxljob",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdebbotwst1",
+    "hostname": "ec2-az2c-luiot-dev2-coap",
     "sw": "Linux",
-    "service": "vdebbotwst1",
+    "service": "ec2-az2c-luiot-dev2-coap",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-xxljob",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-xxljob",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pmasterwba1",
+    "sw": "Linux",
+    "service": "vexdhiotp2pmasterwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-oss",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-oss",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehomecctvsb1app",
+    "sw": "Linux",
+    "service": "vdehomecctvsb1app",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -6182,425 +8810,128 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgupdownwba2",
-    "sw": "Apache",
-    "service": "vexdeviotstgupdownwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcctvwst1",
+    "hostname": "ec2-az2a-luiot-dev1-p2p2",
     "sw": "Linux",
-    "service": "vdehcctvwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevcctvwas",
-    "sw": "Linux",
-    "service": "vdevcctvwas",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevhcctvwas",
-    "sw": "Apache",
-    "service": "vdevhcctvwas",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevhcctvwas",
-    "sw": "Tomcat",
-    "service": "vdevhcctvwas",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcgwwba1",
-    "sw": "Apache",
-    "service": "vdehcgwwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwwba2",
-    "sw": "Apache",
-    "service": "vexdhhcgwwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave5",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev2-hbase6",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-rocketmq3",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-rocketmq3",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgapiwst1",
-    "sw": "Tomcat",
-    "service": "vexdeviotstgapiwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgauthwst1",
-    "sw": "Linux",
-    "service": "vexdeviotstgauthwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgdedupwst2",
-    "sw": "Linux",
-    "service": "vexdeviotstgdedupwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgdedupwst1",
-    "sw": "Linux",
-    "service": "vexdeviotstgdedupwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG3dbo2",
-    "sw": "Linux",
-    "service": "vexSTG3dbo2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG2dbo2",
-    "sw": "Linux",
-    "service": "vexSTG2dbo2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRCwst2",
-    "sw": "Tomcat",
-    "service": "vdepetRCwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgapiwba2",
-    "sw": "Apache",
-    "service": "vexdeviotstgapiwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRCwst1",
-    "sw": "Tomcat",
-    "service": "vdepetRCwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetGPUwst1",
-    "sw": "Tomcat",
-    "service": "vdepetGPUwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetGPUwst2",
-    "sw": "Tomcat",
-    "service": "vdepetGPUwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst1",
-    "sw": "Linux",
-    "service": "vdecctvcswst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevdedup2setwst2",
-    "sw": "Tomcat",
-    "service": "vexdevdedup2setwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehpasdbo4",
-    "sw": "Linux",
-    "service": "vdehpasdbo4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehpasdbo1",
-    "sw": "Oracle",
-    "service": "vdehpasdbo1",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotgwdbm2",
-    "sw": "MariaDB",
-    "service": "vdeiotgwdbm2",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-jumper",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-jumper",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevdedup2setwst1",
-    "sw": "Tomcat",
-    "service": "vexdevdedup2setwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-devex",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-devex",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-ota",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-ota",
+    "service": "ec2-az2a-luiot-dev1-p2p2",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-hetu",
+    "hostname": "ec2-az2c-luiot-dev2-ifttt",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hetu",
+    "service": "ec2-az2c-luiot-dev2-ifttt",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-rocketmq1",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-rocketmq1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpetGW1wst2",
+    "sw": "Tomcat",
+    "service": "vexpetGW1wst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-leisi",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-leisi",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-gateway",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-gateway",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-uplusmnger",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-uplusmnger",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-sms",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-sms",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdevupimg2setwst2",
+    "hostname": "vdebbotwst1",
+    "sw": "Linux",
+    "service": "vdebbotwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave1",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev3-hbase2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-devex",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-devex",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave3",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hbase4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-es1",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-es1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst5",
     "sw": "Tomcat",
-    "service": "vexdevupimg2setwst2",
+    "service": "vdehiotsaswst5",
     "score": 100,
     "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-es2",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-es2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-rocketmq2",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-rocketmq2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm2",
-    "sw": "MariaDB",
-    "service": "vdehiotgwdbm2",
-    "score": 84.4,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswba1",
-    "sw": "Apache",
-    "service": "vdehiotsaswba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "MySQL",
-    "service": "ec2-az2a-luiot-dev1-hbase1",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ovxhsadbo1",
-    "sw": "Linux",
-    "service": "ovxhsadbo1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-es2",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev2-es2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevupdd2setwst1",
-    "sw": "Tomcat",
-    "service": "vexdevupdd2setwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1ccarwba1",
-    "sw": "Linux",
-    "service": "vdehiot1ccarwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-apollos",
-    "sw": "Nginx",
-    "service": "ec2-az2c-luiot-dev2-apollos",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst2",
-    "sw": "Tomcat",
-    "service": "vexdepetwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpcctvctrlapp2",
-    "sw": "Linux",
-    "service": "vexpcctvctrlapp2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-leisi",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-leisi",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "Linux",
-    "service": "ec2-az2c-luiot-dev3-hbase1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-gateway",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-gateway",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-datasource",
-    "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev3-datasource",
-    "score": 100,
-    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -6614,153 +8945,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiot1saswst8",
-    "sw": "Tomcat",
-    "service": "vdehiot1saswst8",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst7",
-    "sw": "Tomcat",
-    "service": "vdehiot1saswst7",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotccarwst2",
-    "sw": "Tomcat",
-    "service": "vdehiotccarwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehngwwst1",
+    "hostname": "vexdeviotstgauthwst1",
     "sw": "Linux",
-    "service": "vdehngwwst1",
+    "service": "vexdeviotstgauthwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehhngwwst1",
-    "sw": "Linux",
-    "service": "vdehhngwwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst4",
-    "sw": "Tomcat",
-    "service": "vdehiot1saswst4",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1homewst1",
-    "sw": "Linux",
-    "service": "vdehiot1homewst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1authwst1",
-    "sw": "Tomcat",
-    "service": "vdehiot1authwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst1",
-    "sw": "Linux",
-    "service": "vexdevhcaimmgwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst2",
-    "sw": "Linux",
-    "service": "vexdevhcaimmgwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst4",
-    "sw": "Linux",
-    "service": "vhiotaswst4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "devhcboxsaiirwst1",
-    "sw": "Linux",
-    "service": "devhcboxsaiirwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "daipetGPUapp1",
+    "hostname": "vdehiotauthwba1",
     "sw": "Apache",
-    "service": "daipetGPUapp1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlcctvcswst2",
-    "sw": "Linux",
-    "service": "vexlcctvcswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotgwwba2",
-    "sw": "Apache",
-    "service": "vdeiotgwwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexiag3dba1",
-    "sw": "Altibase",
-    "service": "vexiag3dba1",
-    "score": 80.8,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiag2wst1",
-    "sw": "Tomcat",
-    "service": "vdeiag2wst1",
+    "service": "vdehiotauthwba1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -6776,117 +8972,81 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiagdba1",
+    "hostname": "vexphiotp2plbswba2",
+    "sw": "Linux",
+    "service": "vexphiotp2plbswba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3dba1",
     "sw": "Altibase",
-    "service": "vdeiagdba1",
-    "score": 100,
+    "service": "vexiag3dba1",
+    "score": 80.8,
     "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst11",
-    "sw": "Tomcat",
-    "service": "vdeviotsaswst11",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst6",
-    "sw": "Tomcat",
-    "service": "vdeviotsaswst6",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdendredapp1",
+    "hostname": "vexphiotp2pvtduwba1",
     "sw": "Linux",
-    "service": "vdendredapp1",
+    "service": "vexphiotp2pvtduwba1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvcswst1",
+    "sw": "Linux",
+    "service": "vdecctvcswst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst19",
-    "sw": "Linux",
-    "service": "vdehiotsaswst19",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst18",
-    "sw": "Linux",
-    "service": "vdehiotsaswst18",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst13",
-    "sw": "Tomcat",
-    "service": "vdehiotsaswst13",
+    "hostname": "vexdhhcgwwba2",
+    "sw": "Apache",
+    "service": "vexdhhcgwwba2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexhiotdba2",
-    "sw": "Altibase",
-    "service": "vexhiotdba2",
-    "score": 90.4,
+    "hostname": "vexdhiotp2pdclogwba1",
+    "sw": "Tomcat",
+    "service": "vexdhiotp2pdclogwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst8",
+    "sw": "Tomcat",
+    "service": "vdehiot1saswst8",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotgwdbm2",
+    "sw": "MariaDB",
+    "service": "vdehiotgwdbm2",
+    "score": 84.4,
     "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst6",
+    "hostname": "vdehiot1saswst7",
     "sw": "Tomcat",
-    "service": "vdehiotsaswst6",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst5",
-    "sw": "Tomcat",
-    "service": "vdehiotsaswst5",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst1",
-    "sw": "Tomcat",
-    "service": "vdehiotsaswst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst2",
-    "sw": "Tomcat",
-    "service": "vdehiotmainwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst1",
-    "sw": "Tomcat",
-    "service": "vdehiotmainwst1",
+    "service": "vdehiot1saswst7",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -6902,69 +9062,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotauthwst2",
-    "sw": "Tomcat",
-    "service": "vdehiotauthwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotauthwba1",
-    "sw": "Apache",
-    "service": "vdehiotauthwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhcctvwst1",
-    "sw": "Tomcat",
-    "service": "vexhcctvwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhcctvwst1",
-    "sw": "Apache",
-    "service": "vexhcctvwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG4dbo2",
-    "sw": "Oracle",
-    "service": "vexSTG4dbo2",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotisswba1",
-    "sw": "Linux",
-    "service": "vdehiotisswba1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotepswst2",
-    "sw": "Linux",
-    "service": "vdehiotepswst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotaswst4",
     "sw": "Tomcat",
     "service": "vdehiotaswst4",
@@ -6974,90 +9071,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotagsapp1",
-    "sw": "Linux",
-    "service": "vdeviotagsapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotoawst1",
-    "sw": "Linux",
-    "service": "vdeiotoawst1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeepswst1",
+    "hostname": "vdehiotsaswst1",
     "sw": "Tomcat",
-    "service": "vdeepswst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "viotdbadev",
-    "sw": "Altibase",
-    "service": "viotdbadev",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp4",
-    "sw": "Linux",
-    "service": "vexphiotp2predisapp4",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp6",
-    "sw": "Linux",
-    "service": "vexphiotp2predisapp6",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pdclogwba2",
-    "sw": "Nginx",
-    "service": "vexphiotp2pdclogwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp2",
-    "sw": "Linux",
-    "service": "vexphiotp2predisapp2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp1",
-    "sw": "Linux",
-    "service": "vexphiotp2predisapp1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexiag3wba1",
-    "sw": "Apache",
-    "service": "vexiag3wba1",
+    "service": "vdehiotsaswst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7073,6 +9089,69 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexdevhcaimmgwst2",
+    "sw": "Linux",
+    "service": "vexdevhcaimmgwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevcctvwas",
+    "sw": "Linux",
+    "service": "vdevcctvwas",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "devhcboxsaiirwst1",
+    "sw": "Linux",
+    "service": "devhcboxsaiirwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotgwdbm2",
+    "sw": "MariaDB",
+    "service": "vdeiotgwdbm2",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "daipetGPUapp1",
+    "sw": "Apache",
+    "service": "daipetGPUapp1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave5",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev2-hbase6",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehngwwst1",
+    "sw": "Linux",
+    "service": "vdehngwwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexphiotp2pdaswba2",
     "sw": "Linux",
     "service": "vexphiotp2pdaswba2",
@@ -7082,64 +9161,226 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2plbswba2",
-    "sw": "Linux",
-    "service": "vexphiotp2plbswba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vissexwba1",
+    "hostname": "vdehiotsaswst13",
     "sw": "Tomcat",
-    "service": "vissexwba1",
+    "service": "vdehiotsaswst13",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pdclogwba1",
+    "hostname": "vexdeviotstgupdownwba2",
+    "sw": "Apache",
+    "service": "vexdeviotstgupdownwba2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-apollos",
     "sw": "Nginx",
-    "service": "vexdhiotp2pdclogwba1",
+    "service": "ec2-az2c-luiot-dev2-apollos",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pvtduwba1",
+    "hostname": "ec2-az2a-luiot-dev3-jumper",
     "sw": "Linux",
-    "service": "vexphiotp2pvtduwba1",
+    "service": "ec2-az2a-luiot-dev3-jumper",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehpasdbo1",
+    "sw": "Oracle",
+    "service": "vdehpasdbo1",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-devex",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-devex",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehhngwwst1",
+    "sw": "Linux",
+    "service": "vdehhngwwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG3dbo2",
+    "sw": "Linux",
+    "service": "vexSTG3dbo2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotcgswst4",
+    "sw": "Linux",
+    "service": "vhiotcgswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp1",
+    "sw": "Linux",
+    "service": "vexphiotp2predisapp1",
     "score": 97.7,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pvtduwba2",
-    "sw": "Linux",
-    "service": "vexphiotp2pvtduwba2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba1",
+    "hostname": "vdepetGPUwst2",
     "sw": "Tomcat",
-    "service": "vexdhiotp2pdclogwba1",
+    "service": "vdepetGPUwst2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2predisapp2",
+    "hostname": "ec2-az2a-luiot-dev1-es2",
     "sw": "Linux",
-    "service": "vexdhiotp2predisapp2",
+    "service": "ec2-az2a-luiot-dev1-es2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhcctvwst1",
+    "sw": "Apache",
+    "service": "vexhcctvwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpcctvctrlapp2",
+    "sw": "Linux",
+    "service": "vexpcctvctrlapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgdedupwst1",
+    "sw": "Linux",
+    "service": "vexdeviotstgdedupwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswba1",
+    "sw": "Apache",
+    "service": "vdehiotsaswba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp2",
+    "sw": "Linux",
+    "service": "vexphiotp2predisapp2",
     "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiag2wst1",
+    "sw": "Tomcat",
+    "service": "vdeiag2wst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst4",
+    "sw": "Tomcat",
+    "service": "vdehiot1saswst4",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst11",
+    "sw": "Tomcat",
+    "service": "vdeviotsaswst11",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeepswst1",
+    "sw": "Tomcat",
+    "service": "vdeepswst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst19",
+    "sw": "Linux",
+    "service": "vdehiotsaswst19",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotoawst1",
+    "sw": "Linux",
+    "service": "vdeiotoawst1",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1ccarwba1",
+    "sw": "Linux",
+    "service": "vdehiot1ccarwba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-gateway",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-gateway",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -7163,11 +9404,308 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexdevdedup2setwst1",
+    "sw": "Tomcat",
+    "service": "vexdevdedup2setwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevdedup2setwst2",
+    "sw": "Tomcat",
+    "service": "vexdevdedup2setwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst2",
+    "sw": "Tomcat",
+    "service": "vdepetRCwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vissexwba1",
+    "sw": "Tomcat",
+    "service": "vissexwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevupdd2setwst1",
+    "sw": "Tomcat",
+    "service": "vexdevupdd2setwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1authwst1",
+    "sw": "Tomcat",
+    "service": "vdehiot1authwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-rocketmq2",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev2-rocketmq2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst18",
+    "sw": "Linux",
+    "service": "vdehiotsaswst18",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlcctvcswst2",
+    "sw": "Linux",
+    "service": "vexlcctvcswst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhiotdba2",
+    "sw": "Altibase",
+    "service": "vexhiotdba2",
+    "score": 90.4,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG4dbo2",
+    "sw": "Oracle",
+    "service": "vexSTG4dbo2",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetGPUwst1",
+    "sw": "Tomcat",
+    "service": "vdepetGPUwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst6",
+    "sw": "Tomcat",
+    "service": "vdeviotsaswst6",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-leisi",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-leisi",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevhcctvwas",
+    "sw": "Tomcat",
+    "service": "vdevhcctvwas",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevupimg2setwst2",
+    "sw": "Tomcat",
+    "service": "vexdevupimg2setwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1homewst1",
+    "sw": "Linux",
+    "service": "vdehiot1homewst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhcctvwst1",
+    "sw": "Tomcat",
+    "service": "vexhcctvwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ovxhsadbo1",
+    "sw": "Linux",
+    "service": "ovxhsadbo1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pvtduwba2",
+    "sw": "Linux",
+    "service": "vexphiotp2pvtduwba2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-datasource",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-datasource",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "viotdbadev",
+    "sw": "Altibase",
+    "service": "viotdbadev",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "Linux",
+    "service": "ec2-az2c-luiot-dev3-hbase1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pdclogwba2",
+    "sw": "Nginx",
+    "service": "vexphiotp2pdclogwba2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG2dbo2",
+    "sw": "Linux",
+    "service": "vexSTG2dbo2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "MySQL",
+    "service": "ec2-az2a-luiot-dev1-hbase1",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-hetu",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hetu",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevhcctvwas",
+    "sw": "Apache",
+    "service": "vdevhcctvwas",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotaswst4",
+    "sw": "Linux",
+    "service": "vhiotaswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-rocketmq3",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev3-rocketmq3",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexdhiotp2pttswba2",
     "sw": "Linux",
     "service": "vexdhiotp2pttswba2",
     "score": 97.7,
     "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehpasdbo4",
+    "sw": "Linux",
+    "service": "vdehpasdbo4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgdedupwst2",
+    "sw": "Linux",
+    "service": "vexdeviotstgdedupwst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst6",
+    "sw": "Tomcat",
+    "service": "vdehiotsaswst6",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -7181,11 +9719,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotcgswst4",
-    "sw": "Linux",
-    "service": "vhiotcgswst4",
+    "hostname": "vdehiotmainwst1",
+    "sw": "Tomcat",
+    "service": "vdehiotmainwst1",
     "score": 100,
-    "type": "OS",
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba2",
+    "sw": "Apache",
+    "service": "vexdeviotstgapiwba2",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -7199,27 +9746,108 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdecctvwst1",
-    "sw": "Tomcat",
-    "service": "vdecctvwst1",
+    "hostname": "vdeviotagsapp1",
+    "sw": "Linux",
+    "service": "vdeviotagsapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba1",
+    "sw": "Nginx",
+    "service": "vexdhiotp2pdclogwba1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwba1",
+    "hostname": "vexdevhcaimmgwst1",
+    "sw": "Linux",
+    "service": "vexdevhcaimmgwst1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotgwwba2",
     "sw": "Apache",
-    "service": "vexdeviotstgapiwba1",
+    "service": "vdeiotgwwba2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdepetwst1",
+    "hostname": "vexiag3wba1",
+    "sw": "Apache",
+    "service": "vexiag3wba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-ota",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-ota",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdendredapp1",
+    "sw": "Linux",
+    "service": "vdendredapp1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp6",
+    "sw": "Linux",
+    "service": "vexphiotp2predisapp6",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotisswba1",
+    "sw": "Linux",
+    "service": "vdehiotisswba1",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst1",
     "sw": "Tomcat",
-    "service": "vexdepetwst1",
+    "service": "vdepetRCwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdepetwst2",
+    "sw": "Tomcat",
+    "service": "vexdepetwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwst1",
+    "sw": "Tomcat",
+    "service": "vexdeviotstgapiwst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7227,107 +9855,62 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexphiotp2predisapp4",
-    "sw": "Redis",
+    "sw": "Linux",
     "service": "vexphiotp2predisapp4",
-    "score": 100,
-    "type": "DB",
+    "score": 97.7,
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
-    "sw": "Nginx",
-    "service": "ec2-az2a-luiot-dev3-opncldfrnt",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp6",
-    "sw": "Redis",
-    "service": "vexphiotp2predisapp6",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotdba2",
-    "sw": "Altibase",
-    "service": "vdehiotdba2",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst3",
+    "hostname": "vdehiotccarwst2",
     "sw": "Tomcat",
-    "service": "vdecctvcswst3",
+    "service": "vdehiotccarwst2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2predisapp5",
-    "sw": "Redis",
-    "service": "vexphiotp2predisapp5",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst6",
-    "sw": "Tomcat",
-    "service": "vdehiot1saswst6",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotagsapp2",
+    "hostname": "ec2-az2c-luiot-dev2-es2",
     "sw": "Linux",
-    "service": "vdehiotagsapp2",
+    "service": "ec2-az2c-luiot-dev2-es2",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdetesthcctvwst1",
+    "hostname": "vdehiotauthwst2",
     "sw": "Tomcat",
-    "service": "vdetesthcctvwst1",
-    "score": 78.7,
+    "service": "vdehiotauthwst2",
+    "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdetesthcctvwst1",
+    "hostname": "vexdhiotp2predisapp2",
+    "sw": "Linux",
+    "service": "vexdhiotp2predisapp2",
+    "score": 97.7,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst2",
+    "sw": "Tomcat",
+    "service": "vdehiotmainwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcgwwba1",
     "sw": "Apache",
-    "service": "vdetesthcctvwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp2",
-    "sw": "Redis",
-    "service": "vexphiotp2predisapp2",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst10",
-    "sw": "Tomcat",
-    "service": "vdeviotsaswst10",
+    "service": "vdehcgwwba1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7335,125 +9918,35 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdehcctvwst1",
-    "sw": "Apache",
-    "service": "vdehcctvwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcctvwst1",
-    "sw": "Tomcat",
-    "service": "vdehcctvwst1",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
-    "sw": "Nginx",
-    "service": "ec2-az2c-luiot-dev2-opncldfrnt",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevcctvwas",
-    "sw": "Tomcat",
-    "service": "vdevcctvwas",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp1",
-    "sw": "Redis",
-    "service": "vexphiotp2predisapp1",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst1",
-    "sw": "Tomcat",
-    "service": "vdecctvcswst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevcctvwas",
-    "sw": "Apache",
-    "service": "vdevcctvwas",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1homewst1",
-    "sw": "Tomcat",
-    "service": "vdehiot1homewst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexcctvdba1",
-    "sw": "Altibase",
-    "service": "vexcctvdba1",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehpasdbo4",
-    "sw": "Oracle",
-    "service": "vdehpasdbo4",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst1",
-    "sw": "Tomcat",
-    "service": "vexdevhcaimmgwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst2",
-    "sw": "Tomcat",
-    "service": "vexdevhcaimmgwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave6",
     "sw": "Linux",
-    "service": "ec2-az2a-luiot-dev1-hbase7",
+    "service": "vdehcctvwst1",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-nginx",
-    "sw": "Nginx",
-    "service": "ec2-az2a-luiot-dev3-nginx",
+    "hostname": "vdehiotepswst2",
+    "sw": "Linux",
+    "service": "vdehiotepswst2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiagdba1",
+    "sw": "Altibase",
+    "service": "vdeiagdba1",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst19",
+    "sw": "Tomcat",
+    "service": "vdehiotsaswst19",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7469,20 +9962,56 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexiag3dba2",
+    "hostname": "dev_vdehiotdba2",
     "sw": "Altibase",
-    "service": "vexiag3dba2",
+    "service": "vdehiotdba2",
     "score": 100,
     "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeiag2dba1",
-    "sw": "Altibase",
-    "service": "vdeiag2dba1",
+    "hostname": "vexdeviotstgdedupwst2",
+    "sw": "Tomcat",
+    "service": "vexdeviotstgdedupwst2",
     "score": 100,
-    "type": "DB",
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst8",
+    "sw": "Tomcat",
+    "service": "vdeviotsaswst8",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevhcaimmgwst2",
+    "sw": "Tomcat",
+    "service": "vexdevhcaimmgwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvcswst1",
+    "sw": "Tomcat",
+    "service": "vdecctvcswst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1homewst1",
+    "sw": "Tomcat",
+    "service": "vdehiot1homewst1",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -7491,6 +10020,42 @@ List<Map<String, Object>> rawdata_solidstep = [
     "sw": "Apache",
     "service": "vdeiagwba1",
     "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdetesthcctvwst1",
+    "sw": "Tomcat",
+    "service": "vdetesthcctvwst1",
+    "score": 78.7,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotagsapp2",
+    "sw": "Linux",
+    "service": "vdehiotagsapp2",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
+    "sw": "Nginx",
+    "service": "ec2-az2c-luiot-dev2-opncldfrnt",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcctvwst1",
+    "sw": "Tomcat",
+    "service": "vdehcctvwst1",
+    "score": 97.9,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -7514,45 +10079,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgdedupwst2",
+    "hostname": "vexdepetwst1",
     "sw": "Tomcat",
-    "service": "vexdeviotstgdedupwst2",
+    "service": "vexdepetwst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst8",
-    "sw": "Tomcat",
-    "service": "vdeviotsaswst8",
+    "hostname": "vexphiotp2predisapp1",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp1",
     "score": 100,
-    "type": "WEB",
+    "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst11",
+    "hostname": "vdecctvcswst3",
     "sw": "Tomcat",
-    "service": "vdehiotsaswst11",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdendredapp1",
-    "sw": "Tomcat",
-    "service": "vdendredapp1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst12",
-    "sw": "Tomcat",
-    "service": "vdehiotsaswst12",
+    "service": "vdecctvcswst3",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7568,9 +10115,90 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst19",
+    "hostname": "vexphiotp2predisapp4",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp4",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiag2dba1",
+    "sw": "Altibase",
+    "service": "vdeiag2dba1",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevcctvwas",
     "sw": "Tomcat",
-    "service": "vdehiotsaswst19",
+    "service": "vdevcctvwas",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst12",
+    "sw": "Tomcat",
+    "service": "vdehiotsaswst12",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst6",
+    "sw": "Tomcat",
+    "service": "vdehiot1saswst6",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdendredapp1",
+    "sw": "Tomcat",
+    "service": "vdendredapp1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp5",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp5",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexcctvdba1",
+    "sw": "Altibase",
+    "service": "vexcctvdba1",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-nginx",
+    "sw": "Nginx",
+    "service": "ec2-az2a-luiot-dev3-nginx",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst10",
+    "sw": "Tomcat",
+    "service": "vdeviotsaswst10",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7586,18 +10214,117 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotisswba1",
+    "hostname": "vdehpasdbo4",
+    "sw": "Oracle",
+    "service": "vdehpasdbo4",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp6",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp6",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvwst1",
     "sw": "Tomcat",
-    "service": "vdehiotisswba1",
+    "service": "vdecctvwst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgdedupwst1",
+    "hostname": "vexphiotp2predisapp2",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp2",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcctvwst1",
+    "sw": "Apache",
+    "service": "vdehcctvwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevhcaimmgwst1",
     "sw": "Tomcat",
-    "service": "vexdeviotstgdedupwst1",
+    "service": "vexdevhcaimmgwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave6",
+    "sw": "Linux",
+    "service": "ec2-az2a-luiot-dev1-hbase7",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
+    "sw": "Nginx",
+    "service": "ec2-az2a-luiot-dev3-opncldfrnt",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3dba2",
+    "sw": "Altibase",
+    "service": "vexiag3dba2",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba1",
+    "sw": "Apache",
+    "service": "vexdeviotstgapiwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdetesthcctvwst1",
+    "sw": "Apache",
+    "service": "vdetesthcctvwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevcctvwas",
+    "sw": "Apache",
+    "service": "vdevcctvwas",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst11",
+    "sw": "Tomcat",
+    "service": "vdehiotsaswst11",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7613,45 +10340,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiotccarwba1",
-    "sw": "Apache",
-    "service": "vdeiotccarwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pmasterwba1",
-    "sw": "Nginx",
-    "service": "vexdhiotp2pmasterwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsaswst1",
-    "sw": "Tomcat",
-    "service": "vhiotsaswst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiot1ccarwba1",
     "sw": "Apache",
     "service": "vdehiot1ccarwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdebbotwst1",
-    "sw": "Tomcat",
-    "service": "vdebbotwst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7667,9 +10358,72 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexdhiotp2pmasterwba1",
+    "sw": "Tomcat",
+    "service": "vexdhiotp2pmasterwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pmasterwba1",
+    "sw": "Nginx",
+    "service": "vexdhiotp2pmasterwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotccarwba1",
+    "sw": "Apache",
+    "service": "vdeiotccarwba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgdedupwst1",
+    "sw": "Tomcat",
+    "service": "vexdeviotstgdedupwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexpgwwst1",
     "sw": "Tomcat",
     "service": "vexpgwwst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsaswst1",
+    "sw": "Tomcat",
+    "service": "vhiotsaswst1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotisswba1",
+    "sw": "Tomcat",
+    "service": "vdehiotisswba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdebbotwst1",
+    "sw": "Tomcat",
+    "service": "vdebbotwst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7685,45 +10439,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pmasterwba1",
+    "hostname": "vexdevupdd2setwst2",
     "sw": "Tomcat",
-    "service": "vexdhiotp2pmasterwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswba4",
-    "sw": "Apache",
-    "service": "vdeviotsaswba4",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "viotwbadev",
-    "sw": "Linux",
-    "service": "vhiotaswst4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst4",
-    "sw": "Linux",
-    "service": "vdehiotsaswst4",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba2",
-    "sw": "Tomcat",
-    "service": "vexdhiotp2pdclogwba2",
+    "service": "vexdevupdd2setwst2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7739,36 +10457,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2predisapp3",
-    "sw": "Redis",
-    "service": "vexphiotp2predisapp3",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiag2wba1",
-    "sw": "Apache",
-    "service": "vdeiag2wba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevupdd2setwst2",
-    "sw": "Tomcat",
-    "service": "vexdevupdd2setwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotsaswst14",
     "sw": "Tomcat",
     "service": "vdehiotsaswst14",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "viotwbadev",
+    "sw": "Linux",
+    "service": "vhiotaswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst17",
+    "sw": "Tomcat",
+    "service": "vdehiotsaswst17",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7784,18 +10493,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotgwdbm1",
-    "sw": "MariaDB",
-    "service": "vdehiotgwdbm1",
-    "score": 84.4,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst17",
+    "hostname": "vexdhiotp2pdclogwba2",
     "sw": "Tomcat",
-    "service": "vdehiotsaswst17",
+    "service": "vexdhiotp2pdclogwba2",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7811,9 +10511,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdeiag2wba1",
+    "sw": "Apache",
+    "service": "vdeiag2wba1",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst4",
+    "sw": "Linux",
+    "service": "vdehiotsaswst4",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexpgwwst2",
     "sw": "Tomcat",
     "service": "vexpgwwst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vdehiotaswst2",
+    "sw": "Tomcat",
+    "service": "vdehiotaswst2",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba4",
+    "sw": "Apache",
+    "service": "vdeviotsaswba4",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7829,18 +10565,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexpetGW1wst1",
-    "sw": "Tomcat",
-    "service": "vexpetGW1wst1",
+    "hostname": "vexphiotp2predisapp3",
+    "sw": "Redis",
+    "service": "vexphiotp2predisapp3",
     "score": 100,
-    "type": "WEB",
+    "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "dev_vdehiotaswst2",
+    "hostname": "vdehiotgwdbm1",
+    "sw": "MariaDB",
+    "service": "vdehiotgwdbm1",
+    "score": 84.4,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpetGW1wst1",
     "sw": "Tomcat",
-    "service": "vdehiotaswst2",
+    "service": "vexpetGW1wst1",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -7973,582 +10718,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexsivwba1",
-    "sw": "Apache",
-    "service": "vexsivwba1",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "agent",
-    "sw": "Windows",
-    "service": "agent",
-    "score": 84.4,
-    "type": "OS",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivdbm1",
-    "sw": "Linux",
-    "service": "vexsivdbm1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwba1",
-    "sw": "Linux",
-    "service": "vexsivwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwst2",
-    "sw": "Linux",
-    "service": "vexsivwst2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwba2",
-    "sw": "Linux",
-    "service": "vexsivwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextgw1",
-    "sw": "Nginx",
-    "service": "vexsivextgw1",
-    "score": 96.8,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwba2",
-    "sw": "Apache",
-    "service": "vexsivextwba2",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivdbm2",
-    "sw": "Linux",
-    "service": "vexsivdbm2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwst1",
-    "sw": "Linux",
-    "service": "vexsivextwst1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwst2",
-    "sw": "Tomcat",
-    "service": "vexsivextwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivadm1",
-    "sw": "Tomcat",
-    "service": "vexsivadm1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextgw2",
-    "sw": "Nginx",
-    "service": "vexsivextgw2",
-    "score": 96.8,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextgw1",
-    "sw": "Linux",
-    "service": "vexsivextgw1",
-    "score": 96.5,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwba2",
-    "sw": "Linux",
-    "service": "vexsivextwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwst1",
-    "sw": "Tomcat",
-    "service": "vexsivwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivdbm1",
-    "sw": "MariaDB",
-    "service": "vexsivdbm1",
-    "score": 96.9,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwst2",
-    "sw": "Tomcat",
-    "service": "vexsivwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwba1",
-    "sw": "Linux",
-    "service": "vexsivextwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextgw2",
-    "sw": "Linux",
-    "service": "vexsivextgw2",
-    "score": 96.5,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwst2",
-    "sw": "Linux",
-    "service": "vexsivextwst2",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivadm1",
-    "sw": "Linux",
-    "service": "vexsivadm1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwba2",
-    "sw": "Apache",
-    "service": "vexsivwba2",
-    "score": 76.5,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivwst1",
-    "sw": "Linux",
-    "service": "vexsivwst1",
-    "score": 97.7,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivdbm2",
-    "sw": "MariaDB",
-    "service": "vexsivdbm2",
-    "score": 81.3,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsivextwst1",
-    "sw": "Tomcat",
-    "service": "vexsivextwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-135-83-external",
-    "sw": "Linux",
-    "service": "ip-172.31.135.103-external",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-135-79-internal",
-    "sw": "Linux",
-    "service": "ip-172-31-135-61.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-135-88.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-135-55.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-135-5.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-135-5.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-135-83-external",
-    "sw": "Apache",
-    "service": "ip-172.31.135.103-external",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-76.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "Interface-server(#2, otoplug)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-38.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "mgmt-frontend(#2)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-44.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "fms-backend(#2)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-89.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "fms-backend(#1)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-54.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "mgmt-backend(#2)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-110.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-110.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-99.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "mgmt-frontend(#1)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-88.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-88.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-40.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "fms-frontend(#1)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-102.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-102.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-20.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "gw-service(#2)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-8-55.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "bastion_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-122.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "mgmt-backend(#1)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-74.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "gw-service(#1)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-4-56.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-4-56.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-93.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "fms-frontend(#2)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-32.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "Interface-server(#1, otoplug)_prd",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-93.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-93.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-100.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-100.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-78.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-78.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-7.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-7.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-27.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-27.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-29.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-29.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-56.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-56.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-61.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-61.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-14.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-14.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadclogapp1",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadcrptapp1",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadcrptapp2",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadclogapp4",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadclogapp2",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadjksapp1",
-    "sw": "Linux",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexadclogapp3",
-    "sw": "Tomcat",
-    "service": "통합광고(검수)",
-    "score": 100,
-    "type": "WEB",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-172-32-10-15.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "ec2-qa-uplustvmoa-bastion-az2a",
@@ -8639,39 +10808,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-16.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-16.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "pmicmsop01v",
     "sw": "Linux",
     "service": "pmicmsop01v",
     "score": 100,
     "type": "OS",
     "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-5-90.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ec2-stg-nfxpw-bastion",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-2-230.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ec2-dev-nfxpw-bastion",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -8927,51 +11069,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-76.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-76.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-0-22.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-0-22.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-81.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-81.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-115.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-115.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-86.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-86.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-172-31-86-116.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "ip-172-31-86-116.ap-northeast-2.compute.internal",
@@ -8986,7 +11083,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "ec2-dev-aicc-adminwas-az2c.ip-172-31-132-72.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "OS",
-    "team": "SME솔루션개발팀",
+    "team": "AI_Biz_Tech_TF",
     "target": "대상"
   },
   {
@@ -8995,7 +11092,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "ec2-dev-aicc-frontwas-az2c.ip-172-31-132-82.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "OS",
-    "team": "SME솔루션개발팀",
+    "team": "AI_Biz_Tech_TF",
     "target": "대상"
   },
   {
@@ -9014,24 +11111,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "WEB",
     "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FCM1",
-    "sw": "Linux",
-    "service": "TB-FCM1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpTB2lsm2",
-    "sw": "Linux",
-    "service": "vpTB2lsm2",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -9134,15 +11213,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "tiledEncoder",
-    "sw": "Linux",
-    "service": "tiledEncoder",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-172-10-10-81.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "휴대폰결제",
@@ -9157,7 +11227,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "ec2-dev-aicc-frontwas-az2c.ip-172-31-132-82.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "WEB",
-    "team": "SME솔루션개발팀",
+    "team": "AI_Biz_Tech_TF",
     "target": "대상"
   },
   {
@@ -9166,7 +11236,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "ec2-dev-aicc-adminwas-az2c.ip-172-31-132-72.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "WEB",
-    "team": "SME솔루션개발팀",
+    "team": "AI_Biz_Tech_TF",
     "target": "대상"
   },
   {
@@ -9269,36 +11339,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-86-101.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-101.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "ip-172-31-86-123.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-30-86-110.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-30-86-110.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-86-244.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-244.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "OS",
     "team": "모바일서비스SW개발팀",
@@ -9314,39 +11357,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-86-108.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-108.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-az01-ufsm-prd-image",
     "sw": "Linux",
     "service": "ec2-az01-ufsm-prd-image",
     "score": 100,
     "type": "OS",
     "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az03-ufsm-prd-ui",
-    "sw": "Linux",
-    "service": "ec2-az03-ufsm-prd-ui",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-86-217.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-217.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
     "target": "대상"
   },
   {
@@ -9377,24 +11393,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-86-250.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-250.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-86-218.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-86-218.ap-northeast-2.compute.internal",
-    "score": 100,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-172-31-86-106.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "ip-172-31-86-106.ap-northeast-2.compute.internal",
@@ -9419,159 +11417,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "SDS_Testbed",
-    "sw": "Windows",
-    "service": "SDS_Testbed",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "VODCG-I30",
-    "sw": "Windows",
-    "service": "VODCG-I30",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ASIP-TB",
-    "sw": "Windows",
-    "service": "ASIP-TB",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB_FLUTE_GEN",
-    "sw": "Windows",
-    "service": "WIN-1DER4R2EDAL",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "MITG_MAPC_TB",
-    "sw": "Windows",
-    "service": "MITG_MAPC_TB",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "VODCG_I30_TB",
-    "sw": "Windows",
-    "service": "VODCG_I30_TB",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "VODCG_TB",
-    "sw": "Windows",
-    "service": "VODCG_TB",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "V_EDA_asip",
-    "sw": "Windows",
-    "service": "V_EDA_asip",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "epgp-tb",
-    "sw": "Windows",
-    "service": "epgp-tb",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FLUTE-UMS",
-    "sw": "Linux",
-    "service": "TB-FLUTE-UMS",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PullServer",
-    "sw": "Linux",
-    "service": "PullServer",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB_UIS_API_01",
-    "sw": "Linux",
-    "service": "TB_UIS_API_01",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB_UIS_Admin_01",
-    "sw": "Linux",
-    "service": "TB_UIS_Admin_01",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "itv_tb",
-    "sw": "Windows",
-    "service": "itv_tb",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "isu-dev",
-    "sw": "Linux",
-    "service": "isu-dev",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB_UIS_API_02",
-    "sw": "Linux",
-    "service": "TB_UIS_API_02",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "EPGC-PSI",
-    "sw": "Windows",
-    "service": "EPGC-PSI",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -9746,15 +11591,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "dev-vsaas2cm1",
-    "sw": "Linux",
-    "service": "서비스안양_지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "dev_vsaasdbm1",
     "sw": "Linux",
     "service": "서비스안양_지능형CCTV",
@@ -9764,8 +11600,17 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "dev-vsaas2cm1",
+    "sw": "Linux",
+    "service": "서비스안양_지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "dev_vsaasadminwba1",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "서비스안양_지능형CCTV",
     "score": 100,
     "type": "WEB",
@@ -9774,7 +11619,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "dev_vsaasadminwba1",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "서비스안양_지능형CCTV",
     "score": 100,
     "type": "WEB",
@@ -9944,12 +11789,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "CTISTB",
-    "sw": "Linux",
-    "service": "CTISTB",
+    "hostname": "vdenxgauthfdsdbm1",
+    "sw": "MariaDB",
+    "service": "vdenxgauthfdsdbm1",
     "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
+    "type": "DB",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
@@ -9962,102 +11807,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdenxgauthfdsdbm1",
-    "sw": "MariaDB",
-    "service": "vdenxgauthfdsdbm1",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexnxgauthfdsdbm02",
     "sw": "MariaDB",
     "service": "vexnxgauthfdsdbm02",
     "score": 100,
     "type": "DB",
     "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "eas2",
-    "sw": "Linux",
-    "service": "eas2",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpTBads1",
-    "sw": "Linux",
-    "service": "vpTBads1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FCS4",
-    "sw": "Linux",
-    "service": "TB-FCS4",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpTB2lsm1",
-    "sw": "Linux",
-    "service": "vpTB2lsm1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FCS1",
-    "sw": "Linux",
-    "service": "TB-FCS1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FCS2",
-    "sw": "Linux",
-    "service": "TB-FCS2",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "eas1",
-    "sw": "Linux",
-    "service": "eas1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpTB2lsm1-os2",
-    "sw": "Linux",
-    "service": "vpTB2lsm1-os2",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-FCS3",
-    "sw": "Linux",
-    "service": "TB-FCS3",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -10133,66 +11888,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-127-87.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_oem_bastion_2",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-25-164.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_dev_config",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-25-140.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_dev_bastion_1",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdesohodtanalwst1",
     "sw": "Linux",
     "service": "vdesohodtanalwst1",
     "score": 100,
     "type": "OS",
     "team": "SOHO플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-127-60.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_oem_config_1",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-127-36.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_oem_bastion_1",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-127-94.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "hkmc_mtv_oem_config_2",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트모빌리티개발팀",
     "target": "대상"
   },
   {
@@ -10295,15 +11996,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexnxgauthfdsdbm01",
-    "sw": "Linux",
-    "service": "vexnxgauthfdsdbm01",
-    "score": 100,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
     "hostname": "vdenxgauthfdsdbm1",
     "sw": "Linux",
     "service": "vdenxgauthfdsdbm1",
@@ -10313,12 +12005,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "TB-IPTV-NODE1-LSM1",
+    "hostname": "vexnxgauthfdsdbm01",
     "sw": "Linux",
-    "service": "TB-IPTV-NODE1-LSM1",
+    "service": "vexnxgauthfdsdbm01",
     "score": 100,
     "type": "OS",
-    "team": "IPTV인프라개발팀",
+    "team": "Agile품질프로페션",
     "target": "대상"
   },
   {
@@ -10328,69 +12020,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-IPTV-NODE1-DNP1",
-    "sw": "Linux",
-    "service": "TB-IPTV-NODE1-DNP1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-IPTV-206",
-    "sw": "Linux",
-    "service": "TB-IPTV-206",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vodTBads1",
-    "sw": "Linux",
-    "service": "vodTBads1",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tvtb2ss100-shield",
-    "sw": "Linux",
-    "service": "tvtb2ss100-shield",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "itvDAS_TB",
-    "sw": "Solaris",
-    "service": "itvDAS_TB",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vodtb2dnp100-edge",
-    "sw": "Linux",
-    "service": "vodtb2dnp100-edge",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "fdtb1ss100-vod",
-    "sw": "Linux",
-    "service": "fdtb1ss100-vod",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -10439,111 +12068,12 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vadcrptapp1",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadcbdpapp2",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadcbdpapp1",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadclogapp3",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadclogapp1",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadclogapp2",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadclogapp4",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vadcrptapp2",
-    "sw": "Tomcat",
-    "service": "통합광고(상용)",
-    "score": 97.9,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "EPGP-PSI",
-    "sw": "Windows",
-    "service": "EPGP-PSI",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "TB-CUI-N1Svc002",
-    "sw": "Linux",
-    "service": "TB-CUI-N1Svc002",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdeadcmpdbo1",
     "sw": "Oracle",
     "service": "통합광고(개발)",
     "score": 100,
     "type": "DB",
     "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "edsp-tb",
-    "sw": "Windows",
-    "service": "edsp-tb",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
     "target": "대상"
   },
   {
@@ -10835,24 +12365,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-103-external",
-    "sw": "Apache",
-    "service": "ip-172-31-149-45.ap-northeast-2.compute.internal",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-149-51-external",
-    "sw": "Apache",
-    "service": "ip-172.31.149.51-external",
-    "score": 88.2,
-    "type": "WEB",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdeccssdbo1",
     "sw": "Oracle",
     "service": "vdeccssdbo1",
@@ -11015,18 +12527,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ImgECS_GUW_EDGE_04",
+    "hostname": "ImgECS_GUW_EDGE_01",
     "sw": "Linux",
-    "service": "ImgECS_GUW_EDGE_04",
+    "service": "ImgECS_GUW_EDGE_01",
     "score": 100,
     "type": "OS",
     "team": "VAS서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ImgECS_GUW_EDGE_01",
+    "hostname": "ImgECS_GUW_EDGE_04",
     "sw": "Linux",
-    "service": "ImgECS_GUW_EDGE_01",
+    "service": "ImgECS_GUW_EDGE_04",
     "score": 100,
     "type": "OS",
     "team": "VAS서비스개발팀",
@@ -11538,7 +13050,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vodadapitb.uplus.co.kr",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "광고집행(개발)",
     "score": 100,
     "type": "WEB",
@@ -11547,7 +13059,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vodadapitb.uplus.co.kr",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "광고집행(개발)",
     "score": 100,
     "type": "WEB",
@@ -11798,18 +13310,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-platform2-ap2c",
+    "hostname": "ec2-stg-ulsp-platform1-ap2a",
     "sw": "Linux",
-    "service": "ec2-stg-ulsp-platform2-ap2c",
+    "service": "ec2-stg-ulsp-platform1-ap2a",
     "score": 100,
     "type": "OS",
     "team": "SME솔루션개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-platform1-ap2a",
+    "hostname": "ec2-stg-ulsp-platform2-ap2c",
     "sw": "Linux",
-    "service": "ec2-stg-ulsp-platform1-ap2a",
+    "service": "ec2-stg-ulsp-platform2-ap2c",
     "score": 100,
     "type": "OS",
     "team": "SME솔루션개발팀",
@@ -12465,15 +13977,6 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdepageadmwst1",
-    "sw": "Linux",
-    "service": "U+Page",
-    "score": 100,
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepageproxywba1",
     "sw": "Linux",
     "service": "U+Page",
     "score": 100,
@@ -13220,18 +14723,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vicstgwwba",
+    "hostname": "vdecstextwba1",
     "sw": "Linux",
-    "service": "vicstgwwba",
+    "service": "vdecstextwba1",
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdecstextwba1",
+    "hostname": "vicstgwwba",
     "sw": "Linux",
-    "service": "vdecstextwba1",
+    "service": "vicstgwwba",
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
@@ -13906,27 +15409,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadwba1",
-    "sw": "Apache",
-    "service": "vderadwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vderadouif1",
     "sw": "Linux",
     "service": "vderadouif1",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vderadkafka1",
-    "sw": "Linux",
-    "service": "vderadkafka1",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
@@ -13942,20 +15427,29 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadwst1",
-    "sw": "Tomcat",
-    "service": "vderadwst1",
+    "hostname": "vderadkafka1",
+    "sw": "Linux",
+    "service": "vderadkafka1",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vderadwba1",
+    "sw": "Apache",
+    "service": "vderadwba1",
     "score": 100,
     "type": "WEB",
     "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vderadwba1",
-    "sw": "Linux",
-    "service": "vderadwba1",
+    "hostname": "vderadwst1",
+    "sw": "Tomcat",
+    "service": "vderadwst1",
     "score": 100,
-    "type": "OS",
+    "type": "WEB",
     "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
@@ -13972,6 +15466,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vderadui1",
     "sw": "Linux",
     "service": "vderadui1",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vderadwba1",
+    "sw": "Linux",
+    "service": "vderadwba1",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
@@ -14456,27 +15959,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "spamdev2",
-    "sw": "Linux",
-    "service": "spamdev2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "IPPUSHGW1",
     "sw": "Linux",
     "service": "IPPUSHGW1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdescswba2",
-    "sw": "Linux",
-    "service": "vdescswba2",
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
@@ -14501,9 +15986,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "spamdev2",
+    "sw": "Linux",
+    "service": "spamdev2",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdescsdbm1",
     "sw": "Linux",
     "service": "vdescsdbm1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdescswba2",
+    "sw": "Linux",
+    "service": "vdescswba2",
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
@@ -14528,6 +16031,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdescsdba1",
+    "sw": "Linux",
+    "service": "vdescsdba1",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdepushgwdba1",
     "sw": "Linux",
     "service": "vdepushgwdba1",
@@ -14538,10 +16050,19 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdescsdba1",
-    "sw": "Linux",
+    "sw": "Altibase",
     "service": "vdescsdba1",
     "score": 100,
-    "type": "OS",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepushgwdba1",
+    "sw": "Altibase",
+    "service": "vdepushgwdba1",
+    "score": 100,
+    "type": "DB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
@@ -14555,18 +16076,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepushgwdba1",
+    "hostname": "spamdev1",
     "sw": "Altibase",
-    "service": "vdepushgwdba1",
-    "score": 100,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdescsdba1",
-    "sw": "Altibase",
-    "service": "vdescsdba1",
+    "service": "spamdev1",
     "score": 100,
     "type": "DB",
     "team": "기반서비스개발팀",
@@ -14574,7 +16086,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "spamdev1",
-    "sw": "Altibase",
+    "sw": "MariaDB",
     "service": "spamdev1",
     "score": 100,
     "type": "DB",
@@ -14587,15 +16099,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "IPPUSHGW1",
     "score": 100,
     "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "spamdev1",
-    "sw": "MariaDB",
-    "service": "spamdev1",
-    "score": 100,
-    "type": "DB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
@@ -14852,24 +16355,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vMMSPVLapp1",
-    "sw": "Linux",
-    "service": "vMMSPVLapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vMMSPVLapp2",
-    "sw": "Linux",
-    "service": "vMMSPVLapp2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdecaswba1",
     "sw": "Apache",
     "service": "vdecaswba1",
@@ -15113,173 +16598,11 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vcasdba21",
-    "sw": "Altibase",
-    "service": "vcasdba21",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba03",
-    "sw": "Altibase",
-    "service": "vcasdba03",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba22",
-    "sw": "Altibase",
-    "service": "vcasdba22",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba23",
-    "sw": "Altibase",
-    "service": "vcasdba23",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba02",
-    "sw": "Altibase",
-    "service": "vcasdba02",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba13",
-    "sw": "Altibase",
-    "service": "vcasdba13",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba12",
-    "sw": "Altibase",
-    "service": "vcasdba12",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba24",
-    "sw": "Altibase",
-    "service": "vcasdba24",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba01",
-    "sw": "Altibase",
-    "service": "vcasdba01",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba04",
-    "sw": "Altibase",
-    "service": "vcasdba04",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba11",
-    "sw": "Altibase",
-    "service": "vcasdba11",
-    "score": 100,
-    "type": "DB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdedchgdbo1",
     "sw": "Linux",
     "service": "vdedchgdbo1",
     "score": 100,
     "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst8",
-    "sw": "Tomcat",
-    "service": "vnCASwst8",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst2",
-    "sw": "Tomcat",
-    "service": "vnCASwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst4",
-    "sw": "Tomcat",
-    "service": "vnCASwst4",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst6",
-    "sw": "Tomcat",
-    "service": "vnCASwst6",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst1",
-    "sw": "Tomcat",
-    "service": "vnCASwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba2",
-    "sw": "Apache",
-    "service": "vcasadminwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba1",
-    "sw": "Apache",
-    "service": "vcasadminwba1",
-    "score": 100,
-    "type": "WEB",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
@@ -15438,396 +16761,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnCASwst6",
-    "sw": "Linux",
-    "service": "vnCASwst6",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst4",
-    "sw": "Linux",
-    "service": "vnCASwst4",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba5",
-    "sw": "Linux",
-    "service": "vnCASwba5",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst2",
-    "sw": "Linux",
-    "service": "vcasadminwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba2",
-    "sw": "Linux",
-    "service": "vcasadminwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba7",
-    "sw": "Linux",
-    "service": "vnCASwba7",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba1",
-    "sw": "Linux",
-    "service": "vcasadminwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba8",
-    "sw": "Linux",
-    "service": "vnCASwba8",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst1",
-    "sw": "Linux",
-    "service": "vnCASwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba3",
-    "sw": "Linux",
-    "service": "vnCASwba3",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst2",
-    "sw": "Linux",
-    "service": "vnCASwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst1",
-    "sw": "Linux",
-    "service": "vcasadminwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst5",
-    "sw": "Linux",
-    "service": "vnCASwst5",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba6",
-    "sw": "Apache",
-    "service": "vnCASwba6",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba1",
-    "sw": "Apache",
-    "service": "vnCASwba1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba2",
-    "sw": "Apache",
-    "service": "vnCASwba2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba4",
-    "sw": "Apache",
-    "service": "vnCASwba4",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst3",
-    "sw": "Tomcat",
-    "service": "vnCASwst3",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst7",
-    "sw": "Tomcat",
-    "service": "vnCASwst7",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASPVLapp1",
-    "sw": "Linux",
-    "service": "vnCASPVLapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASPVLapp2",
-    "sw": "Linux",
-    "service": "vnCASPVLapp2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba4",
-    "sw": "Linux",
-    "service": "vnCASwba4",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba6",
-    "sw": "Linux",
-    "service": "vnCASwba6",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba2",
-    "sw": "Linux",
-    "service": "vnCASwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba1",
-    "sw": "Linux",
-    "service": "vnCASwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst7",
-    "sw": "Linux",
-    "service": "vnCASwst7",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst3",
-    "sw": "Linux",
-    "service": "vnCASwst3",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst8",
-    "sw": "Linux",
-    "service": "vnCASwst8",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba5",
-    "sw": "Apache",
-    "service": "vnCASwba5",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst2",
-    "sw": "Tomcat",
-    "service": "vcasadminwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba7",
-    "sw": "Apache",
-    "service": "vnCASwba7",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba8",
-    "sw": "Apache",
-    "service": "vnCASwba8",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst1",
-    "sw": "Tomcat",
-    "service": "vcasadminwst1",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba3",
-    "sw": "Apache",
-    "service": "vnCASwba3",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst5",
-    "sw": "Tomcat",
-    "service": "vnCASwst5",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdecasdba1",
     "sw": "Linux",
     "service": "vdecasdba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba02",
-    "sw": "Linux",
-    "service": "vcasdba02",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba01",
-    "sw": "Linux",
-    "service": "vcasdba01",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba04",
-    "sw": "Linux",
-    "service": "vcasdba04",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba23",
-    "sw": "Linux",
-    "service": "vcasdba23",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba12",
-    "sw": "Linux",
-    "service": "vcasdba12",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba24",
-    "sw": "Linux",
-    "service": "vcasdba24",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba21",
-    "sw": "Linux",
-    "service": "vcasdba21",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba22",
-    "sw": "Linux",
-    "service": "vcasdba22",
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
@@ -15846,33 +16782,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdedchgwba1",
     "sw": "Linux",
     "service": "vdedchgwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba03",
-    "sw": "Linux",
-    "service": "vcasdba03",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba11",
-    "sw": "Linux",
-    "service": "vcasdba11",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasdba13",
-    "sw": "Linux",
-    "service": "vcasdba13",
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
@@ -16077,18 +16986,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdefido3dbo1",
+    "hostname": "vdefidosdkwst1",
     "sw": "Linux",
-    "service": "vdefido3dbo1",
+    "service": "vdefidosdkwst1",
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdefidosdkwst1",
+    "hostname": "vdefido3dbo1",
     "sw": "Linux",
-    "service": "vdefidosdkwst1",
+    "service": "vdefido3dbo1",
     "score": 100,
     "type": "OS",
     "team": "커머스서비스개발팀",
@@ -16213,7 +17122,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdeaddsvcwba1",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "vdeaddsvcwba1",
     "score": 100,
     "type": "WEB",
@@ -16222,7 +17131,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdeaddsvcwba1",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "vdeaddsvcwba1",
     "score": 100,
     "type": "WEB",
@@ -16536,18 +17445,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-62-186.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-62-176.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "ip-172-31-62-186.ap-northeast-2.compute.internal",
+    "service": "ip-172-31-62-176.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-62-176.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-62-186.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "ip-172-31-62-176.ap-northeast-2.compute.internal",
+    "service": "ip-172-31-62-186.ap-northeast-2.compute.internal",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
@@ -16605,15 +17514,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasmvsapp01",
-    "sw": "Linux",
-    "service": "서비스안양_지능형CCTV",
-    "score": 89,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
     "target": "대상"
   },
   {
@@ -16770,69 +17670,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vtadwba2",
-    "sw": "Linux",
-    "service": "vtadwba2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vtadwst1",
-    "sw": "Linux",
-    "service": "vtadwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vtadwba1",
-    "sw": "Linux",
-    "service": "vtadwba1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vtadwst2",
-    "sw": "Linux",
-    "service": "vtadwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexipsdevwst2",
-    "sw": "Linux",
-    "service": "vexipsdevwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotagsemul1",
-    "sw": "Linux",
-    "service": "vhiotagsemul1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexipsdevwst2",
-    "sw": "Tomcat",
-    "service": "vexipsdevwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexdhiotp2pmasterwst1",
     "sw": "Tomcat",
     "service": "vexdhiotp2pmasterwst1",
@@ -16842,54 +17679,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsasadmwst2",
-    "sw": "Linux",
-    "service": "vdehiotsasadmwst2",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vhiotmainwst1",
     "sw": "Linux",
     "service": "vhiotmainwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhiotaswst6",
-    "sw": "Linux",
-    "service": "vexhiotaswst6",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsasadmwst2",
-    "sw": "Tomcat",
-    "service": "vdehiotsasadmwst2",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsasadmwst1",
-    "sw": "Linux",
-    "service": "vdehiotsasadmwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhiotaswst5",
-    "sw": "Linux",
-    "service": "vexhiotaswst5",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -16905,873 +17697,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsasadmwst1",
+    "hostname": "vexsotpwst2",
     "sw": "Tomcat",
-    "service": "vdehiotsasadmwst1",
-    "score": 100,
+    "service": "vexsotpwst2",
+    "score": 0,
     "type": "WEB",
-    "team": "홈IoT개발팀",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexipsdevwst1",
-    "sw": "Linux",
-    "service": "vexipsdevwst1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhhcgwapp1",
-    "sw": "Linux",
-    "service": "vexhhcgwapp1",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexipsdevwst1",
+    "hostname": "vexlbspwst2",
     "sw": "Tomcat",
-    "service": "vexipsdevwst1",
-    "score": 100,
+    "service": "vexlbspwst2",
+    "score": 0,
     "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vtaddbm2",
-    "sw": "Linux",
-    "service": "vtaddbm2",
-    "score": 100,
-    "type": "OS",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vtaddbm1",
+    "hostname": "vsivadm1",
     "sw": "Linux",
-    "service": "vtaddbm1",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspadwba1",
-    "sw": "Linux",
-    "service": "vexlbspadwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspadwba2",
-    "sw": "Linux",
-    "service": "vexlbspadwba2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspadwst1",
-    "sw": "Linux",
-    "service": "vexlbspadwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspadwst2",
-    "sw": "Linux",
-    "service": "vexlbspadwst2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-51.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-51.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-96.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-96.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-10.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-10.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-58.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-58.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-94.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-94.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-101.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-101.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-114.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-114.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-77.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-77.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-113.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-113.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-57.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-57.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-73.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-73.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-37.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-37.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-70.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-70.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-104.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-104.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-51.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-51.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-68.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-68.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-23.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-23.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-68.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-68.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-19.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-19.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-114.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-114.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-55.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-55.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-78.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-78.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-123.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-123.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-62.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-62.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-26.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-26.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-105.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-105.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-17.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-17.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-69.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-69.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-125.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-125.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-35.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-35.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-8.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-8.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-97.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-97.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-25.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-25.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-103.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-103.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-28.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-28.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-75.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-75.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-23.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-23.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-75.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-75.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-28.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-28.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-21.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-21.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-109.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-109.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-34.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-34.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-33.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-33.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-77.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-77.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-36.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-36.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-108.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-108.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-85.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-85.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-42.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-42.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-20.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-20.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-124.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-124.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-50.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-50.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-97.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-97.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-49.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-49.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-60.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-60.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-79.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-79.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-47.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-47.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-112.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-112.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-80.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-80.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-12.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-12.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-109.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-109.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-56.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-56.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-11.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-11.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-55.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-55.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-73.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-73.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-33.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-33.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-100.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-100.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-113.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-113.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-58.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-58.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-117.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-117.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-57.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-57.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-16.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-16.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-84.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-84.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-36.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-36.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbspwst1",
-    "sw": "Linux",
-    "service": "vdelbspwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbspdbm1",
-    "sw": "Linux",
-    "service": "vdelbspdbm1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbspwba1",
-    "sw": "Linux",
-    "service": "vdelbspwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbspadwba1",
-    "sw": "Linux",
-    "service": "vdelbspadwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vlbspdbm2",
-    "sw": "Linux",
-    "service": "vlbspdbm2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vlbspwba1",
-    "sw": "Linux",
-    "service": "vlbspwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vlbspwst2",
-    "sw": "Linux",
-    "service": "vlbspwst2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vlbspwst3",
-    "sw": "Linux",
-    "service": "vlbspwst3",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vlbspwst4",
-    "sw": "Linux",
-    "service": "vlbspwst4",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-45.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-45.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-82.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-82.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-53.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-5-53.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-5.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-5.ap-northeast-2.compute.internal",
+    "service": "vsivadm1",
     "score": 0,
     "type": "OS",
-    "team": "0",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-49.ap-northeast-2.compute.internal",
+    "hostname": "vexsotpgw2",
     "sw": "Linux",
-    "service": "ip-100-64-1-49.ap-northeast-2.compute.internal",
+    "service": "vexsotpgw2",
     "score": 0,
     "type": "OS",
     "team": "0",
@@ -17787,102 +17742,66 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vlbspwba2",
+    "hostname": "vdesivadm1",
+    "sw": "Tomcat",
+    "service": "vdesivadm1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-120.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vlbspwba2",
+    "service": "ip-100-64-9-120.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vlbspwba3",
+    "hostname": "vdesivwst1",
+    "sw": "Tomcat",
+    "service": "vdesivwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-77.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vlbspwba3",
+    "service": "ip-100-64-9-77.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vlbspwba4",
+    "hostname": "vlbspadwst1",
+    "sw": "Tomcat",
+    "service": "vlbspadwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-36.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vlbspwba4",
+    "service": "ip-100-64-9-36.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vdelbspadwst1",
+    "hostname": "vexsotpwst1",
     "sw": "Linux",
-    "service": "vdelbspadwst1",
+    "service": "vexsotpwst1",
     "score": 0,
     "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {"hostname": "vsivwst1", "sw": "Linux", "service": "vsivwst1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwst2", "sw": "Linux", "service": "vsivwst2", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwst3", "sw": "Linux", "service": "vsivwst3", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwst4", "sw": "Linux", "service": "vsivwst4", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwba1", "sw": "Linux", "service": "vsivwba1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwba2", "sw": "Linux", "service": "vsivwba2", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwba3", "sw": "Linux", "service": "vsivwba3", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivwba4", "sw": "Linux", "service": "vsivwba4", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivadm1", "sw": "Linux", "service": "vsivadm1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {
-    "hostname": "ip-100-64-1-4.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-4.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-118.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-118.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-125.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-1-125.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsivextwba1",
-    "sw": "Linux",
-    "service": "vsivextwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsivextwba2",
-    "sw": "Linux",
-    "service": "vsivextwba2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsivextwst1",
-    "sw": "Linux",
-    "service": "vsivextwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
@@ -17891,172 +17810,229 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "vsivextwst2",
     "score": 0,
     "type": "OS",
-    "team": "0",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
-  {"hostname": "vsivgw1", "sw": "Linux", "service": "vsivgw1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivgw2", "sw": "Linux", "service": "vsivgw2", "score": 0, "type": "OS", "team": "0", "target": "대상"},
   {
-    "hostname": "vsivextgw1",
+    "hostname": "ip-100-64-5-124.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vsivextgw1",
+    "service": "ip-100-64-5-124.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vsivextgw2",
+    "hostname": "vexvasdbm1",
     "sw": "Linux",
-    "service": "vsivextgw2",
+    "service": "vexvasdbm1",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
-  {"hostname": "vsivdbm1", "sw": "Linux", "service": "vsivdbm1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsivdbm2", "sw": "Linux", "service": "vsivdbm2", "score": 0, "type": "OS", "team": "0", "target": "대상"},
+  {
+    "hostname": "vlbspwst2",
+    "sw": "Tomcat",
+    "service": "vlbspwst2",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst2",
+    "sw": "Tomcat",
+    "service": "vsivwst2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-60.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-60.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexmdldbm1",
+    "sw": "Linux",
+    "service": "vexmdldbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecuponwst1",
+    "sw": "Apache",
+    "service": "vdecuponwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpiasdbm1",
+    "sw": "Linux",
+    "service": "vexpiasdbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextwst1",
+    "sw": "Tomcat",
+    "service": "vdesivextwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivgw1",
+    "sw": "Nginx",
+    "service": "vsivgw1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-20.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-20.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpgw1",
+    "sw": "Linux",
+    "service": "vexsotpgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-97.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-97.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivgw2",
+    "sw": "Linux",
+    "service": "vsivgw2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwba1",
+    "sw": "Linux",
+    "service": "vsivextwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-23.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-23.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
   {
     "hostname": "vsotpadm1",
     "sw": "Linux",
     "service": "vsotpadm1",
     "score": 0,
     "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {"hostname": "vsotpgw1", "sw": "Linux", "service": "vsotpgw1", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {"hostname": "vsotpgw2", "sw": "Linux", "service": "vsotpgw2", "score": 0, "type": "OS", "team": "0", "target": "대상"},
-  {
-    "hostname": "vsotpwba1",
-    "sw": "Linux",
-    "service": "vsotpwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsotpwba2",
-    "sw": "Linux",
-    "service": "vsotpwba2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsotpwst1",
-    "sw": "Linux",
-    "service": "vsotpwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vsotpwst2",
-    "sw": "Linux",
-    "service": "vsotpwst2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenxgauthexwst1",
-    "sw": "Linux",
-    "service": "vdenxgauthexwst1",
-    "score": 0,
-    "type": "OS",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdemvasawba1",
-    "sw": "Apache",
-    "service": "vdemvasawba1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenxgauthredapp1",
-    "sw": "Linux",
-    "service": "vdenxgauthredapp1",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemvasawst1",
-    "sw": "Tomcat",
-    "service": "vdemvasawst1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemvascwst1",
-    "sw": "Tomcat",
-    "service": "vdemvascwst1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemvascwba1",
-    "sw": "Apache",
-    "service": "vdemvascwba1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemvasdbm1",
+    "hostname": "vmccdbm1",
     "sw": "MariaDB",
-    "service": "vdemvasdbm1",
+    "service": "vmccdbm1",
     "score": 0,
     "type": "DB",
-    "team": "모바일서비스개발챕터",
+    "team": "VAS서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vmcpexdbm1",
+    "hostname": "vsivwba1",
     "sw": "Linux",
-    "service": "vmcpexdbm1",
+    "service": "vsivwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-85.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-85.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vmcpexdbm2",
+    "hostname": "ip-100-64-9-116.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vmcpexdbm2",
+    "service": "ip-100-64-9-116.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vdecuponwst1",
+    "hostname": "vsotpwba1",
     "sw": "Apache",
-    "service": "vdecuponwst1",
+    "service": "vsotpwba1",
     "score": 0,
     "type": "WEB",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdecuponwst1",
+    "hostname": "ip-100-64-9-88.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-88.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexvasadmdbm1",
+    "sw": "Linux",
+    "service": "vexvasadmdbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpadm1",
     "sw": "Tomcat",
-    "service": "vdecuponwst1",
+    "service": "vsotpadm1",
     "score": 0,
     "type": "WEB",
     "team": "커머스서비스개발팀",
@@ -18072,75 +18048,48 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "dev-vsaas2dbm1",
-    "sw": "MariaDB",
-    "service": "서비스안양_지능형CCTV",
+    "hostname": "vlbspwba4",
+    "sw": "Apache",
+    "service": "vlbspwba4",
     "score": 0,
-    "type": "DB",
-    "team": "지능형CCTV개발팀",
-    "target": "설치미지원"
-  },
-  {
-    "hostname": "tvTB2ss1",
-    "sw": "PostgreSQL",
-    "service": "tvTB2ss1",
-    "score": 0,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
+    "type": "WEB",
+    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdesivwba1",
+    "hostname": "vsivextwst1",
+    "sw": "Tomcat",
+    "service": "vsivextwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextgw1",
     "sw": "Linux",
-    "service": "vdesivwba1",
+    "service": "vsivextgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-24.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-24.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vdesivwst1",
-    "sw": "Linux",
-    "service": "vdesivwst1",
+    "hostname": "vdesotpwst1",
+    "sw": "Tomcat",
+    "service": "vdesotpwst1",
     "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdesivgw1",
-    "sw": "Linux",
-    "service": "vdesivgw1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdesivdbm1",
-    "sw": "Linux",
-    "service": "vdesivdbm1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdesivadm1",
-    "sw": "Linux",
-    "service": "vdesivadm1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdesivextwba1",
-    "sw": "Linux",
-    "service": "vdesivextwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
@@ -18149,133 +18098,97 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "vdesotpwst1",
     "score": 0,
     "type": "OS",
-    "team": "0",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdesotpwba1",
+    "hostname": "ip-172-31-149-103-external",
     "sw": "Linux",
-    "service": "vdesotpwba1",
+    "service": "ip-172-31-149-45.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "0",
+    "team": "서비스인프라팀",
     "target": "대상"
   },
   {
-    "hostname": "vexsotpwba1",
-    "sw": "Linux",
-    "service": "vexsotpwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwba1",
-    "sw": "Apache",
-    "service": "vexsotpwba1",
-    "score": 0,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwba2",
-    "sw": "Linux",
-    "service": "vexsotpwba2",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwba2",
-    "sw": "Apache",
-    "service": "vexsotpwba2",
-    "score": 0,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwst1",
-    "sw": "Linux",
-    "service": "vexsotpwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwst1",
+    "hostname": "vdesivwst1",
     "sw": "Tomcat",
-    "service": "vexsotpwst1",
+    "service": "vdesivwst1",
     "score": 0,
     "type": "WEB",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexsotpwst2",
+    "hostname": "ip-100-64-5-9.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vexsotpwst2",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexsotpwst2",
-    "sw": "Tomcat",
-    "service": "vexsotpwst2",
-    "score": 0,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasmvsapp1",
-    "sw": "Linux",
-    "service": "dev_vsaasmvsapp1",
+    "service": "ip-100-64-5-9.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-37-internal",
-    "sw": "Linux",
-    "service": "ip-172.31.149.37-internal",
+    "hostname": "vsivwba1",
+    "sw": "Apache",
+    "service": "vsivwba1",
     "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-108-internal",
-    "sw": "Linux",
-    "service": "ip-172.31.149.108-internal",
+    "hostname": "vsivadm1",
+    "sw": "Tomcat",
+    "service": "vsivadm1",
     "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-51-external",
+    "hostname": "ip-100-64-9-11.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "ip-172.31.149.51-external",
+    "service": "ip-100-64-9-11.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "서비스인프라팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-70.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-109.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "ip-172-31-149-36.ap-northeast-2.compute.internal",
+    "service": "ip-100-64-1-109.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "서비스인프라팀",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspdbm1",
+    "sw": "MariaDB",
+    "service": "vexlbspdbm1",
+    "score": 0,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-60.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-60.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-57.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-57.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
     "target": "대상"
   },
   {
@@ -18288,36 +18201,558 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vpTBcds1",
+    "hostname": "vsotpwst1",
     "sw": "Linux",
-    "service": "vpTBcds1",
+    "service": "vsotpwst1",
     "score": 0,
     "type": "OS",
-    "team": "VAS서비스개발팀",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdenspwst1",
+    "hostname": "ip-100-64-9-86.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vdenspwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenspgw1",
-    "sw": "Linux",
-    "service": "vdenspgw1",
+    "service": "ip-100-64-9-86.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vdenspwba1",
+    "hostname": "ip-100-64-9-51.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vdenspwba1",
+    "service": "ip-100-64-9-51.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwst2",
+    "sw": "Tomcat",
+    "service": "vlbspadwst2",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-62.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-62.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcpexdbm2",
+    "sw": "Linux",
+    "service": "vmcpexdbm2",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-78.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-78.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextgw1",
+    "sw": "Nginx",
+    "service": "vsivextgw1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-29.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-149-20.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-stg-news-02",
+    "sw": "Linux",
+    "service": "U+뉴스",
+    "score": 0,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwba4",
+    "sw": "Linux",
+    "service": "vsivwba4",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextgw2",
+    "sw": "Nginx",
+    "service": "vsivextgw2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-108-internal",
+    "sw": "Linux",
+    "service": "ip-172.31.149.108-internal",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-61.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-61.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-87.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-87.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasmvsapp1",
+    "sw": "Linux",
+    "service": "서비스안양_지능형CCTV",
+    "score": 0,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-31.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-31.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-51-external",
+    "sw": "Linux",
+    "service": "ip-172.31.149.51-external",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-96.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-96.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-prd-news-01",
+    "sw": "Linux",
+    "service": "U+뉴스",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexmdldbm2",
+    "sw": "Linux",
+    "service": "vexmdldbm2",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-28.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-28.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-23.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-23.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-73.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-73.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepiasdbm1",
+    "sw": "Linux",
+    "service": "vdepiasdbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-5.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-5.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpwst2",
+    "sw": "Linux",
+    "service": "vexsotpwst2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-110.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-110.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-stg-news-01",
+    "sw": "Linux",
+    "service": "U+뉴스",
+    "score": 0,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwst1",
+    "sw": "Tomcat",
+    "service": "vsotpwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-149-70.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-172-31-149-36.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-98.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-98.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpgw2",
+    "sw": "Nginx",
+    "service": "vsotpgw2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-59.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-59.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-82.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-82.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-30.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-30.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-10.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-10.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivdbm2",
+    "sw": "Linux",
+    "service": "vsivdbm2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-7.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-7.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivwst1",
+    "sw": "Tomcat",
+    "service": "vdesivwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivgw1",
+    "sw": "Apache",
+    "service": "vdesivgw1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-92.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-92.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpgw1",
+    "sw": "Linux",
+    "service": "vsotpgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-56.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-56.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivgw2",
+    "sw": "Nginx",
+    "service": "vsivgw2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "DEV-OFFICEDB01",
+    "sw": "Redis",
+    "service": "DEV-OFFICEDB01",
+    "score": 0,
+    "type": "DB",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-94.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-94.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-prd-news-02",
+    "sw": "Linux",
+    "service": "U+뉴스",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexvasadmdbm2",
+    "sw": "Linux",
+    "service": "vexvasadmdbm2",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspdbm2",
+    "sw": "MariaDB",
+    "service": "vlbspdbm2",
+    "score": 0,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwba2",
+    "sw": "Linux",
+    "service": "vsotpwba2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-106.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-106.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-28.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-28.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-84.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-84.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwba1",
+    "sw": "Apache",
+    "service": "vsivextwba1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwba1",
+    "sw": "Linux",
+    "service": "vsotpwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextgw2",
+    "sw": "Linux",
+    "service": "vsivextgw2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwba3",
+    "sw": "Apache",
+    "service": "vsivwba3",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst3",
+    "sw": "Tomcat",
+    "service": "vsivwst3",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesotpwba1",
+    "sw": "Linux",
+    "service": "vdesotpwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmcpexdbm1",
+    "sw": "Linux",
+    "service": "vmcpexdbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-70.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-70.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
@@ -18333,12 +18768,210 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepiasdbm1",
+    "hostname": "ip-100-64-9-46.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vdepiasdbm1",
+    "service": "ip-100-64-9-46.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwst2",
+    "sw": "Tomcat",
+    "service": "vsivextwst2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-109.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-109.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwba3",
+    "sw": "Linux",
+    "service": "vsivwba3",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenspwst1",
+    "sw": "Linux",
+    "service": "vdenspwst1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesotpwba1",
+    "sw": "Apache",
+    "service": "vdesotpwba1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivgw1",
+    "sw": "Linux",
+    "service": "vsivgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenspgw1",
+    "sw": "Linux",
+    "service": "vdenspgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecuponwst1",
+    "sw": "Tomcat",
+    "service": "vdecuponwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexcpnextradbm1",
+    "sw": "Linux",
+    "service": "vexcpnextradbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-73.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-73.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesotpgw1",
+    "sw": "Nginx",
+    "service": "vdesotpgw1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst1",
+    "sw": "Tomcat",
+    "service": "vsivwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba3",
+    "sw": "Apache",
+    "service": "vlbspwba3",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-0-204.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ec2-dev-ev-charger-svc-puba-bastion",
+    "score": 0,
+    "type": "OS",
+    "team": "스마트모빌리티개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdenspwba1",
+    "sw": "Linux",
+    "service": "vdenspwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-68.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-68.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwba4",
+    "sw": "Apache",
+    "service": "vsivwba4",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst1",
+    "sw": "Tomcat",
+    "service": "vlbspwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-45.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-45.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-37.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-37.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwba2",
+    "sw": "Apache",
+    "service": "vsotpwba2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwst2",
+    "sw": "Linux",
+    "service": "vsotpwst2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
@@ -18360,21 +18993,390 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-38.ap-northeast-2.compute.internal",
+    "hostname": "vexvasdbm2",
     "sw": "Linux",
-    "service": "ip-100-64-1-38.ap-northeast-2.compute.internal",
+    "service": "vexvasdbm2",
     "score": 0,
     "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-0-204.ap-northeast-2.compute.internal",
+    "hostname": "vsivwst4",
     "sw": "Linux",
-    "service": "ec2-dev-ev-charger-svc-puba-bastion",
+    "service": "vsivwst4",
     "score": 0,
     "type": "OS",
-    "team": "스마트모빌리티개발팀",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-71.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-71.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwst1",
+    "sw": "Linux",
+    "service": "vsivextwst1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-12.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-12.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpiasdbm2",
+    "sw": "Linux",
+    "service": "vexpiasdbm2",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpgw2",
+    "sw": "Linux",
+    "service": "vsotpgw2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwba2",
+    "sw": "Apache",
+    "service": "vsivextwba2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba1",
+    "sw": "Apache",
+    "service": "vlbspwba1",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-80.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-80.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-117.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-117.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst4",
+    "sw": "Tomcat",
+    "service": "vlbspwst4",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivadm1",
+    "sw": "Tomcat",
+    "service": "vdesivadm1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-116.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-116.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpwst2",
+    "sw": "Tomcat",
+    "service": "vsotpwst2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-55.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-55.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-27.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-27.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst3",
+    "sw": "Linux",
+    "service": "vsivwst3",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpwst1",
+    "sw": "Tomcat",
+    "service": "vexsotpwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspadwba1",
+    "sw": "Apache",
+    "service": "vlbspadwba1",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpwba2",
+    "sw": "Apache",
+    "service": "vexsotpwba2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-79.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-79.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdesivextwst1",
+    "sw": "Tomcat",
+    "service": "vdesivextwst1",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-50.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-50.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspdbm1",
+    "sw": "MariaDB",
+    "service": "vlbspdbm1",
+    "score": 0,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-58.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-58.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlbspdbm2",
+    "sw": "MariaDB",
+    "service": "vexlbspdbm2",
+    "score": 0,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-118.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-118.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst4",
+    "sw": "Tomcat",
+    "service": "vsivwst4",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivdbm1",
+    "sw": "MariaDB",
+    "service": "vsivdbm1",
+    "score": 0,
+    "type": "DB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivextwba2",
+    "sw": "Linux",
+    "service": "vsivextwba2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-75.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-75.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst2",
+    "sw": "Linux",
+    "service": "vsivwst2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspdbm1",
+    "sw": "MariaDB",
+    "service": "vdelbspdbm1",
+    "score": 0,
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-114.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-114.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vmccdbm2",
+    "sw": "MariaDB",
+    "service": "vmccdbm2",
+    "score": 0,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2dbm1",
+    "sw": "MariaDB",
+    "service": "서비스안양_지능형CCTV",
+    "score": 0,
+    "type": "DB",
+    "team": "지능형CCTV개발팀",
+    "target": "설치미지원"
+  },
+  {
+    "hostname": "ip-100-64-5-120.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-120.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpwba1",
+    "sw": "Linux",
+    "service": "vexsotpwba1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivdbm1",
+    "sw": "Linux",
+    "service": "vsivdbm1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-16.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-16.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivadm2",
+    "sw": "Tomcat",
+    "service": "vsivadm2",
+    "score": 0,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-114.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-114.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
     "target": "대상"
   },
   {
@@ -18387,432 +19389,270 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "aws-stg-news-01",
+    "hostname": "ip-100-64-5-11.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "U+뉴스",
-    "score": 0,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-stg-news-02",
-    "sw": "Linux",
-    "service": "U+뉴스",
-    "score": 0,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-prd-news-01",
-    "sw": "Linux",
-    "service": "U+뉴스",
-    "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-46.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-46.ap-northeast-2.compute.internal",
+    "service": "ip-100-64-5-11.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "aws-prd-news-02",
+    "hostname": "ip-100-64-9-104.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "U+뉴스",
-    "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexcpnextradbm1",
-    "sw": "Linux",
-    "service": "vexcpnextradbm1",
+    "service": "ip-100-64-9-104.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-85.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-149-37-internal",
     "sw": "Linux",
-    "service": "ip-100-64-1-85.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "DEV-OFFICEDB01",
-    "sw": "Redis",
-    "service": "DEV-OFFICEDB01",
-    "score": 0,
-    "type": "DB",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-149-29.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-172-31-149-20.ap-northeast-2.compute.internal",
+    "service": "ip-172.31.149.37-internal",
     "score": 0,
     "type": "OS",
     "team": "서비스인프라팀",
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-149-103-external",
+    "hostname": "vsivwba2",
     "sw": "Linux",
-    "service": "ip-172-31-149-45.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeMSCwst1",
-    "sw": "Tomcat",
-    "service": "vdeMSCwst1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeMSCadmwst1",
-    "sw": "Tomcat",
-    "service": "vdeMSCadmwst1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeMSCDwst1",
-    "sw": "Tomcat",
-    "service": "vdeMSCDwst1",
-    "score": 0,
-    "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenxgauthdba4",
-    "sw": "Linux",
-    "service": "vdenxgauthdba4",
+    "service": "vsivwba2",
     "score": 0,
     "type": "OS",
     "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdenxgauthdba3",
-    "sw": "Linux",
-    "service": "vdenxgauthdba3",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenxgauthdba2",
-    "sw": "Linux",
-    "service": "vdenxgauthdba2",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "tiledMuxer",
-    "sw": "Linux",
-    "service": "TileMuxer",
-    "score": 0,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdenxgauthdba1",
-    "sw": "Linux",
-    "service": "vdenxgauthdba1",
-    "score": 0,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeMSCdbm1",
-    "sw": "MariaDB",
-    "service": "vdeMSCdbm1",
-    "score": 0,
-    "type": "DB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeMSCwba1",
+    "hostname": "vsivwba2",
     "sw": "Apache",
-    "service": "vdeMSCwba1",
+    "service": "vsivwba2",
     "score": 0,
     "type": "WEB",
-    "team": "모바일서비스개발챕터",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeMSCDwba1",
+    "hostname": "vlbspadwba2",
     "sw": "Apache",
-    "service": "vdeMSCDwba1",
+    "service": "vlbspadwba2",
     "score": 0,
     "type": "WEB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpsadmapp1",
-    "sw": "Linux",
-    "service": "vwpsadmapp1",
-    "score": 0,
-    "type": "OS",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpsadmapp1",
+    "hostname": "ip-100-64-9-57.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-57.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-68.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-68.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwst3",
+    "sw": "Tomcat",
+    "service": "vlbspwst3",
+    "score": 0,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-108.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-108.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivwst1",
+    "sw": "Linux",
+    "service": "vsivwst1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-32.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-32.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsotpgw1",
     "sw": "Nginx",
-    "service": "vwpsadmapp1",
+    "service": "vsotpgw1",
     "score": 0,
     "type": "WEB",
-    "team": "기반서비스개발팀",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpsadmapp2",
-    "sw": "Linux",
-    "service": "vwpsadmapp2",
-    "score": 0,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpsadmapp2",
-    "sw": "Nginx",
-    "service": "vwpsadmapp2",
-    "score": 0,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpsadmdbm1",
-    "sw": "Linux",
-    "service": "vwpsadmdbm1",
-    "score": 0,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpsadmdbm1",
+    "hostname": "vsivdbm2",
     "sw": "MariaDB",
-    "service": "vwpsadmdbm1",
+    "service": "vsivdbm2",
     "score": 0,
     "type": "DB",
-    "team": "기반서비스개발팀",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpsadmdbm2",
+    "hostname": "ip-100-64-5-4.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpsadmdbm2",
+    "service": "ip-100-64-5-4.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "기반서비스개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vwpsadmdbm2",
-    "sw": "MariaDB",
-    "service": "vwpsadmdbm2",
-    "score": 0,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpsapdbm1",
+    "hostname": "ip-100-64-9-103.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpsapdbm1",
+    "service": "ip-100-64-9-103.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "기반서비스개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vwpsapdbm1",
-    "sw": "MariaDB",
-    "service": "vwpsapdbm1",
+    "hostname": "vexsotpwba1",
+    "sw": "Apache",
+    "service": "vexsotpwba1",
     "score": 0,
-    "type": "DB",
-    "team": "기반서비스개발팀",
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpsapdbm2",
+    "hostname": "ip-100-64-9-33.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpsapdbm2",
+    "service": "ip-100-64-9-33.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "기반서비스개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vwpsapdbm2",
-    "sw": "MariaDB",
-    "service": "vwpsapdbm2",
-    "score": 0,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpswba1",
+    "hostname": "ip-100-64-9-101.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpswba1",
+    "service": "ip-100-64-9-101.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "기반서비스개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vwpswba1",
-    "sw": "Nginx",
-    "service": "vwpswba1",
+    "hostname": "vexlbspadwst1",
+    "sw": "Tomcat",
+    "service": "vexlbspadwst1",
     "score": 0,
     "type": "WEB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpswba2",
+    "hostname": "ip-100-64-1-19.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpswba2",
+    "service": "ip-100-64-1-19.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
-    "team": "기반서비스개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "vwpswba2",
-    "sw": "Nginx",
-    "service": "vwpswba2",
+    "hostname": "ip-100-64-9-100.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-9-100.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexsotpwba2",
+    "sw": "Linux",
+    "service": "vexsotpwba2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-119.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-5-119.ap-northeast-2.compute.internal",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vlbspwba2",
+    "sw": "Apache",
+    "service": "vlbspwba2",
     "score": 0,
     "type": "WEB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vwpswst1",
+    "hostname": "ip-100-64-5-51.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "vwpswst1",
-    "score": 0,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vwpswst2",
-    "sw": "Linux",
-    "service": "vwpswst2",
-    "score": 0,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-61.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "ip-100-64-9-61.ap-northeast-2.compute.internal",
+    "service": "ip-100-64-5-51.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-88.ap-northeast-2.compute.internal",
+    "hostname": "vdesotpgw1",
     "sw": "Linux",
-    "service": "ip-100-64-9-88.ap-northeast-2.compute.internal",
+    "service": "vdesotpgw1",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vsivadm2",
+    "sw": "Linux",
+    "service": "vsivadm2",
+    "score": 0,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-49.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "ip-100-64-1-49.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-24.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-58.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "ip-100-64-9-24.ap-northeast-2.compute.internal",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspwba1",
-    "sw": "Linux",
-    "service": "vexlbspwba1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspwba2",
-    "sw": "Linux",
-    "service": "vexlbspwba2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspwst1",
-    "sw": "Linux",
-    "service": "vexlbspwst1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspwst2",
-    "sw": "Linux",
-    "service": "vexlbspwst2",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspdbm1",
-    "sw": "Linux",
-    "service": "vexlbspdbm1",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlbspdbm2",
-    "sw": "Linux",
-    "service": "vexlbspdbm2",
+    "service": "ip-100-64-5-58.ap-northeast-2.compute.internal",
     "score": 0,
     "type": "OS",
     "team": "0",
