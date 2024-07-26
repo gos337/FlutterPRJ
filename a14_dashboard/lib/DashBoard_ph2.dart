@@ -30,16 +30,18 @@ List<Map<String, String>> groupLab = [
   {"lab": "홈Lab", "team": "IPTV인프라개발팀"},
   {"lab": "홈Lab", "team": "홈디바이스개발팀"},
   {"lab": "홈Lab", "team": "IPTV서비스개발팀"},
+  {"lab": "기술개발그룹", "team": "기술부채해소TF"},
 ];
 //?1   tableGroup2() 에서 그룹테이블 생성에 사용하는 데이터        ]]
 
 //?1   tableGroup() 에서 그룹테이블 생성에 사용하는 데이터        [[
-List<String> labName = ["기업Lab", "모바일Lab", "홈Lab", "총합계"];
+List<String> labName = ["기업Lab", "모바일Lab", "홈Lab", "기술개발그룹", "총합계"];
 
 List<List<String>> teamlist = [
   ["미래모빌리티기술팀", "스마트모빌리티개발팀", "스마트DX플랫폼개발팀", "지능형CCTV개발팀", "SME솔루션개발팀", "SOHO플랫폼개발팀"],
   ["광고플랫폼개발팀", "기반서비스개발팀", "모바일서비스선행개발팀", "커머스서비스개발팀", "VAS서비스개발팀", "모바일서비스SW개발팀", "모바일서비스개발챕터"],
   ["홈IoT개발팀", "IPTV인프라개발팀", "홈디바이스개발팀", "IPTV서비스개발팀"],
+  ["기술부채해소TF"],
   ["-"],
 ];
 //?1   tableGroup() 에서 그룹테이블 생성에 사용하는 데이터        ]]
@@ -157,19 +159,25 @@ class DashBoard_ph2 extends StatefulWidget {
 class _DashBoard_ph2State extends State<DashBoard_ph2> {
   static const textStyle = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 28,
+    // fontSize: 28,
+    fontSize: 20,
   );
   static const textStyle_Type1 = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 20,
+    // fontSize: 20,
+    fontSize: 18,
   );
   static const textStyle_Type2 = TextStyle(
     fontWeight: FontWeight.w600,
-    fontSize: 16,
+    // fontSize: 16,
+    fontSize: 14,
   );
 
-  double dataColumn_width = 100;
-  double dataColumn_height = 40;
+  // double dataColumn_width = 100;
+  // double dataColumn_height = 40;
+  // double headColumn_height = 60;
+  double dataColumn_width = 75;
+  double dataColumn_height = 35;
   double headColumn_height = 60;
 
   int activeIndex = 0;
@@ -679,11 +687,25 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) {
           return [
-            const SliverAppBar(
-              title: Text("기술개발그룹 보안 Dash Board", style: textStyle),
+            SliverAppBar(
+              title: const Text("기술개발그룹 보안 Dash Board", style: textStyle),
               centerTitle: true,
-              actions: [
-                Center(child: Text("기준일 : 6월 27일    ", style: textStyle_Type1)),
+              // leading: Icon(Icons.menu),
+              leadingWidth: 275,
+              leading: Row(
+                // mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(width: 8),
+                  Image.asset(
+                    "resource/mouse3.png",
+                    height: 40,
+                  ),
+                  const Text("  좌우 스크롤은 마우스 드래그를 사용하세요", style: textStyle_Type2),
+                ],
+              ),
+
+              actions: const [
+                Center(child: Text("기준일 : 7월 25일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
@@ -758,9 +780,9 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                             Column(
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(left: pageIndex * 100),
-                                  width: 100,
-                                  height: 50,
+                                  margin: EdgeInsets.only(left: pageIndex * dataColumn_width),
+                                  width: dataColumn_width,
+                                  height: 40,
                                   decoration: BoxDecoration(
                                     color: Colors.purple[200]!,
                                     borderRadius: const BorderRadius.vertical(top: Radius.circular(4)),
@@ -769,15 +791,15 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                                     child: Text("선택된\n보안점검",
                                         textAlign: TextAlign.center,
                                         style: textStyle_Type1.copyWith(
-                                          fontSize: 18,
+                                          fontSize: 16,
                                           color: Colors.purple[800],
                                         )),
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(left: pageIndex * 100),
-                                  width: 100,
-                                  height: 780,
+                                  margin: EdgeInsets.only(left: pageIndex * dataColumn_width),
+                                  width: dataColumn_width,
+                                  height: 728,
                                   decoration: BoxDecoration(
                                     color: const Color.fromRGBO(206, 147, 216, 0.2),
                                     border: Border.all(
@@ -826,8 +848,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                         const SizedBox(width: 4),
 
                         SizedBox(
-                          width: 2011,
-                          height: 830,
+                          width: 1558,
+                          height: 775,
                           child: Stack(
                             children: [
                               Column(
@@ -897,7 +919,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
-                            "resource/mouse2.jpg",
+                            "resource/mouse3.png",
                             height: 80,
                           ),
                           Text("  좌우 스크롤은 마우스 드래그를 사용하세요",
@@ -922,7 +944,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
         color: Colors.purple[50],
         height: 700,
         width: 800,
-        margin: const EdgeInsets.only(top: 100),
+        margin: const EdgeInsets.only(top: 10),
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1606,7 +1628,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
             ColumnBox(height: height, width: width, text: dataOfTable[i][0], style: "body3"),
             Gagebar(height: height, width: width, text: dataOfTable[i][0]),
 
-            if (type == dialogType.solidstepScore && i != dataOfTable.length - 1 && dataOfTable[i][0] != "100점")
+            // if (type == dialogType.solidstepScore && i != dataOfTable.length - 1 && dataOfTable[i][0] != "100점")
+            if (false)
               Container(
                 height: height,
                 width: width,
@@ -1738,7 +1761,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       required dialogType type}) {
     double heightTitle = headColumn_height;
     double heightData = dataColumn_height;
-    double width = 90;
+    // double width = 90;
+    double width = 65;
     int dataLength = 2;
     List<List<dynamic>> temp = [];
     List<List<String>> dataOfTable = [];
@@ -1876,12 +1900,12 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
             Container(
               height: height,
               width: width,
-              // padding: const EdgeInsets.all(0),
+              padding: const EdgeInsets.all(0),
               alignment: Alignment.centerRight,
               child: IconButton(
                   splashRadius: 1,
-                  // padding: const EdgeInsets.all(0),
-                  // alignment: Alignment.centerRight,
+                  padding: const EdgeInsets.all(0),
+                  alignment: Alignment.centerRight,
                   color: Colors.lightBlue,
                   onPressed: () {
                     //?2 팝업으로 띄울 데이터 생성부 [[
@@ -1978,8 +2002,8 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
       required List<dynamic>? data,
       required dialogType type}) {
     double height = dataColumn_height;
-    double width = pageIndex == 1 ? 75 : 90;
-    // double width = 75;
+    // double width = pageIndex == 1 ? 75 : 90;
+    double width = 65;
     int dataLength;
     List<List<dynamic>> temp = [];
     List<List<String>> dataOfTable = [];
@@ -2644,7 +2668,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
     //?2 Display 부분
     return SizedBox(
       height: list.length > 15 ? dataColumn_height * 15 + 20 : dataColumn_height * list.length,
-      width: dataColumn_width * 10,
+      width: dataColumn_width * 11,
       child: ListView.builder(
         scrollDirection: Axis.vertical,
         itemCount: list.length,
@@ -2658,7 +2682,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                 width: i == 0
                     ? dataColumn_width * 5
                     : i == 1
-                        ? dataColumn_width * 3
+                        ? dataColumn_width * 4
                         // : i == 2
                         //     ? dataColumn_width * 2
                         : dataColumn_width,
