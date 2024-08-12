@@ -203,17 +203,17 @@ List<Map<String, dynamic>> data_metieye_data = [
   },
   {
     "target": 337,
-    "done_agent": 0,
-    "rate_agent": "100%",
-    "done_direc": 0,
-    "rate_direc": "100%",
-    "done_live": 0,
-    "rate_live": "100%",
-    "done_alarm": 0,
-    "rate_alarm": "100%",
-    "done_check": 0,
-    "rate_check": "100%",
-    "rate": "100%"
+    "done_agent": 1,
+    "rate_agent": "99%",
+    "done_direc": 1,
+    "rate_direc": "99%",
+    "done_live": 1,
+    "rate_live": "99%",
+    "done_alarm": 1,
+    "rate_alarm": "99%",
+    "done_check": 1,
+    "rate_check": "99%",
+    "rate": "99%"
   },
   {
     "target": 24,
@@ -273,16 +273,16 @@ List<Map<String, dynamic>> data_metieye_data = [
   },
   {
     "target": 718,
-    "done_agent": 0,
-    "rate_agent": "100%",
-    "done_direc": 0,
-    "rate_direc": "100%",
-    "done_live": 0,
-    "rate_live": "100%",
-    "done_alarm": 0,
-    "rate_alarm": "100%",
-    "done_check": 0,
-    "rate_check": "100%",
-    "rate": "100%"
+    "done_agent": 1,
+    "rate_agent": "99%",
+    "done_direc": 1,
+    "rate_direc": "99%",
+    "done_live": 1,
+    "rate_live": "99%",
+    "done_alarm": 1,
+    "rate_alarm": "99%",
+    "done_check": 1,
+    "rate_check": "99%",
+    "rate": "99%"
   }
 ];
