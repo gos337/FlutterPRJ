@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////////////////////////
+///   조치유무
+/////////////////////////////////////////////////////////////////////////////
 List<Map<String, dynamic>> data_solidstep_isDone = [
   {"score": "완료"},
   {"score": "완료"},
@@ -8,11 +11,11 @@ List<Map<String, dynamic>> data_solidstep_isDone = [
   {"score": "미완료"},
   {"score": "미완료"},
   {"score": "미완료"},
-  {"score": "완료"},
   {"score": "미완료"},
   {"score": "미완료"},
   {"score": "미완료"},
-  {"score": "완료"},
+  {"score": "미완료"},
+  {"score": "미완료"},
   {"score": "완료"},
   {"score": "완료"},
   {"score": "완료"},
@@ -24,28 +27,34 @@ List<String> data_solidstep_score_OStitle_OldSite = ["OS", "상", "중", "하"];
 List<String> data_solidstep_score_DBtitle_OldSite = ["DB", "상", "중", "하"];
 List<String> data_solidstep_score_WEBtitle_OldSite = ["WEB", "상", "중", "하"];
 
+/////////////////////////////////////////////////////////////////////////////
+///   OS
+/////////////////////////////////////////////////////////////////////////////
 List<Map<String, dynamic>> data_solidstep_OS_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 11, "middle": 0, "low": 17},
-  {"high": 2, "middle": 0, "low": 2},
-  {"high": 2, "middle": 0, "low": 21},
+  {"high": 5, "middle": 0, "low": 1},
+  {"high": 1, "middle": 0, "low": 0},
+  {"high": 2, "middle": 0, "low": 20},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 29, "middle": 2, "low": 10},
-  {"high": 30, "middle": 10, "low": 4},
+  {"high": 28, "middle": 2, "low": 3},
   {"high": 13, "middle": 7, "low": 9},
-  {"high": 0, "middle": 0, "low": 0},
+  {"high": 0, "middle": 18, "low": 0},
   {"high": 6, "middle": 0, "low": 0},
-  {"high": 0, "middle": 0, "low": 2},
+  {"high": 6, "middle": 4, "low": 7},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 1},
-  {"high": 93, "middle": 19, "low": 66}
+  {"high": 90, "middle": 33, "low": 51}
 ];
 
+/////////////////////////////////////////////////////////////////////////////
+///   DB
+/////////////////////////////////////////////////////////////////////////////
 List<Map<String, dynamic>> data_solidstep_DB_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
@@ -54,20 +63,23 @@ List<Map<String, dynamic>> data_solidstep_DB_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 0, "middle": 1, "low": 0},
+  {"high": 0, "middle": 36, "low": 6},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 1, "low": 0},
+  {"high": 0, "middle": 6, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 0, "middle": 0, "low": 0},
-  {"high": 0, "middle": 2, "low": 0}
+  {"high": 0, "middle": 43, "low": 6}
 ];
 
+/////////////////////////////////////////////////////////////////////////////
+///   WEB
+/////////////////////////////////////////////////////////////////////////////
 List<Map<String, dynamic>> data_solidstep_WEB_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
@@ -90,7 +102,451 @@ List<Map<String, dynamic>> data_solidstep_WEB_isDone = [
   {"high": 1, "middle": 0, "low": 0}
 ];
 
+/////////////////////////////////////////////////////////////////////////////
+///   (구)SolidStep 시트 , AG ~ AM 열
+/////////////////////////////////////////////////////////////////////////////
 List<Map<String, Object>> rawdata_solidstep_isDone = [
+  {
+    "hostname": "vdeEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeEMSdbm1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeMSCdbm1",
+    "importance": "중",
+    "service": "뮤직벨링",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "모바일서비스개발챕터",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdescsdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeSVCdbm1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviag2dba01",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviag2dba01",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vEMSdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vEMSdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviagdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviagdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviagdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviagdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm2",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexEMSdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm2",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSVCdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vIMdba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vSVCdbm1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vSVCdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vSVCdbm2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
   {
     "hostname": "vdememmvgw1",
     "importance": "상",
@@ -110,8 +566,26 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "aws-prd-news-01",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "aws-prd-news-02",
     "importance": "상",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-prd-news-02",
+    "importance": "중",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -128,17 +602,161 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
-    "hostname": "dev_vsaasiotapp01",
-    "importance": "상",
-    "service": "지능형CCTV",
+    "hostname": "dmicmpos01v",
+    "importance": "하",
+    "service": "U+모바일 사원증",
     "score": "사이트에서 확인",
     "type": "OS",
-    "team": "지능형CCTV개발팀",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-admin-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-api-bat-ap2",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-bastion-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-chat-backup-ap2a",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-chat2-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
     "target": "대상"
   },
   {
     "hostname": "ec2-stg-ulsp-eks-deploy-ap2",
     "importance": "상",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-media1-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-platform1-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-platform2-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-rdb-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-rdb-backup-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-redis-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-redis-backup-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-slb1-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-slb1-backup-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-slb2-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-slb2-backup-ap2c",
+    "importance": "하",
     "service": "화상커뮤니케이션 플랫폼",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -152,6 +770,51 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-uverse-was1-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-uverse-was2-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-was1-ap2a",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-stg-ulsp-was2-ap2c",
+    "importance": "하",
+    "service": "화상커뮤니케이션 플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "gw",
+    "importance": "중",
+    "service": "국제및 050 SMSGW",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
@@ -173,8 +836,17 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "ip-172-10-10-81.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "기술부채해소TF",
+    "target": "대상"
+  },
+  {
     "hostname": "ip-172-20-210-200.ap-northeast-2.compute.internal",
-    "importance": "상",
+    "importance": "하",
     "service": "이통MaaP FE",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -182,9 +854,9 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-20-210-200.ap-northeast-2.compute.internal",
-    "importance": "상",
-    "service": "이통MaaP FE",
+    "hostname": "ip-172-20-97-170.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "기반서비스개발팀",
@@ -197,6 +869,159 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-62-208.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "로봇플랫폼",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "중",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-109.ap-northeast-2.compute.internal",
+    "importance": "중",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "상",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "중",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "하",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-172-31-86-123.ap-northeast-2.compute.internal",
+    "importance": "중",
+    "service": "일상비일상의틈",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
     "target": "대상"
   },
   {
@@ -236,30 +1061,12 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
-    "hostname": "PLTEDevDB",
-    "importance": "상",
-    "service": "IoT@industry(전용망인증)",
+    "hostname": "spamdev1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PLTEDevWAS",
-    "importance": "상",
-    "service": "IoT@industry(전용망인증)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PLTEDevWAS",
-    "importance": "상",
-    "service": "IoT@industry(전용망인증)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
+    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
@@ -479,8 +1286,26 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vdekbzmadmwst1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdekbzmapp1",
     "importance": "상",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdekbzmapp1",
+    "importance": "하",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -497,8 +1322,26 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vdekbzmdbm1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdekbzmqapp2",
     "importance": "상",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdekbzmqapp2",
+    "importance": "하",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -512,42 +1355,6 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbsomswst1",
-    "importance": "상",
-    "service": "LBSOMS, 분실폰",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdem2mswba1",
-    "importance": "상",
-    "service": "M2MS(vM2MS)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemtmsdba1",
-    "importance": "상",
-    "service": "M2MS(vM2MS)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdemtmswst1",
-    "importance": "상",
-    "service": "M2MS(vM2MS)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
   {
@@ -575,6 +1382,60 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepageadmwba1",
+    "importance": "하",
+    "service": "U+Page",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepageadmwst1",
+    "importance": "하",
+    "service": "U+Page",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepagedbo1",
+    "importance": "하",
+    "service": "U+Page",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepageproxywba1",
+    "importance": "하",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepagewba1",
+    "importance": "하",
+    "service": "U+Page",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepagewst1",
+    "importance": "하",
+    "service": "U+Page",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
     "target": "대상"
   },
   {
@@ -624,7 +1485,16 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
   },
   {
     "hostname": "vdewltawst1",
-    "importance": "상",
+    "importance": "하",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "하",
     "service": "U+멤버스",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -661,6 +1531,51 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
   {
     "hostname": "vdewltawst1",
     "importance": "상",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "상",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltawst1",
+    "importance": "하",
     "service": "U+멤버스",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -678,7 +1593,16 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
   },
   {
     "hostname": "vdewltgwwba1",
-    "importance": "상",
+    "importance": "하",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltgwwba1",
+    "importance": "하",
     "service": "U+멤버스",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -695,8 +1619,62 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vdewltgwwba1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltgwwba1",
+    "importance": "상",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltgwwba1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltgwwba1",
+    "importance": "하",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdewltwst1",
     "importance": "상",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
+    "importance": "하",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
+    "importance": "하",
     "service": "U+멤버스",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -723,7 +1701,34 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
   },
   {
     "hostname": "vdewltwst1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
     "importance": "상",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
+    "importance": "중",
+    "service": "U+멤버스",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
+    "importance": "하",
     "service": "U+멤버스",
     "score": "사이트에서 확인",
     "type": "OS",
@@ -839,6 +1844,168 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vnCASPVLapp1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASPVLapp2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba3",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba4",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba5",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba6",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba7",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba8",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst2",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst3",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst4",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst5",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst6",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst7",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst8",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "voideadm1",
     "importance": "상",
     "service": "oneM2M",
@@ -902,6 +2069,15 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vpsdewst1",
+    "importance": "중",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
+    "score": "사이트에서 확인",
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vSVCdbm1",
     "importance": "상",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
@@ -938,786 +2114,12 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
-    "hostname": "vdeMSCdbm1",
-    "importance": "중",
-    "service": "뮤직벨링",
-    "score": "사이트에서 확인",
-    "type": "DB",
-    "team": "모바일서비스개발챕터",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdescsdba1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-prd-news-01",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-prd-news-02",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "gw",
-    "importance": "중",
-    "service": "국제및 050 SMSGW",
+    "hostname": "vzosdedbm1",
+    "importance": "상",
+    "service": "ZOS / RIMS",
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelMdba1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeSVCdbm1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "importance": "중",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexEMSdbm1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexEMSdbm2",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexIMdba1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexIMdba2",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSVCdbm1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSVCdbm2",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpsdewst1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasupdateapp01",
-    "importance": "하",
-    "service": "지능형CCTV",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasupdateapp01",
-    "importance": "하",
-    "service": "지능형CCTV",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dmicmpos01v",
-    "importance": "하",
-    "service": "U+모바일 사원증",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dmicmpos01v",
-    "importance": "하",
-    "service": "U+모바일 사원증",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-admin-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-api-bat-ap2",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-bastion-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-chat-backup-ap2a",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-chat2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-media1-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-redis-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-redis-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-backup-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-10-10-81.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기술부채해소TF",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-20-210-200.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "이통MaaP FE",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-20-97-170.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-125-169.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "산업DX플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-125-173.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "산업DX플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-26-176.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-166.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-176.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-177.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-184.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-185.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-186.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-188.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-196.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-198.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-208.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-172-31-62-215.ap-northeast-2.compute.internal",
-    "importance": "하",
-    "service": "로봇플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PLTEDevDB",
-    "importance": "하",
-    "service": "IoT@industry(전용망인증)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PLTEDevWAS",
-    "importance": "하",
-    "service": "IoT@industry(전용망인증)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "PLTEDevWEB",
-    "importance": "하",
-    "service": "IoT@industry(전용망인증)",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "spamdev1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotsvcwba1",
-    "importance": "하",
-    "service": "IoT Partners Portal",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdekbzmadmwst1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdekbzmapp1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdekbzmdbm1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdekbzmqapp2",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepageadmwba1",
-    "importance": "하",
-    "service": "U+Page",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepageadmwst1",
-    "importance": "하",
-    "service": "U+Page",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepagedbo1",
-    "importance": "하",
-    "service": "U+Page",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepageproxywba1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepagewba1",
-    "importance": "하",
-    "service": "U+Page",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepagewst1",
-    "importance": "하",
-    "service": "U+Page",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeSVCdbm1",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "importance": "하",
-    "service": "U+멤버스",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
     "target": "대상"
   }
 ];

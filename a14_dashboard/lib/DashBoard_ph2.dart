@@ -800,7 +800,10 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
               ),
 
               actions: const [
-                Center(child: Text("기준일 : 8월 9일    ", style: textStyle_Type1)),
+                /////////////////////////////////////////////////////////////////////////////
+                ///   기준일 변경
+                /////////////////////////////////////////////////////////////////////////////
+                Center(child: Text("기준일 : 8월 16일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,
