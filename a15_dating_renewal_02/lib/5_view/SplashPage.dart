@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
+import 'RegistrationPage.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -26,21 +29,41 @@ class SplashUI extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(50.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SizedBox(height: 10),
-            const Column(
-              children: [
-                // Image.asset('resource/images/graphic_service_icon.png'),
-                // Image.asset('resource/images/graphic_service_label.png'),
-                IU_Box(),
-              ],
-            ),
-            Image.asset('resource/images/grapich_u_plus_logo.png'),
+            // const SizedBox(height: 10),
+            // const Flexible(flex: 1, fit: FlexFit.tight, child: SizedBox(height: 1)),
+            Flexible(
+                flex: 1, fit: FlexFit.tight, child: Image.asset('resource/images/grapich_u_plus_logo.png', width: 150)),
+            Flexible(flex: 1, fit: FlexFit.tight, child: Image.asset('resource/images/logo.png', width: 150)),
+            Flexible(flex: 1, fit: FlexFit.tight, child: UI_TitleText()),
+
+            Flexible(flex: 1, fit: FlexFit.tight, child: UI_Registrion(context))
           ],
         ),
       ),
     );
+  }
+
+  Align UI_Registrion(BuildContext context) {
+    return Align(
+        alignment: Alignment.center,
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const RegistrationPage()));
+          },
+          child: Container(
+            child: const Text("회원가입", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600, color: Colors.white)),
+          ),
+        ));
+  }
+
+  Align UI_TitleText() {
+    return Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          child: const Text("마이데이트", style: TextStyle(fontSize: 48, fontWeight: FontWeight.w600, color: Colors.white)),
+        ));
   }
 }
 
