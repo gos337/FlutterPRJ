@@ -16,31 +16,10 @@ class PeoplePage extends StatelessWidget {
     print("Debug");
     print(index);
 
-    // return SizedBox(
-    //   child: test(index: index),
-    // );
     return PeopleUI(index: index);
   }
 }
 
-// class test extends StatefulWidget {
-//   const test({
-//     super.key,
-//     required this.index,
-//   });
-
-//   final int index;
-
-//   @override
-//   State<test> createState() => _testState();
-// }
-
-// class _testState extends State<test> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Image.asset(peoplePath[widget.index], fit: BoxFit.cover);
-//   }
-// }
 
 class PeopleUI extends StatefulWidget {
   const PeopleUI({
@@ -238,7 +217,7 @@ class _PeopleUIState extends State<PeopleUI> {
       foregroundColor: Colors.white,
       // backgroundColor: const Color.fromARGB(255, 201, 48, 240),
       backgroundColor: Colors.black,
-      leading: const Icon(Icons.menu),
+      // leading: const Icon(Icons.menu),
       actions: const [Icon(Icons.notifications_active)],
       elevation: 1.0,
     );

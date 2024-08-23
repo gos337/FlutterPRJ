@@ -152,17 +152,18 @@ class _RegistrationUIState extends State<RegistrationUI> {
   ListView UI_RegistrationMethod() {
     return ListView.separated(
       scrollDirection: Axis.horizontal,
-      itemCount: 5,
+      itemCount: 7,
       separatorBuilder: (context, index) => const SizedBox(width: 24),
       itemBuilder: (context, index) {
-        List<String> method = ["카드", "전자금융", "은행", "증권", "보험"];
-        List<String> methodCount = ["3", "3", "6", "5", "4"];
+        List<String> method = ["카드", "통신사", "SNS", "전자금융", "은행", "증권", "보험"];
+        List<String> methodCount = ["3", "3", "6", "5", "4", "5", "4"];
         return Align(
           alignment: Alignment.bottomLeft,
           child: Row(
             children: [
               Text(method[index],
                   style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.black87)),
+                  SizedBox(width: 8),
               CircleAvatar(
                   radius: 10,
                   backgroundColor: Colors.grey[800],
