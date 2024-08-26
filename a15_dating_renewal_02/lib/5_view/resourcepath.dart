@@ -16,7 +16,12 @@ List<String> peopleIconPath = [
   "resource/images/match_icon6.png",
 ];
 List<String> peopleIconName = [
-  "미연","민니", "소연", "우기", "슈화", "희정", 
+  "미연",
+  "민니",
+  "소연",
+  "우기",
+  "슈화",
+  "희정",
 ];
 
 List<String> peopleRecommendPath = [
@@ -30,12 +35,19 @@ List<String> peopleRecommendPath = [
   "resource/images/theme_icon8.png",
 ];
 List<String> peopleRecommendName = [
-"민지","하나", "다니엘", "해린", "혜인", "윤아", "민주", "모카",
+  "민지",
+  "하나",
+  "다니엘",
+  "해린",
+  "혜인",
+  "윤아",
+  "민주",
+  "모카",
 ];
 
 List<String> peopleRecommendCategory = [
-"나랑 거리가 가까운 친구",
-"나랑 성격이 알맞는 친구",
+  "나랑 거리가 가까운 친구",
+  "나랑 성격이 알맞는 친구",
 ];
 
 List<String> badgePath = [
@@ -46,4 +58,18 @@ List<String> badgePath = [
   "resource/images/dallar_badge.png",
   "resource/images/house_badge.png",
   "resource/images/insure_badge.png",
+];
+
+List<String> eventPath = [
+  "resource/images/announce_icon.png",
+  "resource/images/event_icon.png",
+  "resource/images/fitting_icon.png",
+  "resource/images/mbti_icon.png",
+];
+
+List<String> eventName = [
+  "공지",
+  "이벤트",
+  "피팅",
+  "MBTI",
 ];

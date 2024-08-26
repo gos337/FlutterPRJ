@@ -803,7 +803,7 @@ class _DashBoard_ph2State extends State<DashBoard_ph2> {
                 /////////////////////////////////////////////////////////////////////////////
                 ///   기준일 변경
                 /////////////////////////////////////////////////////////////////////////////
-                Center(child: Text("기준일 : 8월 20일    ", style: textStyle_Type1)),
+                Center(child: Text("기준일 : 8월 23일    ", style: textStyle_Type1)),
               ],
               elevation: 0,
               automaticallyImplyLeading: false,

@@ -6,7 +6,7 @@ List<Map<String, dynamic>> data_solidstep_isDone = [
   {"score": "완료"},
   {"score": "미완료"},
   {"score": "완료"},
-  {"score": "미완료"},
+  {"score": "완료"},
   {"score": "완료"},
   {"score": "미완료"},
   {"score": "미완료"},
@@ -35,10 +35,10 @@ List<Map<String, dynamic>> data_solidstep_OS_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 5, "middle": 0, "low": 1},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 2, "middle": 0, "low": 20},
+  {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 29, "middle": 2, "low": 10},
-  {"high": 16, "middle": 2, "low": 3},
+  {"high": 13, "middle": 1, "low": 3},
   {"high": 13, "middle": 7, "low": 9},
   {"high": 0, "middle": 18, "low": 0},
   {"high": 6, "middle": 0, "low": 0},
@@ -49,7 +49,7 @@ List<Map<String, dynamic>> data_solidstep_OS_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 1},
-  {"high": 79, "middle": 33, "low": 51}
+  {"high": 74, "middle": 32, "low": 31}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@ List<Map<String, dynamic>> data_solidstep_DB_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 0, "middle": 36, "low": 6},
+  {"high": 0, "middle": 37, "low": 6},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
@@ -74,7 +74,7 @@ List<Map<String, dynamic>> data_solidstep_DB_isDone = [
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
   {"high": 0, "middle": 0, "low": 0},
-  {"high": 0, "middle": 47, "low": 6}
+  {"high": 0, "middle": 48, "low": 6}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -106,15 +106,6 @@ List<Map<String, dynamic>> data_solidstep_WEB_isDone = [
 ///   (구)SolidStep 시트 , AG ~ AM 열
 /////////////////////////////////////////////////////////////////////////////
 List<Map<String, Object>> rawdata_solidstep_isDone = [
-  {
-    "hostname": "vdememmvgw1",
-    "importance": "상",
-    "service": "U+멤버십",
-    "score": "사이트에서 확인",
-    "type": "WEB",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
   {
     "hostname": "vdeEMSdbm1",
     "importance": "중",
@@ -593,6 +584,15 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
+    "hostname": "vzosdedbm1",
+    "importance": "중",
+    "service": "ZOS / RIMS",
+    "score": "사이트에서 확인",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "aws-prd-news-01",
     "importance": "상",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
@@ -635,204 +635,6 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "모바일서비스SW개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-admin-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-api-bat-ap2",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-bastion-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-chat-backup-ap2a",
-    "importance": "하",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-chat2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-eks-deploy-ap2",
-    "importance": "상",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-media1-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-redis-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-redis-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-backup-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-backup-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-ssh-hub-ap2",
-    "importance": "상",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was1-ap2a",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was2-ap2c",
-    "importance": "하",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "SME솔루션개발팀",
     "target": "대상"
   },
   {
@@ -1346,15 +1148,6 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbsomsdbo1",
-    "importance": "상",
-    "service": "LBSOMS, 분실폰",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
     "target": "대상"
   },
   {
@@ -2024,39 +1817,21 @@ List<Map<String, Object>> rawdata_solidstep_isDone = [
     "target": "대상"
   },
   {
-    "hostname": "vpsdewba1",
-    "importance": "상",
-    "service": "PUSH",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpsdewst1",
-    "importance": "상",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpsdewst1",
-    "importance": "중",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
-    "score": "사이트에서 확인",
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vvdelbsmapwba1",
     "importance": "상",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, SolidStep에 팀 자산으로 등록되어 있음",
     "score": "사이트에서 확인",
     "type": "OS",
     "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdememmvgw1",
+    "importance": "상",
+    "service": "U+멤버십",
+    "score": "사이트에서 확인",
+    "type": "WEB",
+    "team": "모바일서비스선행개발팀",
     "target": "대상"
   }
 ];

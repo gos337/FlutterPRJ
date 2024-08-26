@@ -44,6 +44,7 @@ class _MainUIState extends State<MainUI> {
                 UI_Profile(),
                 const SizedBox(height: 16),
                 UI_Event(),
+                const SizedBox(height: 16),
                 UI_People(),
               ],
             ),
@@ -113,18 +114,21 @@ class _MainUIState extends State<MainUI> {
       color: testmode ? Colors.green[100] : null,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        itemCount: 5,
+        itemCount: eventPath.length,
         separatorBuilder: (context, index) => const SizedBox(width: 8),
         itemBuilder: (context, index) {
           return Column(
             children: [
-              CircleAvatar(
-                  radius: 50,
-                  backgroundColor: Colors.grey[800],
-                  child: const Text("공지",
-                      style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))),
+              // CircleAvatar(
+              //     radius: 50,
+              //     backgroundColor: Colors.grey[800],
+              //     child: const Text("공지",
+              //         style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))),
+              CircleAvatar(radius: 50, backgroundImage: AssetImage(eventPath[index])),
+
               const SizedBox(height: 8),
-              const Text("공지", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white)),
+              Text(eventName[index],
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white)),
             ],
           );
         },
@@ -132,17 +136,44 @@ class _MainUIState extends State<MainUI> {
     );
   }
 
-   Padding UI_PeopleRecommend(int index) {
+  // {
+  //   return Container(
+  //     padding: const EdgeInsets.all(8),
+  //     height: 150,
+  //     color: testmode ? Colors.green[100] : null,
+  //     child: ListView.separated(
+  //       scrollDirection: Axis.horizontal,
+  //       itemCount: 4,
+  //       separatorBuilder: (context, index) => const SizedBox(width: 8),
+  //       itemBuilder: (context, index) {
+  //         return Column(
+  //           children: [
+  //             CircleAvatar(
+  //                 radius: 50,
+  //                 backgroundColor: Colors.grey[800],
+  //                 child: const Text("공지",
+  //                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))),
+  //             const SizedBox(height: 8),
+  //             const Text("공지", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white)),
+  //           ],
+  //         );
+  //       },
+  //     ),
+  //   );
+  // }
+
+  Padding UI_PeopleRecommend(int index) {
     return Padding(
-      padding: const EdgeInsets.only(top: 8, bottom: 16 ),
+      padding: const EdgeInsets.only(top: 8, bottom: 16),
       child: Column(
         children: [
           Container(
-            height: 40,
-            alignment: Alignment.centerLeft,
-            padding: EdgeInsets.only(left: 8, top: 16 ),
-            child: Text(peopleRecommendCategory[index], style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white))),
-              const SizedBox(height: 8),
+              height: 40,
+              alignment: Alignment.centerLeft,
+              padding: const EdgeInsets.only(left: 8, top: 16),
+              child: Text(peopleRecommendCategory[index],
+                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white))),
+          const SizedBox(height: 8),
           Container(
             padding: const EdgeInsets.all(8),
             height: 150,
@@ -159,12 +190,11 @@ class _MainUIState extends State<MainUI> {
                     //     backgroundColor: Colors.grey[800],
                     //     child: const Text("공지",
                     //         style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))),
-                    CircleAvatar(
-                      radius: 50,
-                      backgroundImage: AssetImage(peopleRecommendPath[index])),
-          
+                    CircleAvatar(radius: 50, backgroundImage: AssetImage(peopleRecommendPath[index])),
+
                     const SizedBox(height: 8),
-                    Text(peopleRecommendName[index], style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white)),
+                    Text(peopleRecommendName[index],
+                        style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: Colors.white)),
                   ],
                 );
               },
@@ -175,7 +205,6 @@ class _MainUIState extends State<MainUI> {
     );
   }
 
-
   SizedBox UI_People() {
     return SizedBox(
         // height: 300,
@@ -183,15 +212,15 @@ class _MainUIState extends State<MainUI> {
       print(constraints);
       return Column(
         children: [
-           UI_PeopleBox(constraints, 0),
-                     UI_PeopleRecommend(0),
-           UI_PeopleBox(constraints, 1),
-           UI_PeopleBox(constraints, 2),
-                     UI_PeopleRecommend(1),
-           UI_PeopleBox(constraints, 3),
-           UI_PeopleBox(constraints, 4),
-                     UI_PeopleRecommend(0),
-           UI_PeopleBox(constraints, 5),
+          UI_PeopleBox(constraints, 0),
+          UI_PeopleRecommend(0),
+          UI_PeopleBox(constraints, 1),
+          UI_PeopleBox(constraints, 2),
+          UI_PeopleRecommend(1),
+          UI_PeopleBox(constraints, 3),
+          UI_PeopleBox(constraints, 4),
+          UI_PeopleRecommend(0),
+          UI_PeopleBox(constraints, 5),
 
           // for (int index = 0; index < peoplePath.length; index++)
           //   Column(
@@ -204,17 +233,10 @@ class _MainUIState extends State<MainUI> {
     }));
   }
 
-  Column UI_PeopleBox(BoxConstraints constraints
-, int index) {
-
-  return Column(
-    children: [
-      UI_PeopleHeader(index),
-                      UI_PeopleBody(constraints, index),
-                UI_PeopleTail(),
-                const SizedBox(height: 8)
-    ],
-  );
+  Column UI_PeopleBox(BoxConstraints constraints, int index) {
+    return Column(
+      children: [UI_PeopleHeader(index), UI_PeopleBody(constraints, index), UI_PeopleTail(), const SizedBox(height: 8)],
+    );
   }
 
   Container UI_PeopleTail() {
@@ -250,16 +272,16 @@ class _MainUIState extends State<MainUI> {
       child: Row(
         children: [
           CircleAvatar(
-              radius: 20,
-              backgroundImage: AssetImage(peopleIconPath[index]),
-              backgroundColor: Colors.grey[800],
-              // child:
-              //     const Text("사진", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))
-              ),
+            radius: 20,
+            backgroundImage: AssetImage(peopleIconPath[index]),
+            backgroundColor: Colors.grey[800],
+            // child:
+            //     const Text("사진", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.white))
+          ),
           Container(
               margin: const EdgeInsets.only(left: 8),
-              child:
-                  Text(peopleIconName[index], style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black)))
+              child: Text(peopleIconName[index],
+                  style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black)))
         ],
       ),
     );

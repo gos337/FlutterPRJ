@@ -11,10 +11,10 @@ List<Map<String, dynamic>> data_solidstep_agent = [
   {"done": 51, "doing": 0, "ready": 33, "target": 84, "rate": "100%"},
   {"done": 66, "doing": 0, "ready": 3, "target": 69, "rate": "100%"},
   {"done": 41, "doing": 0, "ready": 11, "target": 52, "rate": "100%"},
-  {"done": 95, "doing": 0, "ready": 0, "target": 95, "rate": "100%"},
+  {"done": 74, "doing": 0, "ready": 21, "target": 95, "rate": "100%"},
   {"done": 3, "doing": 0, "ready": 0, "target": 3, "rate": "100%"},
   {"done": 52, "doing": 0, "ready": 0, "target": 52, "rate": "100%"},
-  {"done": 75, "doing": 0, "ready": 7, "target": 82, "rate": "100%"},
+  {"done": 74, "doing": 1, "ready": 7, "target": 82, "rate": "98%"},
   {"done": 10, "doing": 0, "ready": 0, "target": 10, "rate": "100%"},
   {"done": 73, "doing": 0, "ready": 5, "target": 78, "rate": "100%"},
   {"done": 35, "doing": 0, "ready": 0, "target": 35, "rate": "100%"},
@@ -25,7 +25,7 @@ List<Map<String, dynamic>> data_solidstep_agent = [
   {"done": 2, "doing": 0, "ready": 0, "target": 2, "rate": "100%"},
   {"done": 0, "doing": 0, "ready": 2, "target": 2, "rate": "100%"},
   {"done": 17, "doing": 0, "ready": 0, "target": 17, "rate": "100%"},
-  {"done": 1052, "doing": 0, "ready": 64, "target": 1116, "rate": "100%"}
+  {"done": 1030, "doing": 1, "ready": 85, "target": 1116, "rate": "99%"}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -34,23 +34,23 @@ List<Map<String, dynamic>> data_solidstep_agent = [
 List<Map<String, dynamic>> data_solidstep_score = [
   {"score": "100점"},
   {"score": "100점"},
-  {"score": "96점"},
   {"score": "99점"},
+  {"score": "100점"},
   {"score": "100점"},
   {"score": "100점"},
   {"score": "97점"},
   {"score": "93점"},
-  {"score": "90점"},
+  {"score": "65점"},
   {"score": "98점"},
   {"score": "100점"},
-  {"score": "98점"},
+  {"score": "99점"},
   {"score": "100점"},
   {"score": "97점"},
   {"score": "100점"},
   {"score": "100점"},
   {"score": "100점"},
   {"score": "100점"},
-  {"score": "98점"}
+  {"score": "97점"}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -60,22 +60,22 @@ List<Map<String, dynamic>> data_solidstep_OS_Score = [
   {"target": 8, "doing": 0, "rate": "100%"},
   {"target": 19, "doing": 0, "rate": "100%"},
   {"target": 84, "doing": 1, "rate": "98%"},
-  {"target": 39, "doing": 1, "rate": "97%"},
-  {"target": 81, "doing": 0, "rate": "100%"},
+  {"target": 39, "doing": 0, "rate": "100%"},
+  {"target": 59, "doing": 0, "rate": "100%"},
   {"target": 3, "doing": 0, "rate": "100%"},
   {"target": 65, "doing": 10, "rate": "84%"},
-  {"target": 220, "doing": 12, "rate": "94%"},
+  {"target": 218, "doing": 11, "rate": "94%"},
   {"target": 19, "doing": 11, "rate": "42%"},
   {"target": 123, "doing": 18, "rate": "85%"},
   {"target": 70, "doing": 0, "rate": "100%"},
-  {"target": 18, "doing": 1, "rate": "94%"},
+  {"target": 18, "doing": 0, "rate": "100%"},
   {"target": 11, "doing": 0, "rate": "100%"},
   {"target": 470, "doing": 2, "rate": "99%"},
   {"target": 43, "doing": 0, "rate": "100%"},
   {"target": 6, "doing": 0, "rate": "100%"},
   {"target": 0, "doing": 0, "rate": "100%"},
   {"target": 22, "doing": 0, "rate": "100%"},
-  {"target": 1293, "doing": 56, "rate": "96%"}
+  {"target": 1269, "doing": 53, "rate": "96%"}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -84,7 +84,7 @@ List<Map<String, dynamic>> data_solidstep_OS_Score = [
 List<Map<String, dynamic>> data_solidstep_DB_Score = [
   {"target": 0, "doing": 0, "rate": "100%"},
   {"target": 2, "doing": 0, "rate": "100%"},
-  {"target": 6, "doing": 1, "rate": "83%"},
+  {"target": 6, "doing": 0, "rate": "100%"},
   {"target": 2, "doing": 0, "rate": "100%"},
   {"target": 8, "doing": 0, "rate": "100%"},
   {"target": 1, "doing": 0, "rate": "100%"},
@@ -100,7 +100,7 @@ List<Map<String, dynamic>> data_solidstep_DB_Score = [
   {"target": 0, "doing": 0, "rate": "100%"},
   {"target": 0, "doing": 0, "rate": "100%"},
   {"target": 3, "doing": 0, "rate": "100%"},
-  {"target": 156, "doing": 21, "rate": "87%"}
+  {"target": 156, "doing": 20, "rate": "87%"}
 ];
 
 /////////////////////////////////////////////////////////////////////////////
@@ -174,6 +174,870 @@ List<Map<String, dynamic>> data_metieye_cleansing_ver2_data = [
 /////////////////////////////////////////////////////////////////////////////
 List<Map<String, Object>> rawdata_solidstep = [
   {
+    "hostname": "dmicmpos01v",
+    "sw": "Linux",
+    "service": "U+모바일 사원증",
+    "score": 100,
+    "type": "OS",
+    "team": "모바일서비스SW개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba3",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst7",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst5",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst8",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst6",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba2",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba4",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst2",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba8",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba6",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba7",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba1",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst2",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba5",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba1",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba4",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vMMSPVLapp2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba8",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst4",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst3",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwba1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba5",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba3",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba2",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vMMSPVLapp1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst1",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASPVLapp2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASPVLapp1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst7",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst5",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst8",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst6",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst3",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwst4",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 98.8,
+    "type": "OS",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vcasadminwst1",
+    "sw": "Tomcat",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba7",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnCASwba6",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasvaemsdbm1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasmediaapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasadminwba1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaaswba1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasinmsapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasstrmapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaaseimapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasapi1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaascmapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasupdateapp01",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasiotapp01",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2ems1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2api1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2update1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2admin1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2iot1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasmediaapp02",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2wba1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasdbm1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2dbm1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "설치미지원"
+  },
+  {
+    "hostname": "dev-vsaas2cm1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2iot1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2slb1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2wba1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasiotapp01",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasems1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasems1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaasoamapp01",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2ems1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vaems2dbm1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "설치미지원"
+  },
+  {
+    "hostname": "dev_vsaasapi1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasfrelayapp01",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2update1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasmvsapp1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2api1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaaseimapp1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaasvalbapp01",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasadminwba1",
+    "sw": "Apache",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasadminwba1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasstrmapp02",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2admin1",
+    "sw": "Apache",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2admin1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vsaas2inms1",
+    "sw": "Linux",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "OS",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaaswba1",
+    "sw": "Tomcat",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "WEB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasdbm1",
+    "sw": "MariaDB",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "DB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vsaasvaemsdbm1",
+    "sw": "MariaDB",
+    "service": "지능형CCTV",
+    "score": 100,
+    "type": "DB",
+    "team": "지능형CCTV개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdemtmsdba1",
+    "sw": "Altibase",
+    "service": "M2MS(vM2MS)",
+    "score": 100,
+    "type": "DB",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbsomswba1",
+    "sw": "Linux",
+    "service": "LBSOMS, 분실폰",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbsomswst1",
+    "sw": "Linux",
+    "service": "LBSOMS, 분실폰",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbsomsdbo1",
+    "sw": "Linux",
+    "service": "LBSOMS, 분실폰",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdelbspwba1",
+    "sw": "Apache",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "WEB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vESNwba01",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -237,7 +1101,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeEMSdbm1",
+    "hostname": "vOPXapp1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 97.7,
@@ -246,7 +1110,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vOPXapp1",
+    "hostname": "vdeEMSdbm1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 97.7,
@@ -294,33 +1158,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vEMSdbm1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbsomsdbo1",
-    "sw": "Linux",
-    "service": "LBSOMS, 분실폰",
-    "score": 97.7,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbsomswba1",
-    "sw": "Linux",
-    "service": "LBSOMS, 분실폰",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdelbsomswst1",
-    "sw": "Linux",
-    "service": "LBSOMS, 분실폰",
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
@@ -405,15 +1242,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dmicmpos01v",
-    "sw": "Linux",
-    "service": "U+모바일 사원증",
-    "score": 99.8,
-    "type": "OS",
-    "team": "모바일서비스SW개발팀",
     "target": "대상"
   },
   {
@@ -666,420 +1494,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaaseimapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 97.7,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasapi1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasmvsapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasadminwba1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2admin1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaaswba1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2wba1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vaems2dbm1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "설치미지원"
-  },
-  {
-    "hostname": "dev-vsaasvalbapp01",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasvaemsdbm1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasiotapp01",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasems1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2iot1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2dbm1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "설치미지원"
-  },
-  {
-    "hostname": "dev_vsaasfrelayapp01",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasupdateapp01",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasstrmapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2api1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasmediaapp02",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2ems1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2inms1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasmediaapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2cm1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasdbm1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2update1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2slb1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasstrmapp02",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaaswba1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaascmapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaasoamapp01",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasinmsapp1",
-    "sw": "Linux",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "OS",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasapi1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2iot1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2api1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2ems1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaaseimapp1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2admin1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasiotapp01",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasdbm1",
-    "sw": "MariaDB",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "DB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2update1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasadminwba1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasvaemsdbm1",
-    "sw": "MariaDB",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "DB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2admin1",
-    "sw": "Apache",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasadminwba1",
-    "sw": "Apache",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vsaas2wba1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vsaasems1",
-    "sw": "Tomcat",
-    "service": "지능형CCTV",
-    "score": 100,
-    "type": "WEB",
-    "team": "지능형CCTV개발팀",
     "target": "대상"
   },
   {
@@ -1470,414 +1884,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnCASwba5",
+    "hostname": "vdesmclnwba1",
     "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba7",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba6",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst4",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst3",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst1",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba4",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba1",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba3",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba8",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst5",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst7",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vMMSPVLapp1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASPVLapp2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASPVLapp1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst2",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst8",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst6",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba1",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwst2",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba5",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vMMSPVLapp2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba6",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba7",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst4",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst3",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst6",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst8",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 98.8,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vcasadminwba2",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba3",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba2",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba4",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst1",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwba8",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst5",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnCASwst7",
-    "sw": "Tomcat",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "커머스서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdesmclnwst1",
-    "sw": "Linux",
-    "service": "스마트크린 개발기 was",
+    "service": "스마트크린 개발기 web",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdesmclnwba1",
+    "hostname": "vdesmclnwst1",
     "sw": "Linux",
-    "service": "스마트크린 개발기 web",
+    "service": "스마트크린 개발기 was",
     "score": 100,
     "type": "OS",
     "team": "스마트DX플랫폼개발팀",
@@ -2308,7 +2326,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdemcpnadmapp1",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "모바일 상품권 ",
     "score": 100,
     "type": "WEB",
@@ -2317,7 +2335,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdemcpnadmapp1",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "모바일 상품권 ",
     "score": 100,
     "type": "WEB",
@@ -2442,7 +2460,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeadcbwst2",
+    "hostname": "vdeadcbwst1",
     "sw": "Linux",
     "service": "ADCB",
     "score": 100,
@@ -2451,7 +2469,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeadcbwst1",
+    "hostname": "vdeadcbwst2",
     "sw": "Linux",
     "service": "ADCB",
     "score": 100,
@@ -2793,15 +2811,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiag2wba1",
-    "sw": "Linux",
-    "service": "IAG",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexiag3wst1",
     "sw": "Linux",
     "service": "IAG",
@@ -2820,15 +2829,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexiag3wba1",
-    "sw": "Linux",
-    "service": "IAG",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdeiag2dba1",
     "sw": "Linux",
     "service": "IAG",
@@ -2838,7 +2838,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdeiag2wba1",
+    "sw": "Linux",
+    "service": "IAG",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdeiagwba1",
+    "sw": "Linux",
+    "service": "IAG",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3wba1",
     "sw": "Linux",
     "service": "IAG",
     "score": 100,
@@ -2865,24 +2883,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexiag3dba1",
-    "sw": "Linux",
-    "service": "IAG",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiagwst1",
-    "sw": "Linux",
-    "service": "IAG",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexiag3wst2",
     "sw": "Linux",
     "service": "IAG",
@@ -2893,6 +2893,24 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexiag3wba2",
+    "sw": "Linux",
+    "service": "IAG",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexiag3dba1",
+    "sw": "Linux",
+    "service": "IAG",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiagwst1",
     "sw": "Linux",
     "service": "IAG",
     "score": 100,
@@ -3000,7 +3018,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-65-24.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-65-51.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -3009,7 +3027,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-65-51.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-65-24.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -3351,6 +3369,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "tvTB1ls1",
+    "sw": "PostgreSQL",
+    "service": "CDN",
+    "score": 100,
+    "type": "DB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vptb2ss101",
+    "sw": "Apache",
+    "service": "CDN",
+    "score": 100,
+    "type": "WEB",
+    "team": "VAS서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vptb2ss100",
     "sw": "Apache",
     "service": "CDN",
@@ -3360,7 +3396,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "tvTB1ls1",
+    "hostname": "vptb2ss101",
     "sw": "PostgreSQL",
     "service": "CDN",
     "score": 100,
@@ -3374,24 +3410,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "CDN",
     "score": 100,
     "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss101",
-    "sw": "PostgreSQL",
-    "service": "CDN",
-    "score": 100,
-    "type": "DB",
-    "team": "VAS서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vptb2ss101",
-    "sw": "Apache",
-    "service": "CDN",
-    "score": 100,
-    "type": "WEB",
     "team": "VAS서비스개발팀",
     "target": "대상"
   },
@@ -3658,7 +3676,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "tb-hdtvlog",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "VUCTLO로그 수집 서버",
     "score": 100,
     "type": "WEB",
@@ -3667,7 +3685,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "tb-hdtvlog",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "VUCTLO로그 수집 서버",
     "score": 100,
     "type": "WEB",
@@ -3990,7 +4008,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vpTBads1",
+    "hostname": "vpTB2lsm1",
     "sw": "Linux",
     "service": "CDN",
     "score": 100,
@@ -3999,7 +4017,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vpTB2lsm1",
+    "hostname": "vpTBads1",
     "sw": "Linux",
     "service": "CDN",
     "score": 100,
@@ -4080,20 +4098,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "TB-FCS1",
-    "sw": "Linux",
-    "service": "실시간",
-    "score": 100,
-    "type": "OS",
-    "team": "IPTV인프라개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "TB_UIS_API_01",
     "sw": "Apache",
     "service": "UI스크립트",
     "score": 100,
     "type": "WEB",
+    "team": "IPTV인프라개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "TB-FCS1",
+    "sw": "Linux",
+    "service": "실시간",
+    "score": 100,
+    "type": "OS",
     "team": "IPTV인프라개발팀",
     "target": "대상"
   },
@@ -4116,9 +4134,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vpTB2lsm2",
+    "hostname": "TB-FCS4",
     "sw": "Linux",
-    "service": "CDN",
+    "service": "실시간",
     "score": 100,
     "type": "OS",
     "team": "IPTV인프라개발팀",
@@ -4134,9 +4152,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "TB-FCS4",
+    "hostname": "vpTB2lsm2",
     "sw": "Linux",
-    "service": "실시간",
+    "service": "CDN",
     "score": 100,
     "type": "OS",
     "team": "IPTV인프라개발팀",
@@ -4180,7 +4198,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "CTISTB",
-    "sw": "JBoss",
+    "sw": "Apache",
     "service": "모아보기",
     "score": 100,
     "type": "WEB",
@@ -4189,7 +4207,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "CTISTB",
-    "sw": "Apache",
+    "sw": "JBoss",
     "service": "모아보기",
     "score": 100,
     "type": "WEB",
@@ -4252,7 +4270,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "isu-dev",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "데이터방송",
     "score": 100,
     "type": "WEB",
@@ -4261,7 +4279,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "isu-dev",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "데이터방송",
     "score": 100,
     "type": "WEB",
@@ -4296,7 +4314,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "VODCG-I30",
+    "hostname": "EPGP-PSI",
     "sw": "Windows",
     "service": "EPG",
     "score": 100,
@@ -4305,7 +4323,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "EPGP-PSI",
+    "hostname": "VODCG-I30",
     "sw": "Windows",
     "service": "EPG",
     "score": 100,
@@ -4413,7 +4431,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vwpsapdbm1",
+    "hostname": "vwpsadmdbm2",
     "sw": "MariaDB",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -4422,7 +4440,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vwpsadmdbm2",
+    "hostname": "vwpsapdbm1",
     "sw": "MariaDB",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -4872,15 +4890,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "program_a1",
-    "sw": "Linux",
-    "service": "웹하드 2.0",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "sfolder_a1",
     "sw": "Linux",
     "service": "웹하드 2.0",
@@ -4890,7 +4899,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "pauth2_a1",
+    "hostname": "program_a1",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -4899,7 +4908,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "linkmedia98",
+    "hostname": "whdd9001",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -4917,16 +4926,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "whdd9002",
-    "sw": "Linux",
-    "service": "웹하드 2.0",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "whdd9001",
+    "hostname": "linkmedia98",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -4953,6 +4953,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "whdd9002",
+    "sw": "Linux",
+    "service": "웹하드 2.0",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "whdd998",
     "sw": "Linux",
     "service": "웹하드 2.0",
@@ -4962,7 +4971,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "nauth1",
+    "hostname": "pauth2_a1",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -4980,16 +4989,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "whdd_mdb",
-    "sw": "Linux",
-    "service": "웹하드 2.0",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "imglink98",
+    "hostname": "wldd99",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -5016,7 +5016,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "wldd99",
+    "hostname": "nauth1",
+    "sw": "Linux",
+    "service": "웹하드 2.0",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "whdd_mdb",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -5026,6 +5035,15 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "preview_a1",
+    "sw": "Linux",
+    "service": "웹하드 2.0",
+    "score": 100,
+    "type": "OS",
+    "team": "SME솔루션개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "imglink98",
     "sw": "Linux",
     "service": "웹하드 2.0",
     "score": 100,
@@ -5619,15 +5637,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdelbspwba1",
-    "sw": "Apache",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotgwdbm1",
     "sw": "MariaDB",
     "service": "홈IoT SAS",
@@ -5745,7 +5754,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pstunwba2",
+    "hostname": "vexdhiotp2pdaswba2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
@@ -5754,7 +5763,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pdaswba2",
+    "hostname": "vexdhiotp2pstunwba2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
@@ -5862,10 +5871,19 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pdclogwba1",
+    "hostname": "vexdhiotp2pdbm1",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pdclogwba1",
+    "sw": "Linux",
+    "service": "슈퍼맘카 P2P",
+    "score": 0,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -5875,15 +5893,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdbm1",
-    "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
-    "score": 0,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
@@ -5916,15 +5925,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pstunwba1",
-    "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexdhiotp2predisapp2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
@@ -5935,6 +5935,15 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexphiotp2pzookeeperapp3",
+    "sw": "Linux",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pstunwba1",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
@@ -6132,15 +6141,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pmasterwst2",
-    "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexphiotp2pclickhouseapp2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
@@ -6151,6 +6151,15 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexphiotp2predisapp6",
+    "sw": "Linux",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pmasterwst2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
     "score": 100,
@@ -6744,7 +6753,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-skywalking",
+    "hostname": "ec2-az2a-luiot-dev1-p2p2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -6753,7 +6762,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-p2p2",
+    "hostname": "ec2-az2a-luiot-dev1-skywalking",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -6789,15 +6798,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-ifttt",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-az2a-luiot-dev1-leisi",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
@@ -6807,7 +6807,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-uplusmnger",
+    "hostname": "ec2-az2a-luiot-dev1-ifttt",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -6817,6 +6817,15 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "ec2-az2a-luiot-dev1-p2p1",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-uplusmnger",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -7203,7 +7212,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiotoawst1",
+    "hostname": "vdeogswst1",
     "sw": "Linux",
     "service": "홈IoT 플랫폼",
     "score": 100,
@@ -7215,33 +7224,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdepetGPwst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotdba2",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeogswst1",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotoas2",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -7275,9 +7257,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdeiotoawst1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotoas2",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vdehiotdba2",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vhiotsaswst2",
     "sw": "Linux",
     "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotss2",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -7296,15 +7314,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdepetGPwst2",
     "sw": "Linux",
     "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotss2",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -7546,7 +7555,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "wh3-dev02",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "웹하드 3.0",
     "score": 100,
     "type": "WEB",
@@ -7555,7 +7564,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "wh3-dev02",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "웹하드 3.0",
     "score": 100,
     "type": "WEB",
@@ -8184,7 +8193,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexadcrptapp2",
+    "hostname": "vexadcrptapp1",
     "sw": "Tomcat",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -8193,7 +8202,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexadcrptapp1",
+    "hostname": "vexadcrptapp2",
     "sw": "Tomcat",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -8373,18 +8382,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeMSCDwba1",
-    "sw": "Apache",
-    "service": "뮤직벨링",
+    "hostname": "vdemvasawst1",
+    "sw": "Tomcat",
+    "service": "뮤직부가서비스",
     "score": 100,
     "type": "WEB",
     "team": "모바일서비스개발챕터",
     "target": "대상"
   },
   {
-    "hostname": "vdemvasawst1",
-    "sw": "Tomcat",
-    "service": "뮤직부가서비스",
+    "hostname": "vdeMSCDwba1",
+    "sw": "Apache",
+    "service": "뮤직벨링",
     "score": 100,
     "type": "WEB",
     "team": "모바일서비스개발챕터",
@@ -8544,6 +8553,51 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "slave3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-es3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgupdownwst1",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotaswst2",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgauthwba1",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexhioaswst1",
     "sw": "Linux",
     "service": "홈IoT플랫폼",
@@ -8571,18 +8625,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-es3",
+    "hostname": "slave2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgupdownwst1",
-    "sw": "Linux",
-    "service": "HCSS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8598,36 +8643,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave3",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave2",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgauthwba1",
+    "hostname": "vexSTG1dbo2",
     "sw": "Linux",
     "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst2",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8652,15 +8670,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexSTG1dbo2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdepetRC1wst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
@@ -8670,70 +8679,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdecctvcswst2",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRC1wst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsswst1",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst9",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdefanwst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotisswst1",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiothomewst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotauthwst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -8751,9 +8697,72 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vhiotisswst1",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst9",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsswst1",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexdeviotstgupdownwba1",
     "sw": "Linux",
     "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvcswst2",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdefanwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotauthwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRC1wst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8778,9 +8787,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave4",
+    "hostname": "vexdeviotstgimgwst1",
     "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhioaswst2",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8805,9 +8823,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgimgwst1",
+    "hostname": "slave1",
     "sw": "Linux",
-    "service": "HCSS",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave4",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8823,18 +8850,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave1",
+    "hostname": "vhiotepswst1",
     "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexhioaswst2",
+    "hostname": "vexdeviotstgapiwst2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotsswst3",
     "sw": "Linux",
     "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgimgwst2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsswst2",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8850,7 +8904,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwst2",
+    "hostname": "vexdeviotstgauthwba2",
     "sw": "Linux",
     "service": "HCSS",
     "score": 100,
@@ -8868,9 +8922,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepetGWwst2",
+    "hostname": "ec2-az2a-luiot-dev1-es1",
     "sw": "Linux",
-    "service": "홈IoT SAS",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-es3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotcgswst3",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8886,9 +8967,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotepswst1",
+    "hostname": "vdepetGWwst2",
     "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8913,36 +8994,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsswst2",
+    "hostname": "vexSTG1dbo1",
     "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsswst3",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotcgswst3",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "HCSS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -8958,52 +9012,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgauthwba2",
+    "hostname": "vdehiotaswst4",
     "sw": "Linux",
-    "service": "HCSS",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev1-es3",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgimgwst2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG1dbo1",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-es1",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehhngwwst2",
+    "hostname": "vdehiotgwdbm2",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -9012,9 +9030,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-xxljob",
+    "hostname": "ec2-az2a-luiot-dev3-es2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-manager",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst6",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotogsapp1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotepswst1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9030,34 +9084,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotrgsapp2",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave4",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwapp1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotcgswst2",
+    "hostname": "vhiotsswst4",
     "sw": "Linux",
     "service": "홈IoT플랫폼",
     "score": 100,
@@ -9066,7 +9093,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexcctvdba1",
+    "hostname": "ec2-az2a-luiot-dev3-manager",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdetesthcctvwst1",
     "sw": "Linux",
     "service": "홈CCTV플랫폼",
     "score": 100,
@@ -9075,27 +9111,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepetRCwst1",
+    "hostname": "vhiotaswst1",
     "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgapiwba2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhiotemulapp1",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9120,6 +9138,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexcctvdba1",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-xxljob",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2a-luiot-dev3-ota",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
@@ -9129,7 +9165,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-manager",
+    "hostname": "ec2-az2a-luiot-dev3-board",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -9138,25 +9174,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave2",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave2",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotsswst4",
+    "hostname": "vhiotcgswst2",
     "sw": "Linux",
     "service": "홈IoT플랫폼",
     "score": 100,
@@ -9165,7 +9183,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-manager",
+    "hostname": "vdepetRCwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotrgsapp2",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -9174,7 +9210,79 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-es2",
+    "hostname": "vexdepetwst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst8",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1authwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevupimg2setwst2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexhiotemulapp1",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehhngwwst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhhcgwapp1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -9183,7 +9291,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-es3",
+    "hostname": "ec2-az2a-luiot-dev3-coap",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -9210,16 +9318,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotogsapp1",
+    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
     "sw": "Linux",
-    "service": "홈IoT 플랫폼",
+    "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-board",
+    "hostname": "slave4",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-es3",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -9237,120 +9354,21 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevupimg2setwst2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-coap",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotaswst4",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1authwst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdetesthcctvwst1",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotepswst1",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst1",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst6",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst8",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdenauthdba1",
     "sw": "Altibase",
     "service": "휴대폰 본인확인",
     "score": 100,
     "type": "DB",
     "team": "커머스서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave6",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
@@ -9372,15 +9390,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "slave6",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "test-authhsm1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -9390,7 +9399,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "vexdevdedup2setwst2",
+    "hostname": "vdehigwwst2",
+    "sw": "Linux",
+    "service": "홈IoT(제휴GW 개발 WAS1 스마트가전)",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba1",
     "sw": "Linux",
     "service": "HCSS",
     "score": 100,
@@ -9399,7 +9417,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst12",
+    "hostname": "GDPDB_TEST",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst2",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -9417,7 +9444,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotisswst1",
+    "hostname": "vdepetGPUwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotaswst3",
     "sw": "Linux",
     "service": "홈IoT 플랫폼",
     "score": 100,
@@ -9426,25 +9462,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotaswst2",
+    "hostname": "vdehiotsaswst5",
     "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "GDPDB_TEST",
+    "hostname": "vdehiotsaswst12",
     "sw": "Linux",
-    "service": "홈CCTV플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwba1",
+    "hostname": "vexdevdedup2setwst2",
     "sw": "Linux",
     "service": "HCSS",
     "score": 100,
@@ -9453,9 +9489,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexhcctvwst1",
+    "hostname": "vdepetGPUwst2",
     "sw": "Linux",
-    "service": "홈CCTV플랫폼",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotisswst1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9480,117 +9525,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdepetRCwst2",
+    "hostname": "vdehiotaswst2",
     "sw": "Linux",
-    "service": "홈IoT SAS",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdepetGPUwst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst3",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehigwwst2",
-    "sw": "Linux",
-    "service": "홈IoT(제휴GW 개발 WAS1 스마트가전)",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetGPUwst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst5",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwwba2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexlcctvcswst1",
+    "hostname": "vexhcctvwst1",
     "sw": "Linux",
     "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst6",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehomecctvstrm2app",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst8",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotccarwst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9606,7 +9552,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst11",
+    "hostname": "vdehiotmainwst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -9615,9 +9561,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2pdbm2",
+    "hostname": "vdehiotsaswst6",
     "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9633,9 +9579,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevupdd2setwst1",
+    "hostname": "vexlcctvcswst1",
     "sw": "Linux",
-    "service": "HCSS",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pdbm2",
+    "sw": "Linux",
+    "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9651,16 +9606,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevdedup2setwst1",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst1",
+    "hostname": "vdeviotsaswst11",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -9669,7 +9615,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotauthwst2",
+    "hostname": "vhiotcgswst1",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotccarwst2",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -9687,9 +9642,63 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotcgswst1",
+    "hostname": "vexdevupdd2setwst1",
     "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotgwdbm2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevdedup2setwst1",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst8",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhhcgwwba2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehomecctvstrm2app",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotauthwst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -9948,63 +9957,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgupdownwba2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswba1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-device",
+    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1sasdbo1",
-    "sw": "Linux",
-    "service": "홈IoT(SAS DB 개발1)",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeepswst1",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-user",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehomecctvstrm1app",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10020,6 +9975,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdeepswst1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgupdownwba2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2c-luiot-dev2-apollos",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
@@ -10029,81 +10002,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-rocketmq3",
+    "hostname": "vdehiot1sasdbo1",
     "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-registsvr",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcgwwba1",
-    "sw": "Linux",
-    "service": "홈IoT(제휴GW 개발 WEB 홈넷-대우건설)",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst13",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiothomewst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave3",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-cem",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-gateway",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
+    "service": "홈IoT(SAS DB 개발1)",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10128,6 +10029,60 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2a-luiot-dev1-cem",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiothomewst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-device",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcgwwba1",
+    "sw": "Linux",
+    "service": "홈IoT(제휴GW 개발 WEB 홈넷-대우건설)",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-user",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2c-luiot-dev2-hetu",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
@@ -10137,9 +10092,54 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst9",
+    "hostname": "ec2-az2c-luiot-dev2-rocketmq3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev1-gateway",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehomecctvstrm1app",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-registsvr",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst13",
     "sw": "Linux",
     "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10149,6 +10149,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdecctvctrlapp3",
     "sw": "Linux",
     "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst9",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10218,15 +10227,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pmasterwba2",
-    "sw": "Tomcat",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexpmqwst1",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
@@ -10238,6 +10238,15 @@ List<Map<String, Object>> rawdata_solidstep = [
   {
     "hostname": "vexdhiotp2pmasterwba2",
     "sw": "Nginx",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pmasterwba2",
+    "sw": "Tomcat",
     "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "WEB",
@@ -10308,9 +10317,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst10",
+    "hostname": "vdehiotauthwba1",
     "sw": "Linux",
-    "service": "홈IoT개발(conncar,iotautorun)",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10320,6 +10329,33 @@ List<Map<String, Object>> rawdata_solidstep = [
     "hostname": "vdehiot1saswst7",
     "sw": "Linux",
     "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst11",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst6",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst10",
+    "sw": "Linux",
+    "service": "홈IoT개발(conncar,iotautorun)",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10344,7 +10380,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst11",
+    "hostname": "ec2-az2a-luiot-dev3-nginx",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst22",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -10362,88 +10416,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotauthwba1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst6",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-nginx",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst22",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotaswst2",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst20",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "master1",
-    "sw": "Apache",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotrgsapp1",
-    "sw": "Linux",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpgwwst1",
+    "hostname": "vdehiotgwdbm1",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -10461,9 +10434,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst14",
+    "hostname": "vexpgwwst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdecubewst1",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10479,34 +10461,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdehiotsaswst20",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexpgwwst2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst17",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotogsapp2",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm1",
     "sw": "Linux",
     "service": "홈IoT SAS",
     "score": 100,
@@ -10524,24 +10488,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "master1",
-    "sw": "Tomcat",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotccarwba1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehpasdbo1",
     "sw": "Linux",
     "service": "홈IoT 플랫폼",
@@ -10551,9 +10497,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "devhcboxsaiirwst2",
+    "hostname": "dev_vdehiotaswst2",
     "sw": "Linux",
-    "service": "HCSS",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "Tomcat",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst14",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotgwwba2",
+    "sw": "Linux",
+    "service": "홈IoT(제휴GW 개발 WEB2)",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10569,15 +10542,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswba4",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexdhiotp2pdclogwba2",
     "sw": "Linux",
     "service": "슈퍼맘카 P2P",
@@ -10587,9 +10551,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdecubewst1",
+    "hostname": "vdehiotogsapp2",
     "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10605,9 +10569,54 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiotgwwba2",
+    "hostname": "vdeviotsaswba4",
     "sw": "Linux",
-    "service": "홈IoT(제휴GW 개발 WEB2)",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "master1",
+    "sw": "Apache",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst17",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotccarwba1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotrgsapp1",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "devhcboxsaiirwst2",
+    "sw": "Linux",
+    "service": "HCSS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -10713,20 +10722,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst16",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexphiotp2pdclogwba1",
     "sw": "Nginx",
     "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst16",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -10767,20 +10776,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotgwwba1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdepetGWwst1",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotgwwba1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -10821,18 +10830,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotadmwst1",
+    "hostname": "ovxhsadbo2",
     "sw": "Linux",
-    "service": "홈IoT 플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ovxhsadbo2",
+    "hostname": "vdehiotadmwst1",
     "sw": "Linux",
-    "service": "홈IoT SAS",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -11001,18 +11010,18 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotoasapp2",
+    "hostname": "vexdhiotp2pvtmwba1",
     "sw": "Linux",
-    "service": "홈IoT 플랫폼",
+    "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pvtmwba1",
+    "hostname": "vdehiotoasapp2",
     "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -11109,20 +11118,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotcgswst1",
     "sw": "Linux",
     "service": "홈IoT플랫폼",
     "score": 100,
     "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -11469,20 +11478,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdendredwba1",
-    "sw": "Apache",
-    "service": "홈IoT(SAS 공통WEB 개발2~4)",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexdevhcboxconwst2",
     "sw": "Linux",
     "service": "HCSS",
     "score": 100,
     "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdendredwba1",
+    "sw": "Apache",
+    "service": "홈IoT(SAS 공통WEB 개발2~4)",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -11506,7 +11515,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdetestcctvwst1",
-    "sw": "Apache",
+    "sw": "Tomcat",
     "service": "홈CCTV플랫폼",
     "score": 100,
     "type": "WEB",
@@ -11515,7 +11524,7 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdetestcctvwst1",
-    "sw": "Tomcat",
+    "sw": "Apache",
     "service": "홈CCTV플랫폼",
     "score": 100,
     "type": "WEB",
@@ -11595,7 +11604,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-datasource",
+    "hostname": "ec2-az2a-luiot-dev2-sms",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -11604,7 +11613,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev2-sms",
+    "hostname": "ec2-az2c-luiot-dev2-datasource",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -11667,7 +11676,106 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2c-luiot-dev2-gateway",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-oss",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-xxljob",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhhcgwapp2",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-az2a-luiot-dev3-logcollect",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-devex",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-ifttt",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-rocketmq1",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-uplusadmin",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-uplusmnger",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-es1",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -11685,15 +11793,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-jumper",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-az2c-luiot-dev2-cem",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
@@ -11703,9 +11802,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2c-luiot-dev2-jumper",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpetGW1wst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdebbotwst1",
     "sw": "Linux",
     "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-coap",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -11730,133 +11856,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-xxljob",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-es1",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-ifttt",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-uplusmnger",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-devex",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwapp2",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-rocketmq1",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave3",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-uplusadmin",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpetGW1wst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-gateway",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "slave1",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-coap",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-oss",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave5",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -11874,6 +11874,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "slave5",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexdeviotstgdedupwst2",
     "sw": "Linux",
     "service": "HCSS",
@@ -11883,61 +11892,43 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswst6",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetGPUwst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotmainwst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehpasdbo4",
+    "hostname": "vexdeviotstgauthwst1",
     "sw": "Linux",
-    "service": "홈IoT플랫폼",
+    "service": "HCSS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexSTG4dbo2",
-    "sw": "Oracle",
+    "hostname": "vexdevdedup2setwst1",
+    "sw": "Tomcat",
     "service": "HCSS",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2pdclogwba2",
-    "sw": "Nginx",
-    "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-rocketmq2",
+    "hostname": "vdehiot1saswst7",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehngwwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-es2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -11946,16 +11937,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevhcaimmgwst2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst13",
+    "hostname": "vdehiothomewst2",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -11964,115 +11946,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiot1saswst4",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcctvwst1",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevhcctvwas",
-    "sw": "Tomcat",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehhngwwst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vhiotaswst4",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhhcgwwba2",
-    "sw": "Apache",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst1",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcgwwba1",
-    "sw": "Apache",
-    "service": "홈IoT(제휴GW 개발 WEB 홈넷-대우건설)",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevhcctvwas",
-    "sw": "Apache",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2plbswba1",
-    "sw": "Linux",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexSTG3dbo2",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev1-es2",
+    "hostname": "master1",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -12090,38 +11964,20 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "master1",
+    "hostname": "vexhcctvwst1",
+    "sw": "Apache",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-datasource",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst7",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgauthwst1",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst6",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -12135,36 +11991,27 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vissexwba1",
+    "hostname": "vdehiotsaswst5",
     "sw": "Tomcat",
-    "service": "홈IoT플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst18",
-    "sw": "Linux",
+    "hostname": "vexdhhcgwwba2",
+    "sw": "Apache",
     "service": "홈IoT SAS",
     "score": 100,
-    "type": "OS",
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexlcctvcswst2",
-    "sw": "Linux",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiotgwwba2",
-    "sw": "Apache",
-    "service": "홈IoT(제휴GW 개발 WEB2)",
+    "hostname": "vdehiotaswst4",
+    "sw": "Tomcat",
+    "service": "홈IoT플랫폼",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -12180,6 +12027,42 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-az2a-luiot-dev3-jumper",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2pdclogwba2",
+    "sw": "Nginx",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgdedupwst1",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexSTG2dbo2",
     "sw": "Linux",
     "service": "HCSS",
@@ -12189,18 +12072,72 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-gateway",
+    "hostname": "vdecctvcswst1",
     "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
+    "service": "홈CCTV플랫폼",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgupdownwba2",
+    "hostname": "vdevcctvwas",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1ccarwba1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswba1",
     "sw": "Apache",
-    "service": "HCSS",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba1",
+    "sw": "Tomcat",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevhcctvwas",
+    "sw": "Apache",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehpasdbo4",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotccarwst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -12216,29 +12153,11 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwba2",
-    "sw": "Apache",
-    "service": "HCSS",
+    "hostname": "vhiotaswst4",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
     "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetGPUwst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst11",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -12252,88 +12171,52 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwst1",
-    "sw": "Tomcat",
-    "service": "HCSS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswba1",
+    "hostname": "vexdeviotstgupdownwba2",
     "sw": "Apache",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotepswst2",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-es2",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst8",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst1",
-    "sw": "Linux",
     "service": "HCSS",
     "score": 100,
-    "type": "OS",
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexpcctvctrlapp2",
-    "sw": "Linux",
+    "hostname": "vexhcctvwst1",
+    "sw": "Tomcat",
     "service": "홈CCTV플랫폼",
     "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-rocketmq3",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexdhiotp2pdclogwba1",
-    "sw": "Nginx",
-    "service": "슈퍼맘카 P2P",
+    "hostname": "vdeepswst1",
+    "sw": "Tomcat",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotisswba1",
+    "hostname": "ec2-az2a-luiot-dev3-devex",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vhiotagsapp2",
     "sw": "Linux",
     "service": "홈IoT 플랫폼",
     "score": 100,
@@ -12342,18 +12225,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-apollos",
-    "sw": "Nginx",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRCwst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
+    "hostname": "vdehcgwwba1",
+    "sw": "Apache",
+    "service": "홈IoT(제휴GW 개발 WEB 홈넷-대우건설)",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -12369,16 +12243,88 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdevcctvwas",
-    "sw": "Linux",
+    "hostname": "vdevhcctvwas",
+    "sw": "Tomcat",
     "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevhcaimmgwst2",
+    "sw": "Linux",
+    "service": "HCSS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiothomewst2",
+    "hostname": "vdehiotauthwst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst8",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-apollos",
+    "sw": "Nginx",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwst1",
+    "sw": "Tomcat",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-leisi",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst6",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehpasdbo1",
+    "sw": "Oracle",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdepetwst2",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -12396,11 +12342,218 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-devex",
+    "hostname": "vdehhngwwst1",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst4",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetRCwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst6",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst11",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotagsapp1",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetGPUwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst13",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevupimg2setwst2",
+    "sw": "Tomcat",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevhcaimmgwst1",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG4dbo2",
+    "sw": "Oracle",
+    "service": "HCSS",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcctvwst1",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexSTG3dbo2",
+    "sw": "Linux",
+    "service": "HCSS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpcctvctrlapp2",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotgwwba2",
+    "sw": "Apache",
+    "service": "홈IoT(제휴GW 개발 WEB2)",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdepetGPUwst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexlcctvcswst2",
+    "sw": "Linux",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1authwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "daipetGPUapp1",
+    "sw": "Apache",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst19",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotgwdbm2",
+    "sw": "MariaDB",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-rocketmq2",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
     "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -12414,7 +12567,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotccarwst2",
+    "hostname": "ec2-az2a-luiot-dev1-es2",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotmainwst2",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -12432,88 +12594,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehpasdbo1",
-    "sw": "Oracle",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst19",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepetRCwst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotaswst4",
-    "sw": "Tomcat",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1ccarwba1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst5",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba1",
-    "sw": "Tomcat",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhcctvwst1",
-    "sw": "Tomcat",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotgwdbm2",
-    "sw": "MariaDB",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "daipetGPUapp1",
+    "hostname": "vexdeviotstgapiwba2",
     "sw": "Apache",
     "service": "HCSS",
     "score": 100,
@@ -12522,7 +12603,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vhiotagsapp2",
+    "hostname": "vissexwba1",
+    "sw": "Tomcat",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotisswba1",
     "sw": "Linux",
     "service": "홈IoT 플랫폼",
     "score": 100,
@@ -12531,16 +12621,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevupimg2setwst2",
-    "sw": "Tomcat",
-    "service": "HCSS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-datasource",
+    "hostname": "ec2-az2a-luiot-dev3-gateway",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -12558,18 +12639,36 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevdedup2setwst1",
-    "sw": "Tomcat",
-    "service": "HCSS",
+    "hostname": "vdehiotsaswst18",
+    "sw": "Linux",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotepswst2",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba1",
+    "sw": "Nginx",
+    "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-rocketmq3",
+    "hostname": "vexdhiotp2plbswba1",
     "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
+    "service": "슈퍼맘카 P2P",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -12585,44 +12684,26 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehngwwst1",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
+    "hostname": "vdehpasdbo4",
+    "sw": "Oracle",
+    "service": "홈IoT플랫폼",
     "score": 100,
-    "type": "OS",
+    "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdeepswst1",
+    "hostname": "vexphiotp2predisapp5",
+    "sw": "Redis",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdevcctvwas",
     "sw": "Tomcat",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotagsapp1",
-    "sw": "Linux",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgdedupwst1",
-    "sw": "Linux",
-    "service": "HCSS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexhcctvwst1",
-    "sw": "Apache",
     "service": "홈CCTV플랫폼",
     "score": 100,
     "type": "WEB",
@@ -12630,7 +12711,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotmainwst2",
+    "hostname": "vexdevhcaimmgwst2",
+    "sw": "Tomcat",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst4",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -12639,45 +12729,45 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-jumper",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-leisi",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1authwst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotauthwst2",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
+    "hostname": "ec2-az2a-luiot-dev3-nginx",
     "sw": "Nginx",
     "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "slave6",
+    "sw": "Linux",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgapiwba1",
+    "sw": "Apache",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst22",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst8",
+    "sw": "Tomcat",
+    "service": "홈IoT(NCD서버)",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -12693,6 +12783,150 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdendredapp1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiot1saswst6",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvcswst3",
+    "sw": "Tomcat",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst12",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp4",
+    "sw": "Redis",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswst10",
+    "sw": "Tomcat",
+    "service": "홈IoT개발(conncar,iotautorun)",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdecctvwst1",
+    "sw": "Apache",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2c-luiot-dev2-opncldfrnt",
+    "sw": "Nginx",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdetesthcctvwst1",
+    "sw": "Apache",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
+    "sw": "Nginx",
+    "service": "스마트홈Easy플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst19",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehcctvwst1",
+    "sw": "Apache",
+    "service": "홈CCTV플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotsaswst18",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexphiotp2predisapp1",
+    "sw": "Redis",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiag2dba1",
+    "sw": "Altibase",
+    "service": "IAG",
+    "score": 100,
+    "type": "DB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdeviotstgdedupwst2",
+    "sw": "Tomcat",
+    "service": "HCSS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdecctvcswst1",
     "sw": "Tomcat",
     "service": "홈CCTV플랫폼",
@@ -12702,25 +12936,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdeviotstgapiwba1",
-    "sw": "Apache",
-    "service": "HCSS",
+    "hostname": "vexdepetwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiotagsapp2",
-    "sw": "Linux",
+    "hostname": "dev_vdehiotdba2",
+    "sw": "Altibase",
     "service": "홈IoT플랫폼",
     "score": 100,
-    "type": "OS",
+    "type": "DB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdendredapp1",
+    "hostname": "vdehiotsaswst8",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -12756,151 +12990,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevhcaimmgwst2",
-    "sw": "Tomcat",
-    "service": "HCSS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvcswst3",
-    "sw": "Tomcat",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst22",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst4",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevhcaimmgwst1",
-    "sw": "Tomcat",
-    "service": "HCSS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdetesthcctvwst1",
-    "sw": "Apache",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "slave6",
-    "sw": "Linux",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst8",
-    "sw": "Tomcat",
-    "service": "홈IoT(NCD서버)",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiot1saswst6",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp5",
-    "sw": "Redis",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst12",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdecctvwst1",
-    "sw": "Apache",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeiag2dba1",
-    "sw": "Altibase",
-    "service": "IAG",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst8",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst18",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdehiotsaswst11",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst19",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -12918,88 +13008,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexphiotp2predisapp1",
-    "sw": "Redis",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotdba2",
-    "sw": "Altibase",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-az2a-luiot-dev3-nginx",
-    "sw": "Nginx",
-    "service": "스마트홈Easy플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswst10",
-    "sw": "Tomcat",
-    "service": "홈IoT개발(conncar,iotautorun)",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdepetwst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexphiotp2predisapp4",
-    "sw": "Redis",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehpasdbo4",
-    "sw": "Oracle",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "DB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehcctvwst1",
-    "sw": "Apache",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdevcctvwas",
-    "sw": "Tomcat",
-    "service": "홈CCTV플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdeviotstgdedupwst2",
+    "hostname": "vexdevhcaimmgwst1",
     "sw": "Tomcat",
     "service": "HCSS",
     "score": 100,
@@ -13008,17 +13017,26 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2a-luiot-dev3-opncldfrnt",
-    "sw": "Nginx",
-    "service": "스마트홈Easy플랫폼",
+    "hostname": "vdehiot1homewst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vdehiot1homewst1",
-    "sw": "Tomcat",
+    "hostname": "vdehiotagsapp2",
+    "sw": "Linux",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "OS",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeiotccarwba1",
+    "sw": "Apache",
     "service": "홈IoT SAS",
     "score": 100,
     "type": "WEB",
@@ -13035,52 +13053,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeiotccarwba1",
-    "sw": "Apache",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pmasterwba1",
-    "sw": "Nginx",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst20",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vhiotsaswst1",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotisswba1",
-    "sw": "Tomcat",
-    "service": "홈IoT 플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexpgwwst1",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -13099,8 +13072,17 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vexdhiotp2pmasterwba1",
-    "sw": "Tomcat",
+    "sw": "Nginx",
     "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdehiotisswba1",
+    "sw": "Tomcat",
+    "service": "홈IoT 플랫폼",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
@@ -13116,6 +13098,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdehiotsaswst20",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexpgwwst1",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vexdeviotstgauthwst1",
     "sw": "Tomcat",
     "service": "HCSS",
@@ -13125,34 +13125,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevupdd2setwst2",
-    "sw": "Tomcat",
-    "service": "HCSS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev_vdehiotaswst2",
-    "sw": "Tomcat",
-    "service": "홈IoT플랫폼",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdehiotsaswst14",
-    "sw": "Tomcat",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba2",
+    "hostname": "vexdhiotp2pmasterwba1",
     "sw": "Tomcat",
     "service": "슈퍼맘카 P2P",
     "score": 100,
@@ -13161,7 +13134,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexpgwwst2",
+    "hostname": "vexpetGW1wst1",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -13170,20 +13143,11 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdeviotsaswba1",
-    "sw": "Apache",
-    "service": "홈IoT SAS",
+    "hostname": "viotwbadev",
+    "sw": "Linux",
+    "service": "홈IoT 플랫폼",
     "score": 100,
-    "type": "WEB",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdhiotp2pdclogwba2",
-    "sw": "Nginx",
-    "service": "슈퍼맘카 P2P",
-    "score": 100,
-    "type": "WEB",
+    "type": "OS",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
@@ -13206,6 +13170,60 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vexpgwwst2",
+    "sw": "Tomcat",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba2",
+    "sw": "Tomcat",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev_vdehiotaswst2",
+    "sw": "Tomcat",
+    "service": "홈IoT플랫폼",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdhiotp2pdclogwba2",
+    "sw": "Nginx",
+    "service": "슈퍼맘카 P2P",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba1",
+    "sw": "Apache",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdeviotsaswba4",
+    "sw": "Apache",
+    "service": "홈IoT SAS",
+    "score": 100,
+    "type": "WEB",
+    "team": "홈IoT개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdeviotsaswba2",
     "sw": "Apache",
     "service": "홈IoT SAS",
@@ -13224,25 +13242,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdehiotsaswst4",
-    "sw": "Linux",
-    "service": "홈IoT SAS",
-    "score": 100,
-    "type": "OS",
-    "team": "홈IoT개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdeviotsaswba4",
-    "sw": "Apache",
-    "service": "홈IoT SAS",
+    "hostname": "vexdevupdd2setwst2",
+    "sw": "Tomcat",
+    "service": "HCSS",
     "score": 100,
     "type": "WEB",
     "team": "홈IoT개발팀",
     "target": "대상"
   },
   {
-    "hostname": "vexpetGW1wst1",
+    "hostname": "vdehiotsaswst14",
     "sw": "Tomcat",
     "service": "홈IoT SAS",
     "score": 100,
@@ -13251,9 +13260,9 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "viotwbadev",
+    "hostname": "vdehiotsaswst4",
     "sw": "Linux",
-    "service": "홈IoT 플랫폼",
+    "service": "홈IoT SAS",
     "score": 100,
     "type": "OS",
     "team": "홈IoT개발팀",
@@ -13620,7 +13629,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-push",
+    "hostname": "ec2-az2c-luiot-dev2-ota",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -13629,7 +13638,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-az2c-luiot-dev2-ota",
+    "hostname": "ec2-az2c-luiot-dev2-push",
     "sw": "Linux",
     "service": "스마트홈Easy플랫폼",
     "score": 100,
@@ -14229,15 +14238,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 100,
     "type": "OS",
     "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-media1-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
     "target": "대상"
   },
   {
@@ -14925,15 +14925,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-chat-backup-ap2a",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdewltdbo1",
     "sw": "Oracle",
     "service": "U+멤버스",
@@ -15114,97 +15105,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-chat2-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-stg-ulsp-chat1-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was1-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb2-backup-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform2-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-platform1-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was1-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-redis-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-rdb-backup-ap2c",
     "sw": "Linux",
     "service": "화상커뮤니케이션 플랫폼",
     "score": 100,
@@ -15222,70 +15123,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-redis-backup-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-admin-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-uverse-was2-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-stg-ulsp-chat1-backup-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-was2-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-backup-ap2a",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-bastion-ap2c",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-slb1-ap2a",
     "sw": "Linux",
     "service": "화상커뮤니케이션 플랫폼",
     "score": 100,
@@ -15429,34 +15267,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-stg-ulsp-api-bat-ap2",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-dev-ulsp-ssh-hub-ap2",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-ssh-hub-ap2",
-    "sw": "Linux",
-    "service": "화상커뮤니케이션 플랫폼",
-    "score": 100,
-    "type": "OS",
-    "team": "SME솔루션개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-stg-ulsp-eks-deploy-ap2",
     "sw": "Linux",
     "service": "화상커뮤니케이션 플랫폼",
     "score": 100,
@@ -16941,24 +16752,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadkafka1",
-    "sw": "Linux",
-    "service": "U+ 스마트레이더",
-    "score": 100,
-    "type": "OS",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vderadwst1",
-    "sw": "Tomcat",
-    "service": "U+ 스마트레이더",
-    "score": 100,
-    "type": "WEB",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vderadui1",
     "sw": "Tomcat",
     "service": "U+ 스마트레이더",
@@ -16977,6 +16770,24 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vderadmqtt1",
+    "sw": "Linux",
+    "service": "U+ 스마트레이더",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vderadkafka1",
+    "sw": "Linux",
+    "service": "U+ 스마트레이더",
+    "score": 100,
+    "type": "OS",
+    "team": "스마트DX플랫폼개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vderadouif1",
     "sw": "Linux",
     "service": "U+ 스마트레이더",
@@ -16986,11 +16797,11 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadmqtt1",
-    "sw": "Linux",
+    "hostname": "vderadwst1",
+    "sw": "Tomcat",
     "service": "U+ 스마트레이더",
     "score": 100,
-    "type": "OS",
+    "type": "WEB",
     "team": "스마트DX플랫폼개발팀",
     "target": "대상"
   },
@@ -17004,7 +16815,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadcol1",
+    "hostname": "vderadouif1",
     "sw": "Tomcat",
     "service": "U+ 스마트레이더",
     "score": 100,
@@ -17022,7 +16833,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vderadouif1",
+    "hostname": "vderadcol1",
     "sw": "Tomcat",
     "service": "U+ 스마트레이더",
     "score": 100,
@@ -17310,24 +17121,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdescsdbm1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vpsdewba1",
-    "sw": "Linux",
-    "service": "PUSH",
-    "score": 100,
-    "type": "OS",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "spamdev2",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -17337,7 +17130,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vpsdewst1",
+    "hostname": "vdescswba2",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -17355,7 +17148,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdescswba2",
+    "hostname": "vdescsdbm1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
@@ -17382,6 +17175,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "vdepushgwdba1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "OS",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdescsdba1",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -17392,10 +17194,19 @@ List<Map<String, Object>> rawdata_solidstep = [
   },
   {
     "hostname": "vdepushgwdba1",
-    "sw": "Linux",
+    "sw": "Altibase",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
-    "type": "OS",
+    "type": "DB",
+    "team": "기반서비스개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdescsdba1",
+    "sw": "Altibase",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 100,
+    "type": "DB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
@@ -17405,24 +17216,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 100,
     "type": "WEB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdepushgwdba1",
-    "sw": "Altibase",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "DB",
-    "team": "기반서비스개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdescsdba1",
-    "sw": "Altibase",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 100,
-    "type": "DB",
     "team": "기반서비스개발팀",
     "target": "대상"
   },
@@ -17887,7 +17680,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdefido3dbo1",
+    "hostname": "vdefidosdkwst1",
     "sw": "Linux",
     "service": "PASS",
     "score": 100,
@@ -17896,7 +17689,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdefidosdkwst1",
+    "hostname": "vdefido3dbo1",
     "sw": "Linux",
     "service": "PASS",
     "score": 100,
@@ -18265,15 +18058,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdemtmsdba1",
-    "sw": "Altibase",
-    "service": "M2MS(vM2MS)",
-    "score": 61.5,
-    "type": "DB",
-    "team": "스마트DX플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vdetrsgapp1",
     "sw": "Linux",
     "service": "wTRSP",
@@ -18355,880 +18139,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-172-31-148-152-internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp21",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-77.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp11",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-82.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-10.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-68.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp23",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-an2-dev-mvoip-slb-01-az2a",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-37.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-54.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-an2-dev-mvoip-media-01-az2a",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-126.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-74.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-71.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-94.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltwst1",
-    "sw": "Linux",
-    "service": "U+멤버스",
-    "score": 0,
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-72.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-34.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ec2-an2-dev-mvoip-rtc-01a",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp20",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-80.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp07",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp04",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-30.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-5.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-51.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-25.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-17.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-89.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-75.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-23.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxaufdsdbm02",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-12.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-81.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp22",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-prd-news-01",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-60.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-96.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-22.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-32.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdememdbo1",
-    "sw": "Linux",
-    "service": "U+멤버십",
-    "score": 0,
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexdevcctvdba2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-117.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexTRSGapp1",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-119.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-26.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-49.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-29.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-50.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-54.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-98.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-51.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-119.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp12",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-108.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-99.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-4.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-31.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-92.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-8.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-74.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-42.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-43.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-46.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-102.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-104.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-22.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-97.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-68.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltawst1",
-    "sw": "Linux",
-    "service": "U+멤버스",
-    "score": 0,
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-108.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-9.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-37.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-55.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-60.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp13",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-45.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-106.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp09",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-31.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-11.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-58.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-19.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-121.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-92.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-84.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp05",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-44.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-122.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-70.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-stg-news-01",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-11.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-16.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-120.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-94.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-100-64-9-82.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-7.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19246,7 +18157,43 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ip-100-64-1-72.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-stg-news-01",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "Agile품질프로페션",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-70.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
     "hostname": "ip-100-64-1-106.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-44.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19264,7 +18211,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-106.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-30.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19273,7 +18220,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-116.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp05",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19282,7 +18229,52 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-18.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-31.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-106.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-94.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-60.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-23.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-37.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19300,15 +18292,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-52.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-100-64-5-103.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -19318,7 +18301,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-48.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-9.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19327,7 +18310,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdewltdbo1",
+    "hostname": "vdewltawst1",
     "sw": "Linux",
     "service": "U+멤버스",
     "score": 0,
@@ -19336,12 +18319,30 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-115.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-12.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
     "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-97.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-prd-news-01",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
     "target": "대상"
   },
   {
@@ -19354,7 +18355,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-76.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-96.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19363,34 +18364,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-124.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-52.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-58.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-68.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp23",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19417,7 +18391,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-99.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-92.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-31.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-77.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19444,7 +18436,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-93.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp21",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19453,16 +18445,34 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-an2-dev-mvoip-ES-Node-03-az2a",
+    "hostname": "ip-100-64-5-54.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
-    "team": "광고플랫폼개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-30.ap-northeast-2.compute.internal",
+    "hostname": "vexTRSGapp1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-29.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-50.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19480,25 +18490,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-94.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-90.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-45.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-119.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19525,7 +18517,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-48.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-22.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19534,7 +18526,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-84.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-99.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19543,7 +18535,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-73.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-119.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-74.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19561,25 +18562,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-46.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-70.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-33.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-25.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19597,7 +18580,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-33.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-102.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19606,7 +18589,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-7.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp07",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19624,7 +18607,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-92.ap-northeast-2.compute.internal",
+    "hostname": "ec2-an2-dev-mvoip-rtc-01a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-34.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19633,7 +18625,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-105.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp09",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19642,7 +18634,43 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-59.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-68.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-an2-dev-mvoip-media-01-az2a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-an2-dev-mvoip-slb-01-az2a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-11.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-121.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19657,6 +18685,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "score": 0,
     "type": "OS",
     "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-10.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
     "target": "대상"
   },
   {
@@ -19696,7 +18733,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "ip-100-64-9-114.ap-northeast-2.compute.internal",
+    "hostname": "ip-172-31-148-152-internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19705,7 +18742,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-124.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp11",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19714,7 +18751,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-28.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-82.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19723,61 +18760,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-15.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-116.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
     "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-27.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp06",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vdewltgwwba1",
-    "sw": "Linux",
-    "service": "U+멤버스",
-    "score": 0,
-    "type": "OS",
-    "team": "모바일서비스선행개발팀",
     "target": "대상"
   },
   {
     "hostname": "ip-100-64-1-20.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-78.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-20.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19795,12 +18787,21 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-an2-dev-mvoip-OAM-Master-03-az2a",
+    "hostname": "ip-100-64-9-37.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
-    "team": "광고플랫폼개발팀",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-54.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
     "target": "대상"
   },
   {
@@ -19813,7 +18814,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-112.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-126.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19822,7 +18823,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-95.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-74.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19831,7 +18832,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-118.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-71.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19840,7 +18841,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxaufdsdbm01",
+    "hostname": "ip-100-64-5-115.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltwst1",
+    "sw": "Linux",
+    "service": "U+멤버스",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-124.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19858,6 +18877,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ip-100-64-5-5.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
     "hostname": "ec2-an2-dev-mvoip-OAM-Master-01-az2a",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -19867,7 +18895,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-107.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp20",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19876,16 +18904,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "aws-stg-news-02",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "Agile품질프로페션",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-70.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-80.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19894,7 +18913,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-85.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp04",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19903,7 +18922,43 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-62.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-51.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-17.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-89.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-75.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxaufdsdbm02",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19921,7 +18976,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ip-100-64-5-81.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
     "hostname": "ip-100-64-1-91.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp22",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19939,7 +19012,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-8.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-60.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19948,7 +19021,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-60.ap-northeast-2.compute.internal",
+    "hostname": "vexdevcctvdba2",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19957,7 +19030,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-72.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-32.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19966,7 +19039,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-12.ap-northeast-2.compute.internal",
+    "hostname": "vdememdbo1",
+    "sw": "Linux",
+    "service": "U+멤버십",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-49.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19975,7 +19057,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp14",
+    "hostname": "ip-100-64-1-117.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-51.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-119.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -19993,7 +19093,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-97.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-4.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20002,7 +19102,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-120.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-8.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20011,7 +19111,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vexdevcctvdba1",
+    "hostname": "ip-100-64-1-33.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20020,7 +19120,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp15",
+    "hostname": "ip-100-64-5-26.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20029,7 +19129,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-118.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-108.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20038,7 +19138,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-123.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-105.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20047,52 +19147,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-116.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-19.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-10.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-46.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-53.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp24",
+    "hostname": "vnxausmsapp13",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20110,7 +19165,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp17",
+    "hostname": "ip-100-64-1-98.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20119,16 +19174,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-an2-dev-mvoip-ES-Node-01-az2a",
+    "hostname": "ip-100-64-9-73.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
-    "team": "광고플랫폼개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-73.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-58.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-19.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20146,6 +19210,33 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ip-100-64-5-20.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-92.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-84.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
     "hostname": "ip-100-64-5-111.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20155,7 +19246,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-45.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-122.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20164,7 +19255,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-24.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp12",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20173,16 +19264,34 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdememwst1",
+    "hostname": "ip-100-64-5-11.ap-northeast-2.compute.internal",
     "sw": "Linux",
-    "service": "U+멤버십",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
-    "team": "모바일서비스선행개발팀",
+    "team": "0",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-56.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-16.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-120.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-94.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20200,16 +19309,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-88.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-109.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-108.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20227,6 +19327,15 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
+    "hostname": "ec2-an2-dev-mvoip-OAM-Master-03-az2a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
     "hostname": "vdeviag2dba01",
     "sw": "Altibase",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20236,7 +19345,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-44.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-18.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-95.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-52.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20272,24 +19399,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-87.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-107.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
     "hostname": "ec2-an2-dev-mvoip-ES-Node-02-az2c",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20299,7 +19408,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-14.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-42.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20308,16 +19417,25 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdememwba1",
+    "hostname": "aws-stg-news-02",
     "sw": "Linux",
-    "service": "U+멤버십",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
-    "team": "모바일서비스선행개발팀",
+    "team": "Agile품질프로페션",
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-5.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-43.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-46.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20335,7 +19453,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-13.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-99.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20344,7 +19462,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-79.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-93.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20353,7 +19471,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-121.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-94.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20362,7 +19480,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-84.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-90.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20371,7 +19489,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-80.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-104.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20380,7 +19498,34 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-79.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-45.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-22.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-68.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-48.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20398,7 +19543,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-50.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-55.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20407,7 +19552,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-41.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-8.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20416,7 +19561,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp01",
+    "hostname": "ip-100-64-1-45.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20425,7 +19570,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-95.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-46.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20434,7 +19579,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-78.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-70.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20443,88 +19588,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-109.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-28.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "aws-prd-news-02",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "서비스인프라팀",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-126.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-101.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-73.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-114.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-35.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-9-56.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-15.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-72.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20542,24 +19606,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-18.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-105.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-100-64-1-112.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20569,7 +19615,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-24.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-7.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20578,7 +19624,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-104.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-24.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20605,34 +19651,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-11.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vnxausmsapp16",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-117.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-86.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-92.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20650,7 +19669,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "설치미지원"
   },
   {
-    "hostname": "ip-100-64-1-36.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-59.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20659,7 +19678,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-40.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-106.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20668,7 +19687,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-57.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-48.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20677,16 +19696,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-43.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-5-25.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-97.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20704,7 +19714,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-103.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp08",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20713,7 +19723,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp08",
+    "hostname": "ip-100-64-1-124.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20731,12 +19741,795 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vdememapp1",
+    "hostname": "ip-100-64-1-28.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdewltdbo1",
+    "sw": "Linux",
+    "service": "U+멤버스",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-120.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexdevcctvdba1",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-103.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-23.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-78.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-123.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "dev-vaems2dbm1",
+    "sw": "MariaDB",
+    "service": "지능형CCTV",
+    "score": 0,
+    "type": "DB",
+    "team": "지능형CCTV개발팀",
+    "target": "설치미지원"
+  },
+  {
+    "hostname": "ip-100-64-1-10.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-57.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-107.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-116.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-85.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-76.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-52.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-62.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp24",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-60.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-84.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-an2-dev-mvoip-ES-Node-01-az2a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-113.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-45.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp14",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vexvcctvdba2",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp18",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-61.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-38.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp15",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-58.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-107.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdememwba1",
     "sw": "Linux",
     "service": "U+멤버십",
     "score": 0,
     "type": "OS",
     "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-68.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-10.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-46.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-47.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-53.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-57.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ec2-an2-dev-mvoip-ES-Node-03-az2a",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-86.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp16",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-30.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-24.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-56.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-79.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-56.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-50.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-88.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-109.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-126.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "aws-prd-news-02",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "서비스인프라팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-28.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-95.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-80.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-84.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-87.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-5.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-101.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-13.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-114.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-73.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-79.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-121.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-14.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-105.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-44.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-41.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp01",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdememwst1",
+    "sw": "Linux",
+    "service": "U+멤버십",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-78.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-109.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-33.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-73.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp17",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-35.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-15.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-36.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-19.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-18.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-25.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-103.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-118.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-104.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-11.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-5-117.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-9-12.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-40.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-43.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
     "target": "대상"
   },
   {
@@ -20758,7 +20551,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "vnxausmsapp19",
+    "hostname": "ip-100-64-5-31.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20767,12 +20560,21 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-31.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-62.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
     "type": "OS",
     "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "vdememapp1",
+    "sw": "Linux",
+    "service": "U+멤버십",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
     "target": "대상"
   },
   {
@@ -20785,7 +20587,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-47.ap-northeast-2.compute.internal",
+    "hostname": "vnxausmsapp19",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-70.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20812,15 +20623,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ec2-an2-dev-mvoip-OAM-Master-02-az2c",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "광고플랫폼개발팀",
-    "target": "대상"
-  },
-  {
     "hostname": "vexdeviagdba1",
     "sw": "Altibase",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20830,7 +20632,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-103.ap-northeast-2.compute.internal",
+    "hostname": "ec2-an2-dev-mvoip-OAM-Master-02-az2c",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "광고플랫폼개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxaufdsdbm01",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20839,7 +20650,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-23.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-114.ap-northeast-2.compute.internal",
+    "sw": "Linux",
+    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
+    "score": 0,
+    "type": "OS",
+    "team": "0",
+    "target": "대상"
+  },
+  {
+    "hostname": "ip-100-64-1-118.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20857,7 +20677,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-38.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-5-112.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20875,42 +20695,6 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-61.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "dev-vaems2dbm1",
-    "sw": "MariaDB",
-    "service": "지능형CCTV",
-    "score": 0,
-    "type": "DB",
-    "team": "지능형CCTV개발팀",
-    "target": "설치미지원"
-  },
-  {
-    "hostname": "vnxausmsapp18",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "vexvcctvdba2",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
     "hostname": "ip-100-64-1-61.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
@@ -20920,7 +20704,16 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-1-10.ap-northeast-2.compute.internal",
+    "hostname": "vdewltgwwba1",
+    "sw": "Linux",
+    "service": "U+멤버스",
+    "score": 0,
+    "type": "OS",
+    "team": "모바일서비스선행개발팀",
+    "target": "대상"
+  },
+  {
+    "hostname": "vnxausmsapp06",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20929,16 +20722,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-5-57.ap-northeast-2.compute.internal",
-    "sw": "Linux",
-    "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
-    "score": 0,
-    "type": "OS",
-    "team": "0",
-    "target": "대상"
-  },
-  {
-    "hostname": "ip-100-64-1-113.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-27.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20956,7 +20740,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-62.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-1-15.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
@@ -20965,7 +20749,7 @@ List<Map<String, Object>> rawdata_solidstep = [
     "target": "대상"
   },
   {
-    "hostname": "ip-100-64-9-119.ap-northeast-2.compute.internal",
+    "hostname": "ip-100-64-9-7.ap-northeast-2.compute.internal",
     "sw": "Linux",
     "service": "컨플 시스템인벤토리에 미등록된 서버지만, Seedcrock에 팀 자산으로 등록되어 있음",
     "score": 0,
